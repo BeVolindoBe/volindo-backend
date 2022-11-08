@@ -14,8 +14,7 @@ services:
             - DATABASE_PASSWORD=postgres
             - DATABASE_HOST=vdb
             - DATABASE_PORT=5432
-            - DEBUG=False
-            - DJANGO_DEBUG=True
+            - DEBUG=True
             - SECRET_KEY=vol-service-secret
             - TIME_ZONE=America/Mexico_City
             - ALLOWED_HOSTS=*
