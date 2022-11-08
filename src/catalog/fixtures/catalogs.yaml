@@ -1,0 +1,5 @@
+- model: 'catalog.Catalog'
+  fields:
+    id: '79ad56d1-f7c9-48de-b997-79724be2a59c'
+    slug: 'countries'
+    description: 'Countries'
