@@ -1,0 +1,11 @@
+- model: 'catalogue.Catalogue'
+  fields:
+    id: '79ad56d1-f7c9-48de-b997-79724be2a59c'
+    slug: 'countries'
+    description: 'Countries'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: 'daaf8765-9fda-4b0f-84aa-604877bd19d9'
+    slug: 'hotel_amenities'
+    description: 'Hotel Amenities'

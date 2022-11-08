@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from catalog.models import Catalog, Item
+from catalogue.models import Catalogue, Item
 
 
 class ItemSerializer(serializers.ModelSerializer):
@@ -9,17 +9,17 @@ class ItemSerializer(serializers.ModelSerializer):
         model = Item
         fields = [
             'id',
-            'catalog',
+            'catalogue',
             'slug',
             'description',
             'metadata'
         ]
 
 
-class CatalogSerializer(serializers.ModelSerializer):
+class CatalogueSerializer(serializers.ModelSerializer):
 
     items = ItemSerializer(many=True)
 
     class Meta:
-        model = Catalog
+        model = Catalogue
         fields = '__all__'

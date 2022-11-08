@@ -2,5 +2,5 @@ from django.urls import path, include
 
 
 urlpatterns = [
-    path('catalogs/', include('catalog.urls')),
+    path('catalogues/', include('catalogue.urls')),
 ]
