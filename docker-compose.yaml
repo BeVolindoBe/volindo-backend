@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+    volindo-app:
+        container_name: volindo-app
+        build: .
+        command: 'python manage.py runserver 0.0.0.0:8000'
+        # command: 'gunicorn volindoapp.wsgi:application -b 0.0.0.0:8000 -w 6 -t 29 --log-level DEBUG'
+        volumes:
+            - ./src/:/code
+        environment:
+            - DATABASE_NAME=vdb
+            - DATABASE_USER=postgres
+            - DATABASE_PASSWORD=postgres
+            - DATABASE_HOST=vdb
+            - DATABASE_PORT=5432
+            - DEBUG=False
+            - DJANGO_DEBUG=True
+            - SECRET_KEY=vol-service-secret
+            - TIME_ZONE=America/Mexico_City
+            - ALLOWED_HOSTS=*
+        ports:
+            - '8000:8000'
+    vdb:
+        container_name: vdb
+        image: postgres:14
+        # command: ["postgres", "-c", "log_statement=all"]
+        environment:
+            - POSTGRES_DB=vdb
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+            - POSTGRES_PORT=5432
+        ports:
+            - '5432:5432'
+        expose:
+            - '5432'
+        healthcheck:
+            test: [ "CMD", "pg_isready", "-q", "-d", "postgres", "-U", "postgres" ]
+            timeout: 60s
+            interval: 3s
+            retries: 2
+        volumes:
+            - db:/var/lib/postgresql/data
+volumes:
+    db:
