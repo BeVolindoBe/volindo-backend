@@ -1,0 +1,6 @@
+- model: 'catalog.Catalog'
+  fields:
+    id: 'c2a07389-da13-4420-9060-c6bef2d6bd03'
+    catalog_name: 'incomes_categories'
+    description: 'Categorías de ingresos'
+  
