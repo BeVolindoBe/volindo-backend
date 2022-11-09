@@ -5,13 +5,14 @@ from django.db import models
 
 class Hotel(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    external_id = models.CharField(max_length=100, db_index=True, unique=True)
-    hotel_name = models.CharField(max_length=40)
-    star_rating = models.SmallPositiveIntegerField(default=0)
-    hotel_description = models.CharField(max_length=2000)
-    hotel_address = models.CharField(max_length=400)
-    lat = models.DecimalField(max_digits=None, decimal_places=None, **options)
-    lon = models.DecimalField(max_digits=None, decimal_places=None, **options)
+    destination = models.IntegerField()
+    check_in_date= models.DateField()
+    number_of_rooms = models.PositiveIntegerField()
+    number_of_adults = models.PositiveIntegerField()
+    number_of_nights = models.PositiveIntegerField()
+    number_of_child = models.PositiveIntegerField()
+    hotel_info = models.JSONField()
+    created_at=models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = 'hotels'
