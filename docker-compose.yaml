@@ -18,6 +18,11 @@ services:
             - SECRET_KEY=vol-service-secret
             - TIME_ZONE=America/Mexico_City
             - ALLOWED_HOSTS=*
+            - TMX_HOST=http://test.services.travelomatix.com/webservices/index.php/hotel_v3/service/Search
+            - TMTX_USERNAME=test273344
+            - TMTX_DOMAINKEY=TMX5262731660138834
+            - TMTX_SYSTEM=test
+            - TMTX_PASSWORD=test@273
         ports:
             - '8000:8000'
     vdb:
