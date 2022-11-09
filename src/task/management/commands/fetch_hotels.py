@@ -10,6 +10,8 @@ from catalogue.models import Item
 
 from task.logging import log
 
+from cache.redis import get_connector
+
 
 class Command(BaseCommand):
 
@@ -40,17 +42,22 @@ class Command(BaseCommand):
         }
 
     def handle(self, *args, **options):
-        try:
-            log('Getting Hotels Information')
-            r = requests.post(
-                environ.get('TMX_HOST'),
-                data=json.dumps(self.body),
-                headers=self.headers
-            )
-            log('Hotels Received: {}'.format(
-                len(r.json()['Search']['HotelSearchResult']['HotelResults']))
-            )
-        except requests.exceptions.RequestException as e:
-            log('Unable to get data from the API: {}'.format(e))
-        except KeyError as e:
-            log(e)
+        r = get_connector()
+        r.set('foo', 'bar')
+        print(r.get('foo'))
+        # cache.set('test', 'test', 10)
+        # print(cache.get('test'))
+        # try:
+        #     log('Getting Hotels Information')
+        #     r = requests.post(
+        #         environ.get('TMX_HOST'),
+        #         data=json.dumps(self.body),
+        #         headers=self.headers
+        #     )
+        #     log('Hotels Received: {}'.format(
+        #         len(r.json()['Search']['HotelSearchResult']['HotelResults']))
+        #     )
+        # except requests.exceptions.RequestException as e:
+        #     log('Unable to get data from the API: {}'.format(e))
+        # except KeyError as e:
+        #     log(e)

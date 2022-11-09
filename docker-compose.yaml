@@ -14,6 +14,10 @@ services:
             - DATABASE_PASSWORD=postgres
             - DATABASE_HOST=vdb
             - DATABASE_PORT=5432
+            # - CACHE_LOCATION=redis://vcache:6379
+            - CACHE_HOST=vcache
+            - CACHE_PORT=6379
+            - CACHE_DB=0
             - DEBUG=True
             - SECRET_KEY=vol-service-secret
             - TIME_ZONE=America/Mexico_City
@@ -25,6 +29,9 @@ services:
             - TMTX_PASSWORD=test@273
         ports:
             - '8000:8000'
+        depends_on:
+            - vdb
+            - vcache
     vdb:
         container_name: vdb
         image: postgres:14
@@ -34,8 +41,8 @@ services:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_PORT=5432
-        ports:
-            - '5432:5432'
+        # ports:
+        #     - '5432:5432'
         expose:
             - '5432'
         healthcheck:
@@ -44,6 +51,16 @@ services:
             interval: 3s
             retries: 2
         volumes:
-            - db:/var/lib/postgresql/data
+            - vdb:/var/lib/postgresql/data
+    vcache:
+        image: redis
+        expose:
+            - '6379'
+        ports:
+            - '6379:6379'
+        command: redis-server
+        volumes: 
+            - vcache:/data
 volumes:
-    db:
+    vdb:
+    vcache:
