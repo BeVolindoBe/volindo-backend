@@ -7,6 +7,18 @@ from django.core.cache import cache
 from celery import shared_task
 
 
+def parse(data, cache_key):
+    results = json.loads(cache.get(cache_key))
+    for hotel in data:
+        results['hotels'].append(
+            {
+                'provider': 'Travelomatix',
+                'name': hotel['HotelName']
+            }
+        )
+    cache.set(cache_key, json.dumps(results), 900)
+
+
 @shared_task
 def fetch_from_travelomatix():
     url = 'http://test.services.travelomatix.com/webservices/index.php/hotel_v3/service/Search'
@@ -38,7 +50,7 @@ def fetch_from_travelomatix():
         headers=headers
     )
     data = response.json()['Search']['HotelSearchResult']['HotelResults']
-    cache.set('travelomatix', json.dumps(data), 600)
+    parse(data, 'test')
     with open('travelomatix.json', 'w') as f:
         f.write(json.dumps(data, indent=4))
         f.close()

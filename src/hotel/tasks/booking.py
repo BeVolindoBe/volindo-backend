@@ -7,6 +7,18 @@ from django.core.cache import cache
 from celery import shared_task
 
 
+def parse(data, cache_key):
+    results = json.loads(cache.get(cache_key))
+    for hotel in data:
+        results['hotels'].append(
+            {
+                'provider': 'Booking',
+                'name': hotel['hotel_name']
+            }
+        )
+    cache.set(cache_key, json.dumps(results), 900)
+
+
 @shared_task
 def fetch_from_booking():
     url = 'https://apidojo-booking-v1.p.rapidapi.com/properties/list'
@@ -32,7 +44,7 @@ def fetch_from_booking():
     }
     response = requests.request('GET', url, headers=headers, params=querystring)
     data = response.json()['result']
-    cache.set('booking', json.dumps(data), 600)
+    parse(data, 'test')
     with open('booking.json', 'w') as f:
         f.write(json.dumps(data, indent=4))
         f.close()
