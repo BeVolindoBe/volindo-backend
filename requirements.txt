@@ -6,3 +6,4 @@ gunicorn
 pyyaml
 requests
 redis
+celery
