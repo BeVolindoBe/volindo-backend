@@ -1,0 +1,38 @@
+[
+    {
+        "geoId": "12786616",
+        "destinationId": "561413",
+        "landmarkCityDestinationId": null,
+        "type": "HOTEL",
+        "redirectPage": "DEFAULT_PAGE",
+        "latitude": 41.887943,
+        "longitude": -87.625385,
+        "searchDetail": null,
+        "caption": "<span class='highlighted'>London</span>House Chicago, Curio Collection by Hilton, Chicago, Illinois, United States of America",
+        "name": "LondonHouse Chicago, Curio Collection by Hilton"
+    },
+    {
+        "geoId": "438504",
+        "destinationId": "235666",
+        "landmarkCityDestinationId": null,
+        "type": "HOTEL",
+        "redirectPage": "DEFAULT_PAGE",
+        "latitude": 51.480839,
+        "longitude": -0.437828,
+        "searchDetail": null,
+        "caption": "<span class='highlighted'>London</span> Heathrow Marriott Hotel, Hayes, England, United Kingdom",
+        "name": "London Heathrow Marriott Hotel"
+    },
+    {
+        "geoId": "18773",
+        "destinationId": "114200",
+        "landmarkCityDestinationId": null,
+        "type": "HOTEL",
+        "redirectPage": "DEFAULT_PAGE",
+        "latitude": 51.494561,
+        "longitude": -0.189412,
+        "searchDetail": null,
+        "caption": "<span class='highlighted'>London</span> Marriott Hotel Kensington, London, England, United Kingdom",
+        "name": "London Marriott Hotel Kensington"
+    }
+]

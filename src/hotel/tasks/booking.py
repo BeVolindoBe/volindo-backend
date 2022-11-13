@@ -13,7 +13,8 @@ def parse(data, cache_key):
         results['hotels'].append(
             {
                 'provider': 'Booking',
-                'name': hotel['hotel_name']
+                'name': hotel['hotel_name'],
+                'price': hotel['price_breakdown']['all_inclusive_price']
             }
         )
     cache.set(cache_key, json.dumps(results), 900)
