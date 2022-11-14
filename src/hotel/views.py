@@ -8,7 +8,7 @@ from django.core.cache import cache
 
 from hotel.tasks.booking import fetch_from_booking
 from hotel.tasks.travelomatix import fetch_from_travelomatix
-from hotel.tasks.hotels_com import fetch_from_hotels_com
+# from hotel.tasks.hotels_com import fetch_from_hotels_com
 
 
 class Search(APIView):
@@ -17,7 +17,7 @@ class Search(APIView):
         fetch_from_booking.delay()
         fetch_from_travelomatix.delay()
         cache.set('test', json.dumps({'hotels': []}), 900)
-        return Response({'Message': 'I am working'}, status=status.HTTP_200_OK)
+        return Response({'Results': 'test'}, status=status.HTTP_200_OK)
 
 
 class Result(APIView):

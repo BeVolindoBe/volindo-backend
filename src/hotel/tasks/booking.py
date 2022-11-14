@@ -14,14 +14,22 @@ def parse(data, cache_key):
             {
                 'provider': 'Booking',
                 'name': hotel['hotel_name'],
-                'price': hotel['price_breakdown']['all_inclusive_price']
+                'offered_price': float(hotel['price_breakdown']['all_inclusive_price']),
+                'total_price': float(hotel['price_breakdown']['gross_price']),
+                'image': hotel['main_photo_url'],
+                'star_rating': int(hotel['class']),
+                'latitude': float(hotel['latitude']),
+                'longitude': float(hotel['longitude']),
+                'amenities': []
             }
         )
+    results['hotels'].sort(key=lambda x: x['total_price'])
     cache.set(cache_key, json.dumps(results), 900)
 
 
 @shared_task
 def fetch_from_booking():
+    print(f'Getting data from Booking'.upper())
     url = 'https://apidojo-booking-v1.p.rapidapi.com/properties/list'
     querystring = {
         'offset':'0',
@@ -44,6 +52,7 @@ def fetch_from_booking():
         'X-RapidAPI-Host': 'apidojo-booking-v1.p.rapidapi.com'
     }
     response = requests.request('GET', url, headers=headers, params=querystring)
+    print(f'Booking response status is {response.status_code}'.upper())
     data = response.json()['result']
     parse(data, 'test')
     with open('booking.json', 'w') as f:
