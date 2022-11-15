@@ -21,6 +21,6 @@ class TravelerTestCase(TestCase):
     traveler_id = '26558871-d77f-4ee4-8f3f-f8a7cefd84a5'
 
     def test_get_traveler_by_id(self):
-        response = self.client.get('/agents/{}/travelers/{}'.format(self.agent_id, self.traveler_id))
-        print(dumps(response.json(), indent=4))
+        response = self.client.get('/agents/{}/travelers/{}/'.format(self.agent_id, self.traveler_id))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)

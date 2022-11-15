@@ -1,16 +1,12 @@
 from rest_framework import serializers
 
+from catalogue.models import Item
 from catalogue.serializers import ItemSerializer
 
 from agent.models import Agent
 
 
 class AgentSerializer(serializers.ModelSerializer):
-
-    phone_contry_code = ItemSerializer(read_only=True)
-    gender = serializers.CharField(
-        source='get_gender_display'
-    )
 
     class Meta:
         model = Agent
@@ -24,3 +20,10 @@ class AgentSerializer(serializers.ModelSerializer):
             'phone_contry_code',
             'web_site'
         )
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['gender'] = instance.get_gender_display()
+        data['country'] = ItemSerializer(instance.country).data
+        data['phone_contry_code'] = ItemSerializer(instance.phone_contry_code).data
+        return data

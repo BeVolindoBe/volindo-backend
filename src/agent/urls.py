@@ -1,8 +1,9 @@
 from django.urls import path
 
-from agent.views import AgentDetail
+from agent.views import AgentDetail, NewAgent
 
 
 urlpatterns = [
-    path('<str:pk>', AgentDetail.as_view())
+    path('', NewAgent.as_view()),
+    path('<str:pk>/', AgentDetail.as_view())
 ]

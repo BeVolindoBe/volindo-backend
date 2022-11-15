@@ -20,9 +20,9 @@ if settings.DEBUG:
 
     schema_view = get_schema_view(
        openapi.Info(
-          title="Volindo API",
+          title='Volindo API',
           default_version='v1',
-          description="Volindo API",
+          description='Volindo API',
        ),
        public=True,
        permission_classes=[permissions.AllowAny],
