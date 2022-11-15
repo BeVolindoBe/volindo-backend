@@ -7,4 +7,4 @@ from agent.models import Agent
 class AgentDetail(RetrieveAPIView):
 
     serializer_class = AgentSerializer
-    queryset = Agent.objects.select_related('user').all()
+    queryset = Agent.objects.all()

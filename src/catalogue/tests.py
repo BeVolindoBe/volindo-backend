@@ -10,7 +10,7 @@ class CatalogueTestCase(TestCase):
     client = Client()
     fixtures = [
         'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/user_status.yaml'
+        'catalogue/fixtures/agent_status.yaml'
     ]
 
     def test_get_all_catalogues(self):
@@ -19,6 +19,6 @@ class CatalogueTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_catalogue_by_slug(self):
-        response = self.client.get('/catalogues/user_status')
+        response = self.client.get('/catalogues/agent_status')
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)

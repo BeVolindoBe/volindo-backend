@@ -2,7 +2,7 @@
   fields:
     id: '69e5e698-a900-4d14-a077-ba165f476a40'
     catalogue_id: 'a4c7e30b-8b4e-4b2e-9674-a8137a930383'
-    slug: 'user_validated'
+    slug: 'agent_validated'
     description: 'Validated'
     metadata:
 
@@ -10,6 +10,6 @@
   fields:
     id: '850e92dd-a12d-4c58-94ef-782ec4c4edc7'
     catalogue_id: 'a4c7e30b-8b4e-4b2e-9674-a8137a930383'
-    slug: 'user_pending'
+    slug: 'agent_pending'
     description: 'Pending for validation'
     metadata:

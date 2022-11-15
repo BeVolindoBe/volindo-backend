@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'catalogue',
-    'user',
     'agent',
+    'traveler',
     'hotel'
 ]
 

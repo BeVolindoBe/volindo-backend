@@ -2,37 +2,35 @@ from uuid import uuid4
 
 from django.db import models
 
-from user.models import User
-
 from catalogue.models import Item
+from catalogue.constants import GENDER_CHOICES
 
 
 class Agent(models.Model):
-    GENDER_CHOICES = (
-        ('M', 'Male'),
-        ('F', 'Female'),
-        ('N', 'Non binary'),
-        ('O', 'Other')
-    )
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    user = models.OneToOneField(User, on_delete=models.DO_NOTHING)
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     email = models.EmailField()
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
-    birthday = models.DateField()
+    birthdate = models.DateField()
     country = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,
-        related_name='country'
+        related_name='agent_country'
     )
     phone_contry_code = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,
-        related_name='phone_contry_code'
+        related_name='agent_phone_contry_code'
     )
     phone_number = models.CharField(max_length=10)
     web_site = models.URLField()
+    is_active = models.BooleanField(default=True)
+    agent_status = models.ForeignKey(
+        Item,
+        on_delete=models.DO_NOTHING,
+        default='69e5e698-a900-4d14-a077-ba165f476a40'
+    )
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

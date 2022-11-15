@@ -1,8 +1,8 @@
 - model: 'catalogue.Catalogue'
   fields:
     id: 'a4c7e30b-8b4e-4b2e-9674-a8137a930383'
-    slug: 'user_status'
-    description: 'User status'
+    slug: 'agent_status'
+    description: 'Agent status'
 
 - model: 'catalogue.Catalogue'
   fields:
@@ -15,3 +15,9 @@
     id: 'dc0ea1ae-aeae-4b9f-8052-eb5ff3f23e99'
     slug: 'phone_country_codes'
     description: 'Phone country codes'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
+    slug: 'traveler_status'
+    description: 'Traveler status'

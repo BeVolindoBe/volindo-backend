@@ -31,7 +31,7 @@ services:
             - '8000:8000'
         depends_on:
             - vdb
-            - vcache
+            # - vcache
     # volindo-worker:
     #     container_name: volindo-worker
     #     build: .
@@ -78,16 +78,16 @@ services:
             retries: 2
         volumes:
             - vdb:/var/lib/postgresql/data
-    vcache:
-        image: redis
-        container_name: vcache
-        expose:
-            - '6379'
-        ports:
-            - '6379:6379'
-        command: redis-server
-        volumes: 
-            - vcache:/data
+    # vcache:
+    #     image: redis
+    #     container_name: vcache
+    #     expose:
+    #         - '6379'
+    #     ports:
+    #         - '6379:6379'
+    #     command: redis-server
+    #     volumes: 
+    #         - vcache:/data
 volumes:
     vdb:
-    vcache:
+    # vcache:

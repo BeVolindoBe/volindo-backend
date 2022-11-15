@@ -1,0 +1,23 @@
+- model: 'catalogue.Item'
+  fields:
+    id: 'ff82a0d3-7d21-4f8f-af9b-c28f61562749'
+    catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
+    slug: 'travaler_high_potential'
+    description: 'High potential'
+    metadata:
+
+- model: 'catalogue.Item'
+  fields:
+    id: 'a2f80408-4a01-4fcc-8f4e-737ca044f06a'
+    catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
+    slug: 'travaler_lead'
+    description: 'Lead'
+    metadata:
+
+- model: 'catalogue.Item'
+  fields:
+    id: '564c239f-678b-4e5b-a502-969ecdfc23c9'
+    catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
+    slug: 'travaler_family_friend'
+    description: 'Famili/Friend'
+    metadata:
