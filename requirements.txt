@@ -7,3 +7,4 @@ pyyaml
 requests
 redis
 celery
+drf-yasg
