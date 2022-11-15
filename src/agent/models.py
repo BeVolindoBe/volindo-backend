@@ -2,7 +2,7 @@ from uuid import uuid4
 
 from django.db import models
 
-from user.models.import User
+from user.models import User
 
 from catalogue.models import Item
 
@@ -21,10 +21,18 @@ class Agent(models.Model):
     email = models.EmailField()
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     birthday = models.DateField()
-    phone_contry_code = models.ForeignKey(Item, on_delete=models.DO_NOTHING)
-    phone number = models.CharField(max_length=10)
-    webpage = models.URLField()
-    country = models.ForeignKey(Item, on_delete=models.DO_NOTHING)
+    country = models.ForeignKey(
+        Item,
+        on_delete=models.DO_NOTHING,
+        related_name='country'
+    )
+    phone_contry_code = models.ForeignKey(
+        Item,
+        on_delete=models.DO_NOTHING,
+        related_name='phone_contry_code'
+    )
+    phone_number = models.CharField(max_length=10)
+    web_site = models.URLField()
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

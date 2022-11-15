@@ -3,5 +3,6 @@
     id: '3c9efa4d-1b46-4e7c-b042-86f512f6dc8d'
     catalogue_id: 'dc0ea1ae-aeae-4b9f-8052-eb5ff3f23e99'
     slug: '+52'
-    description: 'Mexico'
+    description: '+52'
     metadata:
+      - 'country': 'Mexico'

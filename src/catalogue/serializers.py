@@ -7,13 +7,11 @@ class ItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Item
-        fields = [
-            'id',
-            'catalogue',
+        fields = (
             'slug',
             'description',
             'metadata'
-        ]
+        )
 
 
 class CatalogueSerializer(serializers.ModelSerializer):
@@ -22,4 +20,8 @@ class CatalogueSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Catalogue
-        fields = '__all__'
+        fields = (
+            'slug',
+            'description',
+            'items'
+        )

@@ -1,8 +1,8 @@
 from django.urls import path
 
-from user.views import UserDetail
+from agent.views import AgentDetail
 
 
 urlpatterns = [
-    path('<str:pk>', UserDetail.as_view())
+    path('<str:pk>', AgentDetail.as_view())
 ]

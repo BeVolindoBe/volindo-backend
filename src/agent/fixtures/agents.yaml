@@ -2,5 +2,14 @@
   fields:
     id: '97d7ea3b-99d3-4123-b4a2-8fc38b6a63ff'
     user_id: '759a75bb-26e3-410e-94b5-9138ebc2e47a'
+    first_name: 'Jhon'
+    last_name: 'Doe'
+    email: 'jhon@doe.com'
+    gender: 'M'
+    birthday: '1970-01-01'
+    country_id: 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce' # Mexico
+    phone_contry_code: '3c9efa4d-1b46-4e7c-b042-86f512f6dc8d' # Mexico +52
+    phone_number: '5512345678'
+    web_site: 'jhondoe.com'
     updated_at: '2022-11-15'
     created_at: '2022-11-15'
