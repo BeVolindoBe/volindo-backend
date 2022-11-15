@@ -1,9 +1,9 @@
 from django.urls import path
 
-from catalogue.views import CatalogueListApiView, CatalogueAPIView
+from catalogue.views import CatalogueDetail, CatalogueList
 
 
 urlpatterns = [
-    path('all', CatalogueListApiView.as_view()),
-    path('<str:slug>', CatalogueAPIView.as_view()),
+    path('all', CatalogueList.as_view()),
+    path('<str:slug>', CatalogueDetail.as_view()),
 ]
