@@ -30,7 +30,7 @@ class AgentTestCase(TestCase):
             'web_site': 'https://example.com'
         }
         response = self.client.post('/agents/', data=data)
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(2, Agent.objects.all().count())
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 

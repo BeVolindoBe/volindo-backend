@@ -1,0 +1,17 @@
+- model: 'catalogue.Item'
+  fields:
+    id: '98511ebe-00aa-4e00-9860-3bd919816868'
+    catalogue_id: 'baee60e6-b5e1-4a1b-a9a1-45e91d929d48'
+    slug: 'amenities_wifi'
+    description: 'Wi Fi'
+    metadata:
+      - icon: 'https://via.placeholder.com/150'
+
+- model: 'catalogue.Item'
+  fields:
+    id: 'a0de42b7-f548-4ccb-9bb2-8a386ac87c65'
+    catalogue_id: 'baee60e6-b5e1-4a1b-a9a1-45e91d929d48'
+    slug: 'amenities_parking'
+    description: 'Parking'
+    metadata:
+      - icon: 'https://via.placeholder.com/150'

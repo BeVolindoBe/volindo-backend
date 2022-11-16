@@ -12,6 +12,9 @@ class Catalogue(models.Model):
         db_table = 'catalogues'
         managed = True
 
+    def __str__(self):
+        return self.description
+
 
 class Item(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
@@ -23,3 +26,6 @@ class Item(models.Model):
     class Meta:
         db_table = 'items'
         managed = True
+
+    def __str__(self):
+        return self.description

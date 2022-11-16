@@ -1,0 +1,26 @@
+- model: 'hotel.Hotel'
+  fields:
+    id: '532c1714-1522-4c1f-b415-8041458024c8'
+    destination: 'd0aec326-799d-415b-bb73-5002808744fc'
+    hotel_name: 'Ruta del Sol'
+    stars: 4
+    latitude: 21.17429
+    longitude: -86.84656
+
+- model: 'hotel.Hotel'
+  fields:
+    id: '532c1714-1522-4c1f-b415-8041458024c8'
+    destination: '4e815994-2cb5-41e2-89c7-621286297fcd'
+    hotel_name: 'MEININGER Hotel Berlin Tiergarten'
+    stars: 3
+    latitude: 13.4105300
+    longitude: 52.5243700
+
+- model: 'hotel.Hotel'
+  fields:
+    id: '17191006-006a-4ebb-9b5a-84ef85874fe7'
+    destination: '5bf3eebf-6e4b-4b9f-8f56-cade3db53904'
+    hotel_name: 'HotelF1 Paris Saint Ouen Marché Aux Puces Rénové'
+    stars: 3
+    latitude: 2.3486000
+    longitude: 48.8534000

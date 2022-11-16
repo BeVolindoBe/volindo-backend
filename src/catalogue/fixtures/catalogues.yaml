@@ -21,3 +21,15 @@
     id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
     slug: 'traveler_status'
     description: 'Traveler status'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: 'd24f3ad1-6557-4965-aec8-2751683651b8'
+    slug: 'destinations'
+    description: 'Destinations'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: 'baee60e6-b5e1-4a1b-a9a1-45e91d929d48'
+    slug: 'amenities'
+    description: 'Hotel amenities'

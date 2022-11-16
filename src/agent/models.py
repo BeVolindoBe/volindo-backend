@@ -31,9 +31,13 @@ class Agent(models.Model):
         on_delete=models.DO_NOTHING,
         default='69e5e698-a900-4d14-a077-ba165f476a40'
     )
+    favorite_food = models.CharField(max_length=100, default='Pizza')
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = 'agents'
         managed = True
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'

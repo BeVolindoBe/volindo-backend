@@ -1,5 +1,5 @@
+from django.contrib import admin
 from django.conf import settings
-
 from django.urls import path, include, re_path
 
 from rest_framework import permissions
@@ -10,6 +10,7 @@ urlpatterns = [
     path('agents/<str:agent_id>/travelers/', include('traveler.urls')),
     path('agents/', include('agent.urls')),
     path('hotels/', include('hotel.urls')),
+   path('admin/', admin.site.urls),
     
 ]
 

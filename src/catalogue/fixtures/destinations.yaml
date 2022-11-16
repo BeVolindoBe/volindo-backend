@@ -1,0 +1,23 @@
+- model: 'catalogue.Item'
+  fields:
+    id: 'd0aec326-799d-415b-bb73-5002808744fc'
+    catalogue_id: 'd24f3ad1-6557-4965-aec8-2751683651b8'
+    slug: 'destination_mexico_cancun'
+    description: 'Cancun, Mexico'
+    metadata:
+
+- model: 'catalogue.Item'
+  fields:
+    id: '5bf3eebf-6e4b-4b9f-8f56-cade3db53904'
+    catalogue_id: 'd24f3ad1-6557-4965-aec8-2751683651b8'
+    slug: 'destination_france_paris'
+    description: 'Paris, France'
+    metadata:
+
+- model: 'catalogue.Item'
+  fields:
+    id: '4e815994-2cb5-41e2-89c7-621286297fcd'
+    catalogue_id: 'd24f3ad1-6557-4965-aec8-2751683651b8'
+    slug: 'destination_germany_berlin'
+    description: 'Berlin, Germany'
+    metadata:
