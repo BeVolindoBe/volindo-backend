@@ -11,6 +11,9 @@ class Catalogue(models.Model):
     class Meta:
         db_table = 'catalogues'
         managed = True
+        verbose_name = 'Catalogue'
+        verbose_name_plural = 'Catalogues'
+        ordering = ['description']
 
     def __str__(self):
         return self.description
@@ -26,6 +29,9 @@ class Item(models.Model):
     class Meta:
         db_table = 'items'
         managed = True
+        verbose_name = 'Catalogue item'
+        verbose_name_plural = 'Catalogue items'
+        ordering = ['catalogue']
 
     def __str__(self):
         return self.description

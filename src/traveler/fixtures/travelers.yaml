@@ -8,7 +8,7 @@
     gender: 'M'
     birthdate: '1980-01-01'
     country_id: 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce' # Mexico
-    phone_contry_code: '3c9efa4d-1b46-4e7c-b042-86f512f6dc8d' # Mexico +52
+    phone_country_code: '3c9efa4d-1b46-4e7c-b042-86f512f6dc8d' # Mexico +52
     phone_number: '5512345678'
     traveler_status_id: 'ff82a0d3-7d21-4f8f-af9b-c28f61562749' # High potential
     in_vacation: False

@@ -18,7 +18,7 @@ class Agent(models.Model):
         on_delete=models.DO_NOTHING,
         related_name='agent_country'
     )
-    phone_contry_code = models.ForeignKey(
+    phone_country_code = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,
         related_name='agent_phone_contry_code'
@@ -31,7 +31,6 @@ class Agent(models.Model):
         on_delete=models.DO_NOTHING,
         default='69e5e698-a900-4d14-a077-ba165f476a40'
     )
-    favorite_food = models.CharField(max_length=100, default='Pizza')
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

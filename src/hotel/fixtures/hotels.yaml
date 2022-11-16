@@ -1,6 +1,6 @@
 - model: 'hotel.Hotel'
   fields:
-    id: '532c1714-1522-4c1f-b415-8041458024c8'
+    id: '36f39134-5c00-44b8-924b-9f23062402b0'
     destination: 'd0aec326-799d-415b-bb73-5002808744fc'
     hotel_name: 'Ruta del Sol'
     stars: 4

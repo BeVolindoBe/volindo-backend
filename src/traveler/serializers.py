@@ -9,7 +9,7 @@ class TravelerSerializer(serializers.ModelSerializer):
 
     traveler_status = ItemSerializer(read_only=True)
     country = ItemSerializer(read_only=True)
-    phone_contry_code = ItemSerializer(read_only=True)
+    phone_country_code = ItemSerializer(read_only=True)
     gender = serializers.CharField(
         source='get_gender_display'
     )

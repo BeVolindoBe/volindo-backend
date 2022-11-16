@@ -20,6 +20,9 @@ class Hotel(models.Model):
     class Meta:
         db_table = 'hotels'
         managed = True
+        verbose_name = 'Hotel'
+        verbose_name_plural = 'Hotels'
+        ordering = ['destination']
 
     def __str__(self):
         return f'{self.hotel_name}'
@@ -37,6 +40,12 @@ class HotelPicture(models.Model):
     class Meta:
         db_table = 'hotels_pictures'
         managed = True
+        verbose_name = 'Hotel picture'
+        verbose_name_plural = 'Hotel pictures'
+        ordering = ['hotel']
+
+    def __str__(self):
+        return f'{self.hotel.hotel_name}'
 
 
 class HotelAmenity(models.Model):
@@ -54,3 +63,9 @@ class HotelAmenity(models.Model):
     class Meta:
         db_table = 'hotels_amenities'
         managed = True
+        verbose_name = 'Hotel amenity'
+        verbose_name_plural = 'Hotel amenities'
+        ordering = ['hotel']
+
+    def __str__(self):
+        return f'{self.hotel.hotel_name}'
