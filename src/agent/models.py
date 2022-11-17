@@ -21,7 +21,7 @@ class Agent(models.Model):
     phone_country_code = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,
-        related_name='agent_phone_contry_code'
+        related_name='agent_phone_country_code'
     )
     phone_number = models.CharField(max_length=10)
     web_site = models.URLField()

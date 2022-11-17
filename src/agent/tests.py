@@ -26,7 +26,7 @@ class AgentTestCase(TestCase):
             'gender': 'M',
             'birthdate': '2022-11-15',
             'country': 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce',
-            'phone_contry_code': '3c9efa4d-1b46-4e7c-b042-86f512f6dc8d',
+            'phone_country_code': '3c9efa4d-1b46-4e7c-b042-86f512f6dc8d',
             'web_site': 'https://example.com'
         }
         response = self.client.post('/agents/', data=data)

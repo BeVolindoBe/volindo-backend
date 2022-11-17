@@ -17,7 +17,7 @@ class AgentSerializer(serializers.ModelSerializer):
             'gender',
             'birthdate',
             'country',
-            'phone_contry_code',
+            'phone_country_code',
             'web_site'
         )
 
@@ -25,5 +25,5 @@ class AgentSerializer(serializers.ModelSerializer):
         data = super().to_representation(instance)
         data['gender'] = instance.get_gender_display()
         data['country'] = ItemSerializer(instance.country).data
-        data['phone_country_code'] = ItemSerializer(instance.phone_contry_code).data
+        data['phone_country_code'] = ItemSerializer(instance.phone_country_code).data
         return data

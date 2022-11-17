@@ -21,7 +21,7 @@ class TravelerSerializer(serializers.ModelSerializer):
             'last_name',
             'email',
             'birthdate',
-            'phone_contry_code',
+            'phone_country_code',
             'phone_number',
             'gender',
             'traveler_status',
@@ -31,5 +31,6 @@ class TravelerSerializer(serializers.ModelSerializer):
             'country',
             'city',
             'state_province',
-            'zip_code'
+            'zip_code',
+            'phone_country_code'
         )
