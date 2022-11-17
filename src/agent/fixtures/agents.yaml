@@ -1,5 +1,6 @@
 - model: 'agent.Agent'
   fields:
+    user_id: 1
     id: '97d7ea3b-99d3-4123-b4a2-8fc38b6a63ff'
     first_name: 'Jhon'
     last_name: 'Doe'

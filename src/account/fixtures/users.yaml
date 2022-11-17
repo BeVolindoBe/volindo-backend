@@ -1,0 +1,5 @@
+- model: 'auth.user'
+  fields:
+    id: 1
+    username: 'user@example.com'
+    password: 'password'

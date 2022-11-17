@@ -15,11 +15,13 @@ class AgentTestCase(TestCase):
         'catalogue/fixtures/agent_status.yaml',
         'catalogue/fixtures/countries.yaml',
         'catalogue/fixtures/phone_country_codes.yaml',
+        'agent/fixtures/users.yaml',
         'agent/fixtures/agents.yaml',
     ]
 
     def test_new_agent(self):
         data = {
+            'user_id': 1,
             'first_name': 'Travel',
             'last_name': 'Agent',
             'email': 'user@example.com',

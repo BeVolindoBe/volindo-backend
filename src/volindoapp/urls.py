@@ -6,19 +6,16 @@ from rest_framework import permissions
 
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('catalogues/', include('catalogue.urls')),
-    path('agents/<str:agent_id>/travelers/', include('traveler.urls')),
-    path('agents/', include('agent.urls')),
+    path('users/<str:user_id>/travelers/', include('traveler.urls')),
+    path('account/', include('agent.urls')),
     path('hotels/', include('hotel.urls')),
-   path('admin/', admin.site.urls),
-    
 ]
 
 if settings.DEBUG:
-
     from drf_yasg.views import get_schema_view
     from drf_yasg import openapi
-
     schema_view = get_schema_view(
        openapi.Info(
           title='Volindo API',
@@ -28,6 +25,17 @@ if settings.DEBUG:
        public=True,
        permission_classes=[permissions.AllowAny],
     )
-
-    urlpatterns += [re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui')]
-    urlpatterns += [re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc')]
+    urlpatterns += [
+        re_path(
+            r'^swagger/$',
+            schema_view.with_ui('swagger', cache_timeout=0),
+            name='schema-swagger-ui'
+        )
+    ]
+    urlpatterns += [
+        re_path(
+            r'^redoc/$',
+            schema_view.with_ui('redoc', cache_timeout=0),
+            name='schema-redoc'
+        )
+    ]

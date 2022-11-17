@@ -1,12 +1,14 @@
 from uuid import uuid4
 
 from django.db import models
+from django.contrib.auth.models import User
 
 from catalogue.models import Item
 from catalogue.constants import GENDER_CHOICES
 
 
 class Agent(models.Model):
+    user = models.OneToOneField(User, on_delete=models.DO_NOTHING)
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
