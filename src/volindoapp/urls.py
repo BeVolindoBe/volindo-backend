@@ -7,9 +7,9 @@ from rest_framework import permissions
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('account.urls')),
     path('catalogues/', include('catalogue.urls')),
     path('users/<str:user_id>/travelers/', include('traveler.urls')),
-    path('account/', include('agent.urls')),
     path('hotels/', include('hotel.urls')),
 ]
 

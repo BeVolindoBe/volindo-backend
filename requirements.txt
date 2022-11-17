@@ -8,3 +8,4 @@ requests
 redis
 celery
 drf-yasg
+djangorestframework-simplejwt
