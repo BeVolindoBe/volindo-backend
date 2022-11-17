@@ -4,8 +4,15 @@ from django.urls import path, include, re_path
 
 from rest_framework import permissions
 
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView
+)
+
 
 urlpatterns = [
+    path('login/', TokenObtainPairView.as_view()),
+    path('refresh-token/', TokenRefreshView.as_view()),
     path('admin/', admin.site.urls),
     path('accounts/', include('account.urls')),
     path('catalogues/', include('catalogue.urls')),

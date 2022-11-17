@@ -36,10 +36,37 @@ class USerTestCase(TestCase):
         }
         response = self.client.post('/accounts/register/', data=data)
         # print(dumps(response.json(), indent=4))
-        response = self.client.post('/accounts/register/', data=data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         data = {
             'username': 'user@example.com',
             'password': 'W1D78#Ae9O5r'
         }
-        response = self.client.post('/accounts/login/', json=data)
+        response = self.client.post('/login/', data=data)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_refresh_token(self):
+        data = {
+            'first_name': 'Travel',
+            'last_name': 'Agent',
+            'username': 'user@example.com',
+            'email': 'user@example.com',
+            'password': 'W1D78#Ae9O5r',
+            'password2': 'W1D78#Ae9O5r',
+        }
+        response = self.client.post('/accounts/register/', data=data)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        data = {
+            'username': 'user@example.com',
+            'password': 'W1D78#Ae9O5r'
+        }
+        response = self.client.post('/login/', data=data)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        data = {
+            'refresh': response.json()['refresh']
+        }
+        response = self.client.post('/refresh-token/', data=data)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
