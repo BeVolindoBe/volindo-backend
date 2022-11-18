@@ -9,3 +9,4 @@ redis
 celery
 drf-yasg
 djangorestframework-simplejwt[crypto]
+gunicorn
