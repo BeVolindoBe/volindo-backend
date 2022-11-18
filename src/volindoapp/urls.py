@@ -9,8 +9,11 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView
 )
 
+from account.views import HealthCheck
+
 
 urlpatterns = [
+    path('', HealthCheck.as_view()),
     path('login/', TokenObtainPairView.as_view()),
     path('refresh-token/', TokenRefreshView.as_view()),
     path('admin/', admin.site.urls),
