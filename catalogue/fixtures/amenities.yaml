@@ -1,17 +1,2750 @@
-- model: 'catalogue.Item'
-  fields:
-    id: '98511ebe-00aa-4e00-9860-3bd919816868'
-    catalogue_id: 'baee60e6-b5e1-4a1b-a9a1-45e91d929d48'
-    slug: 'amenities_wifi'
-    description: 'Wi Fi'
-    metadata:
-      - icon: 'https://via.placeholder.com/150'
 
-- model: 'catalogue.Item'
+- model: "catalogue.Item"
   fields:
-    id: 'a0de42b7-f548-4ccb-9bb2-8a386ac87c65'
-    catalogue_id: 'baee60e6-b5e1-4a1b-a9a1-45e91d929d48'
-    slug: 'amenities_parking'
-    description: 'Parking'
+    id: "20179d75-765c-471b-9d2e-6dac1c91bce8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "shopping_on_site"
+    description: "Shopping on site"
     metadata:
-      - icon: 'https://via.placeholder.com/150'
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "0af43b55-2675-4540-b5c1-a0166bf87271"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "air_conditioning"
+    description: "Air conditioning"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "96f768ec-84e3-415b-901f-5def4060217b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "patio"
+    description: "Patio"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6c869a16-d49f-4564-b9f2-fb3c7334cee2"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "late_check-out"
+    description: "Late check-out"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7cccf0bb-f76f-40b1-93b7-a68cb9499f75"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "television_in_lobby"
+    description: "Television in lobby"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "96b038fa-5943-4c19-a3cb-93a1d3d2fb7b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "private_check-incheck-out"
+    description: "Private check-in/check-out"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "ce196583-0bbe-4a02-a80f-d76d57b35db8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "smoking_areas"
+    description: "Smoking areas"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8efbd973-fa25-4de2-9e86-90e9613c2dd1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "elevatorlift"
+    description: "Elevator/lift"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1f170c17-a4d2-4696-b5cc-1090825446f5"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "garden"
+    description: "Garden"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4d3c383c-94c6-4793-93cf-c29e1846ceed"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "reception_desk"
+    description: "Reception desk"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "70257569-051c-48d5-a572-eab1747471a8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "no_elevators"
+    description: "No elevators"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "710742bc-9db5-42e6-b670-910423859ccc"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "terrace"
+    description: "Terrace"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8aec4634-e282-4887-9b48-d309aa3ee597"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "washing_machine"
+    description: "Washing machine"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b4e19cfb-b461-4865-8787-b22f4c9eed73"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "design_hotel"
+    description: "Design hotel"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c60d9f8d-665f-46c5-befd-dc9db30287bd"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "pharmacy"
+    description: "Pharmacy"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "ba801d6d-d224-4f5a-82ca-59b884c9b134"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "smoking_allowed"
+    description: "Smoking Allowed"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2e083a39-751d-4198-8f43-6781746aa028"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "express_check-in"
+    description: "Express check-in"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4972fe0e-fb48-4914-9c5e-22ab396c7447"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "all_spaces_non-smoking_(public_and_private)"
+    description: "All Spaces Non-Smoking (public and private)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3313ce94-fa8f-4f9d-9860-3895189ea139"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bank"
+    description: "Bank"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2cdacb41-643c-4002-96cb-0f3d110ef5a6"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "express_check-incheck-out"
+    description: "Express check-in/check-out"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3b4fb265-5e1b-42ff-b003-ca88f427319f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "heating"
+    description: "Heating"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "020b1c99-0d8f-496f-b348-dca9baf8f11a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "chapel"
+    description: "Chapel"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1618a9c0-2f15-4177-8d55-eaab8776c819"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "currency_exchange"
+    description: "Currency exchange"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f97d0f9a-65ed-4f9f-a734-74db7f767c14"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "doorman"
+    description: "Doorman"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "bc70a773-72b2-4299-81e0-0608af66e7a1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "winery"
+    description: "Winery"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b007bb73-1587-46ad-b43e-98bf103a0eb4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "24-hour_reception"
+    description: "24-hour reception"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f856e010-0577-49ed-972c-3d68ee8bd5a1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "newspapers"
+    description: "Newspapers"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c1b460d3-bbd9-4015-88b3-77fc37849e7e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "security_guard"
+    description: "Security guard"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3ac8cd7d-64a2-447c-8649-f7a23be9b349"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "dishwasher"
+    description: "Dishwasher"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "bd4a5532-c173-4bbc-b26d-3a369f5ff26e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "radio"
+    description: "Radio"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "83c0fffe-e69d-42ed-9d53-9649a1a86702"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ticket_assistance"
+    description: "Ticket assistance"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8c5c1fe8-bb10-4bd4-990c-fe29eda85ae4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "upper_floors_accessible_by_elevator"
+    description: "Upper floors accessible by elevator"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1ba548b1-cfa5-407a-8f9b-9beb3289324d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "adults_only"
+    description: "Adults Only"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "14e26053-92d9-4325-bd0f-b6058afa145d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "smoke-free_property"
+    description: "Smoke-free property"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "18a798cb-e723-49f2-a4f6-00630ac9a12d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "atm"
+    description: "ATM"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "686d53f2-38b4-41d4-8729-cd3f99e31b96"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "outdoor_furniture"
+    description: "Outdoor furniture"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f792f299-6188-4e17-8df3-63f5a262b1ae"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "gift_shop"
+    description: "Gift shop"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b8fed3d9-890c-407d-9326-0bc6b140d7a2"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "early_check-in"
+    description: "Early check-in"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "12498382-a162-4a20-a542-ccf5250e128a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "dryer"
+    description: "Dryer"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1d5339fe-3a28-4847-af22-9e6459538851"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "fire_extinguisher"
+    description: "Fire Extinguisher"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e7c235bd-2d6a-4b5f-a0c3-ee985df713b9"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "computer"
+    description: "Computer"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2dbcd7cb-e244-4e52-97c2-c03559cbd5a5"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "express_check-out"
+    description: "Express check-out"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "General"
+
+- model: "catalogue.Item"
+  fields:
+    id: "ae2e1695-5999-4521-bdde-348a60c2ab0c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "internet"
+    description: "Internet"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Internet"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2be39359-7013-417e-82ff-714d04fb3073"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "internet_access"
+    description: "Internet access"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Internet"
+
+- model: "catalogue.Item"
+  fields:
+    id: "82efba78-efda-4446-aace-ab52d5367e5c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "in-room_internet"
+    description: "In-room internet"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Internet"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c4ebcfbf-31c1-4726-bf73-b56fe909aba4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "wi-fi"
+    description: "Wi-Fi"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Internet"
+
+- model: "catalogue.Item"
+  fields:
+    id: "359bbc37-a9dd-4b3a-8b8e-e372641c3d9b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "wi-fi_in_the_hotel"
+    description: "Wi-Fi in the hotel"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Internet"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4e4c5934-e420-47da-b71c-70d361e4bd94"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_wi-fi"
+    description: "Free Wi-Fi"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Internet"
+
+- model: "catalogue.Item"
+  fields:
+    id: "197b1179-4156-49ce-83b7-865c064ef9c3"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_internet"
+    description: "Free internet"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Internet"
+
+- model: "catalogue.Item"
+  fields:
+    id: "be4acb14-878f-49ca-9dc9-eecf3b2f2579"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "sun_deck"
+    description: "Sun Deck"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "71e557d2-2c4d-4630-afb7-a8233b6ab38f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bowling"
+    description: "Bowling"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c0801110-15f2-4a55-9393-ed3ddc164c48"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "hunt"
+    description: "Hunt"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "20e290ca-53b9-4d84-899d-70690cd36910"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "hiking"
+    description: "Hiking"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4bd1de4f-d453-46ef-8a83-0920f2771443"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "casino"
+    description: "Casino"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d2ad2887-8270-45f3-b608-2b267ea037f1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "fishing"
+    description: "Fishing"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8ca15f83-f711-4fa1-9df8-4ba0c1610ebf"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ice_skating"
+    description: "Ice skating"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6c189095-3f1d-47bc-bcf0-ea330f78f21f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "karaoke"
+    description: "Karaoke"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "df6a9bbe-9b13-4ccb-a142-4e64aa5e47dd"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "barbeque"
+    description: "Barbeque"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a4b25ab9-5cd1-421b-902e-ec866163ee85"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ping-pong"
+    description: "Ping-Pong"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "607fe485-9209-47a6-8024-59d059608937"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "snowmobile_and_quad_bikes_rental"
+    description: "Snowmobile and quad bikes rental"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8508f8c4-ed9c-434a-9cf6-c47bb2639a76"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "mini_golf"
+    description: "Mini golf"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5d59295e-4e81-4291-bfe2-b5d7e6c9b388"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "suitable_for_events"
+    description: "Suitable for Events"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1386bac7-d069-4ac5-ba0e-3712c9a585f4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "library"
+    description: "Library"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "73924fd0-4982-4c16-b843-df814b4caf15"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "entertainment"
+    description: "Entertainment"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7581f267-630a-41ed-9446-c5f8e1006a69"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "barbecue_grill(s)"
+    description: "Barbecue grill(s)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b4ce97ec-f7f5-46e4-a895-7ea5f119bc7d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "billiards"
+    description: "Billiards"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5dfff5f0-be30-4180-9393-0b9e1f889305"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "museum"
+    description: "Museum"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "62eedda2-5ed3-4dec-bf29-0d120f02d73c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_bicycle_rental"
+    description: "Free bicycle rental"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f084cbb7-8a44-48ea-b36a-5090d7a10e27"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bike_rental"
+    description: "Bike rental"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "42e1d2fc-ec9c-4204-935f-8ef25284c065"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "nightclub"
+    description: "Nightclub"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b9e7a37f-c2e4-434c-a188-888102f82c4b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "picnic_area"
+    description: "Picnic area"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Recreation"
+
+- model: "catalogue.Item"
+  fields:
+    id: "911ae8da-a552-42ee-9d68-402058709b9e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "cable_tv"
+    description: "Cable TV"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "94643d12-eac5-4212-8015-ca07bb75d93c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "soundproof_rooms"
+    description: "Soundproof rooms"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "79e5b417-fef1-47c5-9308-b9a97f3c8c51"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "room_service"
+    description: "Room service"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "0d9b2557-d6b2-4bf3-989e-fdc2644cd023"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "showerbathtub"
+    description: "Shower/Bathtub"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "62e36da8-00c5-40e4-a6fb-1c18878e3805"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "mini-fridge"
+    description: "Mini-fridge"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "61f0ee07-7684-445e-8419-f650290eb843"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bathtub"
+    description: "Bathtub"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "386af689-bdf3-4500-9c76-32857656ef76"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "clothes_rack"
+    description: "Clothes rack"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "313b80e5-ca45-4af7-b22d-e9af41bb51d4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bridal_suite"
+    description: "Bridal suite"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e7a26a9e-bf73-4ed9-b6e2-711c5f2a568b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "non-smoking_rooms"
+    description: "Non-smoking rooms"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a6023684-2f6e-458c-9fb1-c4a1059fb9d6"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "laptop_safe"
+    description: "Laptop safe"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1fe51611-3f48-4161-9585-4efbab7ed695"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "smoking_allowed_in_bedrooms"
+    description: "Smoking allowed in bedrooms"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "45da8264-c535-47a0-b3d5-cc80c158090b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "linens"
+    description: "Linens"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "ace43173-5246-425f-a87e-3f54d08357af"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "tv"
+    description: "TV"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8e85b2a7-5741-48f8-9f90-3bf341b00882"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "minibar"
+    description: "Minibar"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "400fb26d-0131-426f-9de3-ae98924bdbb7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "allergy-free_rooms"
+    description: "Allergy-free rooms"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5fd6aebf-5bdb-4215-8938-83b3505be28a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "interconnecting_rooms_available"
+    description: "Interconnecting rooms available"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a6da86b0-63b4-4fd1-8e11-f01e208911d1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "music_system"
+    description: "Music system"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6b551826-77da-440a-a127-9ed03475fdf7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "fridge"
+    description: "Fridge"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e9cc0769-ea26-4481-99e9-fe51e3a0a476"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "shower"
+    description: "Shower"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e458e0c6-6768-4902-ad3b-ab6075693245"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "trouser_press"
+    description: "Trouser press"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4160d059-129a-4296-a6d0-f975c0e8e9f0"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "mosquito_net"
+    description: "Mosquito net"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7de9539a-9395-4aa2-87be-2c151fdc26ca"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "vip_room_amenities"
+    description: "VIP room amenities"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "418984cc-1479-44f8-a6f3-58e48b894a75"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "toiletries"
+    description: "Toiletries"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "fc8934c0-e6a7-4ccb-97f2-1fea2b061ac2"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "indoor_fireplace"
+    description: "Indoor Fireplace"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5071265f-461a-442c-92c0-ec67a3c3d734"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "slippers"
+    description: "Slippers"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b5782ad4-6a2c-4c6f-bf55-072050a0cfd4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "wardrobecloset"
+    description: "Wardrobe/Closet"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "457b82eb-e469-4fd8-8b17-a951968d60de"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "alarm_clock"
+    description: "Alarm clock"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b5b44553-e184-4196-8053-33777ad580b3"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "safe_(in_room)"
+    description: "Safe (in room)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a5352994-e238-4ec6-a417-92519a539f6f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bathrobe"
+    description: "Bathrobe"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b78b68d5-67e9-4c1d-abac-b8f497da1e2f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "hairdryer"
+    description: "Hairdryer"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5cde4bdd-5db8-4686-b5f6-650b8722d6d8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "smoke_detector"
+    description: "Smoke Detector"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "fa0b59bf-db8b-4383-b211-7f75b80bd6d8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "flat-screen_tv"
+    description: "Flat-screen TV"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "59a713d2-7ab7-4280-a2f6-136c318e9e0f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "locker"
+    description: "Locker"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "10fda179-d5dd-49ce-b207-931c75223118"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "dvd_player"
+    description: "DVD Player"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6ff0c6e8-216d-4636-95a4-a87701e430ed"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "carbon_monoxide_detector"
+    description: "Carbon Monoxide Detector"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "303e1237-dbe2-4a43-a7da-a7ede87c9660"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "family_room"
+    description: "Family room"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Rooms"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5032d129-34ed-428b-bdd8-53e0c45b6159"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "iron"
+    description: "Iron"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1f2b9c0c-9749-43ac-aa5e-daa23ffe3c69"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "hairdryer_(on_request)"
+    description: "Hairdryer (on request)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3113209f-c48f-405c-b250-36c55c4ff0e0"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ironing_accessories_(by_request)"
+    description: "Ironing accessories (by request)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6f7d0876-215b-40cb-9c44-444f59054edf"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "deposit_boxes"
+    description: "Deposit boxes"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "95a0c580-b94b-48c7-b82a-689eef5ea6bf"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ironing"
+    description: "Ironing"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "31306c5a-0562-4b44-a5b4-753b410bc8cd"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "safe-deposit_box"
+    description: "Safe-deposit box"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4b25cf62-0104-4d63-855b-c891b73a1014"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "iron_and_board"
+    description: "Iron and board"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a13a6e0e-a881-4d69-886e-ce71517dc6d7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "dry-cleaning"
+    description: "Dry-cleaning"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4e77b9fa-a8e7-40fd-b8c1-a8142d2543aa"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "luggage_storage"
+    description: "Luggage storage"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "cb59a5d1-959b-4ebe-a870-3d08edb0224b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "wake-up_service"
+    description: "Wake-up service"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4ea13533-9a3b-4a4f-99e6-d1fe0c356ab6"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "telephone"
+    description: "Telephone"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e691ddbf-d379-414c-a5a9-40cc77b93cb8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "laundry"
+    description: "Laundry"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b667e78c-a2ce-4f71-a2c8-6d51c31bddca"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "shoe_shine"
+    description: "Shoe shine"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f9a75ae8-e470-42ad-9367-4e53b4ac74e0"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "concierge_services"
+    description: "Concierge services"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Services and amenities"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e859ca58-a65c-49c2-9516-2795fc762cd3"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "breakfast_in_the_room"
+    description: "Breakfast in the room"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2f48ae07-fe00-403b-9acd-826a8b2758b2"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "breakfastlunch_to_go"
+    description: "Breakfast/lunch to go"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e9e25c7c-4bb5-4dd9-8949-edfbe1cc4be3"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "full_board_rates_available"
+    description: "Full board rates available"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3a286e69-422b-4ff7-bf6b-a70557ae7054"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "kitchen"
+    description: "Kitchen"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7730fcc0-f32d-4d24-9f6e-5d1fc4618b78"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "restaurant_(buffet_style)"
+    description: "Restaurant (buffet style)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "cab5f74d-9505-41b2-8c48-8c4151f7eeaf"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "half_board_rates_available"
+    description: "Half board rates available"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5261f831-bbc8-48f4-9d98-b2a0f7be2269"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "restaurant"
+    description: "Restaurant"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "755e14f4-c2cc-4699-9ebf-af680bb2b64d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "common_kitchen"
+    description: "Common kitchen"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d3c1d979-e366-46e4-b62f-41cda929d600"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bottled_water"
+    description: "Bottled water"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f4020f36-72eb-4577-8f23-e3e3bbd3790a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "coffeemaker"
+    description: "Coffeemaker"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "10a6972f-da8f-4c73-b55c-bd157c6d4d49"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "buffet_breakfast"
+    description: "Buffet breakfast"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b0a17d82-3e55-4d18-830c-da89fbdf739a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bar"
+    description: "Bar"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1a081c74-5ec6-4568-a448-bd55d6b49dce"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "cafe"
+    description: "Cafe"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "650c0557-778f-4a72-9c50-7293c39fdd5c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "snack_bar"
+    description: "Snack bar"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c0bca32d-8c76-45de-be18-c2175823747d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "kettle"
+    description: "Kettle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "092fa2a7-7eaf-4196-83c0-455f4461c7ae"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "bottled_water_(at_extra_charge)"
+    description: "Bottled water (at extra charge)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d63d1acb-6db2-4a9f-9d1b-9a72367c48ed"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "kitchenette"
+    description: "Kitchenette"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5151b2a1-ff0d-4759-a7f4-64cf7e73191a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "vending_machine"
+    description: "Vending machine"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "787a4c6b-d59f-40d1-9e72-ab567f32b87e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "coffeetea_for_guests"
+    description: "Coffee/tea for guests"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "bb722500-b715-4b1d-ac08-5ea6e0b7ddde"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "microwave_oven"
+    description: "Microwave oven"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5d1117bc-8d48-4657-a7ea-c01caf07b813"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "packed_lunches"
+    description: "Packed Lunches"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "983789bf-6128-4aa0-97c7-878c2c794d74"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "poolside_bar"
+    description: "Poolside bar"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "adcdd5ea-b4fc-43d4-95e1-322cd61e9b1b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "diet_menu_(on_request)"
+    description: "Diet menu (on request)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "947d53fc-641a-4002-bf71-4bd836ddd84a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "breakfast"
+    description: "Breakfast"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Meals"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5a8927bb-5708-4038-bddb-be4eff4c1b33"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "transfer_services"
+    description: "Transfer services"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3a7b0500-551e-42b5-bed3-3ccbddc071d1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "shopping_center_shuttle_(complimentary)"
+    description: "Shopping center shuttle (complimentary)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "800567d3-c71e-4eb2-acf3-d58be376b822"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "airport_transportation_-_drop-off"
+    description: "Airport transportation - drop-off"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f02425ff-70b1-48a1-b6e1-5f405bd33c3d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "taxi_booking"
+    description: "Taxi booking"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b067fcff-8262-4ea4-a2d7-eaa2578e2bf3"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "area_shuttle_(complimentary)"
+    description: "Area shuttle (complimentary)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6ad527f0-9e06-4559-a819-dcf1910e5f60"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "car_rental"
+    description: "Car rental"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "ac20eb10-4aee-4e54-ab05-6b85268bc68d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "airport_transportation"
+    description: "Airport transportation"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "be05a690-27aa-46e2-b744-eb3fdceb9aa9"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_shuttle"
+    description: "Free shuttle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "488cdffe-0f40-414e-a56f-fcf3df40daa7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "shopping_center_shuttle"
+    description: "Shopping center shuttle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d30b7e2f-e9b3-4186-a20b-19683d4e0189"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "shuttle"
+    description: "Shuttle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "06c42eb4-031d-4d9e-ba31-463b21ff8752"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "airport_transportation_-_pickup"
+    description: "Airport transportation - pickup"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2c74d7e4-2b3e-4dc9-9701-55a615438c4c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "area_shuttle"
+    description: "Area shuttle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5458a4e7-657d-468e-b11e-e4c7d77a2924"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_train_station_shuttle"
+    description: "Free train station shuttle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "9284edee-731a-444f-a69c-6ed872390065"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "port_shuttle"
+    description: "Port shuttle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "be00bb25-9200-47c1-821f-3c54453ec48a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "airport_transportation_(complimentary)"
+    description: "Airport transportation (complimentary)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Transfer"
+
+- model: "catalogue.Item"
+  fields:
+    id: "20218f2b-f332-47fc-a618-3ed85c208056"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "turkish"
+    description: "turkish"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "92fd7611-6e60-4aa4-a55a-038ecf67f568"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "arabic"
+    description: "Arabic"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b46987f7-4ec0-48e0-b46b-9fa40b4cbf44"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "spanish"
+    description: "Spanish"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8afa740a-2d7d-4cc4-921a-cd3af35dbac0"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "japanese"
+    description: "Japanese"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d07d247e-5a5a-48d9-b9f2-5241dab2132e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "portuguese"
+    description: "Portuguese"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2738e410-f5e9-4c66-a263-1bf9266bc217"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "polish"
+    description: "Polish"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "17037b32-65bc-4dc6-8d98-4f6f713b75b7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "english"
+    description: "English"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a8d7dde4-e826-4664-875f-6e7a27233d6e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "multi-language_staff"
+    description: "Multi-language staff"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "99228e0a-fec5-4576-9017-d7f5fb4ed51e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "italian"
+    description: "Italian"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "dd1bc9d3-9b16-479f-8070-4fd01c49fc4c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "chinese"
+    description: "Chinese"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c826bd90-d671-4a88-b069-367c35cc15c8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "korean"
+    description: "Korean"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7d5c3900-0e42-4b70-b734-e82be6d76c59"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "russian"
+    description: "Russian"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c8494be4-2670-4db2-9442-cbcd24bb24b3"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "french"
+    description: "French"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2f1c75c0-f814-4c9a-b7b1-cf5cbf4eacfb"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "german"
+    description: "German"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Languages Spoken"
+
+- model: "catalogue.Item"
+  fields:
+    id: "eb462923-ee7c-4f45-88aa-e23203ea52a4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "offsite_parking_reservations_required"
+    description: "Offsite parking reservations required"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8dfd8fa6-f291-49be-8b51-140b000b72da"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_parking"
+    description: "Free parking"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1f891c19-3e08-4d2a-80a4-bb3dacaa399d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "garage"
+    description: "Garage"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7c867272-4c42-4081-b0d8-21aef74448eb"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "parking"
+    description: "Parking"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4892250d-754a-495f-b30f-e0e728809778"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "parking_nearby"
+    description: "Parking nearby"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "16efc05c-d67f-45aa-821e-4aae2dacb93d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "no_parking"
+    description: "No parking"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "75c13a12-41d2-41a5-962b-9f163c6fd224"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_parking_on_premises"
+    description: "Free Parking on Premises"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "67664399-9e41-4499-9001-9256478e1b7e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "free_parking_nearby"
+    description: "Free parking nearby"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Parking"
+
+- model: "catalogue.Item"
+  fields:
+    id: "bba59b8b-15fa-4216-bbfd-6f24004a0a5c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "swimming_pool"
+    description: "Swimming pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8f973cb8-a176-40ae-89ea-1c2c40598bb6"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "water_sport_facilities"
+    description: "Water sport facilities"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "91e1b1d6-7ab3-487d-aafa-9725e0b334e1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "private_beach"
+    description: "Private beach"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "0d5c7264-42b0-482d-8969-6f322ee03b4b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "seasonal_indoor_swimming_pool"
+    description: "Seasonal indoor swimming pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f9e16767-56e8-417e-9268-866eb24c894d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "transfer_to_the_beach_(free)"
+    description: "Transfer to the beach (free)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8c39f930-7190-416e-ac93-0dc07eda043b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "outdoor_pool"
+    description: "Outdoor pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7fd74c0f-b071-4108-a5b3-72bf14f6753e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "beachpool_towels"
+    description: "Beach/pool towels"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c3d784ca-19e8-485c-8feb-8d1bd91a6bf6"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "pool_facilities"
+    description: "Pool facilities"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c99d88ec-7d0d-4f19-a4ca-40fcfb36f71d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "seasonal_outdoor_swimming_pool"
+    description: "Seasonal outdoor swimming pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "277c8470-6dcb-42d6-8008-c9aea37cf532"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "outdoor_heated_swimming_pool"
+    description: "Outdoor heated swimming pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "fe390a00-f4e4-4c09-b2b7-48cbba32d97d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "water_fun"
+    description: "Water fun"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e58c4926-49c8-4623-bddf-8872c13a7472"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "heated_swimming_pool"
+    description: "Heated swimming pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "dd0e11d6-4cda-4aa7-bbc9-a5968d0f87cd"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "next_to_the_beach"
+    description: "Next to the beach"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b5d8fc40-78cd-4c76-ae78-1e3263f73831"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "spa_tub"
+    description: "Spa tub"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a5f068bd-9284-4511-893e-9ff010255286"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "beach_facilities"
+    description: "Beach facilities"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "10831749-fa06-45eb-8e5c-ddfbd572dcf2"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "water_park"
+    description: "Water park"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3fd131db-e029-40a7-bda6-f0d4c9ebed98"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "indoor_pool"
+    description: "Indoor Pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7d647f28-013c-4dc2-8c38-f35bf9319a01"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "rooftop_pool"
+    description: "Rooftop pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pool and beach"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a438193b-4ee5-4639-a44a-c92310288bc1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "fax_and_copy_machine"
+    description: "Fax and copy machine"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f7180ccb-484a-4660-8a85-d96265179122"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "photocopy_machines"
+    description: "Photocopy machines"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "ed1daa9e-0f9d-46c7-bb5b-5c6b0b515f9f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "meeting_and_presentation_facilities"
+    description: "Meeting and presentation facilities"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "97c7b3c9-e3aa-4234-8746-b9f46e2f06ff"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "business_center"
+    description: "Business center"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4b77c4e0-32d0-41e8-b792-31d00484c243"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "fax_machine"
+    description: "Fax machine"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "134ed5d4-7ec0-4671-b4bf-8bff1f4cdb80"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "conference_hall"
+    description: "Conference Hall"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "45ab9035-7199-47d8-a04a-0f9617934637"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "rental_video_equipment_and_computers"
+    description: "Rental video equipment and computers"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "de1d11f5-080e-45f1-a393-33d6b0d38fb7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "event_facilities"
+    description: "Event facilities"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Business"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d45878f1-76f5-4ff1-b722-3935e1cb74e4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "yoga"
+    description: "Yoga"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8be76e06-c56e-4656-9fee-6eb50a73418f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "sailing"
+    description: "Sailing"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "067d4580-51dc-477f-a462-2d6a2ec32c0e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "yachting"
+    description: "Yachting"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "09e8e139-c006-4790-9d66-b60fc96a9b07"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "badminton"
+    description: "Badminton"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f45c1cd9-2017-4866-b4e6-c7b557259a73"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "golf_сourse_(within_3_km)"
+    description: "Golf сourse (within 3 km)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "f7c62abd-9939-4c78-9fb1-fb254ca32f02"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "tennis_court"
+    description: "Tennis court"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3d6ee955-2251-4e54-bb09-387a9f5e9806"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "diving"
+    description: "Diving"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "92416c31-3c9b-4fb6-9bd5-ba38fc45cc90"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "24_-_hour_gym"
+    description: "24 - hour gym"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "136438bf-094d-4875-838a-ec6b1d1d1904"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "darts"
+    description: "Darts"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6dc7460f-5383-4949-8f2f-206e0a95a8d7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "horse_riding"
+    description: "Horse riding"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "11fb18b8-d112-456d-83ad-c1a0875a5159"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "golf_course"
+    description: "Golf course"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5e54d47a-708c-4170-85e2-fe4effb44c88"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "gym"
+    description: "Gym"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2739d55e-968b-47b0-8094-7e9d5f69cfe1"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "table_tennis"
+    description: "Table Tennis"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d4eb1842-9e5c-4991-b54b-ef13a31001ef"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "cycling"
+    description: "Cycling"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1b8346e3-f81a-4a3c-a81f-ccdb9ef10bcd"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "squash"
+    description: "Squash"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d4eaa5fa-28bd-449f-801c-176fd6b0d4e8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "windsurfing"
+    description: "Windsurfing"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "bb575700-e701-4928-870a-5f6e3acefd53"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "fitness_facilities"
+    description: "Fitness facilities"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "0caa9599-0e1f-4b06-a88e-9e1103a98cbe"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "snorkelling"
+    description: "Snorkelling"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b45d15c6-1f6a-46b0-912d-7027b1bcb012"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "boating"
+    description: "Boating"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e683e491-5d8e-4ad6-9ea0-111e8dcf970e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "children's_playground"
+    description: "Children's playground"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4b00caa7-ed0a-43da-93e7-b9d605745705"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "kids_club"
+    description: "Kids club"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "68092137-0a8b-4c95-a094-537be7d3f690"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "playroom"
+    description: "Playroom"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d0d7a791-199a-4645-92a9-ff14ca708d8b"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "kids'_tv_networks"
+    description: "Kids' TV Networks"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "18222a9d-edc8-4112-b23f-fdeee79a1d62"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "babysitting_and_childcare"
+    description: "Babysitting and childcare"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "fcc0cdc6-fb15-4864-b471-0aa135af4d00"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "children_swimming_pool"
+    description: "Children swimming pool"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "d4a4aff0-edad-4617-8778-1281a6fcce4e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "baby_sleepers"
+    description: "Baby sleepers"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7251b1f8-62e4-477a-b541-f47656428f80"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "familykid_friendly"
+    description: "Family/Kid Friendly"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "662ff270-ac6f-4187-a429-da365b9666ab"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "children's_menu"
+    description: "Children's menu"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Kids"
+
+- model: "catalogue.Item"
+  fields:
+    id: "da0b4fc9-412c-443b-b3c4-bd8a716fea87"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "pets_allowed_(under_5_kg)"
+    description: "Pets allowed (under 5 kg)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pets"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3289b225-2399-43e8-ad2b-267aed8f7ba3"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "pets_not_allowed"
+    description: "Pets Not Allowed"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pets"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8909153d-b292-4cad-a1ef-a04d40b296d9"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "pets_allowed"
+    description: "Pets allowed"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pets"
+
+- model: "catalogue.Item"
+  fields:
+    id: "26acd6a7-278b-4b9c-97eb-1bd82fa4dbca"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "pets_allowed_(free)"
+    description: "Pets allowed (free)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pets"
+
+- model: "catalogue.Item"
+  fields:
+    id: "0541ed91-a7b9-4a61-b0f8-cc56bb26b211"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "pets_allowed_(under_5_kg)_(surcharge)"
+    description: "Pets allowed (under 5 kg) (surcharge)"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Pets"
+
+- model: "catalogue.Item"
+  fields:
+    id: "725c6f60-fdd6-45dc-898e-f29af41a58ae"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "doctor"
+    description: "Doctor"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "2e9754a0-44a3-4fbd-9f67-c09bc4d86db4"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "first_aid_kit"
+    description: "First Aid Kit"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "b280cf73-c9af-4138-8a02-641d7020a602"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "steam_room"
+    description: "Steam room"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "ac8b4618-b156-422d-963d-b648547aa802"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "spa"
+    description: "Spa"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "31aacb71-46ce-4f09-84c8-39210d77adab"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "massage"
+    description: "Massage"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "425349ac-ad48-4bd9-8017-9806153c1a94"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "beauty_services"
+    description: "Beauty services"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a436d4f8-707b-40f7-a1d9-c45b0ae33e5c"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "hammam"
+    description: "Hammam"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5f914804-9ad9-404f-b091-a37fe2156dcf"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "baths"
+    description: "Baths"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "3b693007-e20a-4555-8c0f-312ce6be48c5"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "doctor_on_call"
+    description: "Doctor on call"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e6e29cc5-a246-4ca7-8683-eb4c23e4999a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "solarium"
+    description: "Solarium"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c696f596-b9b9-410a-b7c5-1ec0a51ab55f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "sauna"
+    description: "Sauna"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "67e9ea37-6c8b-4db3-9978-255aac119618"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "health_club"
+    description: "Health club"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Beauty and wellness"
+
+- model: "catalogue.Item"
+  fields:
+    id: "182e0e2f-565f-493d-8f62-810e6a2a7091"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "temperature_control_for_staff"
+    description: "Temperature control for staff"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "12b7f5be-4ecb-4cc9-b7e5-1b2153e762bb"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "personal_protection_equipment_for_guests"
+    description: "Personal protection equipment for guests"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5f9a1a03-11c6-4aa3-968e-f92841e0aa3d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "additional_measures_against_covid-19"
+    description: "Additional measures against COVID-19"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5051e7e8-76e9-47e8-8845-5bc77f2ab889"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "personal_protection_equipment_for_staff"
+    description: "Personal protection equipment for staff"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c84b25fe-a808-4198-bc49-54277b1a1d7f"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "extra_decontamination_measures"
+    description: "Extra decontamination measures"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "bf87e2b2-8a5b-4eee-b2b7-2139e768ec44"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "individually_packaged_food"
+    description: "Individually packaged food"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "4472e5cd-dc3a-4a8f-a1b1-a29623db631e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "contactless_check-in_andor_check-out"
+    description: "Contactless check-in and/or check-out"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "9a4cacb1-dd2d-4453-b5de-c2702310d5bd"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "temperature_control_for_guests"
+    description: "Temperature control for guests"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Health and Safety Measures"
+
+- model: "catalogue.Item"
+  fields:
+    id: "7e10737d-6a42-4141-92a2-6818dc04a4e8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "tour_assistance"
+    description: "Tour assistance"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Tourist services"
+
+- model: "catalogue.Item"
+  fields:
+    id: "a43a7230-ac04-496f-aa6e-68d95f293487"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "accessibility_features"
+    description: "Accessibility features"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Accessibility"
+
+- model: "catalogue.Item"
+  fields:
+    id: "8f5278f7-b276-4481-b1ff-4ccffe37773e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "wheelchair_access_to_bar"
+    description: "Wheelchair access to bar"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Accessibility"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6feb7574-7cec-4c12-801a-940ed590ef84"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "wheelchair_access_to_restaurant"
+    description: "Wheelchair access to restaurant"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Accessibility"
+
+- model: "catalogue.Item"
+  fields:
+    id: "94ab5f8c-ce08-473d-8dab-c5a2c34192eb"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "wheelchair_accessible"
+    description: "Wheelchair Accessible"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Accessibility"
+
+- model: "catalogue.Item"
+  fields:
+    id: "1c0f7782-e871-4b80-b025-c0eebedd5474"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ski-to-door_access"
+    description: "Ski-to-Door Access"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "06eb323e-e1ec-4b2b-a395-b7a9a2d3b48e"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ski_storage"
+    description: "Ski storage"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "6a9120e3-e140-4568-a632-3ed12acf73cc"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "skiing"
+    description: "Skiing"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "5a907519-0b1c-448c-a084-d6f175ee621a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ski_passes_available"
+    description: "Ski passes available"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "479a1309-a9c8-4256-9873-437e4a25ac7d"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "snowboard"
+    description: "Snowboard"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "e6fbd660-c5f9-40cd-9a1c-0ad36343cfca"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "skiing_off-site"
+    description: "Skiing Off-site"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "271bff1a-ee16-40f0-afd7-f3b4472315dd"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ski_facilities_rental"
+    description: "Ski facilities rental"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "c62f2bdc-dee7-4723-9b84-ceb0578459a7"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ski_shuttle"
+    description: "Ski shuttle"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"
+
+- model: "catalogue.Item"
+  fields:
+    id: "dd01712f-2856-4c76-a275-946e681a3d3a"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "ski_school"
+    description: "Ski school"
+    metadata:
+      - icon: "https://via.placeholder.com/150"
+      - category: "Winter sports"

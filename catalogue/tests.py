@@ -10,7 +10,8 @@ class CatalogueTestCase(TestCase):
     client = Client()
     fixtures = [
         'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml'
+        'catalogue/fixtures/agent_status.yaml',
+        'catalogue/fixtures/amenities.yaml'
     ]
 
     def test_get_all_catalogues(self):

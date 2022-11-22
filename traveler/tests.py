@@ -18,10 +18,19 @@ class TravelerTestCase(TestCase):
         'agent/fixtures/agents.yaml',
         'traveler/fixtures/travelers.yaml'
     ]
-    agent_id = '97d7ea3b-99d3-4123-b4a2-8fc38b6a63ff'
+    user_id = '97d7ea3b-99d3-4123-b4a2-8fc38b6a63ff'
     traveler_id = '26558871-d77f-4ee4-8f3f-f8a7cefd84a5'
 
     def test_get_traveler_by_id(self):
-        response = self.client.get('/users/{}/travelers/{}/'.format(self.agent_id, self.traveler_id))
+        response = self.client.get('/users/{}/travelers/{}/'.format(self.user_id, self.traveler_id))
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_update_traveler_by_id(self):
+        data = {
+            'first_name': 'Juan'
+        }
+        response = self.client.patch('/users/{}/travelers/{}/'.format(self.user_id, self.traveler_id), json=data)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.json()['first_name'], 'Juan')

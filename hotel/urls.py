@@ -1,9 +1,8 @@
 from django.urls import path
 
-from hotel.views import Search, Result
+from hotel.views import HotelsList
 
 
 urlpatterns = [
-    path('search', Search.as_view()),
-    path('results', Result.as_view()),
+    path('<str:destination__slug>/', HotelsList.as_view()),
 ]
