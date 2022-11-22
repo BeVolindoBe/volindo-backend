@@ -20,6 +20,7 @@ urlpatterns = [
     path('accounts/', include('account.urls')),
     path('catalogues/', include('catalogue.urls')),
     path('users/<str:user_id>/travelers/', include('traveler.urls')),
+    path('users/', include('agent.urls')),
     path('hotels/', include('hotel.urls')),
 ]
 
