@@ -9,7 +9,8 @@ class HotelAdmin(admin.ModelAdmin):
     list_display = [
         'hotel_name',
         'destination',
-        'stars'
+        'stars',
+        'id'
     ]
     search_fields = ['hotel_name', ]
 

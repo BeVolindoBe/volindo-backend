@@ -1,0 +1,29 @@
+- model: "hotel.HotelPicture"
+  fields:
+    id: "b9ad8618-fa81-4655-8f9e-768ed8fa469c"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    url: "https://cdn.worldota.net/t/1024x768/content/00/37/0037e59212bfdd478806e29915b079d7bb252067.jpeg"
+
+- model: "hotel.HotelPicture"
+  fields:
+    id: "e8f9d83c-889f-4a33-918f-280fe442d3c4"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    url: "https://cdn.worldota.net/t/1024x768/content/fd/2f/fd2f88d7e41aa76bf0f05c93ccce6bfe447582c8.jpeg"
+
+- model: "hotel.HotelPicture"
+  fields:
+    id: "edf901ec-85e2-4eb7-b656-7a47e3c0ce33"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    url: "https://cdn.worldota.net/t/1024x768/content/fa/a1/faa1e9acb724588686059074b21d1152b76c3962.jpeg"
+
+- model: "hotel.HotelPicture"
+  fields:
+    id: "d455f13e-46db-4c10-a08e-46c957540acd"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    url: "https://cdn.worldota.net/t/1024x768/content/43/28/4328a91e8b205902bde65efabbec26f802dcd208.jpeg"
+
+- model: "hotel.HotelPicture"
+  fields:
+    id: "86cc884b-9295-4203-903d-83ab5790a032"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    url: "https://cdn.worldota.net/t/1024x768/content/71/88/7188ba61f0ca343d480d0fe78e0d254603e15592.jpeg"

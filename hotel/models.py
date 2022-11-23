@@ -16,6 +16,8 @@ class Hotel(models.Model):
     stars = models.PositiveSmallIntegerField()
     latitude = models.DecimalField(max_digits=12, decimal_places=8)
     longitude = models.DecimalField(max_digits=12, decimal_places=8)
+    adress = models.CharField(max_length=600, null=True, default=None)
+    description = models.TextField(null=True, default=None)
 
     class Meta:
         db_table = 'hotels'
@@ -32,7 +34,7 @@ class HotelPicture(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     hotel = models.ForeignKey(
         Hotel,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='hotel_pictures'
     )
     url = models.URLField()
@@ -52,12 +54,12 @@ class HotelAmenity(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     hotel = models.ForeignKey(
         Hotel,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='hotel_amenities'
     )
     amenity = models.ForeignKey(
         Item,
-        on_delete=models.DO_NOTHING
+        on_delete=models.CASCADE
     )
 
     class Meta:

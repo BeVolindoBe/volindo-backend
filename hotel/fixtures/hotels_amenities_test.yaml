@@ -1,0 +1,107 @@
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "6aa279ea-127a-4faa-9744-5dd0b5bfaffa"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "b007bb73-1587-46ad-b43e-98bf103a0eb4"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "465c95a1-6785-491e-a46f-4d585c655585"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "c1b460d3-bbd9-4015-88b3-77fc37849e7e"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "2c39cdd2-6253-4ed5-81a5-ccfffc82201c"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "2cdacb41-643c-4002-96cb-0f3d110ef5a6"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "e7e36951-1107-4f2b-9d17-e0abf641b25c"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "b78b68d5-67e9-4c1d-abac-b8f497da1e2f"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "543a66fd-140f-49ed-b136-280e7d04887b"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "fa0b59bf-db8b-4383-b211-7f75b80bd6d8"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "6dbc6897-8480-4b45-a6ff-5a0fa27cd0eb"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "e9cc0769-ea26-4481-99e9-fe51e3a0a476"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "1dff7a2f-b7a6-4c64-9b9e-54bfb1567592"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "418984cc-1479-44f8-a6f3-58e48b894a75"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "26b11fef-70e6-49bd-8ff3-f1355f326d3e"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "e691ddbf-d379-414c-a5a9-40cc77b93cb8"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "79515cac-8986-4343-9a3b-479fad9717f9"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "4e77b9fa-a8e7-40fd-b8c1-a8142d2543aa"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "09a52acc-bba1-4a2d-9660-8411d8c2035d"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "5261f831-bbc8-48f4-9d98-b2a0f7be2269"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "a5b71add-1a1a-47d1-af49-dc56884e6ea7"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "4e4c5934-e420-47da-b71c-70d361e4bd94"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "91f4c5aa-bb22-4376-92f2-0920c9190ea8"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "17037b32-65bc-4dc6-8d98-4f6f713b75b7"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "7ad48092-95b6-4cb4-8951-537be7d1787a"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "c696f596-b9b9-410a-b7c5-1ec0a51ab55f"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "063b03ae-3053-450f-8b23-b74908f1899e"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "182e0e2f-565f-493d-8f62-810e6a2a7091"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "d5e90691-653a-4f76-9a52-957153b7994c"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "c84b25fe-a808-4198-bc49-54277b1a1d7f"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "660bd7a8-cfb3-469f-b3e0-9abef614019c"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "9a4cacb1-dd2d-4453-b5de-c2702310d5bd"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "fb62ee6a-b335-40bb-b3f7-9e4bf561f6be"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "4472e5cd-dc3a-4a8f-a1b1-a29623db631e"
+
+- model: "hotel.HotelAmenity"
+  fields:
+    id: "26fcde44-1ccb-4563-b986-e108126093e5"
+    hotel_id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
+    amenity_id: "5f9a1a03-11c6-4aa3-968e-f92841e0aa3d"
