@@ -15,6 +15,7 @@ redis = "*"
 celery = "*"
 drf-yasg = "*"
 djangorestframework-simplejwt = {extras = ["crypto"], version = "*"}
+awsebcli = "*"
 
 [dev-packages]
 
