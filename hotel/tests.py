@@ -26,5 +26,5 @@ class HotelTestCase(TestCase):
 
     def test_update_traveler_by_id(self):
         response = self.client.get('/hotels/{}/'.format(self.hotel_id))
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)

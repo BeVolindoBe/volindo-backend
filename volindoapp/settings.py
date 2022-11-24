@@ -153,3 +153,5 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+
+CSRF_TRUSTED_ORIGINS = [environ.get('CSRF_TRUSTED_ORIGINS'), ]
