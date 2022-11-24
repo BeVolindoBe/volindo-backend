@@ -7,7 +7,7 @@ services:
         command: 'python manage.py runserver 0.0.0.0:8000'
         # command: 'gunicorn volindoapp.wsgi:application -b 0.0.0.0:8000 -w 6 -t 29 --log-level DEBUG'
         volumes:
-            - .:/code
+            - ./src/:/code
         environment:
             - DATABASE_NAME=volindo
             - DATABASE_USER=volindo
@@ -24,4 +24,3 @@ services:
             - ALLOWED_HOSTS=*
         ports:
             - '80:8000'
- 
