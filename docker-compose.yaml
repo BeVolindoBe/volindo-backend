@@ -7,7 +7,7 @@ services:
         command: 'python manage.py runserver 0.0.0.0:8000'
         # command: 'gunicorn volindoapp.wsgi:application -b 0.0.0.0:8000 -w 6 -t 29 --log-level DEBUG'
         volumes:
-            - ./src/:/code
+            - .:/code
         environment:
             - DATABASE_NAME=vdb
             - DATABASE_USER=postgres
@@ -22,6 +22,8 @@ services:
             - SECRET_KEY=vol-service-secret
             - TIME_ZONE=America/Mexico_City
             - ALLOWED_HOSTS=*
+            - HOST=http://localhost:8000
+            - CSRF_TRUSTED_ORIGINS=http://127.0.0.1
             - TMX_HOST=http://test.services.travelomatix.com/webservices/index.php/hotel_v3/service/Search
             - TMTX_USERNAME=test273344
             - TMTX_DOMAINKEY=TMX5262731660138834

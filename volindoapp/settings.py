@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'catalogue',
     'account',
     'agent',
+    'payment',
     'traveler',
     'hotel'
 ]
@@ -67,7 +68,7 @@ ROOT_URLCONF = 'volindoapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
