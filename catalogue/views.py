@@ -1,6 +1,6 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
-from catalogue.serializers import CatalogueSerializer, ItemSerializer
+from catalogue.serializers import CatalogueSerializer
 from catalogue.models import Catalogue
 
 

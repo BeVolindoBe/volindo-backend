@@ -34,9 +34,17 @@ class NewExternalAgent(CreateAPIView):
             )
 
 
+def payment_edit(request, payment_id):
+    payment = get_object_or_404(Payment, id=payment_id)
+    context = {
+        'payment': payment       
+    }
+    return render(request, 'payment/payment_edit.html', context=context)
+
+
 def payment_link(request, payment_id):
     payment = get_object_or_404(Payment, id=payment_id)
     context = {
         'payment': payment       
     }
-    return render(request, 'payment/payment.html', context=context)
+    return render(request, 'payment/payment_link.html', context=context)
