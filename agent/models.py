@@ -12,6 +12,7 @@ class Agent(models.Model):
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     email = models.EmailField(unique=True)
+    photo = models.URLField(null=True, default=None)
     birthdate = models.DateField(null=True, default=None)
     country = models.ForeignKey(
         Item,

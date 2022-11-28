@@ -29,7 +29,7 @@ SECRET_KEY = environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if environ.get('DEBUG') == 'True' else False
 
-ALLOWED_HOSTS = [environ.get('ALLOWED_HOSTS'), ]
+ALLOWED_HOSTS = [environ.get('ALLOWED_HOSTS').split(','), ]
 
 # Application definition
 
@@ -156,3 +156,8 @@ REST_FRAMEWORK = {
 }
 
 CSRF_TRUSTED_ORIGINS = [environ.get('CSRF_TRUSTED_ORIGINS'), ]
+
+
+SWAGGER_SETTINGS = {
+    'DEFAULT_API_URL': environ['HOST']
+}
