@@ -1,6 +1,4 @@
-GENDER_CHOICES = (
-    ('M', 'Male'),
-    ('F', 'Female'),
-    ('N', 'Non binary'),
-    ('O', 'Other')
+TITLE_CHOICES = (
+    ('MR', 'Mr.'),
+    ('MS', 'Ms.')
 )

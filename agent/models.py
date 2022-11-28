@@ -4,7 +4,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 from catalogue.models import Item
-from catalogue.constants import GENDER_CHOICES
 
 
 class Agent(models.Model):
@@ -13,21 +12,23 @@ class Agent(models.Model):
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     email = models.EmailField()
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
-    birthdate = models.DateField()
+    birthdate = models.DateField(null=True, default=None)
     country = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,
-        related_name='agent_country'
+        related_name='agent_country',
+        null=True,
+        default=None
     )
     phone_country_code = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,
-        related_name='agent_phone_country_code'
+        related_name='agent_phone_country_code',
+        null=True,
+        default=None
     )
-    phone_number = models.CharField(max_length=10)
-    web_site = models.URLField()
-    is_active = models.BooleanField(default=True)
+    phone_number = models.CharField(max_length=10, null=True, default=None)
+    web_site = models.URLField(null=True, default=None)
     agent_status = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,

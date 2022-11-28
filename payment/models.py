@@ -5,7 +5,7 @@ from django.db import models
 from agent.models import Agent
 
 
-class Payment(models.Model):
+class ReservationPayment(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     agent = models.ForeignKey(
         Agent,
@@ -32,11 +32,12 @@ class Payment(models.Model):
 class Reservation(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     payment = models.ForeignKey(
-        Payment,
+        ReservationPayment,
         on_delete=models.DO_NOTHING,
         related_name='reservations'
     )
     hotel_name = models.CharField(max_length=200)
+    room_description = models.CharField(max_length=200, null=True, default=None)
     check_in = models.DateField()
     check_out = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
@@ -50,24 +51,3 @@ class Reservation(models.Model):
 
     def __str__(self) -> str:
         return self.agent.agent_name
-
-
-class Room(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    reservation = models.ForeignKey(
-        Reservation,
-        on_delete=models.DO_NOTHING,
-        related_name='reservations'
-    )
-    external_id = models.CharField(max_length=200)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        db_table = 'rooms'
-        managed = True
-        verbose_name = 'Room'
-        verbose_name_plural = 'Rooms'
-
-    def __str__(self) -> str:
-        return self.reservation.hotel_name

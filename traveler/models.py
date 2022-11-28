@@ -3,7 +3,7 @@ from uuid import uuid4
 from django.db import models
 
 from catalogue.models import Item
-from catalogue.constants import GENDER_CHOICES
+from catalogue.constants import TITLE_CHOICES
 
 from agent.models import Agent
 
@@ -22,8 +22,8 @@ class Traveler(models.Model):
         null=True,
         default=None
     )
-    phone_number = models.CharField(max_length=10)
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True, default=None)
+    phone_number = models.CharField(max_length=10, null=True, default=None)
+    title = models.CharField(max_length=2, choices=TITLE_CHOICES, null=True, default=None)
     traveler_status = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,

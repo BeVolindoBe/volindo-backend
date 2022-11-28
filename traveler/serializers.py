@@ -7,13 +7,6 @@ from traveler.models import Traveler
 
 class TravelerSerializer(serializers.ModelSerializer):
 
-    traveler_status = ItemSerializer(read_only=True)
-    country = ItemSerializer(read_only=True)
-    phone_country_code = ItemSerializer(read_only=True)
-    gender = serializers.CharField(
-        source='get_gender_display'
-    )
-
     class Meta:
         model = Traveler
         fields = (
@@ -21,16 +14,5 @@ class TravelerSerializer(serializers.ModelSerializer):
             'last_name',
             'email',
             'birthdate',
-            'phone_country_code',
-            'phone_number',
-            'gender',
-            'traveler_status',
-            'in_vacation',
-            'is_active',
-            'address',
-            'country',
-            'city',
-            'state_province',
-            'zip_code',
-            'phone_country_code'
+            'phone_number'
         )
