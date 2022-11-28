@@ -98,10 +98,10 @@ class NewReservationPayment(APIView):
 
     def create_user(self, data):
         user, created = User.objects.get_or_create(
-            username=data['email'],
-            email=data['email'],
-            first_name=data['first_name'],
-            last_name=data['last_name']
+            username=data['email'].value,
+            email=data['email'].value,
+            first_name=data['first_name'].value,
+            last_name=data['last_name'].value
         )
         user.set_password(str(uuid4()))
         user.save()
@@ -110,9 +110,9 @@ class NewReservationPayment(APIView):
     def create_agent(self, user, data):
         agent, created = Agent.objects.get_or_create(
             user=user,
-            first_name=data['first_name'],
-            last_name=data['last_name'],
-            email=data['email'],
+            first_name=data['first_name'].value,
+            last_name=data['last_name'].value,
+            email=data['email'].value,
         )
         return agent
 
