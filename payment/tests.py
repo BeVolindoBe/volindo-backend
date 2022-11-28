@@ -4,27 +4,63 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
-from payment.models import Payment, ExternalAgent
+from agent.models import Agent
+
+from traveler.models import Traveler
+
+from payment.models import ReservationPayment, Reservation
 
 
-class ExternalAgentTestCase(TestCase):
+class ReservationPaymentTestCase(TestCase):
 
     client = Client()
-    def test_new_external_agent(self):
+    fixtures = [
+        'catalogue/fixtures/catalogues.yaml',
+        'catalogue/fixtures/agent_status.yaml',
+        'catalogue/fixtures/traveler_status.yaml'
+    ]
+
+    def test_new_reservation_payment(self):
         data = {
-            'external_id': 'ABCDE',
-            'agent_name': 'Jhon Doe',
-            'phone_number': '5521314151',
-            'image': 'https://example.com',
-            'agent_email': 'jhon@doe.com'
+            'agent': {
+                'first_name': 'Jhon',
+                'last_name': 'Doe',
+                'email': 'user@example.com',
+                'phone_number': '5566778899'
+            },
+            'amount': '100.50',
+            'commission': '5.45',
+            'total': '106.00',
+            'hotels': [
+                {
+                    'hotel_name': 'Hotel',
+                    'check_in': '2022-11-30',
+                    'check_out': '2022-12-10',
+                    'room_description': 'Room 1',
+                    'guests': [
+                        {
+                            'first_name': 'Eren',
+                            'last_name': 'Jaeger',
+                            'email': 'user@example.com',
+                            'birthdate': '2000-11-28',
+                            'phone_number': '5500998877'
+                        }
+                    ]
+                }
+            ]
         }
-        response = self.client.post('/payments/external_agents/', data=data)
-        # print(dumps(response.json(), indent=4))
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(1, ExternalAgent.objects.all().count())
-        self.assertEqual(1, Payment.objects.all().count())
-        response = self.client.post('/payments/external_agents/', data=data)
-        # print(dumps(response_2.json(), indent=4))
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(1, ExternalAgent.objects.all().count())
-        self.assertEqual(2, Payment.objects.all().count())
+        response = self.client.post(
+            '/payments/reservations/',
+            data=data,
+            content_type='application/json'
+        )
+        response = self.client.post(
+            '/payments/reservations/',
+            data=data,
+            content_type='application/json'
+        )
+        print(dumps(response.json(), indent=4))
+        self.assertEqual(1, Agent.objects.all().count())
+        self.assertEqual(1, ReservationPayment.objects.all().count())
+        self.assertEqual(1, Traveler.objects.all().count())
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)

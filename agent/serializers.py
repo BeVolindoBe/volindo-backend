@@ -1,6 +1,5 @@
 from rest_framework import serializers
 
-from catalogue.models import Item
 from catalogue.serializers import ItemSerializer
 
 from agent.models import Agent
@@ -14,10 +13,7 @@ class AgentSerializer(serializers.ModelSerializer):
             'first_name',
             'last_name',
             'email',
-            'birthdate',
-            'country',
-            'phone_country_code',
-            'web_site'
+            'phone_number'
         )
 
     def to_representation(self, instance):

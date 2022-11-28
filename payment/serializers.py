@@ -1,38 +1,34 @@
 from rest_framework import serializers
 
-from agent.models import Agent
-from agent.serializers import AgentSerializer
 
-from traveler.serializers import TravelerSerializer
+class TempAgentSerializer(serializers.Serializer):
 
-from payment.models import ReservationPayment, Reservation
-
-
-class ReservationSerializer(serializers.ModelSerializer):
-
-    travelers = TravelerSerializer(many=True)
-
-    class Meta:
-        model = Reservation
-        fields = (
-            'hotel_name',
-            'check_in',
-            'check_out',
-            'room_description',
-            'travelers'
-        )
+    first_name = serializers.CharField()
+    last_name = serializers.CharField()
+    email = serializers.EmailField()
+    phone_number = serializers.CharField()
 
 
-class ReservationPaymentSerializer(serializers.ModelSerializer):
-    agent = AgentSerializer()
+class TempTravelerSerializer(serializers.Serializer):
+    first_name = serializers.CharField()
+    last_name = serializers.CharField()
+    email = serializers.EmailField()
+    birthdate = serializers.DateField()
+    phone_number = serializers.CharField()
+
+
+class ReservationSerializer(serializers.Serializer):
+    hotel_name = serializers.CharField()
+    room_description = serializers.CharField()
+    check_in = serializers.DateField()
+    check_out = serializers.DateField()
+    guests = TempTravelerSerializer(many=True)
+
+
+class ReservationPaymentSerializer(serializers.Serializer):
+
+    agent = TempAgentSerializer()
     hotels = ReservationSerializer(many=True)
-
-    class Meta:
-        model = ReservationPayment
-        fields = (
-            'agent',
-            'amount',
-            'commission',
-            'total',
-            'hotels'
-        )
+    amount = serializers.DecimalField(max_digits=10 ,decimal_places=2)
+    commission = serializers.DecimalField(max_digits=10 ,decimal_places=2)
+    total = serializers.DecimalField(max_digits=10 ,decimal_places=2)
