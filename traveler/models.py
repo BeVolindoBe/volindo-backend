@@ -10,7 +10,7 @@ from agent.models import Agent
 
 class Traveler(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    agent = models.ForeignKey(Agent, on_delete=models.DO_NOTHING, related_name='travelers')
+    agent = models.ForeignKey(Agent, on_delete=models.CASCADE, related_name='travelers')
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     email = models.EmailField()
@@ -18,7 +18,7 @@ class Traveler(models.Model):
     age = models.IntegerField(null=True, default=None)
     phone_country_code = models.ForeignKey(
         Item,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='traveler_phone_contry_code',
         null=True,
         default=None
@@ -27,7 +27,7 @@ class Traveler(models.Model):
     title = models.CharField(max_length=2, choices=TITLE_CHOICES, null=True, default=None)
     traveler_status = models.ForeignKey(
         Item,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='traveler_status',
         default='ff82a0d3-7d21-4f8f-af9b-c28f61562749'
     )
@@ -36,7 +36,7 @@ class Traveler(models.Model):
     address = models.CharField(max_length=200, null=True, default=None)
     country = models.ForeignKey(
         Item,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='traveler_country',
         null=True,
         default=None

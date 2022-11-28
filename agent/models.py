@@ -7,7 +7,7 @@ from catalogue.models import Item
 
 
 class Agent(models.Model):
-    user = models.OneToOneField(User, on_delete=models.DO_NOTHING)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
@@ -16,14 +16,14 @@ class Agent(models.Model):
     birthdate = models.DateField(null=True, default=None)
     country = models.ForeignKey(
         Item,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='agent_country',
         null=True,
         default=None
     )
     phone_country_code = models.ForeignKey(
         Item,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='agent_phone_country_code',
         null=True,
         default=None
@@ -32,7 +32,7 @@ class Agent(models.Model):
     web_site = models.URLField(null=True, default=None)
     agent_status = models.ForeignKey(
         Item,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         default='69e5e698-a900-4d14-a077-ba165f476a40'
     )
     updated_at = models.DateTimeField(auto_now=True)

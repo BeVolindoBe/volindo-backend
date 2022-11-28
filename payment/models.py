@@ -9,7 +9,7 @@ class ReservationPayment(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     agent = models.ForeignKey(
         Agent,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='payments'
     )
     amount = models.DecimalField(max_digits=10, decimal_places=2, default=0)
@@ -33,7 +33,7 @@ class Reservation(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     payment = models.ForeignKey(
         ReservationPayment,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         related_name='reservations'
     )
     hotel_name = models.CharField(max_length=200)
