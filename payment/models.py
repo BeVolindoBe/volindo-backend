@@ -26,7 +26,7 @@ class ReservationPayment(models.Model):
         verbose_name_plural = 'Payments'
 
     def __str__(self) -> str:
-        return self.agent.agent_name
+        return f'{self.agent.first_name} {self.agent.last_name}'
 
 
 class Reservation(models.Model):
@@ -49,4 +49,4 @@ class Reservation(models.Model):
         verbose_name_plural = 'Reservations'
 
     def __str__(self) -> str:
-        return self.agent.agent_name
+        return f'{self.agent.first_name} {self.agent.last_name}'
