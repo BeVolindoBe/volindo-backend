@@ -15,6 +15,7 @@ class Traveler(models.Model):
     last_name = models.CharField(max_length=60)
     email = models.EmailField()
     birthdate = models.DateField(null=True, default=None)
+    age = models.IntegerField(null=True, default=None)
     phone_country_code = models.ForeignKey(
         Item,
         on_delete=models.DO_NOTHING,

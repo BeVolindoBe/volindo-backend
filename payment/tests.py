@@ -8,7 +8,7 @@ from agent.models import Agent
 
 from traveler.models import Traveler
 
-from payment.models import ReservationPayment, Reservation
+from payment.models import ReservationPayment
 
 
 class ReservationPaymentTestCase(TestCase):
@@ -42,8 +42,9 @@ class ReservationPaymentTestCase(TestCase):
                             'first_name': 'Eren',
                             'last_name': 'Jaeger',
                             'email': 'user@example.com',
-                            'birthdate': '2000-11-28',
-                            'phone_number': '5500998877'
+                            'age': 22,
+                            'phone_number': '5500998877',
+                            'title': 'ms'
                         }
                     ]
                 }
@@ -59,8 +60,26 @@ class ReservationPaymentTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(1, Agent.objects.all().count())
         self.assertEqual(1, ReservationPayment.objects.all().count())
         self.assertEqual(1, Traveler.objects.all().count())
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        payment_id = response.json()['payment_id']
+        card_data = {
+            'card_number': '4242424242424242',
+            'cvv': '123',
+            'exp_date': '11/2022',
+            'card_name': 'Jhon Doe'
+        }
+        response = self.client.post(
+            '/payments/{}/'.format(payment_id),
+            data=card_data,
+            content_type='application/json'
+        )
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertNotEqual(
+            ReservationPayment.objects.get(id=payment_id).approved_at,
+            None
+        )
