@@ -27,7 +27,6 @@ services:
             - PAYMENT_TOKEN=https://api.stripe.com/v1/tokens
             - PAYMENT_URL=https://api.stripe.com/v1/charges
             - DEFAULT_CURRENCY=USD
-            # - PAYMENT_AUTH=c2tfbGl2ZV81MU0wQVlwSkxxTkUzRFdRNlNmVmFMeExvMWNIOFNpdUh0RDROTTYxc2o3YjZoQ1ZZRGU1WlBRd0p4WHJPbVg4dkx2T043T3pyQ25hY05id05yRDhMMVptNTAwOTZQb3h2U2Q6
             - PAYMENT_AUTH=sk_test_51M0AYpJLqNE3DWQ6UJQ7S4bxtmYKZJyRwokDelUSvRiws5ZUjmzFouo1llhQUqjO15pYB7nzbvdY10jMnzEzcbgK00oymrIfjl
         ports:
             - '8000:8000'
