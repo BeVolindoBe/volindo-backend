@@ -155,8 +155,7 @@ REST_FRAMEWORK = {
     )
 }
 
-CSRF_TRUSTED_ORIGINS = [environ.get('CSRF_TRUSTED_ORIGINS'), ]
-
+CSRF_TRUSTED_ORIGINS = environ.get('CSRF_TRUSTED_ORIGINS').split(',')
 
 SWAGGER_SETTINGS = {
     'DEFAULT_API_URL': environ['HOST']
