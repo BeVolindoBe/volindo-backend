@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'agent',
     'payment',
     'traveler',
-    'hotel'
+    'hotel',
+    'bank'
 ]
 
 MIDDLEWARE = [

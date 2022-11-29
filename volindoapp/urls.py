@@ -23,6 +23,7 @@ urlpatterns = [
     path('users/', include('agent.urls')),
     path('hotels/', include('hotel.urls')),
     path('payments/', include('payment.urls')),
+    path('bank-accounts/', include('bank.urls')),
 ]
 
 if settings.DEBUG:
