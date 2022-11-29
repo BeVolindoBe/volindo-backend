@@ -21,7 +21,6 @@ urlpatterns = [
     path('catalogues/', include('catalogue.urls')),
     path('users/<str:user_id>/travelers/', include('traveler.urls')),
     path('users/', include('agent.urls')),
-    path('hotels/', include('hotel.urls')),
     path('payments/', include('payment.urls')),
     path('bank-accounts/', include('bank.urls')),
 ]

@@ -3,12 +3,20 @@ from json import dumps
 from django.test import TestCase, Client
 from django.contrib.auth.models import User
 
+from agent.models import Agent
+
 from rest_framework import status
 
 
 class USerTestCase(TestCase):
 
     client = Client()
+
+    fixtures = [
+        'catalogue/fixtures/catalogues.yaml',
+        'catalogue/fixtures/agent_status.yaml',
+        'catalogue/fixtures/agent_subscriptions.yaml',
+    ]
 
     def test_health_check(self):
         response = self.client.get('')
@@ -29,6 +37,7 @@ class USerTestCase(TestCase):
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(1, User.objects.all().count())
+        self.assertEqual(1, Agent.objects.all().count())
 
     def test_get_token(self):
         data = {

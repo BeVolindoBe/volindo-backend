@@ -3,6 +3,12 @@
     id: 'a4c7e30b-8b4e-4b2e-9674-a8137a930383'
     slug: 'agent_status'
     description: 'Agent status'
+  
+- model: 'catalogue.Catalogue'
+  fields:
+    id: '5d7b286e-cab3-4869-b420-119f9bd8b2e9'
+    slug: 'agent_suscription'
+    description: 'Agent suscription'
 
 - model: 'catalogue.Catalogue'
   fields:
@@ -18,12 +24,6 @@
 
 - model: 'catalogue.Catalogue'
   fields:
-    id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
-    slug: 'traveler_status'
-    description: 'Traveler status'
-
-- model: 'catalogue.Catalogue'
-  fields:
     id: 'd24f3ad1-6557-4965-aec8-2751683651b8'
     slug: 'destinations'
     description: 'Destinations'
@@ -33,3 +33,9 @@
     id: 'baee60e6-b5e1-4a1b-a9a1-45e91d929d48'
     slug: 'amenities'
     description: 'Hotel amenities'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
+    slug: 'travaler_status'
+    description: 'Traveler status'

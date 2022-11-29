@@ -15,6 +15,7 @@ class ReservationPaymentTestCase(TestCase):
     fixtures = [
         'catalogue/fixtures/catalogues.yaml',
         'catalogue/fixtures/agent_status.yaml',
+        'catalogue/fixtures/agent_subscriptions.yaml',
         'catalogue/fixtures/traveler_status.yaml'
     ]
 
@@ -40,7 +41,8 @@ class ReservationPaymentTestCase(TestCase):
                                     'last_name': 'Doe',
                                     'email': 'user@example.com',
                                     'age': 22,
-                                    'phone_number': '5544332211'
+                                    'phone_number': '5544332211',
+                                    'title': 'MR'
                                 }
                             ]
                         }
@@ -56,6 +58,7 @@ class ReservationPaymentTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
+        self.assertEqual(1, Agent.objects.all().count())
         response = self.client.post(
             '/payments/reservations/',
             data=data,

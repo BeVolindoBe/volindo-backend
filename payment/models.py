@@ -2,6 +2,8 @@ from uuid import uuid4
 
 from django.db import models
 
+from catalogue.constants import TITLE_CHOICES
+
 from agent.models import Agent
 
 
@@ -75,6 +77,7 @@ class Guest(models.Model):
     email = models.EmailField()
     age = models.IntegerField()
     phone_number = models.CharField(max_length=20)
+    title = models.CharField(max_length=2, choices=TITLE_CHOICES, default='MR')
 
     class Meta:
         db_table = 'guests'

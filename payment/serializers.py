@@ -19,6 +19,7 @@ class GuestSerializer(serializers.Serializer):
     email = serializers.EmailField()
     age = serializers.IntegerField()
     phone_number = serializers.CharField()
+    title = serializers.CharField()
 
 
 class RoomSerializer(serializers.Serializer):

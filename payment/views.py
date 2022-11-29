@@ -101,6 +101,7 @@ class PaymentView(APIView):
                 'email': guest.email,
                 'age': guest.age,
                 'phone_number': guest.phone_number,
+                'title': guest.get_title_display(),
             } for guest in Guest.objects.filter(room=room)
         ]
     
@@ -154,18 +155,22 @@ class NewReservationPayment(APIView):
             first_name=data['first_name'].value,
             last_name=data['last_name'].value
         )
-        user.set_password(str(uuid4()))
-        user.save()
+        if created:
+            user.set_password(str(uuid4()))
+            user.save()
         return user
 
     def create_agent(self, user, data):
-        agent, created = Agent.objects.get_or_create(
-            user=user,
-            first_name=data['first_name'].value,
-            last_name=data['last_name'].value,
-            email=data['email'].value,
-            phone_number=data['phone_number'].value,
-        )
+        try:
+            agent = Agent.objects.get(user=user)
+        except Agent.DoesNotExist:
+            agent = Agent.objects.create(
+                user=user,
+                first_name=data['first_name'].value,
+                last_name=data['last_name'].value,
+                email=data['email'].value,
+                phone_number=data['phone_number'].value,
+            )
         return agent
 
     def create_payment(self, agent, data):
@@ -186,6 +191,7 @@ class NewReservationPayment(APIView):
                 email=g['email'],
                 age=g['age'],
                 phone_number=g['phone_number'],
+                title=g['title'],
             ) for g in data]
         )
 

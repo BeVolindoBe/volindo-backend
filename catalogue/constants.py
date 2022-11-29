@@ -1,4 +1,5 @@
 TITLE_CHOICES = (
     ('MR', 'Mr.'),
-    ('MS', 'Ms.')
+    ('MS', 'Ms.'),
+    ('CH', 'Child')
 )

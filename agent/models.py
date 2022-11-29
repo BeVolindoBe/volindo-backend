@@ -28,12 +28,19 @@ class Agent(models.Model):
         null=True,
         default=None
     )
-    phone_number = models.CharField(max_length=10, null=True, default=None)
+    phone_number = models.CharField(max_length=20, null=True, default=None)
     web_site = models.URLField(null=True, default=None)
     agent_status = models.ForeignKey(
         Item,
         on_delete=models.CASCADE,
-        default='69e5e698-a900-4d14-a077-ba165f476a40'
+        default='69e5e698-a900-4d14-a077-ba165f476a40', # pending
+        related_name='agent_status'
+    )
+    agent_subscription = models.ForeignKey(
+        Item,
+        on_delete=models.CASCADE,
+        default='20179d75-765c-471b-9d2e-6dac1c91bce8', # free
+        related_name='agent_subscription'
     )
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
