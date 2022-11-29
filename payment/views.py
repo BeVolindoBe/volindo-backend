@@ -19,7 +19,9 @@ from drf_yasg.utils import swagger_auto_schema
 from agent.models import Agent
 
 from payment.models import ReservationPayment, Reservation, Guest, Room
-from payment.serializers import ReservationPaymentSerializer, CardSerializer
+from payment.serializers import (
+    ReservationPaymentSerializer, CardSerializer, ReservationSerializer,
+    RoomSerializer, GuestSerializer)
 
 
 class ResponseData:
@@ -91,17 +93,55 @@ class PaymentView(APIView):
             status=status.HTTP_400_BAD_REQUEST
         )
 
+    def get_guests(self, room):
+        return [
+            {
+                'first_name': guest.first_name,
+                'last_name': guest.last_name,
+                'email': guest.email,
+                'age': guest.age,
+                'phone_number': guest.phone_number,
+            } for guest in Guest.objects.filter(room=room)
+        ]
+    
+    def get_rooms(self, hotel):
+        return [
+            {
+                'description': room.description,
+                'guests': self.get_guests(room)
+            } for room in Room.objects.filter(hotel=hotel)
+        ]
+
+    def get_hotels(self, payment):
+        return [
+            {
+                'hotel_name': hotel.hotel_name,
+                'check_in': hotel.check_in,
+                'check_out': hotel.check_out,
+                'rooms': self.get_rooms(hotel)
+            } for hotel in Reservation.objects.filter(payment=payment)
+        ]
+
     def get(self, request, payment_id):
+        # refactor
         try:
-            payment = ReservationPayment.objects.prefetch_related(
-                'hotels', 'hotels_rooms', 'rooms_guests'
-            ).get(id=payment_id)
-            return Response(
-                ReservationPaymentSerializer(payment).data,
-                status=status.HTTP_200_OK
-            )
+            payment = ReservationPayment.objects.get(id=payment_id)
         except ReservationPayment.DoesNotExist:
             return Response({'message': 'Payment not found'}, status=status.HTTP_404_NOT_FOUND)
+        agent = Agent.objects.get(id=payment.agent.id)
+        data = {
+            'agent': {
+                'first_name': agent.first_name,
+                'last_name': agent.last_name,
+                'email': agent.email,
+                'phone_number': agent.phone_number
+            },
+            'amount': payment.amount,
+            'commission': payment.commission,
+            'total': payment.total,
+            'hotels': self.get_hotels(payment)
+        }
+        return Response(data, status=status.HTTP_200_OK)
 
 
 class NewReservationPayment(APIView):
