@@ -68,6 +68,12 @@ class ReservationPaymentTestCase(TestCase):
         self.assertEqual(2, Room.objects.all().count())
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         payment_id = response.json()['payment_id']
+        response = self.client.get(
+            '/payments/{}/'.format(payment_id),
+            content_type='application/json'
+        )
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         card_data = {
             'card_number': '4242424242424242',
             'cvv': '123',

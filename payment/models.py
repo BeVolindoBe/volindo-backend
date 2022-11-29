@@ -34,7 +34,7 @@ class Reservation(models.Model):
     payment = models.ForeignKey(
         ReservationPayment,
         on_delete=models.CASCADE,
-        related_name='reservations'
+        related_name='hotels'
     )
     hotel_name = models.CharField(max_length=200)
     check_in = models.DateField()
@@ -49,7 +49,7 @@ class Reservation(models.Model):
         verbose_name_plural = 'Reservations'
 
     def __str__(self) -> str:
-        return f'{self.payment.agent.first_name} {self.payment.agent.first_name}'
+        return f'{self.hotel_name} - {self.payment.agent.first_name} {self.payment.agent.first_name}'
 
 
 class Room(models.Model):
@@ -64,7 +64,7 @@ class Room(models.Model):
         verbose_name_plural = 'Rooms'
 
     def __str__(self) -> str:
-        return f'{self.hotel.agent.first_name} {self.hotel.agent.last_name}'
+        return f'{self.hotel.hotel_name} - {self.description}'
 
 
 class Guest(models.Model):

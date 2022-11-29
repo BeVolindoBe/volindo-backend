@@ -93,7 +93,9 @@ class PaymentView(APIView):
 
     def get(self, request, payment_id):
         try:
-            payment = ReservationPayment.objects.get(id=payment_id)
+            payment = ReservationPayment.objects.prefetch_related(
+                'hotels', 'hotels_rooms', 'rooms_guests'
+            ).get(id=payment_id)
             return Response(
                 ReservationPaymentSerializer(payment).data,
                 status=status.HTTP_200_OK
