@@ -63,9 +63,9 @@ class ReservationPaymentTestCase(TestCase):
         )
         # print(dumps(response.json(), indent=4))
         self.assertEqual(1, Agent.objects.all().count())
-        self.assertEqual(1, ReservationPayment.objects.all().count())
-        self.assertEqual(1, Guest.objects.all().count())
-        self.assertEqual(1, Room.objects.all().count())
+        self.assertEqual(2, ReservationPayment.objects.all().count())
+        self.assertEqual(2, Guest.objects.all().count())
+        self.assertEqual(2, Room.objects.all().count())
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         payment_id = response.json()['payment_id']
         card_data = {

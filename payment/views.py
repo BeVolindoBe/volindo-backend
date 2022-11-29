@@ -115,13 +115,13 @@ class NewReservationPayment(APIView):
         return agent
 
     def create_payment(self, agent, data):
-        payment, created = ReservationPayment.objects.get_or_create(
+        payment = ReservationPayment.objects.create(
             agent=agent,
             amount=Decimal(data['amount'].value),
             commission=Decimal(data['commission'].value),
             total=Decimal(data['total'].value),
         )
-        return payment, created
+        return payment
 
     def create_guest(self, room, data):
         Guest.objects.bulk_create(
@@ -143,16 +143,15 @@ class NewReservationPayment(APIView):
             )
             self.create_guest(room, r['guests'])
 
-    def create_reservations(self, payment, created, data):
-        if created:
-            for r in data.value:
-                reservation = Reservation.objects.create(
-                    payment=payment,
-                    hotel_name=r['hotel_name'],
-                    check_in=r['check_in'],
-                    check_out=r['check_out']
-                )
-                self.create_rooms(reservation, r['rooms'])
+    def create_reservations(self, payment, data):
+        for r in data.value:
+            reservation = Reservation.objects.create(
+                payment=payment,
+                hotel_name=r['hotel_name'],
+                check_in=r['check_in'],
+                check_out=r['check_out']
+            )
+            self.create_rooms(reservation, r['rooms'])
 
     @swagger_auto_schema(request_body=ReservationPaymentSerializer)
     def post(self, request):
@@ -160,8 +159,8 @@ class NewReservationPayment(APIView):
         if data.is_valid(raise_exception=True):
             user = self.create_user(data['agent'])
             agent = self.create_agent(user, data['agent'])
-            payment, created = self.create_payment(agent, data)
-            self.create_reservations(payment, created, data['hotels'])
+            payment = self.create_payment(agent, data)
+            self.create_reservations(payment, data['hotels'])
             return Response(
                 {'message': 'Payment created.', 'payment_id': str(payment.id)},
                 status=status.HTTP_201_CREATED
