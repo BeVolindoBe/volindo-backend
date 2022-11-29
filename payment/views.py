@@ -91,6 +91,16 @@ class PaymentView(APIView):
             status=status.HTTP_400_BAD_REQUEST
         )
 
+    def get(self, request, payment_id):
+        try:
+            payment = ReservationPayment.objects.get(id=payment_id)
+            return Response(
+                ReservationPaymentSerializer(payment).data,
+                status=status.HTTP_200_OK
+            )
+        except ReservationPayment.DoesNotExist:
+            return Response({'message': 'Payment not found'}, status=status.HTTP_404_NOT_FOUND)
+
 
 class NewReservationPayment(APIView):
 

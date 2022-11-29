@@ -49,7 +49,7 @@ class Reservation(models.Model):
         verbose_name_plural = 'Reservations'
 
     def __str__(self) -> str:
-        return f'{self.agent.first_name} {self.agent.last_name}'
+        return f'{self.payment.agent.first_name} {self.payment.agent.first_name}'
 
 
 class Room(models.Model):
