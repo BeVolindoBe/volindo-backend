@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='agent',
             name='agent_subscription',
-            field=models.ForeignKey(default='5d7b286e-cab3-4869-b420-119f9bd8b2e9', on_delete=django.db.models.deletion.CASCADE, related_name='agent_subscription', to='catalogue.item'),
+            field=models.ForeignKey(default='20179d75-765c-471b-9d2e-6dac1c91bce8', on_delete=django.db.models.deletion.CASCADE, related_name='agent_subscription', to='catalogue.item'),
         ),
         migrations.AlterField(
             model_name='agent',
