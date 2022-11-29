@@ -139,7 +139,8 @@ class PaymentView(APIView):
             'amount': payment.amount,
             'commission': payment.commission,
             'total': payment.total,
-            'hotels': self.get_hotels(payment)
+            'hotels': self.get_hotels(payment),
+            'approved_at': payment.approved_at
         }
         return Response(data, status=status.HTTP_200_OK)
 
@@ -163,6 +164,7 @@ class NewReservationPayment(APIView):
             first_name=data['first_name'].value,
             last_name=data['last_name'].value,
             email=data['email'].value,
+            phone_number=data['phone_number'].value,
         )
         return agent
 
