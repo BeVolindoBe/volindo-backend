@@ -6,9 +6,7 @@ from rest_framework import status
 
 from agent.models import Agent
 
-from traveler.models import Traveler
-
-from payment.models import ReservationPayment
+from payment.models import ReservationPayment, Room, Guest
 
 
 class ReservationPaymentTestCase(TestCase):
@@ -23,32 +21,35 @@ class ReservationPaymentTestCase(TestCase):
     def test_new_reservation_payment(self):
         data = {
             'agent': {
-                'first_name': 'Jhon',
-                'last_name': 'Doe',
+                'first_name': 'Eren',
+                'last_name': 'Jaeger',
                 'email': 'user@example.com',
                 'phone_number': '5566778899'
             },
-            'amount': '100.50',
-            'commission': '5.45',
-            'total': '106.00',
             'hotels': [
                 {
                     'hotel_name': 'Hotel',
-                    'check_in': '2022-11-30',
-                    'check_out': '2022-12-10',
-                    'room_description': 'Room 1',
-                    'guests': [
+                    'check_in': '2022-11-29',
+                    'check_out': '2022-11-29',
+                    'rooms': [
                         {
-                            'first_name': 'Eren',
-                            'last_name': 'Jaeger',
-                            'email': 'user@example.com',
-                            'age': 22,
-                            'phone_number': '5500998877',
-                            'title': 'ms'
+                            'description': 'Room 1',
+                            'guests': [
+                                {
+                                    'first_name': 'Jhon',
+                                    'last_name': 'Doe',
+                                    'email': 'user@example.com',
+                                    'age': 22,
+                                    'phone_number': '5544332211'
+                                }
+                            ]
                         }
                     ]
                 }
-            ]
+            ],
+            'amount': '100.00',
+            'commission': '5.00',
+            'total': '105.00'
         }
         response = self.client.post(
             '/payments/reservations/',
@@ -63,7 +64,8 @@ class ReservationPaymentTestCase(TestCase):
         # print(dumps(response.json(), indent=4))
         self.assertEqual(1, Agent.objects.all().count())
         self.assertEqual(1, ReservationPayment.objects.all().count())
-        self.assertEqual(1, Traveler.objects.all().count())
+        self.assertEqual(1, Guest.objects.all().count())
+        self.assertEqual(1, Room.objects.all().count())
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         payment_id = response.json()['payment_id']
         card_data = {

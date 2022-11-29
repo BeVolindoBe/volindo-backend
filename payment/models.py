@@ -50,3 +50,37 @@ class Reservation(models.Model):
 
     def __str__(self) -> str:
         return f'{self.agent.first_name} {self.agent.last_name}'
+
+
+class Room(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    hotel = models.ForeignKey(Reservation, on_delete=models.CASCADE, related_name='rooms')
+    description = models.CharField(max_length=100, null=True, default=None)
+
+    class Meta:
+        db_table = 'rooms'
+        managed = True
+        verbose_name = 'Room'
+        verbose_name_plural = 'Rooms'
+
+    def __str__(self) -> str:
+        return f'{self.hotel.agent.first_name} {self.hotel.agent.last_name}'
+
+
+class Guest(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name='room_guests')
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    age = models.IntegerField()
+    phone_number = models.CharField(max_length=20)
+
+    class Meta:
+        db_table = 'guests'
+        managed = True
+        verbose_name = 'Guest'
+        verbose_name_plural = 'Guests'
+
+    def __str__(self) -> str:
+        return f'{self.first_name} {self.last_name}'

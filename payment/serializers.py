@@ -2,6 +2,8 @@ from datetime import datetime
 
 from rest_framework import serializers
 
+from payment.models import ReservationPayment, Reservation, Guest, Room
+
 
 class TempAgentSerializer(serializers.Serializer):
 
@@ -11,7 +13,7 @@ class TempAgentSerializer(serializers.Serializer):
     phone_number = serializers.CharField()
 
 
-class TempTravelerSerializer(serializers.Serializer):
+class GuestSerializer(serializers.Serializer):
     first_name = serializers.CharField()
     last_name = serializers.CharField()
     email = serializers.EmailField()
@@ -19,11 +21,16 @@ class TempTravelerSerializer(serializers.Serializer):
     phone_number = serializers.CharField()
 
 
+class RoomSerializer(serializers.Serializer):
+    description = serializers.CharField()
+    guests = GuestSerializer(many=True)
+
+
 class ReservationSerializer(serializers.Serializer):
     hotel_name = serializers.CharField()
     check_in = serializers.DateField()
     check_out = serializers.DateField()
-    guests = TempTravelerSerializer(many=True)
+    rooms = RoomSerializer(many=True)
 
 
 class ReservationPaymentSerializer(serializers.Serializer):

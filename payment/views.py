@@ -18,9 +18,7 @@ from drf_yasg.utils import swagger_auto_schema
 
 from agent.models import Agent
 
-from traveler.models import Traveler
-
-from payment.models import ReservationPayment, Reservation
+from payment.models import ReservationPayment, Reservation, Guest, Room
 from payment.serializers import ReservationPaymentSerializer, CardSerializer
 
 
@@ -125,32 +123,36 @@ class NewReservationPayment(APIView):
         )
         return payment, created
 
-    def create_traveler(self, agent, data):
-        Traveler.objects.bulk_create(
-            [Traveler(
-                agent=agent,
-                first_name=t['first_name'],
-                last_name=t['last_name'],
-                email=t['email'],
-                age=t['age'],
-                phone_number=t['phone_number'],
-            ) for t in data]
+    def create_guest(self, room, data):
+        Guest.objects.bulk_create(
+            [Guest(
+                room=room,
+                first_name=g['first_name'],
+                last_name=g['last_name'],
+                email=g['email'],
+                age=g['age'],
+                phone_number=g['phone_number'],
+            ) for g in data]
         )
 
-    def create_reservations(self, agent, payment, created, data):
+    def create_rooms(self, reservation, data):
+        for r in data:
+            room = Room.objects.create(
+                hotel=reservation,
+                description=r['description']
+            )
+            self.create_guest(room, r['guests'])
+
+    def create_reservations(self, payment, created, data):
         if created:
-            reservations = []
             for r in data.value:
-                reservations.append(
-                    Reservation(
-                        payment=payment,
-                        hotel_name=r['hotel_name'],
-                        check_in=r['check_in'],
-                        check_out=r['check_out']
-                    )
+                reservation = Reservation.objects.create(
+                    payment=payment,
+                    hotel_name=r['hotel_name'],
+                    check_in=r['check_in'],
+                    check_out=r['check_out']
                 )
-                self.create_traveler(agent, r['guests'])
-            Reservation.objects.bulk_create(reservations)
+                self.create_rooms(reservation, r['rooms'])
 
     @swagger_auto_schema(request_body=ReservationPaymentSerializer)
     def post(self, request):
@@ -159,7 +161,7 @@ class NewReservationPayment(APIView):
             user = self.create_user(data['agent'])
             agent = self.create_agent(user, data['agent'])
             payment, created = self.create_payment(agent, data)
-            self.create_reservations(agent, payment, created, data['hotels'])
+            self.create_reservations(payment, created, data['hotels'])
             return Response(
                 {'message': 'Payment created.', 'payment_id': str(payment.id)},
                 status=status.HTTP_201_CREATED
