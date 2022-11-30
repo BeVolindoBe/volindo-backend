@@ -135,7 +135,8 @@ class PaymentView(APIView):
                 'first_name': agent.first_name,
                 'last_name': agent.last_name,
                 'email': agent.email,
-                'phone_number': agent.phone_number
+                'phone_number': agent.phone_number,
+                'photo': agent.photo,
             },
             'amount': payment.amount,
             'commission': payment.commission,
