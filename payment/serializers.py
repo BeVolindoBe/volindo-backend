@@ -11,6 +11,7 @@ class TempAgentSerializer(serializers.Serializer):
     last_name = serializers.CharField()
     email = serializers.EmailField()
     phone_number = serializers.CharField()
+    photo = serializers.URLField()
 
 
 class GuestSerializer(serializers.Serializer):

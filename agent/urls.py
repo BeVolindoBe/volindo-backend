@@ -4,5 +4,5 @@ from agent.views import AgentDetail
 
 
 urlpatterns = [
-    path('<str:pk>/', AgentDetail.as_view())
+    path('', AgentDetail.as_view())
 ]

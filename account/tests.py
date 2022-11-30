@@ -8,6 +8,25 @@ from agent.models import Agent
 from rest_framework import status
 
 
+def get_token():
+    client = Client()
+    data = {
+        'first_name': 'Travel',
+        'last_name': 'Agent',
+        'username': 'user@example.com',
+        'email': 'user@example.com',
+        'password': 'W1D78#Ae9O5r',
+        'password2': 'W1D78#Ae9O5r',
+    }
+    client.post('/accounts/register/', data=data)
+    data = {
+        'username': 'user@example.com',
+        'password': 'W1D78#Ae9O5r'
+    }
+    response = client.post('/login/', data=data)
+    return response.json()['access']
+    
+
 class USerTestCase(TestCase):
 
     client = Client()

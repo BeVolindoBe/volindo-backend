@@ -170,6 +170,7 @@ class NewReservationPayment(APIView):
                 last_name=data['last_name'].value,
                 email=data['email'].value,
                 phone_number=data['phone_number'].value,
+                photo=data['photo'].value,
             )
         return agent
 
