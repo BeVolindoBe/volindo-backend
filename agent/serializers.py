@@ -13,11 +13,20 @@ class AgentSerializer(serializers.ModelSerializer):
             'first_name',
             'last_name',
             'email',
-            'phone_number'
+            'photo',
+            'phone_country_code',
+            'phone_number',
+            'birthdate',
+            'country',
+            'web_site',
+            'agent_status',
+            'agent_subscription',
         )
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
         data['country'] = ItemSerializer(instance.country).data
         data['phone_country_code'] = ItemSerializer(instance.phone_country_code).data
+        data['agent_status'] = ItemSerializer(instance.agent_status).data
+        data['agent_subscription'] = ItemSerializer(instance.agent_subscription).data
         return data

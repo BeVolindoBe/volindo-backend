@@ -14,12 +14,12 @@ from account.views import HealthCheck
 
 urlpatterns = [
     path('', HealthCheck.as_view()),
-    path('login/', TokenObtainPairView.as_view()),
-    path('refresh-token/', TokenRefreshView.as_view()),
+    path('token/', TokenObtainPairView.as_view()),
+    path('token/refresh/', TokenRefreshView.as_view()),
     path('admin/', admin.site.urls),
     path('accounts/', include('account.urls')),
     path('catalogues/', include('catalogue.urls')),
-    path('agents/', include('agent.urls')),
+    path('agent/', include('agent.urls')),
     path('payments/', include('payment.urls')),
     path('bank-accounts/', include('bank.urls')),
 ]

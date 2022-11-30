@@ -21,10 +21,7 @@ class AgentTestCase(TestCase):
 
     def test_get_agent_by_id(self):
         token = get_token()
-        headers = {
-            'Authorization': f'Bearer {token}',
-            'Content-Type': 'application/json'
-        }
-        response = self.client.get('/agents/', headers=headers)
+        response = self.client.get('/agents/', HTTP_AUTHORIZATION=f'Bearer {token}')
+        print(response)
         print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)

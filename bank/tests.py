@@ -15,5 +15,5 @@ class BankAccountTestCase(TestCase):
 
     def test_get_bank_accounts_list(self):
         response = self.client.get('/bank-accounts/')
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)

@@ -23,7 +23,7 @@ def get_token():
         'username': 'user@example.com',
         'password': 'W1D78#Ae9O5r'
     }
-    response = client.post('/login/', data=data)
+    response = client.post('/token/', data=data)
     return response.json()['access']
     
 
@@ -74,7 +74,7 @@ class USerTestCase(TestCase):
             'username': 'user@example.com',
             'password': 'W1D78#Ae9O5r'
         }
-        response = self.client.post('/login/', data=data)
+        response = self.client.post('/token/', data=data)
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -94,12 +94,12 @@ class USerTestCase(TestCase):
             'username': 'user@example.com',
             'password': 'W1D78#Ae9O5r'
         }
-        response = self.client.post('/login/', data=data)
+        response = self.client.post('/token/', data=data)
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         data = {
             'refresh': response.json()['refresh']
         }
-        response = self.client.post('/refresh-token/', data=data)
+        response = self.client.post('/token/refresh/', data=data)
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)

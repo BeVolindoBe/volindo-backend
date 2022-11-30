@@ -16,5 +16,8 @@ class RegisterView(CreateAPIView):
 
 
 class HealthCheck(APIView):
+    authentication_classes = []
+    permission_classes = []
+
     def get(self, request):
-        return Response({'Message': 'OK'}, status=status.HTTP_200_OK)
+        return Response({'message': 'OK'}, status=status.HTTP_200_OK)
