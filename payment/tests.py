@@ -24,7 +24,7 @@ class ReservationPaymentTestCase(TestCase):
             'agent': {
                 'first_name': 'Eren',
                 'last_name': 'Jaeger',
-                'email': 'user@example.com',
+                'email': 'juanpablo@volindo.com',
                 'phone_number': '5566778899',
                 'photo': 'https://example.com'
             },
@@ -40,7 +40,7 @@ class ReservationPaymentTestCase(TestCase):
                                 {
                                     'first_name': 'Jhon',
                                     'last_name': 'Doe',
-                                    'email': 'user@example.com',
+                                    'email': 'juanpablo@volindo.com',
                                     'age': 22,
                                     'phone_number': '5544332211',
                                     'title': 'MR'
@@ -59,6 +59,7 @@ class ReservationPaymentTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(1, Agent.objects.all().count())
         response = self.client.post(
             '/payments/reservations/',
@@ -81,7 +82,7 @@ class ReservationPaymentTestCase(TestCase):
         card_data = {
             'card_number': '4242424242424242',
             'cvv': '123',
-            'exp_date': '11/2022',
+            'exp_date': '01/2025',
             'card_name': 'Jhon Doe'
         }
         response = self.client.post(

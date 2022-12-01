@@ -13,6 +13,9 @@ from django.contrib.auth.models import User
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.permissions import AllowAny
+
+from utilities import send_email
 
 from drf_yasg.utils import swagger_auto_schema
 
@@ -38,6 +41,8 @@ headers = {
 
 
 class PaymentView(APIView):
+
+    permission_classes = (AllowAny, )
 
     def validate_card(self, data):
         exp_date = data['exp_date'].value
@@ -93,33 +98,46 @@ class PaymentView(APIView):
             status=status.HTTP_400_BAD_REQUEST
         )
 
-    def get_guests(self, room):
-        return [
-            {
-                'first_name': guest.first_name,
-                'last_name': guest.last_name,
-                'email': guest.email,
-                'age': guest.age,
-                'phone_number': guest.phone_number,
-                'title': guest.get_title_display(),
-            } for guest in Guest.objects.filter(room=room)
-        ]
+    def get_guests(self, room, agent, payment):
+        guests = []
+        for guest in Guest.objects.filter(room=room):
+            guests.append(
+                {
+                    'first_name': guest.first_name,
+                    'last_name': guest.last_name,
+                    'email': guest.email,
+                    'age': guest.age,
+                    'phone_number': guest.phone_number,
+                    'title': guest.get_title_display(),
+                }
+            )
+            send_email.send(
+                [guest.email],
+                'Here is your Proposal',
+                'supplier_traveler_proposal.html',
+                {
+                    '{{proposal_link}}': f'https://dashapi.volindo.com/paymentBooking?payment_id={payment.id}',
+                    '{{agent_name}}': f'{agent.first_name} {agent.last_name}',
+                    '{{traveler_name}}': f'{guest.first_name} {guest.last_name}'
+                }
+            )
+        return guests
     
-    def get_rooms(self, hotel):
+    def get_rooms(self, hotel, agent, payment):
         return [
             {
                 'description': room.description,
-                'guests': self.get_guests(room)
+                'guests': self.get_guests(room, agent, payment)
             } for room in Room.objects.filter(hotel=hotel)
         ]
 
-    def get_hotels(self, payment):
+    def get_hotels(self, agent, payment):
         return [
             {
                 'hotel_name': hotel.hotel_name,
                 'check_in': hotel.check_in,
                 'check_out': hotel.check_out,
-                'rooms': self.get_rooms(hotel)
+                'rooms': self.get_rooms(hotel, agent, payment)
             } for hotel in Reservation.objects.filter(payment=payment)
         ]
 
@@ -141,13 +159,15 @@ class PaymentView(APIView):
             'amount': payment.amount,
             'commission': payment.commission,
             'total': payment.total,
-            'hotels': self.get_hotels(payment),
+            'hotels': self.get_hotels(agent, payment),
             'approved_at': payment.approved_at
         }
         return Response(data, status=status.HTTP_200_OK)
 
 
 class NewReservationPayment(APIView):
+
+    permission_classes = (AllowAny, )
 
     def create_user(self, data):
         user, created = User.objects.get_or_create(

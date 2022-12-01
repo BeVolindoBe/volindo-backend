@@ -28,6 +28,8 @@ services:
             - PAYMENT_URL=https://api.stripe.com/v1/charges
             - DEFAULT_CURRENCY=USD
             - PAYMENT_AUTH=sk_test_51M0AYpJLqNE3DWQ6UJQ7S4bxtmYKZJyRwokDelUSvRiws5ZUjmzFouo1llhQUqjO15pYB7nzbvdY10jMnzEzcbgK00oymrIfjl
+            - SENDGRID_API_KEY=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
+            - FROM_EMAIL=juanpablo@volindo.com
         ports:
             - '8000:8000'
         depends_on:
