@@ -21,6 +21,7 @@ class Catalogue(models.Model):
 
 class Item(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    parent = models.ForeignKey('self', null=True, default=None, on_delete=models.CASCADE)
     catalogue = models.ForeignKey(Catalogue, on_delete=models.CASCADE, related_name='items')
     slug = models.CharField(max_length=60, db_index=True, unique=True)
     description = models.CharField(max_length=100)

@@ -9,6 +9,9 @@ from agent.tests import get_token
 
 class TravelerTestCase(TestCase):
 
+    traveler_id = ''
+    token = get_token()
+
     client = Client()
     fixtures = [
         'catalogue/fixtures/catalogues.yaml',
@@ -20,7 +23,6 @@ class TravelerTestCase(TestCase):
     ]
 
     def test_create_traveler(self):
-        token = get_token()
         data = {
             'first_name': 'Eren',
             'last_name': 'Jaeger',
@@ -38,8 +40,18 @@ class TravelerTestCase(TestCase):
         }
         response = self.client.post(
             '/agent/travelers/',
-            HTTP_AUTHORIZATION=f'Bearer {token}',
+            HTTP_AUTHORIZATION=f'Bearer {self.token}',
             data=data,
+            content_type='application/json'
+        )
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.traveler_id = response.json()['id']
+    
+    def get_traveler_detail(self):
+        response = self.client.post(
+            '/agent/travelers/{}/'.format(self.traveler_id),
+            HTTP_AUTHORIZATION=f'Bearer {self.token}',
             content_type='application/json'
         )
         print(dumps(response.json(), indent=4))
