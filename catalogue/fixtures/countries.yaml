@@ -1,6 +1,6 @@
 - model: 'catalogue.Item'
   fields:
-    id: 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce'
+    id: '51dd4320-6958-46b2-8501-236027ca30cf'
     catalogue_id: 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce'
     slug: 'mexico'
     description: 'Mexico'

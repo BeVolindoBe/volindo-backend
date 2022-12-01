@@ -29,7 +29,7 @@ class Traveler(models.Model):
         Item,
         on_delete=models.CASCADE,
         related_name='traveler_status',
-        default='ff82a0d3-7d21-4f8f-af9b-c28f61562749'
+        default='ff82a0d3-7d21-4f8f-af9b-c28f61562749' # high potential
     )
     in_vacation = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)

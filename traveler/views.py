@@ -1,12 +1,12 @@
-from rest_framework.generics import RetrieveUpdateAPIView
-from rest_framework import status
-from rest_framework.response import Response
+from rest_framework.generics import ListCreateAPIView
 
 from traveler.serializers import TravelerSerializer
 from traveler.models import Traveler
 
 
-class TravelerDetail(RetrieveUpdateAPIView):
+class ListCreateTravelerApiView(ListCreateAPIView):
 
     serializer_class = TravelerSerializer
-    queryset = Traveler.objects.all()
+
+    def get_queryset(self):
+        return TravelerSerializer.objects.filter(agent__user=self.request.user)

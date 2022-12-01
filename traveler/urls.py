@@ -1,8 +1,8 @@
 from django.urls import path
 
-from traveler.views import TravelerDetail
+from traveler.views import ListCreateTravelerApiView
 
 
 urlpatterns = [
-    path('<str:pk>/', TravelerDetail.as_view())
+    path('', ListCreateTravelerApiView.as_view()),
 ]
