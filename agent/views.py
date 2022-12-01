@@ -1,15 +1,19 @@
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.views import APIView
+from django.shortcuts import get_object_or_404
+
+from rest_framework.generics import RetrieveUpdateAPIView
 
 from agent.serializers import AgentSerializer
 from agent.models import Agent
 
 
-class AgentDetail(APIView):
+class AgentDetail(RetrieveUpdateAPIView):
 
-    def get(self, request):
-        return Response(
-            AgentSerializer(Agent.objects.get(user=request.user)).data,
-            status=status.HTTP_200_OK
-        )
+    serializer_class = AgentSerializer
+
+    def get_queryset(self):
+        return Agent.objects.all()
+
+    def get_object(self):
+        queryset = self.get_queryset()
+        obj = get_object_or_404(queryset, user=self.request.user)
+        return obj

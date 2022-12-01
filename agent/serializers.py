@@ -22,6 +22,10 @@ class AgentSerializer(serializers.ModelSerializer):
             'agent_status',
             'agent_subscription',
         )
+        read_only_fields = (
+            'agent_status',
+            'agent_subscription'
+        )
 
     def to_representation(self, instance):
         data = super().to_representation(instance)

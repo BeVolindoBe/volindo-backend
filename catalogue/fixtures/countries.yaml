@@ -5,3 +5,11 @@
     slug: 'mexico'
     description: 'Mexico'
     metadata:
+
+- model: 'catalogue.Item'
+  fields:
+    id: '581ebb5b-1e88-4961-b1db-0ed256489849'
+    catalogue_id: 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce'
+    slug: 'united_states'
+    description: 'United States'
+    metadata:
