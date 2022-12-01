@@ -1,8 +1,9 @@
 FROM python:alpine3.15
 
 RUN apk update && apk add python3-dev \
-                        gcc \
-                        libc-dev
+                          gcc \
+                          libc-dev \
+                          libffi-dev
 
 WORKDIR /code
 COPY . /code/
