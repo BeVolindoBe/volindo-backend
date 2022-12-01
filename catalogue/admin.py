@@ -10,5 +10,5 @@ class ItemAdmin(admin.ModelAdmin):
     ]
 
 
-# admin.site.register(Catalogue)
-# admin.site.register(Item, ItemAdmin)
+admin.site.register(Catalogue)
+admin.site.register(Item)
