@@ -46,7 +46,7 @@ class AgentTestCase(TestCase):
     def test_update_agent_foreign_keys(self):
         token = get_token()
         data = {
-            'country': '581ebb5b-1e88-4961-b1db-0ed256489849',
+            'country': '53c470d2-71ad-11ed-8eed-6ef05e004391',
         }
         response = self.client.patch(
             '/agent/',

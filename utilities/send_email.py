@@ -26,7 +26,7 @@ def send(to_emails:list, subject:str, html_template:str, data:dict) -> bool:
     )
     try:
         sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
-        sg.send(message)
+        response = sg.send(message)
         return True
     except Exception as e:
         print(e)
