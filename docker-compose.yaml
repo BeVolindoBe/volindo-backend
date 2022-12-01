@@ -8,28 +8,8 @@ services:
         # command: 'gunicorn volindoapp.wsgi:application -b 0.0.0.0:8000 -w 6 -t 29 --log-level DEBUG'
         volumes:
             - .:/code
-        environment:
-            - DATABASE_NAME=vdb
-            - DATABASE_USER=postgres
-            - DATABASE_PASSWORD=postgres
-            - DATABASE_HOST=vdb
-            - DATABASE_PORT=5432
-            - CACHE_LOCATION=redis://vcache:6379/0
-            - CACHE_HOST=vcache
-            - CACHE_PORT=6379
-            - CACHE_DB=0
-            - DEBUG=True
-            - SECRET_KEY=vol-service-secret
-            - TIME_ZONE=America/Mexico_City
-            - ALLOWED_HOSTS=*
-            - HOST=http://localhost:8000
-            - CSRF_TRUSTED_ORIGINS=http://127.0.0.1,http://localhost
-            - PAYMENT_TOKEN=https://api.stripe.com/v1/tokens
-            - PAYMENT_URL=https://api.stripe.com/v1/charges
-            - DEFAULT_CURRENCY=USD
-            - PAYMENT_AUTH=sk_test_51M0AYpJLqNE3DWQ6UJQ7S4bxtmYKZJyRwokDelUSvRiws5ZUjmzFouo1llhQUqjO15pYB7nzbvdY10jMnzEzcbgK00oymrIfjl
-            - SENDGRID_API_KEY=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
-            - FROM_EMAIL=juanpablo@volindo.com
+          env_file:
+            - .env
         ports:
             - '8000:8000'
         depends_on:
@@ -41,25 +21,8 @@ services:
     #     command: 'celery -A volindoapp worker -l INFO'
     #     volumes:
     #         - ./src/:/code
-    #     environment:
-    #         - DATABASE_NAME=vdb
-    #         - DATABASE_USER=postgres
-    #         - DATABASE_PASSWORD=postgres
-    #         - DATABASE_HOST=vdb
-    #         - DATABASE_PORT=5432
-    #         - CACHE_LOCATION=redis://vcache:6379/0
-    #         - CACHE_HOST=vcache
-    #         - CACHE_PORT=6379
-    #         - CACHE_DB=0
-    #         - DEBUG=True
-    #         - SECRET_KEY=vol-service-secret
-    #         - TIME_ZONE=America/Mexico_City
-    #         - ALLOWED_HOSTS=*
-    #         - TMX_HOST=http://test.services.travelomatix.com/webservices/index.php/hotel_v3/service/Search
-    #         - TMTX_USERNAME=test273344
-    #         - TMTX_DOMAINKEY=TMX5262731660138834
-    #         - TMTX_SYSTEM=test
-    #         - TMTX_PASSWORD=test@273
+    #     env_file:
+    #        - .env
     #     depends_on:
     #         - vdb
     #         - vcache
