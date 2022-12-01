@@ -39,3 +39,9 @@
     id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
     slug: 'travaler_status'
     description: 'Traveler status'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: 'c807abfe-71ac-11ed-a1eb-0242ac120002'
+    slug: 'cities'
+    description: ' Cities'
