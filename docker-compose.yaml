@@ -8,8 +8,8 @@ services:
         # command: 'gunicorn volindoapp.wsgi:application -b 0.0.0.0:8000 -w 6 -t 29 --log-level DEBUG'
         volumes:
             - .:/code
-          env_file:
-            - .env
+        env_file:
+        - .env
         ports:
             - '8000:8000'
         depends_on:
