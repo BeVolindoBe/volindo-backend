@@ -6,4 +6,5 @@ from agent.views import AgentDetail
 urlpatterns = [
     path('', AgentDetail.as_view()),
     path('travelers/', include('traveler.urls')),
+    path('notifications/', include('notification.urls')),
 ]

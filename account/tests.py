@@ -69,7 +69,6 @@ class USerTestCase(TestCase):
         }
         response = self.client.post('/accounts/register/', data=data)
         # print(dumps(response.json(), indent=4))
-        print(response)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         data = {
             'username': 'user@example.com',

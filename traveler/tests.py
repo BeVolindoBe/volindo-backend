@@ -49,5 +49,5 @@ class TravelerTestCase(TestCase):
             '/agent/travelers/{}/'.format(traveler_id),
             HTTP_AUTHORIZATION=f'Bearer {token}'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
