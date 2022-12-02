@@ -44,12 +44,9 @@ class TravelerTestCase(TestCase):
         )
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        self.traveler_id = response.json()['id']
-    
-    def get_traveler_detail(self):
-        token = get_token()
+        traveler_id = response.json()['id']
         response = self.client.get(
-            '/agent/travelers/{}/'.format(self.traveler_id),
+            '/agent/travelers/{}/'.format(traveler_id),
             HTTP_AUTHORIZATION=f'Bearer {token}'
         )
         print(dumps(response.json(), indent=4))
