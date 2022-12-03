@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'payment',
     'traveler',
     'bank',
-    'notification'
+    'notification',
+    'search'
 ]
 
 MIDDLEWARE = [

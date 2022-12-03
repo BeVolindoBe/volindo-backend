@@ -20,6 +20,7 @@ urlpatterns = [
     path('accounts/', include('account.urls')),
     path('catalogues/', include('catalogue.urls')),
     path('agent/', include('agent.urls')),
+    path('search/', include('search.urls')),
     path('payments/', include('payment.urls')),
     path('bank-accounts/', include('bank.urls')),
 ]

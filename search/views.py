@@ -31,4 +31,4 @@ class ResultsHotel(APIView):
                 'message': 'No search results found.'
             }
             return Response(error, status=status.HTTP_404_NOT_FOUND)
-        return Response(data, status=status.HTTP_200_OK)
+        return Response(json.loads(data), status=status.HTTP_200_OK)
