@@ -20,6 +20,8 @@ class SearchHotel(APIView):
             'hotels': []
         }
         cache.set(results_id, json.dumps(data), 18000)
+        print(request.query_params)
+        search_hotels_tbo(results_id, request.query_params)
         return Response({'results_id': results_id}, status=status.HTTP_200_OK)
 
 
