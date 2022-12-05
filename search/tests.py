@@ -16,20 +16,37 @@ class SearchTestCase(TestCase):
         'catalogue/fixtures/agent_subscriptions.yaml'
     ]
 
-    query_params = '?destination=mx&check_in=2023-01-10&check_out=2023-01-14&nationality=MX&adults=2&children=1'
-
-    def test_notifications(self):
+    def test_search(self):
         token = get_token()
-        response = self.client.get(
-            f'/search/hotels/{self.query_params}',
-            HTTP_AUTHORIZATION=f'Bearer {token}'
-        )
-        # print(dumps(response.json(), indent=4))
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        results_id = response.json()['results_id']
-        response = self.client.get(
-            f'/search/hotels/results/{results_id}/',
-            HTTP_AUTHORIZATION=f'Bearer {token}'
+        data = {
+            "destination": "018f0c46-27fc-4dd0-9c4c-06d3e368e69d",
+            "check_in": "2022-12-12",
+            "check_out": "2022-12-12",
+            "rooms": [
+                {
+                    "number_of_adults": 2,
+                    "children": [
+                        {
+                        "age": 12
+                        }
+                    ]
+                }
+            ],
+            "currency": "USD",
+            "nationality": "MX"
+        }
+        response = self.client.post(
+            f'/search/hotels/',
+            HTTP_AUTHORIZATION=f'Bearer {token}',
+            data=data,
+            content_type='application/json'
         )
         print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # results_id = response.json()['results_id']
+        # response = self.client.get(
+        #     f'/search/hotels/results/{results_id}/',
+        #     HTTP_AUTHORIZATION=f'Bearer {token}'
+        # )
+        # print(dumps(response.json(), indent=4))
+        # self.assertEqual(response.status_code, status.HTTP_200_OK)

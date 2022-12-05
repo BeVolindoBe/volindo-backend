@@ -8,20 +8,29 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
+from drf_yasg.utils import swagger_auto_schema
+
 from external_api.tasks.search_hotels_tbo import search_hotels_tbo
+
+from search.serializers import SearchSerializer
 
 
 class SearchHotel(APIView):
-    def get(self, request):
-        results_id = str(uuid4())
-        data = {
-            'id': results_id,
-            'stauts': 'pending',
-            'hotels': []
-        }
-        cache.set(results_id, json.dumps(data), 18000)
-        print(request.query_params)
-        search_hotels_tbo(results_id, request.query_params)
+    @swagger_auto_schema(request_body=SearchSerializer)
+    def post(self, request):
+        data = SearchSerializer(data=request.data)
+        if data.is_valid(raise_exception=True):
+            return Response('OK', status=status.HTTP_200_OK)
+            print(data)
+            results_id = str(uuid4())
+            data = {
+                'id': results_id,
+                'stauts': 'pending',
+                'hotels': []
+            }
+            cache.set(results_id, json.dumps(data), 18000)
+            print(request.query_params)
+            search_hotels_tbo(results_id, request.query_params)
         return Response({'results_id': results_id}, status=status.HTTP_200_OK)
 
 
