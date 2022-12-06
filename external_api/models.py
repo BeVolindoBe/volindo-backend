@@ -10,8 +10,6 @@ class ExternalDestination(models.Model):
     provider = models.ForeignKey(Item, on_delete=models.CASCADE, related_name='provider')
     destination = models.ForeignKey(Item, on_delete=models.CASCADE, related_name='destinations')
     external_id = models.CharField(max_length=10)
-    updated_at = models.DateTimeField(auto_now=True)
-    created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = 'external_destinations'
