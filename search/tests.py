@@ -21,14 +21,12 @@ class SearchTestCase(TestCase):
         data = {
             "destination": "018f0c46-27fc-4dd0-9c4c-06d3e368e69d",
             "check_in": "2022-12-12",
-            "check_out": "2022-12-12",
+            "check_out": "2022-12-13",
             "rooms": [
                 {
                     "number_of_adults": 2,
-                    "children": [
-                        {
-                        "age": 12
-                        }
+                    "childrens_ages": [
+                        12
                     ]
                 }
             ],
@@ -41,7 +39,7 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         # results_id = response.json()['results_id']
         # response = self.client.get(

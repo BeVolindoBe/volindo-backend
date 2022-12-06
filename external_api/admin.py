@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from external_api.models import ExternalDestination
+
+
+admin.site.register(ExternalDestination)

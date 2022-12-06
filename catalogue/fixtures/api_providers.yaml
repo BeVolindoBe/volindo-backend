@@ -1,0 +1,15 @@
+- model: 'catalogue.Item'
+  fields:
+    id: '0006ea0f-724a-4fee-a12f-c6f93300f8b9'
+    catalogue_id: '91594db6-0e55-4b6d-babf-d617719a5972'
+    slug: 'rakuten'
+    description: 'Rakuten'
+    metadata:
+
+- model: 'catalogue.Item'
+  fields:
+    id: 'a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba'
+    catalogue_id: '91594db6-0e55-4b6d-babf-d617719a5972'
+    slug: 'tbo'
+    description: 'TBO'
+    metadata:

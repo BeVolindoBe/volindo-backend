@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'traveler',
     'bank',
     'notification',
-    'search'
+    'search',
+    'external_api'
 ]
 
 MIDDLEWARE = [

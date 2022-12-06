@@ -45,3 +45,9 @@
     id: 'c807abfe-71ac-11ed-a1eb-0242ac120002'
     slug: 'cities'
     description: ' Cities'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: '91594db6-0e55-4b6d-babf-d617719a5972'
+    slug: 'api_providers'
+    description: ' API Providers'

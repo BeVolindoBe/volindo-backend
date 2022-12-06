@@ -10,7 +10,7 @@ from rest_framework.response import Response
 
 from drf_yasg.utils import swagger_auto_schema
 
-from external_api.tasks.search_hotels_tbo import search_hotels_tbo
+from external_api.tasks.rakuten.search_hotels import search_rakuten
 
 from search.serializers import SearchSerializer
 
@@ -18,19 +18,16 @@ from search.serializers import SearchSerializer
 class SearchHotel(APIView):
     @swagger_auto_schema(request_body=SearchSerializer)
     def post(self, request):
-        data = SearchSerializer(data=request.data)
-        if data.is_valid(raise_exception=True):
-            return Response('OK', status=status.HTTP_200_OK)
-            print(data)
+        filters = SearchSerializer(data=request.data)
+        if filters.is_valid(raise_exception=True):
             results_id = str(uuid4())
-            data = {
+            results = {
                 'id': results_id,
                 'stauts': 'pending',
                 'hotels': []
             }
-            cache.set(results_id, json.dumps(data), 18000)
-            print(request.query_params)
-            search_hotels_tbo(results_id, request.query_params)
+            cache.set(results_id, json.dumps(results), 18000)
+            search_rakuten(results_id, filters.validated_data)
         return Response({'results_id': results_id}, status=status.HTTP_200_OK)
 
 

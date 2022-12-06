@@ -3,20 +3,11 @@ from datetime import datetime
 from rest_framework import serializers
 
 
-class ChildrenSerializer(serializers.Serializer):
-    age =  serializers.IntegerField()
-
-    def validate(self, attrs):
-        if attrs['age'] < 0:
-            raise serializers.ValidationError(
-                {"age": "Invalid guest age."}
-            )
-        return attrs
-
-
 class SearchRoomSerializer(serializers.Serializer):
     number_of_adults = serializers.IntegerField()
-    children = ChildrenSerializer(many=True)
+    childrens_ages = serializers.ListField(
+        child=serializers.IntegerField()
+    )
 
 
 class SearchSerializer(serializers.Serializer):
