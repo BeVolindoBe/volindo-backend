@@ -6,6 +6,8 @@ from rest_framework import status
 
 from agent.tests import get_token
 
+from hotel.models import HotelPicture, Hotel
+
 
 class SearchTestCase(TestCase):
 
@@ -13,7 +15,8 @@ class SearchTestCase(TestCase):
     fixtures = [
         'catalogue/fixtures/catalogues.yaml',
         'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml'
+        'catalogue/fixtures/agent_subscriptions.yaml',
+        'catalogue/fixtures/api_providers.yaml'
     ]
 
     def test_search(self):
@@ -22,4 +25,6 @@ class SearchTestCase(TestCase):
             f'/external-api/static/',
             HTTP_AUTHORIZATION=f'Bearer {token}',
         )
+        print(Hotel.objects.all().count())
+        print(HotelPicture.objects.all().count())
         self.assertEqual(response.status_code, status.HTTP_200_OK)
