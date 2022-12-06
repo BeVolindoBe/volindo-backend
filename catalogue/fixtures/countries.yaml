@@ -1,967 +1,1806 @@
-- model: ''catalogue.Item''
+- Model: catalogue.Item
   fields:
-    catalogue_id: 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce'
-    description: 'Albania'
-    id: '38121d4e-71ad-11ed-8eed-6ef05e004391'
-    slug: 'AL'
-    metadata:
-
-- model: 'catalogue.Item'
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Abkhazia, Georgia
+    id: 7c490476-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: XA
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Afghanistan
+    id: 7c76a5de-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AF
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Aland
+    id: 7ca4af4c-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AX
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Albania
+    id: 7cd3b0a8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AL
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Algeria
+    id: 7d026efc-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: DZ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: American Samoa
+    id: 7d308bb6-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AS
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Andorra
-    id: 384384ce-71ad-11ed-8eed-6ef05e004391
-    slug: 'AD'
-    metadata:
-
-- model: 'catalogue.Item'
+    id: 7d5fc552-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AD
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Antigua
-    id: 3872a380-71ad-11ed-8eed-6ef05e004391
+    description: Angola
+    id: 7d8e3b08-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AO
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Anguilla
+    id: 7dbcd562-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AI
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Antarctica
+    id: 7deaf708-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AQ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Antigua & Barbuda
+    id: 7e198b2c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: AG
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Argentina
-    id: 38a22934-71ad-11ed-8eed-6ef05e004391
+    id: 7e48fe34-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: AR
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Armenia
+    id: 7e777304-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AM
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Aruba
-    id: 38d1570e-71ad-11ed-8eed-6ef05e004391
+    id: 7ea636ee-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: AW
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Australia
-    id: 392deb54-71ad-11ed-8eed-6ef05e004391
+    id: 7f02ece0-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: AU
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Austria
-    id: 398aa7cc-71ad-11ed-8eed-6ef05e004391
+    id: 7f5db6ca-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: AT
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Azerbaijan
-    id: 39b9fc20-71ad-11ed-8eed-6ef05e004391
+    id: 7f8ce116-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: AZ
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Bahamas
-    id: 39e8cbfe-71ad-11ed-8eed-6ef05e004391
+    id: 7fbb565e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BS
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Bahrain
-    id: 3a182e76-71ad-11ed-8eed-6ef05e004391
+    id: 7fea5b8e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BH
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Bangladesh
+    id: 801874c4-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BD
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Barbados
-    id: 3a46daaa-71ad-11ed-8eed-6ef05e004391
+    id: 804744a2-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BB
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Belarus
-    id: 3a7593b8-71ad-11ed-8eed-6ef05e004391
+    id: 8075d024-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BY
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Belgium
-    id: 3abb227a-71ad-11ed-8eed-6ef05e004391
+    id: 80bad30e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Belize
+    id: 80ea7208-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BZ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Benin
+    id: 8118f510-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BJ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Bermuda
+    id: 8147f40a-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Bhutan
+    id: 81771bb8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BT
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Myanmar (Birmania)
+    id: 81a73a14-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MM
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Bolivia
-    id: 3aea31e6-71ad-11ed-8eed-6ef05e004391
+    id: 81d67202-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BO
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Bosnia Herzegovina
-    id: 3b193a36-71ad-11ed-8eed-6ef05e004391
+    description: Bonaire, Sint Eustatius and Saba
+    id: 82054a6e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BQ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Bosnia
+    id: 82341d44-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BA
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Botswana
-    id: 3b481f4a-71ad-11ed-8eed-6ef05e004391
+    id: 8263771a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BW
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Bouvet Island
+    id: 8293bbc8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BV
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Brazil
-    id: 3b901c8c-71ad-11ed-8eed-6ef05e004391
+    id: 82d852c4-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BR
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Brunei Darussalam
-    id: 3bbf7f86-71ad-11ed-8eed-6ef05e004391
+    description: British Indian Ocean Territory
+    id: 83072f0e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: IO
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: British Virgin Islands
+    id: 83362dfe-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: VG
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Brunei
+    id: 8364cd3a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BN
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Bulgaria
-    id: 3bee8b6e-71ad-11ed-8eed-6ef05e004391
+    id: 8394a4ba-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: BG
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Burkina Faso
+    id: 83c41cea-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BF
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Burundi
+    id: 83f337e6-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BI
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Cabo Verde
+    id: 842261ec-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CV
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Cambodia
-    id: 3c1e9d90-71ad-11ed-8eed-6ef05e004391
+    id: 84510722-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: KH
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Cameroon
-    id: 3c4dc6ba-71ad-11ed-8eed-6ef05e004391
+    id: 84803934-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CM
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Canada
-    id: 3ca92b68-71ad-11ed-8eed-6ef05e004391
+    id: 84dabe2c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CA
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Cayman Islands
+    id: 8509c6ea-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: KY
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Central African Republic
+    id: 85398420-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CF
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: 'Chad \/ Tchad '
+    id: 8568304a-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TD
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Chile
-    id: 3cd87b48-71ad-11ed-8eed-6ef05e004391
+    id: 85970532-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CL
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
-    catalogue_id: 'f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce'
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: China
-    id: '3d1d91a6-71ad-11ed-8eed-6ef05e004391'
+    id: 85dc2194-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CN
-
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Christmas Island
+    id: 860abae0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CX
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Cocos & Keeling Islands
+    id: 86394446-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CC
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Colombia
-    id: 3d4c9ac8-71ad-11ed-8eed-6ef05e004391
+    id: 86676772-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CO
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Comoros
+    id: 8695e926-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: KM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Congo (Republic of)
+    id: 86c4da24-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CG
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Cook Islands
-    id: 3d7c164a-71ad-11ed-8eed-6ef05e004391
+    id: 86f43ada-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CK
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Costa Rica
-    id: 3daad7f0-71ad-11ed-8eed-6ef05e004391
+    id: 8723338a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CR
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Crimea
+    id: 87519216-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: XC
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Croatia
-    id: 3deff6c8-71ad-11ed-8eed-6ef05e004391
+    id: 8795be96-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: HR
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Cuba
+    id: 87c2a294-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CU
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Curacao
+    id: 87f2a6ce-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CW
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Cyprus
-    id: 3e1e67f6-71ad-11ed-8eed-6ef05e004391
+    id: 8821733c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CY
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Czech Republic
-    id: 3e635dde-71ad-11ed-8eed-6ef05e004391
+    id: 8867a8b6-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CZ
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Democratic Republic Of The Congo
+    id: 8897654c-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CD
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Denmark
-    id: 3e926732-71ad-11ed-8eed-6ef05e004391
+    id: 88c9e5b2-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: DK
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Djibouti
+    id: 88f99b86-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: DJ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Dominica
+    id: 89290a56-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: DM
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Dominican Republic
-    id: 3ec10b64-71ad-11ed-8eed-6ef05e004391
+    id: 89574e84-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: DO
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Dutch Antilles
+    id: 89850770-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: AN
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: East Timor
+    id: 89b36de0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TL
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Ecuador
-    id: 3eefd598-71ad-11ed-8eed-6ef05e004391
+    id: 89e2adc6-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: EC
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Egypt
-    id: 3f1e1fde-71ad-11ed-8eed-6ef05e004391
+    id: 8a115202-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: EG
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: El Salvador
+    id: 8a3f3438-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SV
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Equatorial Guinea
+    id: 8a6df958-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GQ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Eritrea
+    id: 8a9c9b82-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: ER
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Estonia
-    id: 3f4d18b6-71ad-11ed-8eed-6ef05e004391
+    id: 8acabb66-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: EE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Ethiopia
-    id: 3f7b650e-71ad-11ed-8eed-6ef05e004391
+    id: 8af98acc-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: ET
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Falkland Islands
+    id: 8b2847b8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: FK
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Faroe Islands
+    id: 8b582b22-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: FO
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Fiji
-    id: 3fa9c46c-71ad-11ed-8eed-6ef05e004391
+    id: 8b87d8b8-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: FJ
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Finland
-    id: 3fd8ec42-71ad-11ed-8eed-6ef05e004391
+    id: 8bb6b2fa-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: FI
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: France
-    id: 404cc694-71ad-11ed-8eed-6ef05e004391
+    id: 8c419988-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: FR
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: French Guyana
+    id: 8c71d7ce-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GF
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: French Polynesia
-    id: 407f7fc6-71ad-11ed-8eed-6ef05e004391
+    id: 8c9fc90e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PF
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: French Southern And Antarctic Territories
+    id: 8ccd6bd4-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TF
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Gabon
+    id: 8cfb5df0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GA
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Gambia
+    id: 8d29f854-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Georgia
+    id: 8d5893d0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GE
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Germany
-    id: 40f3432a-71ad-11ed-8eed-6ef05e004391
+    id: 8de28374-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: DE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Ghana
+    id: 8e1194c0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GH
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Gibraltar
-    id: 4123a4b6-71ad-11ed-8eed-6ef05e004391
+    id: 8e409a18-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: GI
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Greece
-    id: 417eb996-71ad-11ed-8eed-6ef05e004391
+    id: 8e9b3e28-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: GR
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Greenland
+    id: 8ecb2a02-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GL
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Grenada
-    id: 41b0c01c-71ad-11ed-8eed-6ef05e004391
+    id: 8efcc828-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: GD
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Guadeloupe
-    id: 41dfb2d2-71ad-11ed-8eed-6ef05e004391
+    description: Guadalupe
+    id: 8f2ac21e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: GP
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Guam
-    id: 420ef1f0-71ad-11ed-8eed-6ef05e004391
+    id: 8f5a6de8-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: GU
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Guatemala
-    id: 423e61f6-71ad-11ed-8eed-6ef05e004391
+    id: 8f88c4a4-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: GT
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Guernsey
+    id: 8fb7af94-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GG
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Guinea
+    id: 8fe74e48-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GN
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Guinea-Bissau
+    id: 90150432-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GW
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Guyana
+    id: 90431dcc-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GY
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Haiti
+    id: 907349fc-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: HT
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Heard Island And Mcdonald Islands
+    id: 90a2cf6a-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: HM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Honduras
+    id: 90d28cb4-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: HN
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Hong Kong
-    id: 426d87ba-71ad-11ed-8eed-6ef05e004391
+    id: 910115ca-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: HK
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Hungary
-    id: 429d2196-71ad-11ed-8eed-6ef05e004391
+    id: 912fd748-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: HU
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Iceland
-    id: 42ccca90-71ad-11ed-8eed-6ef05e004391
+    id: 9160b714-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: IS
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: India
-    id: 43129f3e-71ad-11ed-8eed-6ef05e004391
+    id: 91a5c520-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: IN
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Indonesia
-    id: 43588bb6-71ad-11ed-8eed-6ef05e004391
+    id: 91eaef92-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: ID
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Ireland(Republic of)
-    id: 439e1a0a-71ad-11ed-8eed-6ef05e004391
+    description: Iran
+    id: 92193212-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: IR
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Iraq
+    id: 9247c398-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: IQ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Ireland
+    id: 928b363c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: IE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Isle Of Man
+    id: 92bb633e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: IM
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Israel
-    id: 43cd1562-71ad-11ed-8eed-6ef05e004391
+    id: 92ea9302-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: IL
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Italy
-    id: 44434c8c-71ad-11ed-8eed-6ef05e004391
+    id: 935d0d88-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: IT
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Cote d'Ivoire
+    id: 938b1386-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: CI
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Jamaica
-    id: 44728d3a-71ad-11ed-8eed-6ef05e004391
+    id: 93ba0178-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: JM
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Japan
-    id: 44b759ec-71ad-11ed-8eed-6ef05e004391
+    id: 93ff2582-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: JP
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Jersey
+    id: 942f1eb8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: JE
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Jordan
-    id: 44e6f5d0-71ad-11ed-8eed-6ef05e004391
+    id: 945e31c6-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: JO
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Kazakhstan
+    id: 948e3b46-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: KZ
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Kenya
-    id: 4516c4c2-71ad-11ed-8eed-6ef05e004391
+    id: 94bd4800-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: KE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Kiribati
+    id: 94ec7986-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: KI
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Kosovo
+    id: 951c1182-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: XK
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Kuwait
-    id: 4546b09c-71ad-11ed-8eed-6ef05e004391
+    id: 954cc8fe-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: KW
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Kyrgyzstan
+    id: 957acdee-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: KG
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Laos
-    id: 4574e444-71ad-11ed-8eed-6ef05e004391
+    id: 95a8ffa2-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LA
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Latvia
-    id: 45a40b52-71ad-11ed-8eed-6ef05e004391
+    id: 95d73a66-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LV
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Lebanon
-    id: 45d276a4-71ad-11ed-8eed-6ef05e004391
+    id: 9605f59a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LB
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Lesotho
+    id: 96359c64-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: LS
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Liberia
+    id: 966451d0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: LR
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Libya
-    id: 4600c0e0-71ad-11ed-8eed-6ef05e004391
+    id: 96927916-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LY
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Liechtenstein
-    id: 462f7836-71ad-11ed-8eed-6ef05e004391
+    id: 96c13030-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LI
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Lithuania
-    id: 465eb47a-71ad-11ed-8eed-6ef05e004391
+    id: 96efcce2-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LT
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Luxembourg
-    id: 468dcab2-71ad-11ed-8eed-6ef05e004391
+    description: Luxembourg (LUX)
+    id: 971e3172-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LU
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Macau
-    id: 46bce3ba-71ad-11ed-8eed-6ef05e004391
+    description: Macao
+    id: 974c4184-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MO
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Macedonia
+    id: 977b8912-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MK
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Madagascar
+    id: 97adfcb2-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MG
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Malawi
+    id: 97de0240-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MW
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Malaysia
-    id: 46ec3318-71ad-11ed-8eed-6ef05e004391
+    id: 980e5c38-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MY
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Maldives
+    id: 983c7ed8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MV
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Mali
+    id: 986b5e6a-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: ML
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Malta
-    id: 471bb02a-71ad-11ed-8eed-6ef05e004391
+    id: 9899859c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MT
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Marshall Islands
+    id: 98c762d2-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MH
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Martinique
+    id: 98f67ec8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MQ
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Mauritania
+    id: 99264c8e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MR
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Mauritius
-    id: 474a5812-71ad-11ed-8eed-6ef05e004391
+    id: 99548798-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MU
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Mayotte
+    id: 9982d13e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: YT
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Mexico
-    id: 47921c88-71ad-11ed-8eed-6ef05e004391
+    id: 99c71a88-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MX
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Micronesia
+    id: 99f61d7e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: FM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Minor Outlying Islands
+    id: 9a245dd8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: UM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Moldova
+    id: 9a52f3be-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MD
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Monaco
-    id: 47c23e9a-71ad-11ed-8eed-6ef05e004391
+    id: 9a80999a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MC
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Mongolia
-    id: 47f08246-71ad-11ed-8eed-6ef05e004391
+    id: 9ab0bb7a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MN
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Montserrat
+    id: 9ae0540c-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MS
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Montenegro
+    id: 9b0eea56-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: ME
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Morocco
-    id: 481f70b0-71ad-11ed-8eed-6ef05e004391
+    id: 9b3e285c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MA
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Myanmar
-    id: 484f5d98-71ad-11ed-8eed-6ef05e004391
+    description: Mozambique
+    id: 9b6ee7bc-75a1-11ed-b70a-6ef05e004391
     metadata: ''
-    slug: MM
-- model: 'catalogue.Item'
+    slug: MZ
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Namibia
-    id: 487ecb1e-71ad-11ed-8eed-6ef05e004391
+    id: 9b9dba38-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: NA
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Nauru
+    id: 9bcc6a72-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: NR
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Nepal
-    id: 48ae4dda-71ad-11ed-8eed-6ef05e004391
+    id: 9bfb4a36-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: NP
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Netherlands
-    id: 48f40c30-71ad-11ed-8eed-6ef05e004391
+    id: 9c40ebea-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: NL
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Netherlands Antilles
-    id: 49222ab6-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: AN
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: New Caledonia
-    id: 49513a22-71ad-11ed-8eed-6ef05e004391
+    id: 9c6fa5fc-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: NC
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: New Zealand
-    id: 4980bc34-71ad-11ed-8eed-6ef05e004391
+    id: 9c9f577a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: NZ
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Nicaragua
+    id: 9cccf360-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: NI
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Niger
+    id: 9cfb5d40-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: NE
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Nigeria
-    id: 49b03374-71ad-11ed-8eed-6ef05e004391
+    id: 9d297c52-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: NG
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Northern Mariana Isl
-    id: 49dee002-71ad-11ed-8eed-6ef05e004391
+    description: Niue
+    id: 9d56da8a-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: NU
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Norfolk Island
+    id: 9d853f10-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: NF
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Northern Mariana Islands
+    id: 9db3ea86-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: MP
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: North Korea
+    id: 9de111c8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: KP
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Norway
-    id: 4a23a764-71ad-11ed-8eed-6ef05e004391
+    id: 9e252dcc-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: 'NO'
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Oman
-    id: 4a52a028-71ad-11ed-8eed-6ef05e004391
+    id: 9e53cf1a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: OM
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Pakistan
+    id: 9e8311c6-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: PK
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Palau
-    id: 4a80e294-71ad-11ed-8eed-6ef05e004391
+    id: 9eb3e4b8-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PW
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Palestine
+    id: 9ee41714-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: PS
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Panama
-    id: 4aaee1c6-71ad-11ed-8eed-6ef05e004391
+    id: 9f12477e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PA
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Papua New Guinea
+    id: 9f410aa0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: PG
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Paraguay
-    id: 4add7da6-71ad-11ed-8eed-6ef05e004391
+    id: 9f6f3d8a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PY
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Peru
-    id: 4b0cad2e-71ad-11ed-8eed-6ef05e004391
+    id: 9f9e26ae-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Philippines
-    id: 4b3dbc52-71ad-11ed-8eed-6ef05e004391
+    id: 9fcd1e00-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PH
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Pitcairn Islands
+    id: 9ffb74da-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: PN
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Poland
-    id: 4b82946c-71ad-11ed-8eed-6ef05e004391
+    id: a0413114-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PL
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Portugal
-    id: 4bc7e292-71ad-11ed-8eed-6ef05e004391
+    id: a0879122-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PT
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Puerto Rico
-    id: 4bf6b39c-71ad-11ed-8eed-6ef05e004391
+    id: a0b5d096-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: PR
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Qatar
-    id: 4c256bb0-71ad-11ed-8eed-6ef05e004391
+    id: a0e3f17e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: QA
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Reunion
+    id: a1135220-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: RE
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Romania
-    id: 4c53c5d2-71ad-11ed-8eed-6ef05e004391
+    id: a1416a48-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: RO
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Russia
-    id: 4c991ca4-71ad-11ed-8eed-6ef05e004391
+    id: a187364a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: RU
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Samoa
-    id: 4d0dbda2-71ad-11ed-8eed-6ef05e004391
+    description: Rwanda
+    id: a1b6f038-75a1-11ed-b70a-6ef05e004391
     metadata: ''
-    slug: WS
-- model: 'catalogue.Item'
+    slug: RW
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: San Marino
-    id: 4d3bead8-71ad-11ed-8eed-6ef05e004391
+    description: St Helena
+    id: a1e4de08-75a1-11ed-b70a-6ef05e004391
     metadata: ''
-    slug: SM
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Saudi Arabia
-    id: 4d6a87da-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: SA
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Senegal
-    id: 4d992874-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: SN
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Serbia
-    id: 4dc7cc56-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: RS
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Seychelles
-    id: 4df655d0-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: SC
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Singapore
-    id: 4e25317a-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: SG
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Slovakia
-    id: 4e548b78-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: SK
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Slovenia
-    id: 4e8464d8-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: SI
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: South Africa
-    id: 4ecb9df8-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: ZA
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: South Korea
-    id: 4efb857c-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: KR
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Spain
-    id: 4f6eb150-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: ES
-- model: 'catalogue.Item'
-  fields:
-    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Sri Lanka
-    id: 4fa04e5e-71ad-11ed-8eed-6ef05e004391
-    metadata: ''
-    slug: LK
-- model: 'catalogue.Item'
+    slug: SH
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: St Kitts & Nevis
-    id: 4fcea61e-71ad-11ed-8eed-6ef05e004391
+    id: a21333e8-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: KN
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: St Lucia
-    id: 4ffd7534-71ad-11ed-8eed-6ef05e004391
+    id: a24085fa-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: LC
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: St Vincent & Grenadi
-    id: 502c5192-71ad-11ed-8eed-6ef05e004391
+    description: St Martin (FR)
+    id: a26ebc22-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MF
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: St Pierre et Miquelon
+    id: a29ce804-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: PM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Saint Vincent And The Grenadines
+    id: a2cada7a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: VC
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Samoa
+    id: a2f91944-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: WS
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: San Barthelemy
+    id: a3281e24-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BL
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: San Marino
+    id: a3566d10-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: São Tomé And Príncipe
+    id: a3850274-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: ST
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Saudi Arabia
+    id: a3b43468-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SA
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Senegal
+    id: a3e1bed8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SN
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Serbia
+    id: a410938e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: RS
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Seychelles
+    id: a43f82b6-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SC
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Sierra Leone
+    id: a46dd3c8-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SL
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Singapore
+    id: a49bb158-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SG
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Sint Maarten (NL)
+    id: a4c93dd0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SX
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Slovakia
+    id: a4f75544-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SK
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Slovenia
+    id: a525cb72-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SI
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Solomon Islands
+    id: a553cd10-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SB
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Somalia
+    id: a581d872-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SO
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: South Africa
+    id: a5c58b62-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: ZA
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: South Georgia And The South Sandwich Islands
+    id: a5f47814-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: GS
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: South Korea
+    id: a622dc40-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: KR
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: South Sudan
+    id: a650d44c-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SS
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Spain
+    id: a6c31aac-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: ES
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Sri Lanka
+    id: a6f3c1b6-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: LK
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Sudan
+    id: a722f904-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SD
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Suriname
+    id: a75150e2-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SR
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Svalbard
+    id: a78112d2-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SJ
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Swaziland
-    id: 50680052-71ad-11ed-8eed-6ef05e004391
+    id: a7b31c00-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: SZ
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Sweden
-    id: 50b2b17e-71ad-11ed-8eed-6ef05e004391
+    id: a7f75b68-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: SE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Switzerland
-    id: 50f9bb3c-71ad-11ed-8eed-6ef05e004391
+    id: a83bd11c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: CH
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Syria
+    id: a8688ad6-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: SY
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Tadzhikistan
+    id: a89651fa-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TJ
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Taiwan
-    id: 512eac8e-71ad-11ed-8eed-6ef05e004391
+    id: a8c43d5e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TW
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Tanzania
-    id: 515d067e-71ad-11ed-8eed-6ef05e004391
+    id: a8f1bc8e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TZ
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Thailand
-    id: 518bd5ee-71ad-11ed-8eed-6ef05e004391
+    id: a91f82ae-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TH
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Togo
+    id: a94d8500-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TG
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Tokelau Tokelau Islands
+    id: a97aba52-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TK
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Tonga
-    id: 51ba5bc6-71ad-11ed-8eed-6ef05e004391
+    id: a9a9301c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TO
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Trinidad & Tobago
-    id: 51e95408-71ad-11ed-8eed-6ef05e004391
+    id: a9d6ae48-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TT
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Tunisia
-    id: 52184d8a-71ad-11ed-8eed-6ef05e004391
+    id: aa055388-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TN
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Turkey
-    id: 5247ef2c-71ad-11ed-8eed-6ef05e004391
+    id: aa32ef32-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TR
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Turks & Caicos Islan
-    id: 5276da8a-71ad-11ed-8eed-6ef05e004391
+    description: Turkmenistan
+    id: aa623b0c-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TM
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Turks & Caicos Islands
+    id: aa90c27e-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: TC
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Tuvalu
+    id: aabf9a04-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: TV
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Uganda
+    id: aaed6dee-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: UG
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Ukraine
-    id: 52a74940-71ad-11ed-8eed-6ef05e004391
+    id: ab1c57a8-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: UA
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: United Arab Emirates
-    id: 52d63f34-71ad-11ed-8eed-6ef05e004391
+    id: ab4ad830-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: AE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: United Kingdom
-    id: 53338bf8-71ad-11ed-8eed-6ef05e004391
+    id: aba63f9a-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: GB
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: United States
-    id: 53c470d2-71ad-11ed-8eed-6ef05e004391
+    id: ac4857a8-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: US
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: United States Virgin Islands
+    id: ac76870e-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: VI
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Uruguay
-    id: 53f4b2c4-71ad-11ed-8eed-6ef05e004391
+    id: aca48208-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: UY
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Uzbekistan
+    id: acd1ecf2-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: UZ
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Vanuatu
-    id: 5422f8a0-71ad-11ed-8eed-6ef05e004391
+    id: ad002888-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: VU
-- model: 'catalogue.Item'
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Vatican City
+    id: ad2d9516-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: VA
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Venezuela
-    id: 54519822-71ad-11ed-8eed-6ef05e004391
+    id: ad5c54b4-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: VE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Vietnam
-    id: 54814248-71ad-11ed-8eed-6ef05e004391
+    id: ad8b7aaa-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: VN
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Virgin Islands (USA)
-    id: 54b0781a-71ad-11ed-8eed-6ef05e004391
+    description: Wallis & Futuna Islands
+    id: adb9e91c-75a1-11ed-b70a-6ef05e004391
     metadata: ''
-    slug: VI
-- model: 'catalogue.Item'
+    slug: WF
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
-    description: Yemen Republic
-    id: 54df48b6-71ad-11ed-8eed-6ef05e004391
+    description: Western Sahara
+    id: ade8d6a0-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: EH
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Yemen
+    id: ae18e8f4-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: YE
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Zambia
-    id: 550dbd18-71ad-11ed-8eed-6ef05e004391
+    id: ae4889ce-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: ZM
-- model: 'catalogue.Item'
+- Model: catalogue.Item
   fields:
     catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
     description: Zimbabwe
-    id: 553f2556-71ad-11ed-8eed-6ef05e004391
+    id: ae7714a6-75a1-11ed-b70a-6ef05e004391
     metadata: ''
     slug: ZW
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Default
+    id: aea52d32-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: DD
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Burma
+    id: aed7d5fc-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: BU
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Wake Island
+    id: af06a1ca-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: WK
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Johnston Island
+    id: af350060-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: JT
+- Model: catalogue.Item
+  fields:
+    catalogue_id: f1d1d7a8-bffe-4d2d-81d4-9d47a2b080ce
+    description: Midway Island
+    id: af62db16-75a1-11ed-b70a-6ef05e004391
+    metadata: ''
+    slug: MI

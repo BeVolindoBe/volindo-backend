@@ -1,8 +1,0 @@
-- model: "hotel.Hotel"
-  fields:
-    id: "38a11835-14f1-4a5c-9e46-77d1990db1d8"
-    destination: "4e815994-2cb5-41e2-89c7-621286297fcd"
-    hotel_name: "Xcell Hotel Hiroshima"
-    stars: 3
-    latitude: 34.391045
-    longitude: 132.46394
