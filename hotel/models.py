@@ -12,6 +12,7 @@ class Hotel(models.Model):
         on_delete=models.CASCADE,
         related_name='hotel_destination'
     )
+    external_id = models.CharField(max_length=100, db_index=True, null=True, default=None)
     hotel_name = models.CharField(max_length=200)
     stars = models.PositiveSmallIntegerField()
     latitude = models.DecimalField(max_digits=12, decimal_places=8)
