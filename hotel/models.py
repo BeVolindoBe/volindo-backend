@@ -10,10 +10,14 @@ class Hotel(models.Model):
     destination = models.ForeignKey(
         Item,
         on_delete=models.CASCADE,
-        related_name='hotel_destination'
+        related_name='hotel_destination',
+        null=True,
+        default=None
     )
     external_id = models.CharField(max_length=100, db_index=True, null=True, default=None)
     hotel_name = models.CharField(max_length=200)
+    country_code = models.CharField(max_length=2, null=True, default=None)
+    city = models.CharField(max_length=10, null=True, default=None)
     stars = models.PositiveSmallIntegerField()
     latitude = models.DecimalField(max_digits=12, decimal_places=8)
     longitude = models.DecimalField(max_digits=12, decimal_places=8)

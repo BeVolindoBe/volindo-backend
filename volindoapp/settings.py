@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'bank',
     'notification',
     'search',
-    'external_api'
+    'external_api',
+    'hotel'
 ]
 
 MIDDLEWARE = [

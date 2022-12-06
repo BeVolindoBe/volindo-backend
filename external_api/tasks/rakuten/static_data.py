@@ -6,7 +6,15 @@ from django.core.cache import cache
 
 from celery import shared_task
 
-from external_api.tasks.rakuten.common import HEADERS, STATIC_HOST
+from external_api.tasks.rakuten.common import HEADERS, STATIC_HOST, IMAGE_HOST
+
+
+def save_data(hotels):
+    image_url = url = IMAGE_HOST + '/{}/{}' # hotel id then image file name
+    hotels_id = []
+    for k, v in hotels.items():
+        print(k, v)
+        break
 
 
 def get_properties():
@@ -30,9 +38,10 @@ def get_details(properties_codes):
         headers=HEADERS,
         data=json.dumps(body)
     )
-    print(json.dumps(details.json(), indent=4))
+    return details.json()
 
 
 def rakuten_data():
     proprties = get_properties()
-    get_details(properties_codes=proprties)
+    hotels = get_details(properties_codes=proprties)
+    save_data(hotels=hotels)
