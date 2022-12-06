@@ -16,7 +16,10 @@ class HotelAdmin(admin.ModelAdmin):
 
     def render_change_form(self, request, context, *args, **kwargs):
         context['adminform'].form.fields['destination'].queryset = Item.objects.filter(
-            catalogue__slug='destinations'
+            catalogue__slug='cities'
+        )
+        context['adminform'].form.fields['provider'].queryset = Item.objects.filter(
+            catalogue__slug='api_providers'
         )
         return super(HotelAdmin, self).render_change_form(request, context, *args, **kwargs)
 

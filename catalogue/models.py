@@ -23,7 +23,7 @@ class Item(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     parent = models.ForeignKey('self', null=True, default=None, on_delete=models.CASCADE)
     catalogue = models.ForeignKey(Catalogue, on_delete=models.CASCADE, related_name='items')
-    slug = models.CharField(max_length=60, db_index=True, unique=True)
+    slug = models.CharField(max_length=60, db_index=True)
     description = models.CharField(max_length=100)
     metadata = models.JSONField(null=True)
 
@@ -35,4 +35,6 @@ class Item(models.Model):
         ordering = ['catalogue']
 
     def __str__(self):
-        return self.description
+        if self.parent is None:
+            return f'{self.description}'
+        return f'{self.description} - {self.parent.description}'

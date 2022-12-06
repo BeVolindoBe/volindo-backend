@@ -1,4 +1,4 @@
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Abtal El Tahrir Street,Aswan 81511, Assuan, Aswan, 81511, Egypt
     city: Aswan
@@ -38,7 +38,7 @@
     longitude: 32.88985
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lagoon Dahab, Sharm El SheikhDahabSouth Sinai, St. Catherine, 46617,
       Egypt
@@ -75,7 +75,7 @@
     longitude: 34.50076
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 17 Village Road,Hurghada,Red Sea, HurghadaRed Sea, Hurghada, 84511, Egypt
     city: Hurghada
@@ -124,7 +124,7 @@
     longitude: 33.8291
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Square Aqua Fun - Hurghada Sheraton Rd., Aqua Fun SquareHurghadaRed Sea,
       Hurghada, 99999, Egypt
@@ -162,7 +162,7 @@
     longitude: 33.840666
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Corniche Road,Hurghada, Hurghada, Hurghada, 99999, Egypt
     city: Hurghada
@@ -209,7 +209,7 @@
     longitude: 33.846044
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Corniche Road,Hurghada,Red Sea, HurghadaRed Sea, Hurghada, 84511,
       Egypt
@@ -256,7 +256,7 @@
     longitude: 33.845555
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: EL CORNICHE ROAD, Hurghada, Hurghada, 11511, Egypt
     city: Hurghada
@@ -290,7 +290,7 @@
     longitude: 33.83677
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Km 19 Village Road,P.O. Box 20,Hurghada,Red Sea, P.O. Box 20HurghadaRed
       Sea, Hurghada, 0, Egypt
@@ -331,7 +331,7 @@
     longitude: 33.826668
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Safaga Road km 18,P.O. Box 13,Hurghada,Red Sea, HurghadaRed Sea, Hurghada,
       99999, Egypt
@@ -369,7 +369,7 @@
     longitude: 33.868149
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Elkornish Road,Hurghada, Hurghada, Hurghada, 000, Egypt
     city: Hurghada
@@ -391,7 +391,7 @@
     longitude: 33.819088
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Kafr Downtown, Downtown, El Gouna, 84513, Egypt
     city: El Gouna
@@ -426,7 +426,7 @@
     longitude: 33.67711
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: SHERATON ROAD, HurghadaRed Sea, Hurghada, ., Egypt
     city: Hurghada
@@ -441,7 +441,7 @@
     longitude: 33.823
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: SHERATON ROAD, Hurghada, Hurghada, 84511, Egypt
     city: Hurghada
@@ -456,7 +456,7 @@
     longitude: 33.84282
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Youssef Afifi Road, Red Sea, Hurghada, 111, Egypt
     city: Hurghada
@@ -500,7 +500,7 @@
     longitude: 33.82611
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 139 Sheraton Road,Hurghada 11511,Red Sea, Hurghada 11511Red Sea, Hurghada,
       11511, Egypt
@@ -534,7 +534,7 @@
     longitude: 33.838436
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Gabal el Hareem Street,P.O. Box 274,Hurghada,Red Sea, P.O. Box 274HurghadaRed
       Sea, Hurghada, 84512, Egypt
@@ -578,7 +578,7 @@
     longitude: 33.8302
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corniche Road Sheraton Street Red Sea 0, Corniche RoadHurghada, Hurghada,
       POBOX1, Egypt
@@ -624,7 +624,7 @@
     longitude: 33.845461
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Safaga Road,Touristic Pedestrian the Mamsha,Hurghada  Bay,Hurghada,Red
       Sea End of Touristic Promenade, Touristic Pedestrian the MamshaHurghada  BayHurghada,
@@ -667,7 +667,7 @@
     longitude: 33.825636
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Corniche Road,P.O. Box 38,12654 Hurghada, P.O. Box 3812654 Hurghada,
       Hurghada, 12654, Egypt
@@ -708,7 +708,7 @@
     longitude: 33.843953
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Fareek Youssef Affifi Street,Village Road,PO Box 36,Hurghada,Red Sea,
       PO Box 36HurghadaRed Sea, Hurghada, 84511, Egypt
@@ -754,7 +754,7 @@
     longitude: 33.824636
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 17 KM from Hurghada Downtown, HurghadaRed Sea, Hurghada, 84511, Egypt
     city: Hurghada
@@ -773,7 +773,7 @@
     longitude: 33.828526
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Hadaba Road,P.O. Box 170,Hurghada,Red Sea, P.O. Box 170HurghadaRed
       Sea, Hurghada, 170, Egypt
@@ -819,7 +819,7 @@
     longitude: 33.83991
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Touristic Road,Hurghada,Red Sea, HurghadaRed Sea, Hurghada, 11241, Egypt
     city: Hurghada
@@ -855,7 +855,7 @@
     longitude: 33.83497
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sheraton Road,Sakala,Hurghada,Red Sea Tourist Road, Al Mamsha, SakalaHurghadaRed
       Sea, Hurghada, 45811, Egypt
@@ -893,7 +893,7 @@
     longitude: 33.835724
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: South Sahl Hashish Road,P.O.Box 263,Hurghada,Red Sea, HurghadaRed Sea,
       Hurghada, 263, Egypt
@@ -934,7 +934,7 @@
     longitude: 33.84659
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Corniche Road,P.O.Box 427,Dahar,Hurghada,Red Sea, P.O.Box 427DaharHurghada,
       Hurghada, 84511, Egypt
@@ -974,7 +974,7 @@
     longitude: 33.841966
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: PO Box 72,El Gouna 84511,Red Sea, El GounaRed Sea, El Gouna, 84511, Egypt
     city: El Gouna
@@ -1011,7 +1011,7 @@
     longitude: 33.68571
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 Reemyvera, Avenue Safaga Road,, HURGHADA, Hurghada, , Egypt
     city: Hurghada
@@ -1050,7 +1050,7 @@
     longitude: 33.846253752708
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sheraton Road 76,84511 Hurghada, 84511 Hurghada, Hurghada, 84511, Egypt
     city: Hurghada
@@ -1082,7 +1082,7 @@
     longitude: 33.8507
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corniche Street, HurghadaRead Sea, Hurghada, N/A, Egypt
     city: Hurghada
@@ -1117,7 +1117,7 @@
     longitude: 33.82072
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 'El Bahr Street, El CornicheP.O. Box: 123Hurghada, Hurghada, , Egypt'
     city: Hurghada
@@ -1149,7 +1149,7 @@
     longitude: 33.812653
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Hurghada-Safaga Road,PO Box 71,Soma Bay,Hurghada,Red Sea, Soma BayQesm
       SafagaRed Sea, Soma Bay, 00000, Egypt
@@ -1190,7 +1190,7 @@
     longitude: 33.997352
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Hurghada, P.O. Box 42Red Sea, Hurghada, , Egypt
     city: Hurghada
@@ -1240,7 +1240,7 @@
     longitude: 33.824847
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Safaga Road Km 12,Hurghada, Hurghada, Hurghada, 0, Egypt
     city: Hurghada
@@ -1284,7 +1284,7 @@
     longitude: 33.82835
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Club Paradisio El Gouna,El Gouna 84513,Red Sea, El Gouna 84513Red Sea,
       El Gouna, 84513, Egypt
@@ -1321,7 +1321,7 @@
     longitude: 33.682802
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Marsa Alam Road,20 Km south of El Quseir,Marsa Alam,Quseir 84733,South
       Red Sea, 20 Km south of El QuseirMarsa AlamQuseir 84733, El Qoseir, 84733, Egypt
@@ -1368,7 +1368,7 @@
     longitude: 34.38742
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 3 El Thawra Council Saint Zamalek,PO Box 732,El Orman Giza,Cairo 11518
       Po Box 732 El Orman Giza, Po Box 732 El Orman Giza11518 Cairo, Cairo, 11518,
@@ -1411,7 +1411,7 @@
     longitude: 31.224335
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2 El Gezira El Wosta Street,Zamalek,11211 Cairo, Zamalek11211 Cairo,
       Cairo, 11211, Egypt
@@ -1451,7 +1451,7 @@
     longitude: 31.21619
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 53 Studio Misr Road,Mariottia Pyramids,Giza,Cairo, Mariottia PyramidsGizaCairo,
       Giza, MariottiaGîza, Egypt
@@ -1490,7 +1490,7 @@
     longitude: 31.150733
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corniche El Nil, Garden City, Garden CityCairo, Cairo, NA, Egypt
     city: Cairo
@@ -1509,7 +1509,7 @@
     longitude: 31.231745
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 20 Abdel Rehim Sabry St Dokki, El DokkiGizaCairo, Giza, 12411, Egypt
     city: Giza
@@ -1544,7 +1544,7 @@
     longitude: 31.214551
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 51 El Orouba Street,Heliopolis,Cairo, HeliopolisCairo, Cairo, 11361,
       Egypt
@@ -1583,7 +1583,7 @@
     longitude: 31.336052
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 6 Pyramids Road,Cairo 12556,Giza, Cairo 12556Giza, Cairo, 12556, Egypt
     city: Cairo
@@ -1625,7 +1625,7 @@
     longitude: 31.133252
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Cairo International Airport Road,Kairo 11361,Heliopolis, Kairo 11361Heliopolis,
       Cairo, 11361, Egypt
@@ -1672,7 +1672,7 @@
     longitude: 31.400874
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Alexandria Road, Pyramids Giza, Giza, 83110, Egypt
     city: Giza
@@ -1709,7 +1709,7 @@
     longitude: 31.12549
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Alexandria Desert Road,PO Box 44,Pyramids,12556 Cairo, PO Box 44Pyramids12556
       Cairo, Cairo, 12556, Egypt
@@ -1752,7 +1752,7 @@
     longitude: 31.1021
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 22 Taha Hussein Str Zamalek District, Zamalek District, Cairo, 11000,
       Egypt
@@ -1785,7 +1785,7 @@
     longitude: 31.219678
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Missaha Square,Dokki,Giza Dokki Giza, P.O. Box 138 OrmanDokki GizaCairo,
       Giza, 12611, Egypt
@@ -1825,7 +1825,7 @@
     longitude: 31.211842
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 21 Mohamed Mazhar Street,Cairo 11511, Zamalek 11211Cairo, Cairo, 11511,
       Egypt
@@ -1864,7 +1864,7 @@
     longitude: 31.222135
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corniche El Nil,PO Box 60,11511 Cairo, P.O. Box 6011511 Cairo, Cairo,
       11511, Egypt
@@ -1903,7 +1903,7 @@
     longitude: 31.231614
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Galaa Square Dokki, P. O. Box 11Cairo 11511, Cairo, 11511, Egypt
     city: Cairo
@@ -1946,7 +1946,7 @@
     longitude: 31.21963
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 Alexandria Desert Road,P.O. Box 16,Pyramids,Giza 12556, P.O. Box 16PyramidsGiza
       12556, Giza, 12556, Egypt
@@ -1984,7 +1984,7 @@
     longitude: 31.12825
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: EL GOMHORIA STREET, 66, CAIRO, Cairo, 11865, Egypt
     city: Cairo
@@ -2007,7 +2007,7 @@
     longitude: 31.246
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Cornich El Nile Street,Luxor 16, Luxor 16, Luxor, 16, Egypt
     city: Luxor
@@ -2045,7 +2045,7 @@
     longitude: 32.642
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Awameya Road,Kings Island,Luxor, Luxor, Luxor, 1111, Egypt
     city: Luxor
@@ -2084,7 +2084,7 @@
     longitude: 32.62
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Youssef Hassan Street,Luxor, Luxor, Luxor, 99999, Egypt
     city: Luxor
@@ -2121,7 +2121,7 @@
     longitude: 32.64318
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Khaled Ebn El Waleed Street,P.O.Box 28,Luxor, P.O.Box 28Luxor, Luxor,
       28, Egypt
@@ -2168,7 +2168,7 @@
     longitude: 32.63512
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corniche El Nile Street,Luxor, Luxor, Luxor, ., Egypt
     city: Luxor
@@ -2208,7 +2208,7 @@
     longitude: 32.6318
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Newabaa Street,South Sinai,Nuweiba 46625, South SinaiNuweiba 46625, Nuweiba,
       46625, Egypt
@@ -2243,7 +2243,7 @@
     longitude: 34.6762
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rua Guararapes, 1889 - Brooklin Novo, Brooklin NovoSão PauloSão Paulo
       04561-004, Sao Paulo, 04561-004, Brazil
@@ -2281,7 +2281,7 @@
     longitude: -46.69333
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 170 Gordon Street, Port MacquarieNew South Wales 2444, Port Macquarie,
       2444, Australia
@@ -2314,7 +2314,7 @@
     longitude: 152.898699
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 3 Penghana Road, QueenstownTasmania 7467, Queenstown, 7467, Australia
     city: Queenstown
@@ -2352,7 +2352,7 @@
     longitude: 145.55742
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 31 Bolsover St, Rockhampton 4700Queensland, Rockhampton, 4700, Australia
     city: Rockhampton
@@ -2389,7 +2389,7 @@
     longitude: 150.50706
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 353 Yaamba Road North, Park AvenueRockhamptonQueensland 4701, Park Avenue,
       4701, Australia
@@ -2425,7 +2425,7 @@
     longitude: 150.522984
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 16 Franklin Street,Swansea,Tasmania 7190, SwanseaTasmania 7190, Swansea,
       7190, Australia
@@ -2460,7 +2460,7 @@
     longitude: 148.076436
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 939 Melba Highway,Yarra Glen,Victoria 3775, Yarra GlenVictoria 3775,
       Yarra Glen, 3775, Australia
@@ -2492,7 +2492,7 @@
     longitude: 145.37744
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1-3 Chemin de l'Armée d'Afrique, 13005 Marseille, Marseille, 13005, France
     city: Marseille
@@ -2526,7 +2526,7 @@
     longitude: 5.404185
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 12 Boulevard Salvator,13006 Marseille, 13006 Marseille, Marseille, 13006,
       France
@@ -2545,7 +2545,7 @@
     longitude: 5.381733
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 22 Rue Mazenod, 13002 Marseille, Marseille, 13002, France
     city: Marseille
@@ -2583,7 +2583,7 @@
     longitude: 5.365771
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Roma 66,96100 Ortigia Siracusa, 96100 Ortigia Siracusa, Syracuse,
       96100, Italy
@@ -2618,7 +2618,7 @@
     longitude: 15.29453
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale L.Sciascia,Villaggio Mosè,92100 Agrigento,Sicilia, Villaggio Mosè92100
       AgrigentoSicilia, Agrigent, 92100, Italy
@@ -2653,7 +2653,7 @@
     longitude: 13.616374
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: VIA ORSA MAGGIORE - CONTRADA LIDO ROSSELLO, VIA ORSA MAGGIORE - CONTRADA
       LIDO ROSSELLO, Sicily, 92010, Italy
@@ -2669,7 +2669,7 @@
     longitude: 13.454724
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via G. Franza,98055 Lipari,Isole Eolie,Messina, 98055 LipariIsole EolieMessina,
       Lipari, 98055, Italy
@@ -2703,7 +2703,7 @@
     longitude: 14.955276
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Serra Luigi 7, 40129 Bologna, Bologna, 40129, Italy
     city: Bologna
@@ -2740,7 +2740,7 @@
     longitude: 11.345628
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Piazza Lorenzo Mascheroni 9,24129 Bergamo,Citta Alta, 24129 BergamoCitta
       Alta, Bergamo, 24129, Italy
@@ -2778,7 +2778,7 @@
     longitude: 9.660287
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Pasini 18,43125 Parma, 43125 Parma, Parma, 43125, Italy
     city: Parma
@@ -2812,7 +2812,7 @@
     longitude: 10.314534
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Largo di Porta Altinia 15,31100 Treviso, 31100 Treviso, Treviso, 31100,
       Italy
@@ -2851,7 +2851,7 @@
     longitude: 12.246767
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Andromeda 5,34073 Grado, 34073 Grado, Grado, 34073, Italy
     city: Grado
@@ -2890,7 +2890,7 @@
     longitude: 13.428313
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Coburger Straße 501, 98673 EisfeldThüringen, Eisfeld, 98673, Germany
     city: Eisfeld
@@ -2925,7 +2925,7 @@
     longitude: 10.923111
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2 Allée Bienvenue,93885 Noisy-le-Grand, 93885 Noisy-le-Grand, Noisy le
       Grand, 93885, France
@@ -2966,7 +2966,7 @@
     longitude: 2.541778
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 25, Boulevard Marsan de Montbrun, 33780 Soulac-sur-Mer, Soulac-sur-Mer,
       33780, France
@@ -2998,7 +2998,7 @@
     longitude: -1.123443
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2 Boulevard De La Douane 11560 Fleury France, 2 Boulevard De La Douane
       11560 Fleury France, Narbonne, 11560, France
@@ -3029,7 +3029,7 @@
     longitude: 3.1875622
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Obere Kaiserstrasse 97, 66386 Sankt Ingbert, Sankt Ingbert, 66386, Germany
     city: Sankt Ingbert
@@ -3053,7 +3053,7 @@
     longitude: 7.1594
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 31 avenue du Prado,Marseille,Paca 13006, MarseillePaca 13006, Marseille,
       13006, France
@@ -3083,7 +3083,7 @@
     longitude: 5.385275
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 4 Rue Coutellerie,13002 Marseille, 13002 Marseille, Marseille, 13002,
       France
@@ -3124,7 +3124,7 @@
     longitude: 5.373133
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 40
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 45 Route De La Treille, 13011 Marseille, Marseille, 13011, France
     city: Marseille
@@ -3157,7 +3157,7 @@
     longitude: 5.506226
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 22 camille flammarion - 3eme Etage batiment A, 13001 Marseille, Marseille,
       13001, France
@@ -3184,7 +3184,7 @@
     longitude: 5.38791
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 64 Avenue dHaifa, 13008 Marseille, Marseille, 13008, France
     city: Marseille
@@ -3236,7 +3236,7 @@
     longitude: 5.390843
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 7 Rue Des Bergers, 13006 Marseilles, Marseille, 13006, France
     city: Marseille
@@ -3275,7 +3275,7 @@
     longitude: 5.383762
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kirkos Subcity Kebele 01/19, Bole District, Addis Ababa, 10000, Ethiopia
     city: Addis Ababa
@@ -3306,7 +3306,7 @@
     longitude: 38.77286
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Africa Avenue, Airport Road Bole, Bole, Addis Ababa, 7110, Ethiopia
     city: Addis Ababa
@@ -3339,7 +3339,7 @@
     longitude: 38.78181
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Belay Zeleke Road, Arada Sub CityAddis Abeba, Addis Ababa, 22473, Ethiopia
     city: Addis Ababa
@@ -3368,7 +3368,7 @@
     longitude: 38.75066
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Bole Medhanialem Behind Edna Mall Cameroon Street, Cameroon Street, Addis
       Ababa, 15974, Ethiopia
@@ -3403,7 +3403,7 @@
     longitude: 38.787698
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Marshal Tito Road,Cazanchise,P.O. Box 110778,Addis Abeba, CazanchiseP.O.
       Box 110778Addis Abeba, Addis Abeba, 110778, Ethiopia
@@ -3441,7 +3441,7 @@
     longitude: 38.768262
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 29 Burns Avenue, San Ignacio, San Ignacio, 00011, Belize
     city: San Ignacio
@@ -3471,7 +3471,7 @@
     longitude: -89.070271
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Calle Litoral, Santa ElenaFlores 01010, Santa Elena, 01010, Guatemala
     city: Santa Elena
@@ -3508,7 +3508,7 @@
     longitude: -89.89353
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Km 468 carretera de Rio Dulce a Flores, Rio Dulce aFlores 17029, Santa
       Elena, 17029, Guatemala
@@ -3537,7 +3537,7 @@
     longitude: -89.815507
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Route des Tamaris,Plage de Pampelonne,83350 Ramatuelle,Saint-Tropez,France,
       Plage de Pampelonne83350 RamatuelleSaint-Tropez, Ramatuelle, 83350, France
@@ -3596,7 +3596,7 @@
     longitude: 6.660204
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 14 Rue Rivault,71400 Autun, 71400 Autun, Autun, 71400, France
     city: Autun
@@ -3632,7 +3632,7 @@
     longitude: 4.29844
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 128 Avenue Du General Leclerc, 10300 Sainte-Savine, Sainte-Savine, 10300,
       France
@@ -3668,7 +3668,7 @@
     longitude: 4.02964
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2 Rue Du General De Gaulle, 10200 Bar-sur-Aube, Bar-sur-Aube, 10200,
       France
@@ -3701,7 +3701,7 @@
     longitude: 4.705236
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: RD55, Marina Viva20166 Porticcio, Grosseto-Prugna, 20166, France
     city: Grosseto-Prugna
@@ -3730,7 +3730,7 @@
     longitude: 8.8064
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Carrer Pompeu Fabra, s/n, Empuriabrava, Girona, Castello dEmpuries, 17487,
       Spain
@@ -3766,7 +3766,7 @@
     longitude: 3.123598
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: C/ de la Gola, 38, LEstartit, Torroella de Montgri, 17258, Spain
     city: Torroella de Montgri
@@ -3807,7 +3807,7 @@
     longitude: 3.192694
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Guinea Conakry Street 10,Kazanchis Area,Kirkos District,Addis Abeba P.O.Box
       5907, Kirkos districtKazanchis areaAddis Abeba, Addis Abeba, 80400, Ethiopia
@@ -3851,7 +3851,7 @@
     longitude: 38.770043
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kebele 16-18 CMC Road Yeka, Yeka, Addis Ababa, 7322, Ethiopia
     city: Addis Ababa
@@ -3881,7 +3881,7 @@
     longitude: 38.818507
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Yeka, CMC Area, Yeka S. CityKebele 15/16/17Gurd Sholla, Addis Ababa,
       1110, Ethiopia
@@ -3918,7 +3918,7 @@
     longitude: 38.824712
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Gseng 33, 5442 Rußbach, Russbach am Pass Gschuett, 5442, Austria
     city: Russbach am Pass Gschuett
@@ -3948,7 +3948,7 @@
     longitude: 13.450184
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 4521404, 5442 Russbach, Russbach am Pass Gschuett, 5442, Austria
     city: Russbach am Pass Gschuett
@@ -3991,7 +3991,7 @@
     longitude: 13.468002
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tannberg 62,6764 Lech,Arlberg, 6764 LechArlberg, Lech, 6764, Austria
     city: Lech
@@ -4029,7 +4029,7 @@
     longitude: 10.139018
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Omesberg 5,6764 Lech am Arlberg,Vorarlberg, 6764 Lech am ArlbergVorarlberg,
       Lech, 6764, Austria
@@ -4065,7 +4065,7 @@
     longitude: 10.138208
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenue du stade,73700 Bourg Saint Maurice, 73700 Bourg Saint Maurice,
       Bourg St. Maurice, 73700, France
@@ -4106,7 +4106,7 @@
     longitude: 6.774766
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Altitude,ZAC Arcs 2000,Drosset,73700 BOURG SAINT MAURICE, ZAC Arcs 2000
       - Drosset73700 BOURG SAINT MAURICE, Bourg St. Maurice, 73700, France
@@ -4144,7 +4144,7 @@
     longitude: 6.833976
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 15 Hastings Street, Noosa Heads, Noosa Heads, 4567, Australia
     city: Noosa Heads
@@ -4180,7 +4180,7 @@
     longitude: 153.08824
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Carrer de la Provença 5,17230 Palamós,Gerona, 17230 PalamosGirona, Palamos,
       17230, Spain
@@ -4212,7 +4212,7 @@
     longitude: 3.12204
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Paseo Maritimo 92-94,08870 Sitges,Barcelona, 08870 SitgesBarcelona, Sitges,
       08870, Spain
@@ -4251,7 +4251,7 @@
     longitude: 1.784607
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Platja de Tamarit. Carretera N-340A., Km 1.172, Tarragona, 43008, Spain
     city: Tarragona
@@ -4286,7 +4286,7 @@
     longitude: 1.358243
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 1
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Paseo Pau Casals 108,43841 La Pineda, 43841 La Pineda, La Pineda de Salou,
       43841, Spain
@@ -4323,7 +4323,7 @@
     longitude: 1.184161
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Alfonso V 7,43840 Salou,Tarragona, 43840 SalouTarragona, Salou, 43840,
       Spain
@@ -4362,7 +4362,7 @@
     longitude: 1.1464593
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rambla Del Parc s/n,43840 Salou,Tarragona, 43840 SalouTarragona, Salou,
       43840, Spain
@@ -4404,7 +4404,7 @@
     longitude: 1.14648
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2 Noosa Drive,4567 Noosa Heads,Queensland, 4567 Noosa HeadsQueensland,
       Noosa Heads, 4567, Australia
@@ -4438,7 +4438,7 @@
     longitude: 153.089622
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 41 Hastings Street,Shop 5,Noosa Heads,Qld 4567, Shop 5Noosa HeadsQld
       4567, Noosa Heads, 4567, Australia
@@ -4471,7 +4471,7 @@
     longitude: 153.089987
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 42 Hastings Street,Noosa Heads 4567,Queensland, Noosa Heads 4567Queensland,
       Noosa Heads, 4567, Australia
@@ -4511,7 +4511,7 @@
     longitude: 153.090849
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 44 Noosa Drive, Noosa HeadsQueensland 4567, Noosa Heads, 4567, Australia
     city: Noosa Heads
@@ -4542,7 +4542,7 @@
     longitude: 153.089753
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 71 Noosa Drive, Noosa HeadsQueensland 4567, Noosa Heads, 4567, Australia
     city: Noosa Heads
@@ -4581,7 +4581,7 @@
     longitude: 153.090046
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Links Drive,P.O. Box 54,Noosa Heads,Queensland 4567, P.O. Box 54Noosa
       HeadsQueensland 4567, Noosa Heads, 4567, Australia
@@ -4625,7 +4625,7 @@
     longitude: 153.086381
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Bedarra Island, Queensland, Bedarra Island, , Australia
     city: Bedarra Island
@@ -4652,7 +4652,7 @@
     longitude: 146.15068
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: '#18 Buena Vista Street, Cayo DistrictSan Ignacio, San Ignacio, 501,
       Belize'
@@ -4690,7 +4690,7 @@
     longitude: -89.068541
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 39 rue Carnot, 86000 Poitiers, Poitiers, 86000, France
     city: Poitiers
@@ -4727,7 +4727,7 @@
     longitude: 0.3382
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 198 Route Nationale, Route du Village, Santa-Maria-Poggio, 20221, France
     city: Santa-Maria-Poggio
@@ -4759,7 +4759,7 @@
     longitude: 9.531667
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Mare Nostrum, s/n, Miami Platja 43892, Miami Platja, 43892, Spain
     city: Miami Platja
@@ -4793,7 +4793,7 @@
     longitude: 0.9648013
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 4 Bis, Rue Camp De Bataille, Villeneuve-les-AvignonProvence 30400, Villeneuve-les-Avignon,
       30400, France
@@ -4828,7 +4828,7 @@
     longitude: 4.795862
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Setaliste 25, Travnja 28, 51417 Moscenicka Draga, Moscenicka Draga, 51417,
       Croatia
@@ -4860,7 +4860,7 @@
     longitude: 14.254301
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 4 rue du Badischhof, Munster 68140Elsass, Munster, 68140, France
     city: Munster
@@ -4894,7 +4894,7 @@
     longitude: 7.1502
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 5 Rue Saint Grégoire,68140 Munster,Elsass, 68140 MunsterElsass, Munster,
       68140, France
@@ -4921,7 +4921,7 @@
     longitude: 7.134896
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 20
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Golf De Saint Thomas du Lac Route De Bessan -D28, Route De Bessan -D28,
       Beziers, 34500, France
@@ -4962,7 +4962,7 @@
     longitude: 3.338434
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rte de Narbonne, Lieu La Gourgasse 2030, Voie Communale Numero 13, Beziers,
       34500, France
@@ -4995,7 +4995,7 @@
     longitude: 3.176004
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Volgogradska 70, 460 07 Liberec, Liberec, 46009, Czech Republic
     city: Liberec
@@ -5027,7 +5027,7 @@
     longitude: 15.031052
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Guldagervej 111,6710 Esbjerg V, 6710 Esbjerg V, Esbjerg, 6710, Denmark
     city: Esbjerg
@@ -5061,7 +5061,7 @@
     longitude: 8.421516
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 35 Place Du Marechal Leclerc, 86000 Poitiers, Poitiers, 86000, France
     city: Poitiers
@@ -5115,7 +5115,7 @@
     longitude: 0.34017
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Carrer de Cadaloques, 96, 43890 Hospitalet de l'InfantTarragona, Vandellos
       i lHospitalet de lInfant, 43890, Spain
@@ -5155,7 +5155,7 @@
     longitude: 0.906718
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1101 7th Ave, FernieBritish Columbia, Fernie, V0B1M0, Canada
     city: Fernie
@@ -5193,7 +5193,7 @@
     longitude: -115.062138
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 892 Highway 3, FernieBritish Columbia V0B 1M0, Fernie, V0B-1M0, Canada
     city: Fernie
@@ -5226,7 +5226,7 @@
     longitude: -115.06398
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2040 Summit Dr, PanoramaBritish Columbia, Panorama, V0A1T0, Canada
     city: Panorama
@@ -5269,7 +5269,7 @@
     longitude: -116.238604
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Hengelhoefdreef 5, 3530 HouthalenProvinz Limburg, Houthalen, 3530, Belgium
     city: Houthalen
@@ -5310,7 +5310,7 @@
     longitude: 5.461905
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 14, rue Rouzic, Rue Rouzic22700 Perros-GuirecBretagne, Perros-Guirec,
       22700, France
@@ -5344,7 +5344,7 @@
     longitude: -3.442994
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 38, Rue du Marechal Foch, 22700 Perros GuirecBretagne, Perros-Guirec,
       22700, France
@@ -5379,7 +5379,7 @@
     longitude: -3.453823
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: N-332 Alicante-Valencia Km. 159,03590 Altea,Alicante, 03590 AlteaAlicante,
       Altea, 03590, Spain
@@ -5416,7 +5416,7 @@
     longitude: -0.038801
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 70 Chemin De La Pointe Port de Ploumanac'h, Port de Ploumanach, Perros-Guirec,
       22700, France
@@ -5456,7 +5456,7 @@
     longitude: -3.48817
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Bichlinger Straße 20, 6363 Westendorf, Westendorf, 6363, Austria
     city: Westendorf
@@ -5486,7 +5486,7 @@
     longitude: 12.220329
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Gran Vía s/n,30380 La Manga,Cartagena,Murcia, 30380 La Manga
       del Mar Menor, La Manga, 30380, Spain
@@ -5516,7 +5516,7 @@
     longitude: -0.7161015
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: A63 Sortie St Jean De Luz Sud, 64122 Saint jean de Luz, Urrugne, 64122,
       France
@@ -5555,7 +5555,7 @@
     longitude: -1.688203
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: LUntxin - Socoa, Socoa64122 Urrugne, Urrugne, 64122, France
     city: Urrugne
@@ -5595,7 +5595,7 @@
     longitude: -1.687812
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida del Mar  1,Marina de la Torre,04638 Mojácar, Marina de la Torre04638
       Mojácar, Mojacar, 04638, Spain
@@ -5630,7 +5630,7 @@
     longitude: -1.826784
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rumunská 655/9,460 01 Liberec, 460 01 Liberec, Liberec, 46001, Czech
       Republic
@@ -5665,7 +5665,7 @@
     longitude: 15.058267
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida de la Albufera, 8 Playa de Muro, Playa De Muro - Mallorca, Muro,
       07458, Spain
@@ -5709,7 +5709,7 @@
     longitude: 3.117579
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Svobody 138-2, (Cidlinská 138/2), Liberec, 46015, Czech Republic
     city: Liberec
@@ -5741,7 +5741,7 @@
     longitude: 15.085763
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Paseo Santa Agueda 6,07720 Es Castell,Menorca, 07720 Es CastellMenorca,
       Es Castell, 07720, Spain
@@ -5777,7 +5777,7 @@
     longitude: 4.293124
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: V Haji 460, Liberec 460 06, Liberec, 46006, Czech Republic
     city: Liberec
@@ -5810,7 +5810,7 @@
     longitude: 15.060654
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Plaza de Europa 1, , La Manga del Mar Menor, 30380, Spain
     city: La Manga del Mar Menor
@@ -5856,7 +5856,7 @@
     longitude: -0.71686864
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Gran Vía s/n,30380 La Manga,Cartagena,Murcia, 30380 La MangaCartagenaMurcia,
       La Manga, 30380, Spain
@@ -5894,7 +5894,7 @@
     longitude: -0.71704257
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 236 Moo 2, Ao-nang Beach, Ao-Nang Muang KrabiKrabi 81000, Krabi, 81000,
       Thailand
@@ -5942,7 +5942,7 @@
     longitude: 98.82615
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 220 Moo 3, Klongdao Beach, SaladanKoh Lanta YaiKrabi 81150, Ko Lanta,
       81150, Thailand
@@ -5974,7 +5974,7 @@
     longitude: 99.032883
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corso delle nazioni 62,33054 Lignano Sabbiadoro-Riviera,Udine, 33054
       Lignano Sabbiadoro-RivieraUdine, Lignano Sabbiadoro, 33054, Italy
@@ -6011,7 +6011,7 @@
     longitude: 13.09715
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lungomare Trieste 128,33054 Lignano Sabbiadoro,Udine, 33054 Lignano SabbiadoroUdine,
       Lignano Sabbiadoro, 33054, Italy
@@ -6052,7 +6052,7 @@
     longitude: 13.137943
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lungomare Trieste 160, 33054 Lignano SabbiadoroUdine, Lignano Sabbiadoro,
       33054, Italy
@@ -6086,7 +6086,7 @@
     longitude: 13.12957
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via degli Asfodeli 5,Postfach 112,30020 Bibione Pineda,Venezia, Postfach
       11230020 Bibione PinedaVenezia, Bibione, 30020, Italy
@@ -6126,7 +6126,7 @@
     longitude: 13.005213
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Pola 1,30021 Caorle,Venezia, 30021 CaorleVenezia, Caorle, 30021,
       Italy
@@ -6161,7 +6161,7 @@
     longitude: 12.89672
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Firmamento 7,30020 Bibione,Venezia, 30020 BibioneVenezia, Bibione,
       30020, Italy
@@ -6195,7 +6195,7 @@
     longitude: 13.05294
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Route de la Crau, Quartier Balarin13280 Raphèle-les-Arles, Arles, 13280,
       France
@@ -6236,7 +6236,7 @@
     longitude: 4.681693
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Centrala 5, 7130 IlanzGraubunden, Ilanz, 7130, Switzerland
     city: Ilanz
@@ -6273,7 +6273,7 @@
     longitude: 9.204278
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Alighieri 3, 30021 CaorleItalien, Caorle, 30021, Italy
     city: Caorle
@@ -6309,7 +6309,7 @@
     longitude: 12.87686
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Emilia 1,30021 Caorle,Venezia, 30021 CaorleVenezia, Caorle, 30021,
       Italy
@@ -6352,7 +6352,7 @@
     longitude: 12.890995
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Cherso 80, 30021 Duna Verde di Caorle, Duna Verde, 30021, Italy
     city: Duna Verde
@@ -6386,7 +6386,7 @@
     longitude: 12.804984
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Padova 83,30016 Lido di Jesolo,Venezia, 30016 Lido di JesoloVenezia,
       Lido di Jesolo, 30016, Italy
@@ -6426,7 +6426,7 @@
     longitude: 12.591587
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Leonardo da Vinci 24,30016 Lido di Jesolo,Venezia, 30016 Lido di
       JesoloVenezia, Lido di Jesolo, 30016, Italy
@@ -6463,7 +6463,7 @@
     longitude: 12.68569
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1450 5th Avenue, Valemount V0E 2Z0, Valemount, V0E2Z0, Canada
     city: Valemount
@@ -6494,7 +6494,7 @@
     longitude: -119.276248
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1470  5th Ave, V0E 2Z0 Valemount, Valemount, V0E-2Z0, Canada
     city: Valemount
@@ -6532,7 +6532,7 @@
     longitude: -119.2774
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1501 Swift Creek Road, ValemountBritish Columbia V0E2Z0, Valemount, V0E2Z0,
       Canada
@@ -6570,7 +6570,7 @@
     longitude: -119.27875
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Dorfstr. 7, 18586 Middelhagen, Middelhagen, 18586, Germany
     city: Middelhagen
@@ -6610,7 +6610,7 @@
     longitude: 13.706981
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 252 Mica Street, Broken Hill 2880, Broken Hill, 2880, Australia
     city: Broken Hill
@@ -6640,7 +6640,7 @@
     longitude: 141.46146
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corner of Barossa Valley Way & Hermann Thumm Drive,Lyndoch 5351, Lyndoch
       5351, Barossa Valley, 5351, Australia
@@ -6681,7 +6681,7 @@
     longitude: 138.874825
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 5 McIvor Road, Bendigo 3550Victoria, Bendigo, 3550, Australia
     city: Bendigo
@@ -6712,7 +6712,7 @@
     longitude: 144.287682
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1799 Coles Bay Road,Coles Bay, Coles Bay, Coles Bay, 7215, Australia
     city: Coles Bay
@@ -6739,7 +6739,7 @@
     longitude: 148.23285
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kalimna Jetty Road,Lakes Entrance 3909, Lakes Entrance 3909, Lake Entrance,
       3909, Australia
@@ -6772,7 +6772,7 @@
     longitude: 147.958776
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 32 Roadknight Street, Lakes Entrance 3909, Lakes Entrance, 3909, Australia
     city: Lakes Entrance
@@ -6806,7 +6806,7 @@
     longitude: 147.997875
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 5-7 Valley Road,Margaret River,Western Australia 6285, Margaret RiverWestern
       Australia 6285, Margaret River, 6285, Australia
@@ -6860,7 +6860,7 @@
     longitude: 115.07175
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 97 Church St, Cowes 3922, Cowes, 3922, Australia
     city: Cowes
@@ -6901,7 +6901,7 @@
     longitude: 145.236333
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Padova 79,30016 Jesolo,Venezia Lido di Jesolo, 30016 JesoloVenezia,
       Lido di Jesolo, 30016, Italy
@@ -6940,7 +6940,7 @@
     longitude: 12.592134
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 12 rue Frisot,85690 Notre Dame de Monts,Vendée,Pays de la Loire, 85690
       Notre Dame de MontsVendéePays de la Loire, Notre Dames de Monts, 85690, France
@@ -6974,7 +6974,7 @@
     longitude: -2.13156
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 30
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lieu-dit La Vigotte, 88340 Girmont Val dAjol, Le Girmont val d'Ajol,
       88340, France
@@ -7001,7 +7001,7 @@
     longitude: 6.594055
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 3 Rue Des Clercs, 57000 Metz, Metz, 57000, France
     city: Metz
@@ -7043,7 +7043,7 @@
     longitude: 6.174664
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Le Plan Occidental, 83550 Vidauban, Vidauban, 83550, France
     city: Vidauban
@@ -7077,7 +7077,7 @@
     longitude: 6.42127
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: BV 2115, 2, BV-211508800 Vilanova i la Geltru, Vilanova I la Geltru,
       08800, Spain
@@ -7130,7 +7130,7 @@
     longitude: 1.69149
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Livenza 5,30017 Lido di Jesolo,Venezia, Venezia, Lido di Jesolo,
       30017, Italy
@@ -7148,7 +7148,7 @@
     longitude: 12.613696
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via del Faro 10,30013 Cavallino-Treporti, Venezia, Cavallino-Treporti,
       30013, Italy
@@ -7165,7 +7165,7 @@
     longitude: 12.579821
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lot 1 Port Campbell Rd, Port Campbell 3269, Port Campbell, 3269, Australia
     city: Port Campbell
@@ -7198,7 +7198,7 @@
     longitude: 143.000604
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Italia ,230, CERVIA PINARELLA, Cervia Pinarella, 48015, Italy
     city: Cervia Pinarella
@@ -7214,7 +7214,7 @@
     longitude: 12.370977
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 38 Katekwan Road, Kata BeachPhuket 83100, Phuket, 83100, Thailand
     city: Phuket
@@ -7253,7 +7253,7 @@
     longitude: 98.30075
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Madhiriguraidhoo,Lhaviyani Atoll, Lhaviyani Atoll, Madhiriguraidhoo,
       07090, Maldives
@@ -7302,7 +7302,7 @@
     longitude: 73.5605
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corner of Hill Road and Romney Road, Cape Town - Green Point 8005, Cape
       Town, 8005, South Africa
@@ -7349,7 +7349,7 @@
     longitude: 18.40237
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avigunda del Carmen 99,Playa de Guadalobón,29680 Estepona,Costa del Sol
       99 Playa de Guadalobon, Playa de Guadalobón29680 EsteponaCosta del Sol, Estepona,
@@ -7388,7 +7388,7 @@
     longitude: -5.173228
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Urbanización Puerto Calero s/n,35570 Puerto Calero,Yaiza,Las Palmas,Lanzarote,
       35570 Puerto CaleroYaizaLas Palmas, Puerto Calero, 35570, Spain
@@ -7431,7 +7431,7 @@
     longitude: -13.704428
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: St Saviour's Road, St. HelierJersey JE2 4GL, St. Helier, JE24GL, United
       Kingdom
@@ -7472,7 +7472,7 @@
     longitude: -2.09956
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Main St North 76, 76, GROS MORNE NATIONAL PARK, Rocky Harbour, A0K4N0,
       Canada
@@ -7490,7 +7490,7 @@
     longitude: -57.91799
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 815 Bridge Road, PO Box 250McBrideBritish Columbia V0J 2E0, McBride,
       V0J2E0, Canada
@@ -7520,7 +7520,7 @@
     longitude: -120.15639
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Paseo Marítimo 108,43892 Miami Playa,Tarragona, 43892 Miami PlayaTarragona,
       Miami Playa, 43892, Spain
@@ -7566,7 +7566,7 @@
     longitude: 0.946045
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Severo Ochoa 3-B,Rincón de loix,03503 Benidorm,Alicante, Rincón
       de loix03503 BenidormAlicante, Benidorm, 03503, Spain
@@ -7615,7 +7615,7 @@
     longitude: -0.103957
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Juan Carlos I s/n,03710 Calpe,Alicante, 03710 CalpeAlicante,
       Calpe, 03710, Spain
@@ -7654,7 +7654,7 @@
     longitude: 0.069534
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Oriente 140,30017 Jesolo Pineta,Venezia, 30017 Jesolo PinetaVenezia,
       Lido di Jesolo, 30017, Italy
@@ -7688,7 +7688,7 @@
     longitude: 12.7175
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Levantina 2,Acceso al mare 3,30016 Lido di Jesolo,Venezia, Acceso
       al mare 330016 Lido di JesoloVenezia, Lido di Jesolo, 30016, Italy
@@ -7727,7 +7727,7 @@
     longitude: 12.667931
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Meduna, 5, 30013 Cavallino TreportiVenezia, Cavallino-Treporti, 30013,
       Italy
@@ -7777,7 +7777,7 @@
     longitude: 12.457759
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Fratelli Vivaldi 42,48125 Lido di Classe, 48125 Lido di Classe,
       Lido di Classe, 48125, Italy
@@ -7825,7 +7825,7 @@
     longitude: 12.337016
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Italia, 194,48015 Pinarella di Cervia, 48015 Pinarella di Cervia,
       Cervia Pinarella, 48015, Italy
@@ -7860,7 +7860,7 @@
     longitude: 12.36932
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via VIII Traversa Mare 19,48015 Milano Marittima,Ravenna, 48015 Milano
       MarittimaRavenna, Milano Marittima, 48015, Italy
@@ -7899,7 +7899,7 @@
     longitude: 12.349584
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Trieste 49, 61100 PesaroPesaro e Urbino, Pesaro, 61100, Italy
     city: Pesaro
@@ -7931,7 +7931,7 @@
     longitude: 12.925862
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: V. A. Cappellini 53, 61032 Fano, Marotta, 61032, Italy
     city: Marotta
@@ -7965,7 +7965,7 @@
     longitude: 13.1014595
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 382, route 132, Perce G0C 2L0Quebec, Perce, G0C2L0, Canada
     city: Perce
@@ -7995,7 +7995,7 @@
     longitude: -64.22211
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 218 chemin des Poirier Highway 20 / Exit 376, Highway 20 / Exit 376,
       Montmagny, G5V4J9, Canada
@@ -8030,7 +8030,7 @@
     longitude: -70.576403
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 20, rue Desbiens, La MalbaieQuébec G5A 3C1, La Malbaie, G5A3C1, Canada
     city: La Malbaie
@@ -8064,7 +8064,7 @@
     longitude: -70.143626
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Ribarska Obala 4, 51512 Njivice, Njivice, 51512, Croatia
     city: Njivice
@@ -8098,7 +8098,7 @@
     longitude: 14.540882
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 13 Rond-Point de l´Arc de Triomphe, 84100 OrangeProvence, Orange, 84100,
       France
@@ -8131,7 +8131,7 @@
     longitude: 4.80493
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 15 Avenue Frederic Mistral, 84100 Orange, Orange, , France
     city: Orange
@@ -8162,7 +8162,7 @@
     longitude: 4.81273
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 0
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 Rue Du Docteur Charcot, 14530 Luc-sur-Mer, Luc-sur-Mer, 14530, France
     city: Luc-sur-Mer
@@ -8201,7 +8201,7 @@
     longitude: -0.351834
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 8 Avenue René Cassin, 22100 Dinan, Dinan, 22100, France
     city: Dinan
@@ -8231,7 +8231,7 @@
     longitude: -2.060855
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 21-25 Rue Rabelai, 37500 Chinon, Chinon, 37500, France
     city: Chinon
@@ -8261,7 +8261,7 @@
     longitude: 0.24131
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 43 Rue Saint Nicolas, 17000 La Rochelle, La Rochelle, 17000, France
     city: La Rochelle
@@ -8303,7 +8303,7 @@
     longitude: -1.14929
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 20 Rue Alfred Kastler,La Rochelle,Charente-Maritime, La RochelleCharente-Maritime,
       La Rochelle, 17000, France
@@ -8327,7 +8327,7 @@
     longitude: -1.1610647
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 4852 Radium Blvd, Radium Hot Springs V0A 1M0, Radium Hot Springs, V0A1M0,
       Canada
@@ -8364,7 +8364,7 @@
     longitude: -116.07431
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Weststraße 33, 59269 BeckumNordrhein-Westfalen, Ennigerloh, 59269, Germany
     city: Ennigerloh
@@ -8404,7 +8404,7 @@
     longitude: 8.03711
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2 rue Frederic Mistral, 34200 Séte, Sète, 34200, France
     city: Sète
@@ -8435,7 +8435,7 @@
     longitude: 3.696972
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Michelangelo 22,Cesenatico, Cesenatico, Cesenatico, 47042, Italy
     city: Cesenatico
@@ -8469,7 +8469,7 @@
     longitude: 12.424517
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Michelangelo 18, 47042 Cesenatico, Cesenatico, 47042, Italy
     city: Cesenatico
@@ -8503,7 +8503,7 @@
     longitude: 12.423751
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Tiziano 34,47042 Valverde di Cesenatico,Forlì-Cesena, 47042 Valverde
       di CesenaticoForlì-Cesena, Cesenatico, 47042, Italy
@@ -8540,7 +8540,7 @@
     longitude: 12.422758
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Litoranea Sud 6, 47843 Misano Adriatico, Misano Adriatico, 47843,
       Italy
@@ -8567,7 +8567,7 @@
     longitude: 12.700911
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lungomare Della Libertà 19,47838 Riccione, 47838 Riccione, Riccione,
       47838, Italy
@@ -8604,7 +8604,7 @@
     longitude: 12.656708
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Parigi 8,Baia Flaminia,61121 Pesaro,Pesaro und Urbino, Baia Flaminia61121
       PesaroPesaro und Urbino, Pesaro, 61121, Italy
@@ -8644,7 +8644,7 @@
     longitude: 12.898044
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Delle Felci 3, Via Delle Felci 3, Adriatic Coast / Rimini, 47893,
       San Marino
@@ -8695,7 +8695,7 @@
     longitude: 12.45608
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Tibullo 2, 63039 San Benedetto del TrontoAscoli Piceno, San Benedetto
       del Tronto, 63074, Italy
@@ -8732,7 +8732,7 @@
     longitude: 13.88839
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 60 Quai De Bosc, 34200 Sète, Sète, 34200, France
     city: Sète
@@ -8770,7 +8770,7 @@
     longitude: 3.692725
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Les Sables D 703, 24220 VézacDordogne, Vezac, 24220, France
     city: Vezac
@@ -8803,7 +8803,7 @@
     longitude: 1.162035
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rue de Lormes ,, LES BAUX DE PROVENCE, Les Baux de Provence, 13520, France
     city: Les Baux de Provence
@@ -8821,7 +8821,7 @@
     longitude: 4.795218
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 63 AVENUE DU MARECHAL FOCH, 83990 Saint-Tropez, Saint-Tropez, 83990,
       France
@@ -8857,7 +8857,7 @@
     longitude: 6.64674
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 2086 Chemin De Saint Louis, 83510 Lorgues, Lorgues, 83510, France
     city: Lorgues
@@ -8880,7 +8880,7 @@
     longitude: 6.37129
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 3, Avenue Jean Monnet, 06230 St-Jean-Cap-Ferrat, Saint-Jean-Cap-Ferrat,
       06230, France
@@ -8917,7 +8917,7 @@
     longitude: 7.328358
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Plage du Ricanto,20700 Ajaccio BP 60996, 20700 Ajaccio, Ajaccio, 20700,
       France
@@ -8960,7 +8960,7 @@
     longitude: 8.77619
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 Rue Bonaparte, 20110 Propriano, Propriano, 20110, France
     city: Propriano
@@ -8998,7 +8998,7 @@
     longitude: 8.902466
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: A Funtana 3 dU Frusteru, BP 1120110 Propriano, Propriano, 20110, France
     city: Propriano
@@ -9029,7 +9029,7 @@
     longitude: 8.901345
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Uciwai road, NadiViti LevuWestern Division, Momi, 679, Fiji Islands
     city: Momi
@@ -9061,7 +9061,7 @@
     longitude: 177.285188
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 3219 West Brigantine Ave, NosaraGuanacaste, Nosara, 110231, Costa Rica
     city: Nosara
@@ -9090,7 +9090,7 @@
     longitude: -85.674282
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 400 meters west y 200 meters south Café de Paris,Nosara Nicoya,Guanacaste,
       Nosara NicoyaGuanacaste, Nosara, 05233, Costa Rica
@@ -9124,7 +9124,7 @@
     longitude: -85.66468
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Pastor Willis Hoover ,517, VALPARAISO, Valparaiso, , Chile
     city: Valparaiso
@@ -9141,7 +9141,7 @@
     longitude: -71.60667
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Atamu Tekena S/n, Hanga RoaRapa Nui, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -9172,7 +9172,7 @@
     longitude: -109.43005
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 25 De Mayo 256, Puerto Madryn, Puerto Madryn, 9120, Argentina
     city: Puerto Madryn
@@ -9212,7 +9212,7 @@
     longitude: -65.034096
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Gündogdu Beldesi,07550 Side,Manavgat, 07550 SideManavgat, Colakli, 07600,
       Turkey
@@ -9242,7 +9242,7 @@
     longitude: 31.288956
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Firenze 4 Angolo Lungomare Marconi, Angolo Lungomare Marconi, Alba
       Adriatica, 64011, Italy
@@ -9283,7 +9283,7 @@
     longitude: 13.932189
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: VIA ARENZANO - LUNGOMARE ZARA, 64021 Giulianova LidoAbruzzo, GIULIANOVA
       LIDO, 64021, Italy
@@ -9318,7 +9318,7 @@
     longitude: 13.9577
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Dei Gemelli 59 C.P. 114 30020 Bibione Bibione 30020 Italy, 30020
       Bibione, Bibione, 30028, Italy
@@ -9353,7 +9353,7 @@
     longitude: 13.045025
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kundu Köyü,07110 Lara,Antalya, 07110 LaraAntalya, Kundu, 07110, Turkey
     city: Kundu
@@ -9395,7 +9395,7 @@
     longitude: 30.91423
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Abraham Mathews 2951, 9120 Puerto Madryn, Puerto Madryn, 9120, Argentina
     city: Puerto Madryn
@@ -9434,7 +9434,7 @@
     longitude: -65.0165
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Gob Maiz 370,Puerto Madryn, Puerto Madryn, Puerto Madryn, 9120, Argentina
     city: Puerto Madryn
@@ -9449,7 +9449,7 @@
     longitude: -65.03905
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Marcos A. Zar 64,9120 Puerto Madryn, 9120 Puerto Madryn, Puerto Madryn,
       9120, Argentina
@@ -9496,7 +9496,7 @@
     longitude: -65.03842
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Héctor Calvo 338 Cerro Bellavista, Cerro BellavistaValparaíso, Valparaiso,
       2381529, Chile
@@ -9536,7 +9536,7 @@
     longitude: -71.62252
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Pasaje Atkinson 151 - 153 Cerro Concepcion, Cerro ConcepciónValparaiso,
       Valparaiso, 2340000, Chile
@@ -9584,7 +9584,7 @@
     longitude: -71.625206
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Pasaje Becquer 131 Cerro Bellavista, Yerbas BuenasCerro BellavistaValparaiso,
       Valparaiso, 2381513, Chile
@@ -9602,7 +9602,7 @@
     longitude: -71.62355
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Torres Del Paine National Park, Torres del PaineRegión de Magallanes
       y de la Antártica Chilena, Torres Del Paine, 7550139, Chile
@@ -9629,7 +9629,7 @@
     longitude: -72.86398
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Atamu Tekena s/n, Hanga RoaEaster Island, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -9667,7 +9667,7 @@
     longitude: -109.43263
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Te Pito Ote Henua 1945, Hanga RoaIsla de PascuaRapa Nui, Hanga
       Roa, 2770000, Chile
@@ -9704,7 +9704,7 @@
     longitude: -109.427734
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tuu ko ihu, Isla de Pascua, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -9727,7 +9727,7 @@
     longitude: -109.42781
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avareipua s/n, Hanga Roa, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -9760,7 +9760,7 @@
     longitude: -109.426712
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Pont s/n, Hanga RoaIsla de Pascua, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -9791,7 +9791,7 @@
     longitude: -109.42733
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Pont, Hanga RoaIsla de Pascua, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -9822,7 +9822,7 @@
     longitude: -109.4223
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Hotu Matua s/n - Sector Orito, Sector OritoHanga Roa 2770000, Hanga Roa,
       2770000, Chile
@@ -9860,7 +9860,7 @@
     longitude: -109.41283
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Petero Atamu, Hanga RoaIsla de Pascua, Hanga Roa, 100, Chile
     city: Hanga Roa
@@ -9893,7 +9893,7 @@
     longitude: -109.338715
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Calle Atamu Tekena S/n, Sector Tahai, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -9940,7 +9940,7 @@
     longitude: -109.42471
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tahai,Hanga Roa,Isla de Pascua, Hanga RoaIsla de Pascua, Hanga Roa, 2770000,
       Chile
@@ -9969,7 +9969,7 @@
     longitude: -109.4247
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Taniera Teave S/n, Hanga RoaRapa Nui, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -10019,7 +10019,7 @@
     longitude: -109.43466
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tuki Haka Hevari s/n, Hanga Roa, Hanga Roa, 2770000, Chile
     city: Hanga Roa
@@ -10056,7 +10056,7 @@
     longitude: -109.42877
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Calle Tuu Koihu,2770000 Hanga Roa,Isla de Pascua,Región de Valparaíso,Chile,
       2770000 Hanga RoaIsla de PascuaRegión de Valparaíso, Hanga Roa, 2770000, Chile
@@ -10092,7 +10092,7 @@
     longitude: -109.4261
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 'Camino Internacional # 4150, Pucón, Pucon, 4920000, Chile'
     city: Pucon
@@ -10155,7 +10155,7 @@
     longitude: -71.93908
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Clemente Holzapfel 190, Pucon4920000 PucónIX Regió, Pucon, 4920000, Chile
     city: Pucon
@@ -10191,7 +10191,7 @@
     longitude: -71.978061
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Km. 17.5 Camino Pucon-Caburgua, Pucon, Pucon, 5090026, Chile
     city: Pucon
@@ -10232,7 +10232,7 @@
     longitude: -71.813131
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Pedro De Valdivia 191, Pucón, Pucon, 4920000, Chile
     city: Pucon
@@ -10260,7 +10260,7 @@
     longitude: -71.978881
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Barros Arana 135, Puerto Natales, Puerto Natales, 6200000, Chile
     city: Puerto Natales
@@ -10296,7 +10296,7 @@
     longitude: -72.5108
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Ladrilleros 105,Puerto Natales,Patagonia, Puerto NatalesPatagonia, Puerto
       Natales, 6160000, Chile
@@ -10331,7 +10331,7 @@
     longitude: -72.512175
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Manuel Balmaceda 722, Puerto Natales, Natales, 6160000, Chile
     city: Natales
@@ -10381,7 +10381,7 @@
     longitude: -72.49269
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Prolongación Avenida España Huerto 82/b,Puerto Natales,Patagonia, Puerto
       NatalesPatagonia, Puerto Natales, 6160000, Chile
@@ -10402,7 +10402,7 @@
     longitude: -72.46828
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Señoret 267, 6160000 Puerto NatalesRegión de Magallanes y de la Antártica
       Chilena (Region XII)Última Esperanza, Natales, 6160000, Chile
@@ -10449,7 +10449,7 @@
     longitude: -72.5099
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Grande Rue, Val Thorens, Les Belleville, 73440, France
     city: Les Belleville
@@ -10490,7 +10490,7 @@
     longitude: 6.584126
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: La Croisette Les menuires, Les menuires, Les Belleville, 73440, France
     city: Les Belleville
@@ -10531,7 +10531,7 @@
     longitude: 6.53955
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Quartier Bruyères Menuires, 73440 Les MenuiresSaint Martin de Belleville,
       Les Belleville, 73440, France
@@ -10570,7 +10570,7 @@
     longitude: 6.537567
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Quartier Des Balcons, Quartier Des Balcons, Ski/alp French Alps (CMF/GNB/GVA),
       73440, France
@@ -10602,7 +10602,7 @@
     longitude: 6.581458
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Quartier les Bruyeres, Les Menuires, Les Menuires 73440, Les Belleville,
       73440, France
@@ -10637,7 +10637,7 @@
     longitude: 6.539102
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 21410 Splitska,Punta BB,Isle of Brac, Punta BBIsle of Brač, Postira,
       21410, Croatia
@@ -10677,7 +10677,7 @@
     longitude: 16.60856
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Breisacher Straße 1, 79395 Neuenburg am Rhein, Neuenburg am Rhein, 79395,
       Germany
@@ -10713,7 +10713,7 @@
     longitude: 7.55884
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kantamanto, Near Accra UTC Shell Filling Station, Shell Filling Station,
       Accra, 10000, Ghana
@@ -10747,7 +10747,7 @@
     longitude: -0.212527
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Quartier Reberty, 73440 Les Menuires, Les Menuires, 73440, France
     city: Les Menuires
@@ -10776,7 +10776,7 @@
     longitude: 6.535561
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 40
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 73440 Val Thorens Val-Thorens, , Val Thorens, 73440, France
     city: Val Thorens
@@ -10814,7 +10814,7 @@
     longitude: 6.574384
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rue Du Soleil,73440 Val Thorens Val-Thorens, 73440 Val Thorens, Val Thorens,
       73440, France
@@ -10847,7 +10847,7 @@
     longitude: 6.57749
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Stablob 81a, Mariahof, Neumarkt in Steiermark, 8812, Austria
     city: Neumarkt in Steiermark
@@ -10882,7 +10882,7 @@
     longitude: 14.393688
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Corner River Road Samdech Tep Vong Street, Wat Bo VillageSala Kamroeuk
       CommuneSiem Reap, Siem Reap, 17252, Cambodia
@@ -10918,7 +10918,7 @@
     longitude: 103.85901
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: National Road 6,Banteay Chas,Siem Reap Slorkram - Angkor Wat, Banteay
       ChasSiem Reap, Siem Reap, 17251, Cambodia
@@ -10960,7 +10960,7 @@
     longitude: 103.867184
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: National Road No. 6, Infront of Cambodian Cultural Village, Khum Sror
       NgeSiem Reap, Siem Reap, , Cambodia
@@ -10991,7 +10991,7 @@
     longitude: 103.83144
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Vihear Chin Village Svay Dangkum Com, Svay Dangkum Com.Siem Reap, Siem
       Reap, 17355, Cambodia
@@ -11028,7 +11028,7 @@
     longitude: 103.8529
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: No. 099 Street OR-90s (Oum-Khun or Beer Garden Street),Svay Dangkum,Siem
       Reap, Svay DangkumSiem Reap, Siem Reap, 17259, Cambodia
@@ -11078,7 +11078,7 @@
     longitude: 103.854
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Road No.6,#665-Group 7 Salakanseng, Salakanseng, Siem Reap, 800024, Cambodia
     city: Siem Reap
@@ -11109,7 +11109,7 @@
     longitude: 103.852721
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 507 East Main Street,Dayton,Washington 99328, DaytonWashington 99328,
       Dayton, 99328, USA
@@ -11150,7 +11150,7 @@
     longitude: -117.975124
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 706 Main Avenue E, SundreAlberta  T0M 1X0, Sundre, T0M1X0, Canada
     city: Sundre
@@ -11183,7 +11183,7 @@
     longitude: -114.62823
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Taphul Street,Svay Dangkum District,Siem Reap, Svay Dangkum DistrictSiem
       Reap, Siem Reap, 855, Cambodia
@@ -11200,7 +11200,7 @@
     longitude: 103.85324
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Metzgergasse 42, 91438 Bad Windsheim, Bad Windsheim, 91438, Germany
     city: Bad Windsheim
@@ -11237,7 +11237,7 @@
     longitude: 10.419266
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale Alpi Orientali 118,44020 LIdo di Pomposa, 44020 LIdo di Pomposa,
       Lido Pomposa, 44020, Italy
@@ -11263,7 +11263,7 @@
     longitude: 12.239719
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Sarsina 1 Lido di Savio, Lido di Savio, Ravenna, 48125, Italy
     city: Ravenna
@@ -11298,7 +11298,7 @@
     longitude: 12.345632
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via del Campeggio ,99, LIDO DI SPINA, Lido di Spina, 44024, Italy
     city: Lido di Spina
@@ -11316,7 +11316,7 @@
     longitude: 12.2555275
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: El Salam Road,Naama Bay,Sharm el Sheikh 46619, Naama BaySharm el Sheikh
       46619, Sharm el Sheikh, 46619, Egypt
@@ -11366,7 +11366,7 @@
     longitude: 34.336967
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Nerudova 45, 506 01 Jičín, Jicin, 50601, Czech Republic
     city: Jicin
@@ -11402,7 +11402,7 @@
     longitude: 15.35058
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Žižkovo Náměstí 3, 506 01 Jičín, Jicin, 50601, Czech Republic
     city: Jicin
@@ -11437,7 +11437,7 @@
     longitude: 15.35467
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 20 rue Linard Gonthier,10 000 Troyes, 10 000 Troyes, Troyes, 10000, France
     city: Troyes
@@ -11487,7 +11487,7 @@
     longitude: 4.081689
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 20, av. de la République, 71400 Autun, Autun, 71400, France
     city: Autun
@@ -11522,7 +11522,7 @@
     longitude: 4.293235
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 3, rue de lArquebuse, 71400 Autun, Autun, 71400, France
     city: Autun
@@ -11547,7 +11547,7 @@
     longitude: 4.300616
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 40
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 103 Rue Aux Arenes, 57000 Metz, Metz, 57000, France
     city: Metz
@@ -11611,7 +11611,7 @@
     longitude: 6.1761
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 20
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 41 Le Village, 88340 Girmont Val d’Ajol, Girmont-Val-dAjol, 88340, France
     city: Girmont-Val-dAjol
@@ -11654,7 +11654,7 @@
     longitude: 6.56001
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rua G, 199, Praia do Cumbuco, Caucaia, 61619-007, Brazil
     city: Caucaia
@@ -11690,7 +11690,7 @@
     longitude: -38.723877
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: R. Olinto Feitosa Costa - Cumbuco, CumbucoCaucaia, Caucaia, 61000-000,
       Brazil
@@ -11722,7 +11722,7 @@
     longitude: -38.72436
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Principal 62,Beira Da Praia Do Cumbuco,Cumbuco,Ceara 61619-990,
       61601-990 Cumbuco, Cumbuco, 61619-990, Brazil
@@ -11751,7 +11751,7 @@
     longitude: -38.71277
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rua A 1ere Etapa,Combuco, Combuco, Cumbuco, 61620-260, Brazil
     city: Cumbuco
@@ -11801,7 +11801,7 @@
     longitude: -38.711758
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rua Lirio, 97, Praia de Tabuba, Caucaia, 61618-680, Brazil
     city: Caucaia
@@ -11856,7 +11856,7 @@
     longitude: -38.701065
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Zavala bb, 21465 ZavalaJelsaOtok Hvar, Jelsa, 21465, Croatia
     city: Jelsa
@@ -11891,7 +11891,7 @@
     longitude: 16.696082
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lefokastro, 37006 LefokastroMagnissia, South Pelion, 37006, Greece
     city: South Pelion
@@ -11921,7 +11921,7 @@
     longitude: 23.181417
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 6, Rue Hippolyte Ribière, 89000 Auxerre, Auxerre, 89000, France
     city: Auxerre
@@ -11950,7 +11950,7 @@
     longitude: 3.5675633
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Šetalište Miramare 1,52470 Umag,Istria, 52470 Umag, Umag, 52470, Croatia
     city: Umag
@@ -11985,7 +11985,7 @@
     longitude: 13.513996
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Burinovac 2, Skradin 22222, Skradin, 22222, Croatia
     city: Skradin
@@ -12017,7 +12017,7 @@
     longitude: 15.922567
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Setor Hoteleiro Sul Q.5 Bloco G,70322-913 Brasilia,Distrito Federal,
       70322-913 BrasiliaDistrito Federal, Brasilia, 70322-913, Brazil
@@ -12052,7 +12052,7 @@
     longitude: -47.891857
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tjarnarbraut 25, 700 Egilstadir, Egilsstadir, 700, Iceland
     city: Egilsstadir
@@ -12085,7 +12085,7 @@
     longitude: -14.395969
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Midvangur 5-7, 700 Egilsstadir, Egilsstadir, 700, Iceland
     city: Egilsstadir
@@ -12120,7 +12120,7 @@
     longitude: -14.405737
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Søgårdevejen 6, 7620 Lemvig, Lemvig, 7620, Denmark
     city: Lemvig
@@ -12152,7 +12152,7 @@
     longitude: 8.290141
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: U Nových Lázní 3270, 415 01 Teplice, Teplice, 41501, Czech Republic
     city: Teplice
@@ -12192,7 +12192,7 @@
     longitude: 13.84147
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Nordre Strandvej 2,3000 Helsingør, 3000 HelsingørHovedstadenDenmark,
       Helsingor, 3000, Denmark
@@ -12227,7 +12227,7 @@
     longitude: 12.603764
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Boulevarden 9A, Balka, 3730 Nekso, Nexo, 3730, Denmark
     city: Nexo
@@ -12266,7 +12266,7 @@
     longitude: 15.105428
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tejnvej 80, Sandkås3770 Allinge, Allinge, 3770, Denmark
     city: Allinge
@@ -12302,7 +12302,7 @@
     longitude: 14.818818
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Oyggjarvegur 45,100 Tórshavn,Føroyar,Faeroe Islands, 100 TórshavnFøroyarFaeroe
       Islands, Torshavn, 100, Faroe Islands
@@ -12338,7 +12338,7 @@
     longitude: -6.79946
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 4-10 Áarvegur, P.O. Box 107110 Tórshavn, Torshavn, 110, Faroe Islands
     city: Torshavn
@@ -12372,7 +12372,7 @@
     longitude: -6.770535
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sjogata, 7,Tromso 9259, Tromso 9259, Tromso, 9259, Norway
     city: Tromso
@@ -12414,7 +12414,7 @@
     longitude: 18.95909
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: P.O. Box 554,9171 Longyearbyen,Spitsbergen, 9171 LongyearbyenSpitsbergen,
       Longyearbyen, 9171, Norway
@@ -12457,7 +12457,7 @@
     longitude: 15.645536
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: C. Sundts gate 22, 5004 Bergen, Bergen, 5004, Norway
     city: Bergen
@@ -12491,7 +12491,7 @@
     longitude: 5.317838
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Vestre Torggate 9, 5015 Bergen, Bergen, 5015, Norway
     city: Bergen
@@ -12528,7 +12528,7 @@
     longitude: 5.32148
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 31 Sundbrovej, 5700 Svendborg, Svendborg, 5700, Denmark
     city: Svendborg
@@ -12570,7 +12570,7 @@
     longitude: 10.612512
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 315 rue fontaine, 01220 Divonne-les-Bains, Divonne-les-Bains, 01220,
       France
@@ -12603,7 +12603,7 @@
     longitude: 6.14107
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 20
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 23 Vassileos Pavlou & Friderikis, 33054 Delphi, Delphi, 33054, Greece
     city: Delphi
@@ -12634,7 +12634,7 @@
     longitude: 22.49441
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 31 Apollonos, 33054 Delphi, Delphi, 33054, Greece
     city: Delphi
@@ -12663,7 +12663,7 @@
     longitude: 22.49423
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Fotomara & Potamianoy 3,21100 Nafplio, 21100 Nafplio, Nauplia, 21100,
       Greece
@@ -12703,7 +12703,7 @@
     longitude: 22.798204
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: AGGELOU TERZAKI 29, GIANNAKOPOULOU 3, Nafplio 21100Argolida, Nafplio,
       21100, Greece
@@ -12747,7 +12747,7 @@
     longitude: 22.798645
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Potamianou & fotomara,Old Town of Nafplio,21100 Nafplio, Old Town of
       Nafplio21100 Nafplio, Nauplia, 21100, Greece
@@ -12785,7 +12785,7 @@
     longitude: 22.799065
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 31 Othonos Str., NafplionArgolida, Nauplia, , Greece
     city: Nauplia
@@ -12812,7 +12812,7 @@
     longitude: 22.7979
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Babagiotou 5,Vaporia,Hermoupolis 84100,Island of Syros Ermoupolis, VaporiaHermoupolis
       84100Island of Syros, Ermoupolis, 84100, Greece
@@ -12848,7 +12848,7 @@
     longitude: 24.94569
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Northestrom 10 And Korai,841 00 Hermoupolis,Syros, 841 00 HermoupolisSyros,
       Ermoupolis, 84100, Greece
@@ -12883,7 +12883,7 @@
     longitude: 24.943628
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tsagarada, Pelion, Tsagkarada, 37012, Greece
     city: Tsagkarada
@@ -12912,7 +12912,7 @@
     longitude: 23.18362
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Katichori,37 011 Portaria, 37 011 Portaria, Portaria, 37011, Greece
     city: Portaria
@@ -12952,7 +12952,7 @@
     longitude: 22.99667
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 370 11 Portaria, 37011 Portaria, Portaria, 37011, Greece
     city: Portaria
@@ -12989,7 +12989,7 @@
     longitude: 22.996685
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Makrinitsa, Mount PelionThessaly, Makrinitsa, 37011, Greece
     city: Makrinitsa
@@ -13014,7 +13014,7 @@
     longitude: 22.98791
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: MAKRINITSA, MOUNT PELION, VOLOS, 370 11, GREECE, Mount Pelion37011 Magnesia,
       Volos, 37011, Greece
@@ -13047,7 +13047,7 @@
     longitude: 22.987738
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Portaria Central Square, 37011 PortariaPilio, Volos, 37011, Greece
     city: Volos
@@ -13080,7 +13080,7 @@
     longitude: 22.998308
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Portaria, Pelion, Volos, 37011, Greece
     city: Volos
@@ -13118,7 +13118,7 @@
     longitude: 23.000792
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Portaria-Pelion,37011 Portaria, 37011 Portaria, Portaria, 37011, Greece
     city: Portaria
@@ -13152,7 +13152,7 @@
     longitude: 22.992011
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Agathias,Palekastro,72300 Lassithi,Crete Island, Palekastro72300 LassithiCrete
       Island, Palekastro, 72300, Greece
@@ -13199,7 +13199,7 @@
     longitude: 26.264145
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 1
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 50 Rue Principale, Saint-SauveurQuebec J0R 1R6, Saint-Sauveur, J0R1R6,
       Canada
@@ -13241,7 +13241,7 @@
     longitude: -74.145995
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 61 St-Denis Avenue, Saint-SauveurQuebec J0R 1R4, Saint-Sauveur, J0R1R4,
       Canada
@@ -13269,7 +13269,7 @@
     longitude: -74.15534
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 777 rue Principale,St-Sauveur-des-Monts,Québec J0R 1R, St-Sauveur-des-MontsQuébec
       J0R 1R, St. Sauveur des Monts, J0R1R, Canada
@@ -13302,7 +13302,7 @@
     longitude: -74.1803
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 9/39 Moo2, Chaweng Beach, Bophut, Chaweng BeachBophutKoh samui, Koh Samui,
       84320, Thailand
@@ -13344,7 +13344,7 @@
     longitude: 100.073532
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Melesigeni s/n,07590 Canyamel,Capdepera,Mallorca, 07590 CanyamelCapdeperaMallorca,
       Canyamel, 07590, Spain
@@ -13380,7 +13380,7 @@
     longitude: 3.439139
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sunny beach, 8240 Sunny Beach - West, Sunny Beach, 8240, Bulgaria
     city: Sunny Beach
@@ -13415,7 +13415,7 @@
     longitude: 27.714682
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 5th Avenue,between Calle 4 & 6 Norte,located at the Qunita Avenida,77710
       Playa del Carmen,Quintana Roo, between Calle 4 & 6 Nortelocated at the Qunita
@@ -13451,7 +13451,7 @@
     longitude: -87.073715
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sorenskriver Bullsgt. 7,6002 Alesund, 6002 Alesund, Alesund, 6002, Norway
     city: Alesund
@@ -13492,7 +13492,7 @@
     longitude: 6.155358
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Viale dei Platani 50, check-in at Unitas Marina in Corso degli Alisei
       39Lignano Sabbiadoro 33054, Lignano Riviera, 33054, Italy
@@ -13533,7 +13533,7 @@
     longitude: 13.14162
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Hakonsgaten 2, 5015 Bergen, Bergen, 5015, Norway
     city: Bergen
@@ -13565,7 +13565,7 @@
     longitude: 5.317498
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Munkegata 26,7011 Trondheim, 7011 Trondheim, Trondheim, 7011, Norway
     city: Trondheim
@@ -13589,7 +13589,7 @@
     longitude: 10.3943
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 1
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Anse Possession, Seychellen, Praslin Island, 0000, Seychelles
     city: Praslin Island
@@ -13625,7 +13625,7 @@
     longitude: 55.729029
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: POSTBOKS 63, 5743 Flåm, Aurland, 5742, Norway
     city: Aurland
@@ -13656,7 +13656,7 @@
     longitude: 7.112533
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tammsaare 24-B,80010 Pärnu, 80010 Pärnu, Pärnu, 80010, Estonia
     city: Pärnu
@@ -13692,7 +13692,7 @@
     longitude: 24.509951
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Route De Brangoure, Route De Brangoure, Pornichet, 44117, France
     city: Pornichet
@@ -13717,7 +13717,7 @@
     longitude: -2.33014
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rukanriutta 13,93830 Rukatunturi, 93825 Rukatunturi, Rukatunturi, 93830,
       Finland
@@ -13746,7 +13746,7 @@
     longitude: 29.120737
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Porosalmentie 313,58900 Rantasalmi, 58900 Rantasalmi, Rantasalmi, 58900,
       Finland
@@ -13779,7 +13779,7 @@
     longitude: 28.3121
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Andres Bello 755, Temuco, Temuco, 4791245, Chile
     city: Temuco
@@ -13816,7 +13816,7 @@
     longitude: -72.592064
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: No. 14 Hotel Street,Pasikuda,Sri Lanka, PasikudaSri Lanka, Pasikudah,
       00255, Sri Lanka
@@ -13850,7 +13850,7 @@
     longitude: 81.574283
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lofthus I Hardanger, Lofthus I Hardanger, Lofthus, 5787, NORWAY
     city: Lofthus
@@ -13883,7 +13883,7 @@
     longitude: 6.65286
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Antonio Varas 1048, Temuco, Temuco, 4780000, Chile
     city: Temuco
@@ -13928,7 +13928,7 @@
     longitude: -72.5876
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Palatupana,Tissamaharama,Kirinda,Yala, TissamaharamaYala 00200, Yala,
       82614, Sri Lanka
@@ -13973,7 +13973,7 @@
     longitude: 81.409378
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 35 Quai Jerome Comparetti, 20169 Bonifacio, Bonifacio, 20169, France
     city: Bonifacio
@@ -14012,7 +14012,7 @@
     longitude: 9.16421
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Cavallo Morto,20169 Bonifacio, 20169 Bonifacio, Bonifacio, 20169, France
     city: Bonifacio
@@ -14047,7 +14047,7 @@
     longitude: 9.169429
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Pk 15 Bemoko-Dzamandzar,Nosy-Be, Nosy-BeMadagascar, Nosy Bè, BP142, Madagascar
     city: Nosy Bè
@@ -14085,7 +14085,7 @@
     longitude: 48.182894
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Mysuseter - Rondane Nasjonalpark, Rondane NationalPO Box 742675 Otta,
       Sel, 2675, Norway
@@ -14120,7 +14120,7 @@
     longitude: 9.673836
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 572 Baghani Street,P.O. Box 609,Stone Town,Zanzibar, P.O. Box 609Stone
       TownZanzibar, Stone Town, 609, Tanzania
@@ -14158,7 +14158,7 @@
     longitude: 39.188886
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Thoméegränd 20,83134 Östersund, 83134 Östersund, Östersund, 83134, Sweden
     city: Östersund
@@ -14196,7 +14196,7 @@
     longitude: 14.640481
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Baltzarsgatan 20,211 36 Malmö, 211 36 Malmö, Malmö, 21136, Sweden
     city: Malmö
@@ -14228,7 +14228,7 @@
     longitude: 13.004078
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Via Francavilla n.6/B Trappitello, Trappitello, Taormina, 98039, Italy
     city: Taormina
@@ -14261,7 +14261,7 @@
     longitude: 15.25026
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Stora Nygatan 35, 21137 Malmö, Malmo, 21137, Sweden
     city: Malmo
@@ -14298,7 +14298,7 @@
     longitude: 13.00212
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Quai Nord  Port de Plaisance, Port de Plaisance20169 Bonifacio, Bonifacio,
       20169, France
@@ -14342,7 +14342,7 @@
     longitude: 9.164352
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 167 Avenue Du General Leclerc, 54500 Vandoeuvre-les-Nancy, Vandoeuvre-les-Nancy,
       54500, France
@@ -14382,7 +14382,7 @@
     longitude: 6.16569
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 730 chemin du rail sur le chemin, 83149 Bras, Bras, 83149, France
     city: Bras
@@ -14422,7 +14422,7 @@
     longitude: 5.959605
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 205 Chemin Des Nevons, 84800 LIsle sur la Sorgue, L'Isle-sur-la-Sorgue,
       84800, France
@@ -14460,7 +14460,7 @@
     longitude: 5.055133
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 6 Place Rose Goudard, 84800 LIsle sur la Sorgue, L'Isle-sur-la-Sorgue,
       84800, France
@@ -14494,7 +14494,7 @@
     longitude: 5.052957
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 9 rue Denfert Rochereau, 84800 L'Isle-sur-la-Sorgue, L'Isle-sur-la-Sorgue,
       84800, France
@@ -14527,7 +14527,7 @@
     longitude: 5.05101
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 6 Avenue Du Lac, 37300 Joue-Les-Tours, Joue-les-Tours, 37300, France
     city: Joue-les-Tours
@@ -14560,7 +14560,7 @@
     longitude: 0.639071
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 rue du Milan Noir, 44350 Guérande, Guerande, 44350, France
     city: Guerande
@@ -14592,7 +14592,7 @@
     longitude: -2.420931
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 12  boulevard de lAbreuvoir, GUERANDE, Guerande, 44350, France
     city: Guerande
@@ -14608,7 +14608,7 @@
     longitude: -2.429768
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Les Portes De Bourgogne Av Georges Besse- Pouilly en Auxois, Av Georges
       Besse- Pouilly en Auxois, Creancey, 21320, France
@@ -14651,7 +14651,7 @@
     longitude: 4.565697
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Olavinkatu 15, 57130 Savonlinna, Savonlinna, 57130, Finland
     city: Savonlinna
@@ -14697,7 +14697,7 @@
     longitude: 28.895926
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Prästgatan 16, 831 31 Östersund, Östersund, 83131, Sweden
     city: Östersund
@@ -14738,7 +14738,7 @@
     longitude: 14.63638
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Ronnebygatan 37-39,371 33 Karlskrona, 371 33 Karlskrona, Karlskrona,
       37133, Sweden
@@ -14768,7 +14768,7 @@
     longitude: 15.58761
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Södra Långgatan 42,392 31 Kalmar, 392 31 Kalmar, Kalmar, 39231, Sweden
     city: Kalmar
@@ -14801,7 +14801,7 @@
     longitude: 16.36745
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Amerikis & Spetson str., 853 00 Kos TownKos Island, Kos, 85300, Greece
     city: Kos
@@ -14833,7 +14833,7 @@
     longitude: 27.283921
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Central Road,Haute Rive,Riviere du Rampart, Haute Rive31201 Roches NoiresRivière
       du Rempart, Roches Noire, 31201, Mauritius
@@ -14882,7 +14882,7 @@
     longitude: 57.730024
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Praia da Falesia, 8200-916 Albufeira, Albufeira, 8200-916, Portugal
     city: Albufeira
@@ -14915,7 +14915,7 @@
     longitude: -8.158607
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Analipsi, HersonissosCrete, Hersonissos, 70014, Greece
     city: Hersonissos
@@ -14950,7 +14950,7 @@
     longitude: 25.34448
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sulislaw 24,49-200 Grodków, 49-200 Grodków, Grodków, 49-200, Poland
     city: Grodków
@@ -14983,7 +14983,7 @@
     longitude: 17.305735
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 7 Haas Street Broome WA 6725, 7 Haas Street Broome WA 6725, Broome, WA6725,
       Australia
@@ -15003,7 +15003,7 @@
     longitude: 122.23966
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Coastal Road,Belle Mare, Belle Mare, Belle Mare, 0, Mauritius
     city: Belle Mare
@@ -15039,7 +15039,7 @@
     longitude: 57.765136
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kammala Road,Waikkal, Waikkal, Waikkal, 00000, Sri Lanka
     city: Waikkal
@@ -15075,7 +15075,7 @@
     longitude: 79.840743
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1, avenue Champollion, 21000 Dijon, Dijon, 21000, France
     city: Dijon
@@ -15106,7 +15106,7 @@
     longitude: 5.06091
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 1
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Eerikinkatu 4,20100 Turku, 20100 Turku, Turku, 20100, Finland
     city: Turku
@@ -15143,7 +15143,7 @@
     longitude: 22.27109
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Satamakatu 1, 70100 Kuopio, Kuopio, 70100, Finland
     city: Kuopio
@@ -15178,7 +15178,7 @@
     longitude: 27.69406
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kylpylaitoksentie 7, 57130 Savonlinna, Savonlinna, 57130, Finland
     city: Savonlinna
@@ -15215,7 +15215,7 @@
     longitude: 28.888974
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Lenina prospekt 98,603004 Nischnij Nowgorod, 603004 Nischnij Nowgorod,
       Nizhniy Novgorod, 603004, Russian Federation
@@ -15257,7 +15257,7 @@
     longitude: 43.870473
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avrory ulitsa 2,450092 Ufa, 450092 Ufa, Ufa, 450092, Russian Federation
     city: Ufa
@@ -15293,7 +15293,7 @@
     longitude: 56.004303
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kurortniy Prospekt, Kurortniy Prospekt, Sochi, 354024, Russian Federation
     city: Sochi
@@ -15348,7 +15348,7 @@
     longitude: 39.72236
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Tchernomorskaya Street 3,354002 Sochi, 354002 Sochi, Sochi, 354002, Russian
       Federation
@@ -15382,7 +15382,7 @@
     longitude: 39.731574
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 22 Duong Truong Sa,P. Hoa Hai,Q. Ngu Hanh Son,Da Nang P. Hoa Hai, Q.
       Ngu Hanh Son T.P., P. Hoa HaiQ. Ngu Hanh SonDa Nang, Da Nang, , Vietnam
@@ -15420,7 +15420,7 @@
     longitude: 108.274156
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sapanpla Road, Amphur MueangKoh Phayam, Ranong, 85000, Thailand
     city: Ranong
@@ -15455,7 +15455,7 @@
     longitude: 98.42224
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 rue du Bailly, 21000 Dijon, Dijon, 21000, France
     city: Dijon
@@ -15488,7 +15488,7 @@
     longitude: 5.073082
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 St Peters Terrace,Willunga 5172,South Australia, Willunga 5172South
       Australia, Willunga, 5172, Australia
@@ -15507,7 +15507,7 @@
     longitude: 138.55481
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Am Weser-Terminal 6,28217 Bremen, 28217 Bremen, Bremen, 28217, Germany
     city: Bremen
@@ -15547,7 +15547,7 @@
     longitude: 8.78804
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: COASTAL ROAD, PEREYBERE, Grand-Baie, 00100, Mauritius
     city: Grand-Baie
@@ -15567,7 +15567,7 @@
     longitude: 57.59159
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Jalan Hanoman,Ubdud 80571,Bali, Ubdud 80571Bali, Ubud, 80571, Indonesia
     city: Ubud
@@ -15611,7 +15611,7 @@
     longitude: 115.263405
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Goldbacher Str. 11, 74635 Kupferzell, Kupferzell, 74635, Germany
     city: Kupferzell
@@ -15639,7 +15639,7 @@
     longitude: 9.681584
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 92 rue Vannerie, 21000 Dijon, Dijon, 21000, France
     city: Dijon
@@ -15671,7 +15671,7 @@
     longitude: 5.0452
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 12 rue Yves Bertrand Burgalat, 21200 Beaune, Beaune, 21200, France
     city: Beaune
@@ -15712,7 +15712,7 @@
     longitude: 4.84357
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 37 Boulevard du 14 Juillet, 13500 Martigues, Martigues, 13500, France
     city: Martigues
@@ -15741,7 +15741,7 @@
     longitude: 5.05555
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 8, Avenue du Rivalet Direction Saint Tropez, Direction Saint Tropez,
       Gassin, 83580, France
@@ -15780,7 +15780,7 @@
     longitude: 6.603411
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 3 quai Amiral Courbet,06230 Villefranche sur mer, 06230 Villefranche
       sur mer, Villefranche-sur-Mer, 06230, France
@@ -15818,7 +15818,7 @@
     longitude: 7.31185
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 32 Rue Helene Boucher, 27000 Evreux, Evreux, 27033, France
     city: Evreux
@@ -15857,7 +15857,7 @@
     longitude: 1.155289
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 Rue Charles Babut, face place du chateau30000 Nîmes, Nîmes, 30000,
       France
@@ -15883,7 +15883,7 @@
     longitude: 4.36267
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 5 Gian.Tzelepi,Ippodamias Square,Piraeus 185 31, Ippodamias SquarePiraeus
       185 31, Piraeus, 18531, Greece
@@ -15927,7 +15927,7 @@
     longitude: 23.647432
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kountouriotou 189, Piraeus 185 35, Piraeus, 18535, Greece
     city: Piraeus
@@ -15962,7 +15962,7 @@
     longitude: 23.646867
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Borska 7,301 00 Plzen, 301 00 Plzen, Plzen, 30100, Czech Republic
     city: Plzen
@@ -15990,7 +15990,7 @@
     longitude: 13.370336
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Na Roudne 13, 301 00 Plzeň, Plzen, 30165, Czech Republic
     city: Plzen
@@ -16020,7 +16020,7 @@
     longitude: 13.38016
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Pallova 12, 301 00 Pilsen, Plzen, 30100, Czech Republic
     city: Plzen
@@ -16047,7 +16047,7 @@
     longitude: 13.38221
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Thamova 9,301 00 Plzen, 301 00 Plzen, Plzen, 30100, Czech Republic
     city: Plzen
@@ -16078,7 +16078,7 @@
     longitude: 13.369655
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Sady 5.kvetna 301/52, 301 00 Plzeň, Plzen, 30100, Czech Republic
     city: Plzen
@@ -16105,7 +16105,7 @@
     longitude: 13.380982
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Hannunkiventie 1, 43800 Kivijärvi, Kivijärvi, 43800, Finland
     city: Kivijärvi
@@ -16138,7 +16138,7 @@
     longitude: 25.07633
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rukankyläntie 15,93830 Rukatunturi, 93830 Rukatunturi, Rukatunturi, 93830,
       Finland
@@ -16180,7 +16180,7 @@
     longitude: 29.140145
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rantalankuja 24, 73310 Tahkovuori, Tahkovuori, 73310, Finland
     city: Tahkovuori
@@ -16206,7 +16206,7 @@
     longitude: 28.045101
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 16 Parkovaya ul. Sestroretsk, 16 Parkovaya ul. Sestroretsk, Saint Petersburg,
       197706, Russian Federation
@@ -16249,7 +16249,7 @@
     longitude: 29.95018
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Marshala Tuhachevskogo Street 27/2,Sankt Petersburg 195067, Sankt Petersburg
       195067, Saint Petersburg, 195067, Russian Federation
@@ -16286,7 +16286,7 @@
     longitude: 30.424983
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 115 Metallistov Prospect, 195197 Sankt Petersburg, St. Petersburg, 195197,
       Russian Federation
@@ -16323,7 +16323,7 @@
     longitude: 30.386649
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kujbyschewa ulitsa 44,620026 Jekaterinburg, 620026 Jekaterinburg, Yekaterinburg,
       620026, Russian Federation
@@ -16362,7 +16362,7 @@
     longitude: 60.616089
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 5
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Hauptstrae 83, 76547 Sinzheim, Sinzheim, 76547, Germany
     city: Sinzheim
@@ -16392,7 +16392,7 @@
     longitude: 8.164597
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Talipanan,Aninuan,5203 Puerto Galera,Oriental Mindoro, Aninuan5203 Puerto
       GaleraOriental Mindoro, Puerto Galera, 5203, Philippines
@@ -16426,7 +16426,7 @@
     longitude: 120.886032
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Rheinallee 3, 53424 Remagen, Remagen, 53424, Germany
     city: Remagen
@@ -16463,7 +16463,7 @@
     longitude: 7.27483
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Uvala Mezzaroca 12, 22203 RažanjRogoznica, Rogoznica, 22203, Croatia
     city: Rogoznica
@@ -16493,7 +16493,7 @@
     longitude: 15.974656
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Galerie du Marais Rue de Cornen, Rue de Cornen, Le Pouliguen, 44510,
       France
@@ -16528,7 +16528,7 @@
     longitude: -2.43208
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 1
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 6 Boulevard Marechal Joffre,34250 Palavas ves Flots, 34250 Palavas ves
       Flots, Palavas-les-Flots, 34250, France
@@ -16569,7 +16569,7 @@
     longitude: 3.93237
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 9 Quai Georges Clemenceau, 34250 Palavas-les-Flots, Palavas-les-Flots,
       34250, France
@@ -16603,7 +16603,7 @@
     longitude: 3.930469
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 1 Rue Amiral Nicol, 29200 Brest, Brest, 29200, France
     city: Brest
@@ -16638,7 +16638,7 @@
     longitude: -4.518069
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 17 Avenue Georges Clémenceau, 29200 Brest, Brest, 29200, France
     city: Brest
@@ -16675,7 +16675,7 @@
     longitude: -4.484297
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 22 Rue Algesiras,29200 Brest, 29200 Brest, Brest, 29200, France
     city: Brest
@@ -16703,7 +16703,7 @@
     longitude: -4.489426
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Kaiserpassage 10, 76133 Karlsruhe, Karlsruhe, 76133, Germany
     city: Karlsruhe
@@ -16746,7 +16746,7 @@
     longitude: 8.396626
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Put Rota 23, 21410 Postira, Postira, 21410, Croatia
     city: Postira
@@ -16761,7 +16761,7 @@
     longitude: 16.630316
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 500m Este de la Iglesia Católica Colonia Libertad de Aguas Claras, Colonia
       Libertad de Aguas Claras, Guayabo, 21302, Costa Rica
@@ -16803,7 +16803,7 @@
     longitude: -85.23852
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Primpongwe St., Accra, Kwabenyan, P.O.BOX11492A, Ghana
     city: Kwabenyan
@@ -16837,7 +16837,7 @@
     longitude: -0.22578
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Western Kokrobite Near AAMA Resort P. O. BOX AN 6024, P. O. BOX AN 6024,
       Kokrobite, 10000, Ghana
@@ -16870,7 +16870,7 @@
     longitude: -0.36848
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Bahnhofstr. 28, 24937 Flensburg, Flensburg, 24937, Germany
     city: Flensburg
@@ -16935,7 +16935,7 @@
     longitude: 9.438103
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Dorf 177,6313 Auffach/Wildschönau, 6313 Auffach/Wildschönau, Wildschönau,
       6313, Austria
@@ -16965,7 +16965,7 @@
     longitude: 12.035198
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Presseggersee 32,9620 Hermagor, 9620 Hermagor-Pressegger See, Hermagor,
       9620, Austria
@@ -17014,7 +17014,7 @@
     longitude: 13.431327
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: C/ de la Cruz, 1, 29640 Fuengirola, Fuengirola, 29640, Spain
     city: Fuengirola
@@ -17046,7 +17046,7 @@
     longitude: -4.622589
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 398 Pim St, Sault Ste. MarieOntario P6B 2V1, Sault Ste. Marie, P6B2V1,
       Canada
@@ -17080,7 +17080,7 @@
     longitude: -84.31946
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 864 Queen St E, P6A 2B4 Sault Ste. Marie, Sault Ste. Marie, P6A2B4, Canada
     city: Sault Ste. Marie
@@ -17112,7 +17112,7 @@
     longitude: -84.32319
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Calle Anton Cerezo, 20-26, 35489 Agaete, Agaete, 35489, Spain
     city: Agaete
@@ -17149,7 +17149,7 @@
     longitude: -15.710584
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Avenida Lanzarote, 10 Puerto Rico, Puerto Rico, Mogan, 35139, Spain
     city: Mogan
@@ -17188,7 +17188,7 @@
     longitude: -15.710896
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: OCT East Dameisha Yantian District, Oct Master Valleyda MeishaKnight
       ValleyYantian District, Shenzhen, 518083, China
@@ -17217,7 +17217,7 @@
     longitude: 114.300998
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 2
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 7 Pyras Street, Ialysos, Rhodes, 85101, Greece
     city: Rhodes
@@ -17272,7 +17272,7 @@
     longitude: 28.167915
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 3
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: Krasnaja ulitsa 109,Krasnodar 350000, 350000 Krasnodar, Krasnodar, 350000,
       Russian Federation
@@ -17310,7 +17310,7 @@
     longitude: 38.97399
     provider: a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba
     stars: 4
-- Model: hotel.Hotel
+- model: hotel.Hotel
   fields:
     address: 26, Kotoroslnaja embankment, 150000 Jaroslawl, Yaroslavl, 150000, Russian
       Federation
