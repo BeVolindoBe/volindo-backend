@@ -21,7 +21,7 @@ class Hotel(models.Model):
     stars = models.PositiveSmallIntegerField()
     latitude = models.DecimalField(max_digits=12, decimal_places=8)
     longitude = models.DecimalField(max_digits=12, decimal_places=8)
-    adress = models.CharField(max_length=600, null=True, default=None)
+    address = models.CharField(max_length=600, null=True, default=None)
     description = models.TextField(null=True, default=None)
 
     class Meta:
