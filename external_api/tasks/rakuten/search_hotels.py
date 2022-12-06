@@ -6,30 +6,10 @@ from django.core.cache import cache
 
 from celery import shared_task
 
-from external_api.tasks.rakuten.common import HEADERS, HOST
+from external_api.tasks.rakuten.common import HEADERS, HOST, PROVIDER_ID
 
 
 QUERY_STRING = '/hotel_list?adult_count={}&check_in_date={}&check_out_date={}&children={}&currency={}&hotel_id_list={}&room_count={}&source_market={}&child_count={}'
-
-
-# def parse(cache_key, filter):
-#     results = json.loads(cache.get(cache_key))
-#     for hotel in data:
-#         results['hotels'].append(
-#             {
-#                 'provider': 'Booking',
-#                 'name': hotel['hotel_name'],
-#                 'offered_price': float(hotel['price_breakdown']['all_inclusive_price']),
-#                 'total_price': float(hotel['price_breakdown']['gross_price']),
-#                 'image': hotel['main_photo_url'],
-#                 'star_rating': int(hotel['class']),
-#                 'latitude': float(hotel['latitude']),
-#                 'longitude': float(hotel['longitude']),
-#                 'amenities': []
-#             }
-#         )
-#     results['hotels'].sort(key=lambda x: x['total_price'])
-#     cache.set(cache_key, json.dumps(results), 900)
 
 
 def parse_rooms(rooms_list) -> dict:

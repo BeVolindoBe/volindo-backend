@@ -54,7 +54,7 @@ class HotelPicture(models.Model):
         related_name='hotel_pictures'
     )
     image_type = models.CharField(max_length=1, choices=IMAGE_TYPE_CHOICES, default='A')
-    url = models.URLField()
+    url = models.URLField(max_length=600)
 
     class Meta:
         db_table = 'hotels_pictures'
