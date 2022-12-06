@@ -11,6 +11,7 @@ from rest_framework.response import Response
 from drf_yasg.utils import swagger_auto_schema
 
 from external_api.tasks.rakuten.search_hotels import search_rakuten
+from external_api.tasks.tbo.search_hotels import search_tbo
 
 from search.serializers import SearchSerializer
 
@@ -27,7 +28,8 @@ class SearchHotel(APIView):
                 'hotels': []
             }
             cache.set(results_id, json.dumps(results), 18000)
-            search_rakuten(results_id, filters.validated_data)
+            # search_rakuten(results_id, filters.validated_data)
+            search_tbo(results_id, filters.validated_data)
         return Response({'results_id': results_id}, status=status.HTTP_200_OK)
 
 

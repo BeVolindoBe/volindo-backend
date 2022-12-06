@@ -4,13 +4,14 @@ from catalogue.models import Item
 
 
 HOST = environ['TBO_URL']
+AUTH = environ['TBO_AUTH']
 
 # STATIC_HOST = environ['RAKUTEN_STATIC_URL']
 
 # IMAGE_HOST = environ['RAKUTEN_IMAGE_URL']
 
 HEADERS = {
-	'Authorization': 'Basic Vm9saW5kb214VGVzdDpWb2xAMjU0MDY3OTQ=',
+	'Authorization': f'Basic {AUTH}',
 	'Content-Type': 'application/json'
 }
 
