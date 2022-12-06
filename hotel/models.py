@@ -62,10 +62,7 @@ class HotelAmenity(models.Model):
         on_delete=models.CASCADE,
         related_name='hotel_amenities'
     )
-    amenity = models.ForeignKey(
-        Item,
-        on_delete=models.CASCADE
-    )
+    amenity = models.CharField(max_length=100)
 
     class Meta:
         db_table = 'hotels_amenities'
