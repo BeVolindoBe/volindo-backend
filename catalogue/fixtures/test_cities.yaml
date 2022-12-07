@@ -1,0 +1,32 @@
+- fields:
+    catalogue_id: c807abfe-71ac-11ed-a1eb-0242ac120002
+    description: Bamiyan
+    id: 029feb6c-75b0-11ed-ac1d-6ef05e004391
+    metadata: ''
+    parent: d01fcfe0-75af-11ed-ac1d-6ef05e004391
+    slug: bamiyan
+  model: catalogue.Item
+- fields:
+    catalogue_id: c807abfe-71ac-11ed-a1eb-0242ac120002
+    description: Bost
+    id: 029fec34-75b0-11ed-ac1d-6ef05e004391
+    metadata: ''
+    parent: d01fcfe0-75af-11ed-ac1d-6ef05e004391
+    slug: bost
+  model: catalogue.Item
+- fields:
+    catalogue_id: c807abfe-71ac-11ed-a1eb-0242ac120002
+    description: Chakcharan
+    id: 029fecd4-75b0-11ed-ac1d-6ef05e004391
+    metadata: ''
+    parent: d01fcfe0-75af-11ed-ac1d-6ef05e004391
+    slug: chakcharan
+  model: catalogue.Item
+- fields:
+    catalogue_id: c807abfe-71ac-11ed-a1eb-0242ac120002
+    description: Darwaz
+    id: 029fed4c-75b0-11ed-ac1d-6ef05e004391
+    metadata: ''
+    parent: d01fcfe0-75af-11ed-ac1d-6ef05e004391
+    slug: darwaz
+  model: catalogue.Item

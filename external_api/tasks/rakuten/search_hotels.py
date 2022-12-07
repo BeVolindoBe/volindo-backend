@@ -6,7 +6,11 @@ from django.core.cache import cache
 
 from celery import shared_task
 
+from catalogue.models import Item
+
 from external_api.tasks.rakuten.common import HEADERS, HOST, PROVIDER_ID
+
+from hotel.models import Hotel
 
 
 QUERY_STRING = '/hotel_list?adult_count={}&check_in_date={}&check_out_date={}&children={}&currency={}&hotel_id_list={}&room_count={}&source_market={}&child_count={}'
@@ -30,7 +34,12 @@ def parse_rooms(rooms_list) -> dict:
 
 @shared_task
 def search_rakuten(results_id, filters):
+    destination = Item.objects.get(id=filters['destination'])
     parsed_rooms = parse_rooms(filters['rooms'])
+    hotels = Hotel.objects.prefetch_related('hotel_pictures').filter(
+        provider_id=PROVIDER_ID,
+        destination_id=destination
+    )
     url = HOST + QUERY_STRING.format(
         parsed_rooms['adults'],
         filters['check_in'],
@@ -46,3 +55,4 @@ def search_rakuten(results_id, filters):
         url,
         headers=HEADERS
     )
+    print(response.json())

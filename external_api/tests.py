@@ -9,7 +9,7 @@ from agent.tests import get_token
 from hotel.models import HotelPicture, Hotel
 
 
-class SearchTestCase(TestCase):
+class StaticTestCase(TestCase):
 
     client = Client()
     fixtures = [
@@ -25,6 +25,4 @@ class SearchTestCase(TestCase):
             f'/external-api/static/',
             HTTP_AUTHORIZATION=f'Bearer {token}',
         )
-        print(Hotel.objects.all().count())
-        print(HotelPicture.objects.all().count())
         self.assertEqual(response.status_code, status.HTTP_200_OK)

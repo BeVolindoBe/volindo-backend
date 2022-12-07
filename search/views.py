@@ -15,6 +15,9 @@ from external_api.tasks.tbo.search_hotels import search_tbo
 
 from search.serializers import SearchSerializer
 
+from hotel.models import Hotel
+from hotel.serializers import HotelSerializer
+
 
 class SearchHotel(APIView):
     @swagger_auto_schema(request_body=SearchSerializer)
@@ -25,12 +28,22 @@ class SearchHotel(APIView):
             results = {
                 'id': results_id,
                 'stauts': 'pending',
-                'hotels': []
+                'hotels': HotelSerializer(
+                    Hotel.objects.prefetch_related(
+                        'hotel_pictures',
+                        'hotel_amenities'
+                    ).filter(destination_id=filters.validated_data['destination']),
+                    many=True
+                ).data
             }
             cache.set(results_id, json.dumps(results), 18000)
             # search_rakuten(results_id, filters.validated_data)
-            search_tbo(results_id, filters.validated_data)
-        return Response({'results_id': results_id}, status=status.HTTP_200_OK)
+            # search_tbo(results_id, filters.validated_data)
+            return Response(results, status=status.HTTP_200_OK)
+        error = {
+            'message': 'Bad request.'
+        }
+        return Response(error, status=status.HTTP_400_BAD_REQUEST)
 
 
 class ResultsHotel(APIView):

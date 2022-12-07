@@ -1,0 +1,20 @@
+- fields:
+    amenity: Library
+    hotel: 5afc9f58-75b0-11ed-ac1d-6ef05e004391
+    id: 5afca3ae-75b0-11ed-ac1d-6ef05e004391
+  model: hotel.HotelAmenity
+- fields:
+    amenity: Express check-in
+    hotel: 5afc9f58-75b0-11ed-ac1d-6ef05e004391
+    id: 5afca412-75b0-11ed-ac1d-6ef05e004391
+  model: hotel.HotelAmenity
+- fields:
+    amenity: elevator
+    hotel: 5afc9f58-75b0-11ed-ac1d-6ef05e004391
+    id: 5afca44e-75b0-11ed-ac1d-6ef05e004391
+  model: hotel.HotelAmenity
+- fields:
+    amenity: Indoor pool
+    hotel: 5afc9f58-75b0-11ed-ac1d-6ef05e004391
+    id: 5afca480-75b0-11ed-ac1d-6ef05e004391
+  model: hotel.HotelAmenity
