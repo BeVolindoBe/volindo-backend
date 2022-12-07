@@ -42,5 +42,11 @@ class CatalogueTestCase(TestCase):
             '/catalogues/destinations/?destination=chakc',
             HTTP_AUTHORIZATION=f'Bearer {token}',
         )           
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        response = self.client.get(
+            '/catalogues/destinations/?destination=new ',
+            HTTP_AUTHORIZATION=f'Bearer {token}',
+        )           
         print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)

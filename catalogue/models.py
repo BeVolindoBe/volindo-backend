@@ -21,11 +21,9 @@ class Catalogue(models.Model):
 
 class Item(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    parent = models.ForeignKey('self', null=True, default=None, on_delete=models.CASCADE)
     catalogue = models.ForeignKey(Catalogue, on_delete=models.CASCADE, related_name='items')
     slug = models.CharField(max_length=60, db_index=True)
     description = models.CharField(max_length=100)
-    metadata = models.JSONField(null=True)
 
     class Meta:
         db_table = 'items'
@@ -38,3 +36,30 @@ class Item(models.Model):
         if self.parent is None:
             return f'{self.description}'
         return f'{self.description} - {self.parent.description}'
+
+
+class Country(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    iso_code = models.CharField(max_length=2)
+    country_name = models.CharField(max_length=100)
+
+    class Meta:
+        db_table = 'countries'
+        managed = True
+        verbose_name = 'Country'
+        verbose_name_plural = 'Countries'
+        ordering = ['iso_name']
+
+
+class Destination(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    country = models.ForeignKey(Country, on_delete=models.CASCADE)
+    destination_name = models.CharField(max_length=200)
+    city_name = models.CharField(max_length=200)
+
+    class Meta:
+        db_table = 'countries'
+        managed = True
+        verbose_name = 'Country'
+        verbose_name_plural = 'Countries'
+        ordering = ['iso_name']
