@@ -5,7 +5,7 @@ from rest_framework import serializers
 
 class SearchRoomSerializer(serializers.Serializer):
     number_of_adults = serializers.IntegerField()
-    childrens_ages = serializers.ListField(
+    children_age = serializers.ListField(
         child=serializers.IntegerField()
     )
 

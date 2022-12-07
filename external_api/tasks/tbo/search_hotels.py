@@ -10,8 +10,8 @@ def parse_rooms(rooms_list) -> list:
     for room in rooms_list:
         rooms.append({
             'Adults': room['number_of_adults'],
-            'Children': len(room['childrens_ages']),
-            'ChildrenAges': room['childrens_ages']
+            'Children': len(room['children_age']),
+            'ChildrenAges': room['children_age']
         })
     return rooms
 

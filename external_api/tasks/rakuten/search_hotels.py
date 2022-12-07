@@ -22,7 +22,7 @@ def parse_rooms(rooms_list) -> dict:
     children = ''
     for obj in rooms_list:
         adults += obj['number_of_adults'] 
-        for c in obj['childrens_ages']:
+        for c in obj['children_age']:
             child_count += 1
             children = children + str(c) + ','
     return {

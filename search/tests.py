@@ -31,7 +31,7 @@ class SearchTestCase(TestCase):
             "rooms": [
                 {
                     "number_of_adults": 2,
-                    "childrens_ages": [
+                    "children_age": [
                         12
                     ]
                 }
