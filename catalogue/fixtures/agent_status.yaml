@@ -4,7 +4,6 @@
     catalogue_id: 'a4c7e30b-8b4e-4b2e-9674-a8137a930383' # Agent status
     slug: 'agent_validated'
     description: 'Validated'
-    metadata:
 
 - model: 'catalogue.Item'
   fields:
@@ -12,4 +11,3 @@
     catalogue_id: 'a4c7e30b-8b4e-4b2e-9674-a8137a930383' # Agent status
     slug: 'agent_pending'
     description: 'Pending for validation'
-    metadata:

@@ -4,7 +4,6 @@
     catalogue_id: '91594db6-0e55-4b6d-babf-d617719a5972'
     slug: 'rakuten'
     description: 'Rakuten'
-    metadata:
 
 - model: 'catalogue.Item'
   fields:
@@ -12,4 +11,3 @@
     catalogue_id: '91594db6-0e55-4b6d-babf-d617719a5972'
     slug: 'tbo'
     description: 'TBO'
-    metadata:

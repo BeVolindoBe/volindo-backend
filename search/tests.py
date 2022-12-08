@@ -16,16 +16,16 @@ class SearchTestCase(TestCase):
         'catalogue/fixtures/agent_subscriptions.yaml',
         'catalogue/fixtures/countries.yaml',
         'catalogue/fixtures/api_providers.yaml',
-        'catalogue/fixtures/test_cities.yaml',
-        'hotel/fixtures/test_hotels.yaml',
-        'hotel/fixtures/test_amenities.yaml',
-        'hotel/fixtures/test_pictures.yaml',
+        'catalogue/fixtures/destinations.yaml',
+        'hotel/fixtures/hotels.yaml',
+        'hotel/fixtures/hotel_amenities.yaml',
+        'hotel/fixtures/hotel_pictures.yaml',
     ]
 
     def test_search(self):
         token = get_token()
         data = {
-            "destination": "029fecd4-75b0-11ed-ac1d-6ef05e004391",
+            "destination": "28e6f8d5-a361-4468-b13e-77ba8ff73ebe",
             "check_in": "2022-12-12",
             "check_out": "2022-12-13",
             "rooms": [

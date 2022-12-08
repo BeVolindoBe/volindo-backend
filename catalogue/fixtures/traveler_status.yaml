@@ -4,7 +4,6 @@
     catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
     slug: 'travaler_high_potential'
     description: 'High potential'
-    metadata:
 
 - model: 'catalogue.Item'
   fields:
@@ -12,7 +11,6 @@
     catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
     slug: 'travaler_lead'
     description: 'Lead'
-    metadata:
 
 - model: 'catalogue.Item'
   fields:
@@ -20,4 +18,3 @@
     catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
     slug: 'travaler_family_friend'
     description: 'Famili/Friend'
-    metadata:

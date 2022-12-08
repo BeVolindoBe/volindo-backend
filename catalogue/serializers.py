@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from catalogue.models import Catalogue, Item
+from catalogue.models import Catalogue, Item, Destination
 
 
 class ItemSerializer(serializers.ModelSerializer):
@@ -24,4 +24,16 @@ class CatalogueSerializer(serializers.ModelSerializer):
             'slug',
             'description',
             'items'
+        )
+
+
+class DestinationSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Destination
+        fields = (
+            'country',
+            'external_id',
+            'search_field',
+            'display_name'
         )

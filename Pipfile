@@ -16,6 +16,7 @@ celery = "*"
 drf-yasg = "*"
 djangorestframework-simplejwt = {extras = ["crypto"], version = "*"}
 sendgrid = "*"
+unidecode = "*"
 
 [dev-packages]
 

@@ -4,8 +4,6 @@
     catalogue_id: "5d7b286e-cab3-4869-b420-119f9bd8b2e9" # Agent subscriptions
     slug: "agent_subscription_free"
     description: "Free subscription"
-    metadata:
-      - icon: "https://via.placeholder.com/150"
 
 - model: "catalogue.Item"
   fields:
@@ -13,5 +11,3 @@
     catalogue_id: "5d7b286e-cab3-4869-b420-119f9bd8b2e9" # Agent subscriptions
     slug: "agent_subscription_expert"
     description: "Expert subscription"
-    metadata:
-      - icon: "https://via.placeholder.com/150"
