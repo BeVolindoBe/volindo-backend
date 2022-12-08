@@ -32,7 +32,7 @@ class SearchHotel(APIView):
             }
             cache.set(results_id, json.dumps(results), 18000)
             # search_rakuten(results_id, filters.validated_data)
-            search_tbo(results_id, filters.validated_data)
+            # search_tbo(results_id, filters.validated_data)
             return Response(results, status=status.HTTP_200_OK)
         error = {
             'message': 'Bad request.'
