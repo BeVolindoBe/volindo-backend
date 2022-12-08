@@ -7,8 +7,8 @@ from rest_framework import status
 
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
-from catalogue.serializers import CatalogueSerializer, DestinationSerializer
-from catalogue.models import Catalogue, Destination
+from catalogue.serializers import CatalogueSerializer, DestinationSerializer, CountrySerializer
+from catalogue.models import Catalogue, Destination, Country
 
 
 
@@ -22,6 +22,11 @@ class CatalogueDetail(RetrieveAPIView):
     serializer_class = CatalogueSerializer
     queryset = Catalogue.objects.prefetch_related('items').all()
     lookup_field = 'slug'
+
+
+class CountryList(ListAPIView):
+    serializer_class = CountrySerializer
+    queryset = Country.objects.all()
 
 
 class DestinationAutocomplete(APIView):
