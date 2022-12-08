@@ -1,3 +1,5 @@
+from unidecode import unidecode
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -5,8 +7,8 @@ from rest_framework import status
 
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
-from catalogue.serializers import CatalogueSerializer, ItemSerializer
-from catalogue.models import Catalogue, Item
+from catalogue.serializers import CatalogueSerializer, DestinationSerializer
+from catalogue.models import Catalogue, Destination
 
 
 
@@ -25,8 +27,7 @@ class CatalogueDetail(RetrieveAPIView):
 class DestinationAutocomplete(APIView):
     def get(self, request):
         destination = request.query_params.get('destination')
-        destinations = Item.objects.filter(
-            description__contains=destination.capitalize(),
-            catalogue_id='c807abfe-71ac-11ed-a1eb-0242ac120002'
+        destinations = Destination.objects.filter(
+            search_field__contains=unidecode(destination.lower())
         )
-        return Response(ItemSerializer(destinations, many=True).data, status=status.HTTP_200_OK)
+        return Response(DestinationSerializer(destinations, many=True).data, status=status.HTTP_200_OK)

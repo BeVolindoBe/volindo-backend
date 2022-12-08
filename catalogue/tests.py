@@ -15,7 +15,7 @@ class CatalogueTestCase(TestCase):
         'catalogue/fixtures/agent_status.yaml',
         'catalogue/fixtures/amenities.yaml',
         'catalogue/fixtures/countries.yaml',
-        'catalogue/fixtures/test_cities.yaml',
+        'catalogue/fixtures/destinations.yaml',
     ]
 
     def test_get_all_catalogues(self):
@@ -45,7 +45,7 @@ class CatalogueTestCase(TestCase):
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         response = self.client.get(
-            '/catalogues/destinations/?destination=new ',
+            '/catalogues/destinations/?destination=Victoria F',
             HTTP_AUTHORIZATION=f'Bearer {token}',
         )           
         print(dumps(response.json(), indent=4))

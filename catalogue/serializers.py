@@ -33,7 +33,5 @@ class DestinationSerializer(serializers.ModelSerializer):
         model = Destination
         fields = (
             'country',
-            'external_id',
-            'search_field',
             'display_name'
         )

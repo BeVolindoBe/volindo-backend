@@ -1,17 +1,17 @@
 
-# - model: "catalogue.Item"
-#   fields:
-#     id: "20179d75-765c-471b-9d2e-6dac1c91bce8"
-#     catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
-#     slug: "shopping_on_site"
-#     description: "Shopping on site"
+- model: "catalogue.Item"
+  fields:
+    id: "20179d75-765c-471b-9d2e-6dac1c91bce8"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "shopping_on_site"
+    description: "Shopping on site"
 
-# - model: "catalogue.Item"
-#   fields:
-#     id: "0af43b55-2675-4540-b5c1-a0166bf87271"
-#     catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
-#     slug: "air_conditioning"
-#     description: "Air conditioning"
+- model: "catalogue.Item"
+  fields:
+    id: "0af43b55-2675-4540-b5c1-a0166bf87271"
+    catalogue_id: "baee60e6-b5e1-4a1b-a9a1-45e91d929d48"
+    slug: "air_conditioning"
+    description: "Air conditioning"
 
 # - model: "catalogue.Item"
 #   fields:
