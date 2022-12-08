@@ -54,12 +54,12 @@ class Country(models.Model):
 class Destination(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
-    destination_name = models.CharField(max_length=200)
-    city_name = models.CharField(max_length=200)
+    destination = models.CharField(max_length=200)
+    external_id = models.CharField(max_length=100, db_index=True)
 
     class Meta:
-        db_table = 'countries'
+        db_table = 'destinations'
         managed = True
-        verbose_name = 'Country'
-        verbose_name_plural = 'Countries'
-        ordering = ['iso_name']
+        verbose_name = 'Destination'
+        verbose_name_plural = 'Destinations'
+        ordering = ['destination']

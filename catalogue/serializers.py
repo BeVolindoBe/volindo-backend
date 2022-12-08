@@ -10,8 +10,7 @@ class ItemSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'slug',
-            'description',
-            'metadata'
+            'description'
         )
 
 

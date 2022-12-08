@@ -8,7 +8,7 @@ from catalogue.models import Destination, Item
 class Hotel(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     destination = models.ForeignKey(
-        Destination,
+        Item,
         on_delete=models.CASCADE,
         related_name='hotel_destination',
         null=True,
