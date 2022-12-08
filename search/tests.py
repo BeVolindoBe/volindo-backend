@@ -25,14 +25,14 @@ class SearchTestCase(TestCase):
     def test_search(self):
         token = get_token()
         data = {
-            "destination": "28e6f8d5-a361-4468-b13e-77ba8ff73ebe",
-            "check_in": "2022-12-12",
-            "check_out": "2022-12-13",
+            "destination": "02aaadfe-75b0-11ed-ac1d-6ef05e004391",
+            "check_in": "2023-01-01",
+            "check_out": "2023-01-05",
             "rooms": [
                 {
-                    "number_of_adults": 2,
-                    "children_age": [
-                        12
+                    "number_of_adults": 1,
+                    "childrens_ages": [
+                        1
                     ]
                 }
             ],
@@ -45,8 +45,8 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
-        # self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         # results_id = response.json()['results_id']
         # response = self.client.get(
         #     f'/search/hotels/results/{results_id}/',
