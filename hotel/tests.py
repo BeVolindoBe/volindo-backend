@@ -4,27 +4,31 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
+from agent.tests import get_token
+
 
 class HotelTestCase(TestCase):
 
     client = Client()
-    hotel_id = '38a11835-14f1-4a5c-9e46-77d1990db1d8'
+    hotel_id = '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
 
     fixtures = [
         'catalogue/fixtures/catalogues.yaml',
         'catalogue/fixtures/agent_status.yaml',
+        'catalogue/fixtures/agent_subscriptions.yaml',
         'catalogue/fixtures/countries.yaml',
+        'catalogue/fixtures/api_providers.yaml',
         'catalogue/fixtures/destinations.yaml',
-        'catalogue/fixtures/phone_country_codes.yaml',
-        'catalogue/fixtures/amenities.yaml',
-        'account/fixtures/users.yaml',
-        'agent/fixtures/agents.yaml',
-        'hotel/fixtures/hotels_test.yaml',
-        'hotel/fixtures/hotels_pictures_test.yaml',
-        'hotel/fixtures/hotels_amenities_test.yaml',
+        'hotel/fixtures/hotels.yaml',
+        'hotel/fixtures/hotel_amenities.yaml',
+        'hotel/fixtures/hotel_pictures.yaml',
     ]
 
     def test_update_traveler_by_id(self):
-        response = self.client.get('/hotels/{}/'.format(self.hotel_id))
-        # print(dumps(response.json(), indent=4))
+        token = get_token()
+        response = self.client.get(
+            '/hotels/{}/'.format(self.hotel_id),
+            HTTP_AUTHORIZATION=f'Bearer {token}'
+        )
+        print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
