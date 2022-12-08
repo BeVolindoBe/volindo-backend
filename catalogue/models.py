@@ -48,7 +48,7 @@ class Country(models.Model):
         managed = True
         verbose_name = 'Country'
         verbose_name_plural = 'Countries'
-        ordering = ['iso_name']
+        ordering = ['iso_code']
 
 
 class Destination(models.Model):

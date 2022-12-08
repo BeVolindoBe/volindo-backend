@@ -23,8 +23,6 @@ class Hotel(models.Model):
     )
     external_id = models.CharField(max_length=100, db_index=True, null=True, default=None)
     hotel_name = models.CharField(max_length=200)
-    country_code = models.CharField(max_length=2, null=True, default=None)
-    city = models.CharField(max_length=100, null=True, default=None)
     stars = models.PositiveSmallIntegerField()
     latitude = models.DecimalField(max_digits=12, decimal_places=8)
     longitude = models.DecimalField(max_digits=12, decimal_places=8)
