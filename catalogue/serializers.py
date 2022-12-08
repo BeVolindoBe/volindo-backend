@@ -31,6 +31,7 @@ class DestinationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Destination
         fields = (
+            'id',
             'country',
             'display_name'
         )
