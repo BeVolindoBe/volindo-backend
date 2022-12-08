@@ -47,10 +47,10 @@ class SearchTestCase(TestCase):
         )
         # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        # results_id = response.json()['results_id']
-        # response = self.client.get(
-        #     f'/search/hotels/results/{results_id}/',
-        #     HTTP_AUTHORIZATION=f'Bearer {token}'
-        # )
+        results_id = response.json()['id']
+        response = self.client.get(
+            f'/search/hotels/results/{results_id}/',
+            HTTP_AUTHORIZATION=f'Bearer {token}'
+        )
         # print(dumps(response.json(), indent=4))
-        # self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
