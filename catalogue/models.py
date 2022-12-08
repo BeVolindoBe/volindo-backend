@@ -54,12 +54,13 @@ class Country(models.Model):
 class Destination(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
-    destination = models.CharField(max_length=200)
     external_id = models.CharField(max_length=100, db_index=True)
+    search_field = models.CharField(max_length=200) 
+    display_name = models.CharField(max_length=200)
 
     class Meta:
         db_table = 'destinations'
         managed = True
         verbose_name = 'Destination'
         verbose_name_plural = 'Destinations'
-        ordering = ['destination']
+        ordering = ['display_name']
