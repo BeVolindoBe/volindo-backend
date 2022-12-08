@@ -55,7 +55,7 @@ class Destination(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
     external_id = models.CharField(max_length=100, db_index=True)
-    search_field = models.CharField(max_length=200) 
+    search_field = models.CharField(max_length=200, db_index=True)
     display_name = models.CharField(max_length=200)
 
     class Meta:
