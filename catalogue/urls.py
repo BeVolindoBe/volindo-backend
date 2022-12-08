@@ -5,7 +5,7 @@ from catalogue.views import CatalogueDetail, CatalogueList, DestinationAutocompl
 
 urlpatterns = [
     path('all/', CatalogueList.as_view()),
-    path('countries/', DestinationAutocomplete.as_view()),
+    path('countries/', CountryList.as_view()),
     path('destinations/', DestinationAutocomplete.as_view()),
     path('<str:slug>/', CatalogueDetail.as_view()),
 ]

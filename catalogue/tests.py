@@ -30,7 +30,7 @@ class CatalogueTestCase(TestCase):
     def test_catalogue_by_slug(self):
         token = get_token()
         response = self.client.get(
-            '/catalogues/cities/',
+            '/catalogues/countries/',
             HTTP_AUTHORIZATION=f'Bearer {token}',
         )           
         # print(dumps(response.json(), indent=4))
@@ -39,13 +39,7 @@ class CatalogueTestCase(TestCase):
     def test_destinations_autocmomplete(self):
         token = get_token()
         response = self.client.get(
-            '/catalogues/destinations/?destination=chakc',
-            HTTP_AUTHORIZATION=f'Bearer {token}',
-        )           
-        # print(dumps(response.json(), indent=4))
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        response = self.client.get(
-            '/catalogues/destinations/?destination=Victoria F',
+            '/catalogues/destinations/?destination=Victori',
             HTTP_AUTHORIZATION=f'Bearer {token}',
         )           
         print(dumps(response.json(), indent=4))
