@@ -30,7 +30,7 @@ class SearchHotel(APIView):
                 'stauts': 'pending',
                 'hotels': []
             }
-            cache.set(results_id, json.dumps(results), 18000)
+            # cache.set(results_id, json.dumps(results), 18000)
             # search_rakuten(results_id, filters.validated_data)
             # search_tbo(results_id, filters.validated_data)
             return Response(results, status=status.HTTP_200_OK)
