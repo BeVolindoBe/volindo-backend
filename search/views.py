@@ -28,7 +28,13 @@ class SearchHotel(APIView):
             results = {
                 'id': results_id,
                 'stauts': 'pending',
-                'hotels': []
+                'hotels': HotelSerializer(
+                    Hotel.objects.prefetch_related(
+                        'hotel_pictures',
+                        'hotel_amenities'
+                    ).filter(destination_id=filters.validated_data['destination']),
+                    many=True
+                ).data
             }
             # cache.set(results_id, json.dumps(results), 18000)
             # search_rakuten(results_id, filters.validated_data)
