@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from catalogue.models import Item
-from catalogue.serializers import ItemSerializer
+from catalogue.serializers import ItemSerializer, CountrySerializer, Country
 
 from agent.models import Agent
 
@@ -36,12 +36,12 @@ class TravelerSerializer(serializers.ModelSerializer):
     def to_internal_value(self, data):
         data['agent'] = Agent.objects.get(user=self.context['request'].user)
         data['phone_country_code'] = Item.objects.get(id=data['phone_country_code'])
-        data['country'] = Item.objects.get(id=data['country'])
+        data['country'] = Country.objects.get(id=data['country'])
         return data
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
-        data['country'] = ItemSerializer(instance.country).data
+        data['country'] = CountrySerializer(instance.country).data
         data['phone_country_code'] = ItemSerializer(instance.phone_country_code).data
         data['traveler_status'] = ItemSerializer(instance.traveler_status).data
         return data

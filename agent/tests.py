@@ -46,7 +46,7 @@ class AgentTestCase(TestCase):
     def test_update_agent_foreign_keys(self):
         token = get_token()
         data = {
-            'country': '53c470d2-71ad-11ed-8eed-6ef05e004391',
+            'country': '7924d644-73cb-4beb-871f-33534f05e287',
         }
         response = self.client.patch(
             '/agent/',
@@ -54,7 +54,7 @@ class AgentTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        # print(dumps(response.json(), indent=4))
+        print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.json()['country']['description'], 'United States')
     

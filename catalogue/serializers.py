@@ -1,7 +1,6 @@
 from rest_framework import serializers
 
-from catalogue.models import Catalogue, Item, Destination
-
+from catalogue.models import Catalogue, Item, Destination, Country
 
 class ItemSerializer(serializers.ModelSerializer):
 
@@ -34,4 +33,14 @@ class DestinationSerializer(serializers.ModelSerializer):
         fields = (
             'country',
             'display_name'
+        )
+
+
+class CountrySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Country
+        fields = (
+            'id',
+            'iso_code',
+            'country_name'
         )

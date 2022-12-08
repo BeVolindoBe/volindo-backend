@@ -2,7 +2,7 @@ from uuid import uuid4
 
 from django.db import models
 
-from catalogue.models import Item
+from catalogue.models import Item, Country
 from catalogue.constants import TITLE_CHOICES
 
 from agent.models import Agent
@@ -35,7 +35,7 @@ class Traveler(models.Model):
     is_active = models.BooleanField(default=False)
     address = models.CharField(max_length=200, null=True, default=None)
     country = models.ForeignKey(
-        Item,
+        Country,
         on_delete=models.CASCADE,
         related_name='traveler_country',
         null=True,

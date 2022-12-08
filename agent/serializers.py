@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from catalogue.serializers import ItemSerializer
+from catalogue.serializers import CountrySerializer, ItemSerializer
 
 from agent.models import Agent
 
@@ -29,7 +29,7 @@ class AgentSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
-        data['country'] = ItemSerializer(instance.country).data
+        data['country'] = CountrySerializer(instance.country).data
         data['phone_country_code'] = ItemSerializer(instance.phone_country_code).data
         data['agent_status'] = ItemSerializer(instance.agent_status).data
         data['agent_subscription'] = ItemSerializer(instance.agent_subscription).data

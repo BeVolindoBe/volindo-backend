@@ -31,7 +31,7 @@ class TravelerTestCase(TestCase):
             'phone_number': '5544332211',
             'title': 'MR',
             'address': 'Mexico Street 10',
-            'country': '47921c88-71ad-11ed-8eed-6ef05e004391', # Mexico
+            'country': '3fe45243-96b9-4427-89ff-baad6cd696bb', # Mexico
             'city': 'Mexico City',
             'state_province': 'Mexico City',
             'zip_code' : '02000',
