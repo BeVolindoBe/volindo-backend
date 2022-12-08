@@ -25,7 +25,7 @@ class SearchTestCase(TestCase):
     def test_search(self):
         token = get_token()
         data = {
-            "destination": "02aaadfe-75b0-11ed-ac1d-6ef05e004391",
+            "destination": "28e6f8d5-a361-4468-b13e-77ba8ff73ebe",
             "check_in": "2023-01-01",
             "check_out": "2023-01-05",
             "rooms": [
