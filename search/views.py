@@ -26,7 +26,7 @@ class SearchHotel(APIView):
         if filters.is_valid(raise_exception=True):
             results_id = str(uuid4())
             results = {
-                'id': results_id,
+                'results_id': results_id,
                 'status': 'pending',
                 'hotels': []
             }
