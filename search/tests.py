@@ -45,7 +45,7 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        # print(dumps(response.json(), indent=4))
+        print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         results_id = response.json()['id']
         response = self.client.get(
