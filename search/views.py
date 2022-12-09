@@ -19,6 +19,7 @@ from hotel.serializers import HotelSerializer
 
 
 class SearchHotel(APIView):
+
     @swagger_auto_schema(request_body=SearchSerializer)
     def post(self, request):
         filters = SearchSerializer(data=request.data)
@@ -26,11 +27,12 @@ class SearchHotel(APIView):
             results_id = str(uuid4())
             results = {
                 'id': results_id,
-                'stauts': 'pending',
+                'status': 'pending',
                 'hotels': []
             }
             cache.set(results_id, json.dumps(results), 18000)
-            search_tbo.delay(results_id, filters.validated_data)
+            # search_tbo.delay(results_id, filters.validated_data)
+            search_tbo(results_id, filters.validated_data)
             results['hotels'] = HotelSerializer(
                 Hotel.objects.prefetch_related(
                     'hotel_pictures',
@@ -39,13 +41,11 @@ class SearchHotel(APIView):
                 many=True
             ).data
             return Response(results, status=status.HTTP_200_OK)
-        error = {
-            'message': 'Bad request.'
-        }
-        return Response(error, status=status.HTTP_400_BAD_REQUEST)
+        return Response({'message': 'Bad request.'}, status=status.HTTP_400_BAD_REQUEST)
 
 
 class ResultsHotel(APIView):
+
     def get(self, request, results_id):
         data = cache.get(results_id)
         if data is None:

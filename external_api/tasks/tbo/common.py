@@ -6,6 +6,8 @@ from catalogue.models import Item
 HOST = environ['TBO_URL']
 AUTH = environ['TBO_AUTH']
 
+SEARCH_URL = f'{HOST}/Search'
+
 HEADERS = {
 	'Authorization': f'Basic {AUTH}',
 	'Content-Type': 'application/json'

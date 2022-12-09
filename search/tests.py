@@ -1,6 +1,7 @@
 from json import dumps
 
 from django.test import TestCase, Client
+from django.core.cache import cache
 
 from rest_framework import status
 
@@ -45,12 +46,12 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(responsse.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         results_id = response.json()['id']
         response = self.client.get(
             f'/search/hotels/results/{results_id}/',
             HTTP_AUTHORIZATION=f'Bearer {token}'
         )
-        # print(dumps(response.json(), indent=4))
+        print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
