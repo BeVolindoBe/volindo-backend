@@ -1,3 +1,5 @@
+import time
+
 from json import dumps
 
 from django.test import TestCase, Client
@@ -26,19 +28,19 @@ class SearchTestCase(TestCase):
     def test_search(self):
         token = get_token()
         data = {
-            "destination": "28e6f8d5-a361-4468-b13e-77ba8ff73ebe",
-            "check_in": "2023-01-01",
-            "check_out": "2023-01-05",
-            "rooms": [
+            'destination': '28e6f8d5-a361-4468-b13e-77ba8ff73ebe',
+            'check_in': '2023-01-01',
+            'check_out': '2023-01-05',
+            'rooms': [
                 {
-                    "number_of_adults": 1,
-                    "children_age": [
+                    'number_of_adults': 1,
+                    'children_age': [
                         1
                     ]
                 }
             ],
-            "currency": "USD",
-            "nationality": "MX"
+            'currency': 'USD',
+            'nationality': 'MX'
         }
         response = self.client.post(
             f'/search/hotels/',
@@ -48,7 +50,8 @@ class SearchTestCase(TestCase):
         )
         # print(dumps(responsse.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        results_id = response.json()['id']
+        results_id = response.json()['results_id']
+        time.sleep(5)
         response = self.client.get(
             f'/search/hotels/results/{results_id}/',
             HTTP_AUTHORIZATION=f'Bearer {token}'
