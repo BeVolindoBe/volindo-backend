@@ -9,7 +9,6 @@ from celery import shared_task
 from external_api.tasks.tbo.common import HEADERS, SEARCH_URL
 
 from hotel.models import Hotel
-from hotel.serializers import HotelSerializer
 
 
 def parse_rooms(rooms_list) -> list:
@@ -24,13 +23,19 @@ def parse_rooms(rooms_list) -> list:
 
 
 def parse_hotels(hotels) -> dict:
+	"""
+		Hotels tuple were the internal id is the first element
+		and the external is the second one
+	"""
 	external_ids = []
 	ids = ''
 	hotels_dict = {}
 	for h in hotels:
-		external_ids.append(h.external_id)
-		ids = ids + f'{h.external_id},'
-		hotels_dict[h.external_id] = HotelSerializer(h).data
+		external_ids.append(h[1])
+		ids = ids + f'{h[1]},'
+		hotels_dict[h[1]] = {
+			'id': str(h[0])
+		}
 	parsed_hotels = {
 		'ids': ids[:-1],
 		'external_ids': external_ids,
@@ -42,11 +47,9 @@ def parse_hotels(hotels) -> dict:
 @shared_task
 def search_tbo(results_id, filters):
 	parsed_rooms = parse_rooms(filters['rooms'])
-	hotels = Hotel.objects.prefetch_related(
-		'hotel_pictures',
-		'hotel_amenities'
-	).filter(destination_id=filters['destination'])
+	hotels = Hotel.objects.values_list('id', 'external_id').filter(destination_id=filters['destination'])
 	parsed_hotels = parse_hotels(hotels=hotels)
+	parsed_hotels['ids']
 	payload = {
 		'CheckIn': filters['check_in'], # format YYYY-mm-dd
 		'CheckOut': filters['check_out'], # format YYYY-mm-dd
