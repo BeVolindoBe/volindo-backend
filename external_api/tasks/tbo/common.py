@@ -1,8 +1,5 @@
 from os import environ
 
-from catalogue.models import Item
-
-
 HOST = environ['TBO_URL']
 AUTH = environ['TBO_AUTH']
 

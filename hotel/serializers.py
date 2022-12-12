@@ -31,6 +31,7 @@ class HotelSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'address',
+            'external_id',
             'destination',
             'hotel_name',
             'stars',

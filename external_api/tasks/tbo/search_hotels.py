@@ -20,7 +20,6 @@ def search_tbo(results_id, filters):
 		destination_id=filters['destination']
 	)
 	parsed_hotels = parse_hotels(hotels=hotels)
-	parsed_hotels['ids']
 	payload = {
 		'CheckIn': filters['check_in'], # format YYYY-mm-dd
 		'CheckOut': filters['check_out'], # format YYYY-mm-dd

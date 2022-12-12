@@ -3,7 +3,6 @@ import json
 import requests
 
 from django.core.cache import cache
-from django.forms.models import model_to_dict
 
 from rest_framework import status
 
@@ -14,6 +13,7 @@ from external_api.tasks.tbo.common import(
 )
 
 from hotel.models import Hotel
+from hotel.serializers import HotelSerializer
 
 
 def parse_hotel_detail(data):
@@ -30,11 +30,14 @@ def parse_hotel_detail(data):
 def tbo_hotel_details(hotel_id, results_id):
     filters = json.loads(cache.get(results_id))['filters']
     parsed_rooms = parse_rooms(filters['rooms'])
-    hotel = model_to_dict(Hotel.objects.get(id=hotel_id))
+    hotel_data = HotelSerializer(
+        Hotel.objects.prefetch_related('hotel_pictures', 'hotel_amenities').get(id=hotel_id)
+    ).data
+    print(hotel_data)
     payload = {
 		'CheckIn': filters['check_in'], # format YYYY-mm-dd
 		'CheckOut': filters['check_out'], # format YYYY-mm-dd
-		'HotelCodes': hotel['external_id'],
+		'HotelCodes': hotel_data['external_id'],
 		'GuestNationality': filters['nationality'],
 		'PaxRooms': parsed_rooms,
 		'ResponseTime': EXPECTED_DETAIL_RESPONSE_TIME,
@@ -42,7 +45,15 @@ def tbo_hotel_details(hotel_id, results_id):
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
     if response.status_code == 200:
-        hotel['rooms'] = parse_hotel_detail(response.json()['HotelResult'][0])
+        if len(response.json()['HotelResult']) > 0:
+            hotel = {
+                'rooms': parse_hotel_detail(response.json()['HotelResult'][0])
+            }
+        else:
+            hotel = {
+                'rooms': []
+            }
+        hotel.update(hotel_data)
         data = GenericResponse(data=hotel, status_code=status.HTTP_200_OK)
     else:
         data = GenericResponse(

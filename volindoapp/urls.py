@@ -23,7 +23,6 @@ urlpatterns = [
     path('search/', include('search.urls')),
     path('payments/', include('payment.urls')),
     path('bank-accounts/', include('bank.urls')),
-    path('external-api/', include('external_api.urls')),
     path('hotels/', include('hotel.urls')),
 ]
 
