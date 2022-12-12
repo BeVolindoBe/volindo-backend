@@ -28,6 +28,7 @@ class SearchHotel(APIView):
             results = {
                 'results_id': results_id,
                 'status': 'pending',
+                'filters': filters.data,
                 'hotels': []
             }
             cache.set(results_id, json.dumps(results), 18000)

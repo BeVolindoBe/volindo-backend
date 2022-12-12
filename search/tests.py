@@ -3,7 +3,6 @@ import time
 from json import dumps
 
 from django.test import TestCase, Client
-from django.core.cache import cache
 
 from rest_framework import status
 
@@ -48,13 +47,22 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        # print(dumps(responsse.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         results_id = response.json()['results_id']
-        time.sleep(5)
+        while True:
+            response = self.client.get(
+                f'/search/hotels/results/{results_id}/',
+                HTTP_AUTHORIZATION=f'Bearer {token}'
+            )
+            if response.json()['status'] != 'pending':
+                break
+            time.sleep(1)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        hotel_id = response.json()['hotels'][0]['id']
         response = self.client.get(
-            f'/search/hotels/results/{results_id}/',
+            f'/hotels/{hotel_id}/?results_id={results_id}',
             HTTP_AUTHORIZATION=f'Bearer {token}'
         )
-        print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # print(dumps(response.json(), indent=4))
