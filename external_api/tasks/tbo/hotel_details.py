@@ -19,10 +19,14 @@ from hotel.serializers import HotelSerializer
 def parse_hotel_detail(data):
     return [
         {
-            'name': r['Name'],
+            'name': r['Name'][0],
             'booking_code': r['BookingCode'],
             'price': r['TotalFare'] + r['TotalTax'],
-            'amenities': r['Inclusion'].split(',')
+            'amenities': [
+                {
+                    'amenity': a
+                } for a in r['Inclusion'].split(',')
+            ]
         } for r in data['Rooms']
     ]
 
