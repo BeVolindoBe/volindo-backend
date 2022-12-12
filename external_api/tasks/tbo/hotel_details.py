@@ -48,10 +48,9 @@ def tbo_hotel_details(hotel_id, results_id):
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
     if response.status_code == 200:
-        results = response.json()['HotelResult']
-        if len(results) > 0:
+        if 'HotelResult' in response.json():
             hotel = {
-                'rooms': parse_hotel_detail(results[0])
+                'rooms': parse_hotel_detail(response.json()['HotelResult'][0])
             }
         else:
             hotel = {
