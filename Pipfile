@@ -17,6 +17,7 @@ drf-yasg = "*"
 djangorestframework-simplejwt = {extras = ["crypto"], version = "*"}
 sendgrid = "*"
 unidecode = "*"
+sentry-sdk = "*"
 
 [dev-packages]
 

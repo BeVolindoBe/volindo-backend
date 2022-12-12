@@ -175,3 +175,17 @@ CSRF_TRUSTED_ORIGINS = environ.get('CSRF_TRUSTED_ORIGINS').split(',')
 SWAGGER_SETTINGS = {
     'DEFAULT_API_URL': environ['HOST']
 }
+
+
+if DEBUG is False:
+    import sentry_sdk
+    from sentry_sdk.integrations.django import DjangoIntegration
+
+    sentry_sdk.init(
+        dsn=environ['SENTRY_DSN'],
+        integrations=[
+            DjangoIntegration(),
+        ],
+        traces_sample_rate=1.0,
+        send_default_pii=True
+    )
