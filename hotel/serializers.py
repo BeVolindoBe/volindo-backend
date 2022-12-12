@@ -1,7 +1,5 @@
 from rest_framework import serializers
 
-from catalogue.serializers import DestinationSerializer
-
 from hotel.models import Hotel, HotelAmenity, HotelPicture
 
 
@@ -25,7 +23,6 @@ class HotelAmenitySerializer(serializers.ModelSerializer):
 
 class HotelSerializer(serializers.ModelSerializer):
 
-    destination = DestinationSerializer()
     hotel_amenities = HotelAmenitySerializer(many=True)
     hotel_pictures = HotelPictureSerializer(many=True)
 
@@ -40,5 +37,6 @@ class HotelSerializer(serializers.ModelSerializer):
             'latitude',
             'longitude',
             'hotel_amenities',
-            'hotel_pictures'
+            'hotel_pictures',
+            'description'
         )
