@@ -21,7 +21,7 @@ def parse_hotel_detail(data):
         {
             'name': r['Name'][0],
             'booking_code': r['BookingCode'],
-            'price': r['TotalFare'] + r['TotalTax'],
+            'price': round(r['TotalFare'] + r['TotalTax']),
             'amenities': [
                 {
                     'amenity': a
