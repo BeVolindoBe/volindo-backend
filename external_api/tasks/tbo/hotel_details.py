@@ -37,7 +37,6 @@ def tbo_hotel_details(hotel_id, results_id):
     hotel_data = HotelSerializer(
         Hotel.objects.prefetch_related('hotel_pictures', 'hotel_amenities').get(id=hotel_id)
     ).data
-    print(hotel_data)
     payload = {
 		'CheckIn': filters['check_in'], # format YYYY-mm-dd
 		'CheckOut': filters['check_out'], # format YYYY-mm-dd
@@ -49,9 +48,10 @@ def tbo_hotel_details(hotel_id, results_id):
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
     if response.status_code == 200:
-        if len(response.json()['HotelResult']) > 0:
+        results = response.json()['HotelResult']
+        if len(results) > 0:
             hotel = {
-                'rooms': parse_hotel_detail(response.json()['HotelResult'][0])
+                'rooms': parse_hotel_detail(results[0])
             }
         else:
             hotel = {

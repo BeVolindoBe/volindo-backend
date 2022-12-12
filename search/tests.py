@@ -65,4 +65,4 @@ class SearchTestCase(TestCase):
             HTTP_AUTHORIZATION=f'Bearer {token}'
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
