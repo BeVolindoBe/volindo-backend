@@ -1,5 +1,7 @@
 import json
 
+from datetime import datetime
+
 import requests
 
 from django.core.cache import cache
@@ -16,7 +18,7 @@ from hotel.models import Hotel
 from hotel.serializers import HotelSerializer
 
 
-def parse_hotel_detail(data):
+def parse_hotel_detail(data, filters):
     return [
         {
             'name': r['Name'][0],
@@ -32,6 +34,13 @@ def parse_hotel_detail(data):
 
 
 def tbo_hotel_details(hotel_id, results_id):
+    results = cache.get(results_id)
+    if results is None:
+        data = GenericResponse(
+            data={'message': 'Hotel data not longer available.'},
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE
+        )
+        return data
     filters = json.loads(cache.get(results_id))['filters']
     parsed_rooms = parse_rooms(filters['rooms'])
     hotel_data = HotelSerializer(
@@ -50,11 +59,17 @@ def tbo_hotel_details(hotel_id, results_id):
     if response.status_code == 200:
         if 'HotelResult' in response.json():
             hotel = {
-                'rooms': parse_hotel_detail(response.json()['HotelResult'][0])
+                'rooms': parse_hotel_detail(response.json()['HotelResult'][0], filters),
+                'number_of_nights': (
+                    datetime.strptime(filters['check_out'], '%Y-%m-%d') - datetime.strptime(filters['check_out'], '%Y-%m-%d')
+                ).days,
             }
         else:
             hotel = {
-                'rooms': []
+                'rooms': [],
+                'number_of_nights': (
+                    datetime.strptime(filters['check_out'], '%Y-%m-%d') - datetime.strptime(filters['check_out'], '%Y-%m-%d')
+                ).days,
             }
         hotel.update(hotel_data)
         data = GenericResponse(data=hotel, status_code=status.HTTP_200_OK)
