@@ -7,7 +7,7 @@ from django.core.cache import cache
 from celery import shared_task
 
 from external_api.tasks.tbo.common import(
-	HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME, parse_hotels, parse_rooms
+	REQUEST_BATCH, HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME, parse_hotels, parse_rooms
 )
 
 from hotel.models import Hotel
@@ -44,7 +44,7 @@ def search_tbo(results_id, filters):
 		destination_id=filters['destination']
 	)
 	counter = 0
-	batch = 10
+	batch = REQUEST_BATCH
 	while counter <= len(hotels):
 		process(hotels[counter:counter+batch], parsed_rooms, results_id, filters)
 		counter += batch
