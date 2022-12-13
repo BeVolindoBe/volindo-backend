@@ -27,7 +27,7 @@ class SearchTestCase(TestCase):
     def test_search(self):
         token = get_token()
         data = {
-            'destination': '28e6f8d5-a361-4468-b13e-77ba8ff73ebe',
+            'destination': '224d3796-70b6-4d36-942d-e3ce90f97ff9',
             'check_in': '2023-01-01',
             'check_out': '2023-01-05',
             'rooms': [
@@ -55,6 +55,7 @@ class SearchTestCase(TestCase):
                 f'/search/hotels/results/{results_id}/',
                 HTTP_AUTHORIZATION=f'Bearer {token}'
             )
+            # print(response.json())
             if response.json()['status'] != 'pending':
                 break
             time.sleep(1)
@@ -66,3 +67,14 @@ class SearchTestCase(TestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         # print(dumps(response.json(), indent=4))
+        response = self.client.post(
+            f'/hotels/rooms/prebook/',
+            HTTP_AUTHORIZATION=f'Bearer {token}',
+            data={
+                'booking_code': response.json()['rooms'][0]['booking_code'],
+                'hotel_id': response.json()['id'],
+                'hotel_name': response.json()['results_id'],
+                'results_id': response.json()['results_id']
+            }
+        )
+        print(print(dumps(response.json(), indent=4)))

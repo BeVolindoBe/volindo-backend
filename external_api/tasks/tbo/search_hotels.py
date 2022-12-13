@@ -7,7 +7,8 @@ from django.core.cache import cache
 from celery import shared_task
 
 from external_api.tasks.tbo.common import(
-	REQUEST_BATCH, HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME, parse_hotels, parse_rooms
+	REQUEST_BATCH, HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME,
+	parse_hotels, parse_rooms
 )
 
 from hotel.models import Hotel

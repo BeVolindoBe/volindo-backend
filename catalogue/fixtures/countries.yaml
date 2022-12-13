@@ -757,7 +757,7 @@
 
 - model: 'catalogue.Country'
   fields:
-    id: '8d34c3fa-f766-414a-ac8f-8d50e0c23812'
+    id: '87ddfd52-d402-4867-8e44-1e57b3a6f772'
     iso_code: 'AE'
     country_name: 'United Arab Emirates'
 

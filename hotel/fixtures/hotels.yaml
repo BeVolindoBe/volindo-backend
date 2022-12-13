@@ -36,3 +36,16 @@
     longitude: '6.174664'
     address: '3 Rue Des Clercs, 57000 Metz, Metz, 57000, France'
     description: 'In the historic heart of Metz, in an elegant XVIII century building, the completely renovated Grand Hotel de Metz features comfortable accommodation and friendly, attentive service.  It is located 100 meters from the Cathedral, the Place Saint-Jacques, Arsenal and the commercial and cultural districts.  The Grand Hotel de Metz welcomes guests 24 hours a day in spacious and cosy guestrooms. Each room is equipped with modern en suite facilities, flat-screen TV and free Wi-Fi internet access.  In the reception area you have a web space and a TV lounge where you can enjoy hot and cold drinks. For your seminars, the hotel can provide a fully-equipped room that measures 35 m².  Close to the A4 and A31 motorways, the TGV station and Metz-Nancy and Luxembourg airports, Grand Hotel de Metz is an ideal choice for all types of travellers who expect quality service and accommodation. By car: Exit motorway Metz Centre and follow Town Centre then Cathedrale.  Secure Car parking is available at Parking République and is 1-minute by foot from the hotel on Rue des Clercs.&nbsp;<br/><b>Disclaimer notification: Amenities are subject to availability and may be chargeable as per the hotel policy.</b>'
+
+- model: 'hotel.Hotel'
+  fields:
+    id: '8a212316-ac8e-4b75-b26f-c2c8ec23cdd8'
+    destination: '224d3796-70b6-4d36-942d-e3ce90f97ff9'
+    provider: 'a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba'
+    external_id: '1078234'
+    hotel_name: 'Signature INN Deira'
+    stars: '3'
+    latitude: '25.264370'
+    longitude: '55.322150'
+    address: 'Al Riqqa Street, P.O.Box 49185Dubai, Dubai, 115283, United Arab Emirates'
+    description: 'Located in the centre of Deira, Signature INN is only 5 km from Dubai International Airport. It has an outdoor pool and features a rooftop restaurant with panoramic city views.  Rooms have parquet floors and are decorated in neutral colours. They include a seating area and LCD TV and satellite channels. Each room comes equipped with air conditioning and a private bathroom with a hairdryer.  In the morning the hotel serves breakfast with freshly-brewed coffee. There is a restaurant that specialises in Indian cuisine and a pub with billiards. At night guests can dance to music at the nightclub.  The tour desk provides information on local attractions and assists with car hire.  The hotel is 550 metres from the Al Rigga Metro Station and is a 20-minute drive from the World Trade Centre. Free private parking is possible on site.&nbsp;<br/><b>Disclaimer notification: Amenities are subject to availability and may be chargeable as per the hotel policy.</b>'

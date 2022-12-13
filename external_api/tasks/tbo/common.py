@@ -1,9 +1,11 @@
 from os import environ
 
+
 HOST = environ['TBO_URL']
 AUTH = environ['TBO_AUTH']
 
 SEARCH_URL = f'{HOST}/Search'
+PREBOOK_URL = f'{HOST}/PreBook'
 
 HEADERS = {
 	'Authorization': f'Basic {AUTH}',
@@ -16,6 +18,8 @@ EXPECTED_SEARCH_RESPONSE_TIME = int(environ['TBO_EXPECTED_SEARCH_RESPONSE_TIME']
 EXPECTED_DETAIL_RESPONSE_TIME = int(environ['TBO_EXPECTED_DETAIL_RESPONSE_TIME'])
 
 REQUEST_BATCH = int(environ['REQUEST_BATCH'])
+
+PAYMENT_MODE = environ['TBO_PAYMENT_MODE']
 
 
 def parse_rooms(rooms_list) -> list:

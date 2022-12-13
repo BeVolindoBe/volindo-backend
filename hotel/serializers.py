@@ -41,3 +41,11 @@ class HotelSerializer(serializers.ModelSerializer):
             'hotel_pictures',
             'description'
         )
+
+
+class PreBookSerializer(serializers.Serializer):
+
+    booking_code = serializers.CharField()
+    hotel_id = serializers.CharField()
+    hotel_name = serializers.CharField()
+    results_id = serializers.CharField()

@@ -1,7 +1,5 @@
 import json
 
-from datetime import datetime
-
 import requests
 
 from django.core.cache import cache
@@ -9,6 +7,7 @@ from django.core.cache import cache
 from rest_framework import status
 
 from common.response_class import GenericResponse
+from common.common import get_number_of_nights
 
 from external_api.tasks.tbo.common import(
     HEADERS, SEARCH_URL, EXPECTED_DETAIL_RESPONSE_TIME, parse_rooms
@@ -23,7 +22,7 @@ def parse_hotel_detail(data, filters):
         {
             'name': r['Name'][0],
             'booking_code': r['BookingCode'],
-            'price': round(r['TotalFare'] + r['TotalTax']),
+            'price': r['TotalFare'],
             'amenities': [
                 {
                     'amenity': a
@@ -34,6 +33,7 @@ def parse_hotel_detail(data, filters):
 
 
 def tbo_hotel_details(hotel_id, results_id):
+    # refactor
     results = cache.get(results_id)
     if results is None:
         data = GenericResponse(
@@ -60,16 +60,14 @@ def tbo_hotel_details(hotel_id, results_id):
         if 'HotelResult' in response.json():
             hotel = {
                 'rooms': parse_hotel_detail(response.json()['HotelResult'][0], filters),
-                'number_of_nights': (
-                    datetime.strptime(filters['check_out'], '%Y-%m-%d') - datetime.strptime(filters['check_in'], '%Y-%m-%d')
-                ).days,
+                'number_of_nights': get_number_of_nights(filters['check_in'], filters['check_out']),
+                'results_id': results_id
             }
         else:
             hotel = {
                 'rooms': [],
-                'number_of_nights': (
-                    datetime.strptime(filters['check_out'], '%Y-%m-%d') - datetime.strptime(filters['check_out'], '%Y-%m-%d')
-                ).days,
+                'number_of_nights': get_number_of_nights(filters['check_in'], filters['check_out']),
+                'results_id': results_id
             }
         hotel.update(hotel_data)
         data = GenericResponse(data=hotel, status_code=status.HTTP_200_OK)
