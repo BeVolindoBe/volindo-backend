@@ -61,7 +61,7 @@ def tbo_hotel_details(hotel_id, results_id):
             hotel = {
                 'rooms': parse_hotel_detail(response.json()['HotelResult'][0], filters),
                 'number_of_nights': (
-                    datetime.strptime(filters['check_out'], '%Y-%m-%d') - datetime.strptime(filters['check_out'], '%Y-%m-%d')
+                    datetime.strptime(filters['check_out'], '%Y-%m-%d') - datetime.strptime(filters['check_in'], '%Y-%m-%d')
                 ).days,
             }
         else:
