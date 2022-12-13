@@ -12,8 +12,10 @@ HEADERS = {
 
 PROVIDER_ID = 'a33ba54c-34f9-4f1a-9d87-0d85a4cfdeba'
 
-EXPECTED_SEARCH_RESPONSE_TIME=int(environ['TBO_EXPECTED_SEARCH_RESPONSE_TIME'])
-EXPECTED_DETAIL_RESPONSE_TIME=int(environ['TBO_EXPECTED_DETAIL_RESPONSE_TIME'])
+EXPECTED_SEARCH_RESPONSE_TIME = int(environ['TBO_EXPECTED_SEARCH_RESPONSE_TIME'])
+EXPECTED_DETAIL_RESPONSE_TIME = int(environ['TBO_EXPECTED_DETAIL_RESPONSE_TIME'])
+
+REQUEST_BATCH = int(environ['REQUEST_BATCH'])
 
 
 def parse_rooms(rooms_list) -> list:
@@ -28,10 +30,6 @@ def parse_rooms(rooms_list) -> list:
 
 
 def parse_hotels(hotels) -> dict:
-	"""
-		Hotels tuple were the internal id is the first element
-		and the external is the second one
-	"""
 	external_ids = []
 	ids = ''
 	hotels_dict = {}

@@ -13,12 +13,7 @@ from external_api.tasks.tbo.common import(
 from hotel.models import Hotel
 
 
-@shared_task
-def search_tbo(results_id, filters):
-	parsed_rooms = parse_rooms(filters['rooms'])
-	hotels = Hotel.objects.values_list('id', 'external_id').filter(
-		destination_id=filters['destination']
-	)
+def process(hotels, parsed_rooms, results_id, filters):
 	parsed_hotels = parse_hotels(hotels=hotels)
 	payload = {
 		'CheckIn': filters['check_in'], # format YYYY-mm-dd
@@ -40,3 +35,16 @@ def search_tbo(results_id, filters):
 		results['status'] = 'update'
 		results['hotels'].extend(temp_hotels)
 		cache.set(results_id, json.dumps(results), 18000)
+
+
+@shared_task
+def search_tbo(results_id, filters):
+	parsed_rooms = parse_rooms(filters['rooms'])
+	hotels = Hotel.objects.values_list('id', 'external_id').filter(
+		destination_id=filters['destination']
+	)
+	counter = 0
+	batch = 10
+	while counter <= len(hotels):
+		process(hotels[counter:counter+batch], parsed_rooms, results_id, filters)
+		counter += batch
