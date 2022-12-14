@@ -27,22 +27,22 @@ def process(hotels, parsed_rooms, results_id, filters):
 		'IsDetailedResponse': False
 	}
 	response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
-	if response.status_code == 200:
-		try:
-			temp_hotels = []
-			for hotel in response.json()['HotelResult']:
-				temp = parsed_hotels['hotels_dict'][hotel['HotelCode']]
-				temp['price'] = hotel['Rooms'][0]['TotalFare']
-				temp_hotels.append(temp)
-			results = json.loads(cache.get(results_id))
-			results['status'] = 'update'
-			results['hotels'].extend(temp_hotels)
-			cache.set(results_id, json.dumps(results), 18000)
-		except KeyError:
-			pass
+	try:
+		hotels = response.json()['HotelResult']
+		temp_hotels = []
+		for hotel in hotels:
+			temp = parsed_hotels['hotels_dict'][hotel['HotelCode']]
+			temp['price'] = hotel['Rooms'][0]['TotalFare']
+			temp_hotels.append(temp)
+		results = json.loads(cache.get(results_id))
+		results['hotels'] = []
+		results['hotels'].extend(temp_hotels)
+		results['status'] = 'update'
+		cache.set(results_id, json.dumps(results), 18000)
+	except KeyError:
+		pass
 
 
-@shared_task
 def search_tbo(results_id, filters):
 	parsed_rooms = parse_rooms(filters['rooms'])
 	hotels = Hotel.objects.values_list('id', 'external_id').filter(
