@@ -25,7 +25,7 @@ class TravelerTestCase(TestCase):
             'first_name': 'Eren',
             'last_name': 'Jaeger',
             'email': 'mail@mail.com',
-            'birthdate': '1900-01-01',
+            'birth_date': '1900-01-01',
             'age': '122',
             'phone_country_code': '3c9efa4d-1b46-4e7c-b042-86f512f6dc8d', # +52 Mexico
             'phone_number': '5544332211',

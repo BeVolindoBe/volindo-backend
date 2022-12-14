@@ -16,7 +16,7 @@ class AgentSerializer(serializers.ModelSerializer):
             'photo',
             'phone_country_code',
             'phone_number',
-            'birthdate',
+            'birth_date',
             'country',
             'web_site',
             'agent_status',

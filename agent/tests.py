@@ -1,13 +1,10 @@
 from json import dumps
 
 from django.test import TestCase, Client
-from django.contrib.auth.models import User
 
 from rest_framework import status
 
 from account.tests import get_token
-
-from agent.models import Agent
 
 
 class AgentTestCase(TestCase):

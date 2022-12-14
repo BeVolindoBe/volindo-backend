@@ -14,7 +14,7 @@ class Traveler(models.Model):
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     email = models.EmailField()
-    birthdate = models.DateField(null=True, default=None)
+    birth_date = models.DateField(null=True, default=None)
     age = models.IntegerField(null=True, default=None)
     phone_country_code = models.ForeignKey(
         Item,
@@ -28,8 +28,7 @@ class Traveler(models.Model):
     traveler_status = models.ForeignKey(
         Item,
         on_delete=models.CASCADE,
-        related_name='traveler_status',
-        default='ff82a0d3-7d21-4f8f-af9b-c28f61562749' # high potential
+        related_name='traveler_status'
     )
     in_vacation = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
@@ -44,6 +43,7 @@ class Traveler(models.Model):
     city = models.CharField(max_length=200, null=True, default=None)
     state_province = models.CharField(max_length=200, null=True, default=None)
     zip_code = models.CharField(max_length=5, null=True, default=None)
+    passport = models.CharField(max_length=30, null=True, default=None)
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

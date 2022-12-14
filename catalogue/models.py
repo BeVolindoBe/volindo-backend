@@ -24,6 +24,7 @@ class Item(models.Model):
     catalogue = models.ForeignKey(Catalogue, on_delete=models.CASCADE, related_name='items')
     slug = models.CharField(max_length=60, db_index=True)
     description = models.CharField(max_length=100)
+    metadata = models.JSONField(null=True, default=None)
 
     class Meta:
         db_table = 'items'
@@ -42,6 +43,7 @@ class Country(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     iso_code = models.CharField(max_length=2)
     country_name = models.CharField(max_length=100)
+    metadata = models.JSONField(null=True, default=None)
 
     class Meta:
         db_table = 'countries'

@@ -13,7 +13,7 @@ class Agent(models.Model):
     last_name = models.CharField(max_length=60)
     email = models.EmailField(unique=True)
     photo = models.URLField(null=True, default=None)
-    birthdate = models.DateField(null=True, default=None)
+    birth_date = models.DateField(null=True, default=None)
     country = models.ForeignKey(
         Country,
         on_delete=models.CASCADE,
