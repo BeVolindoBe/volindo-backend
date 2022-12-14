@@ -15,7 +15,11 @@ from hotel.models import Hotel
 
 
 @shared_task
-def process(hotels, parsed_rooms, results_id, filters):
+def search_tbo(results_id, filters):
+	parsed_rooms = parse_rooms(filters['rooms'])
+	hotels = Hotel.objects.values_list('id', 'external_id').filter(
+		destination_id=filters['destination']
+	)
 	parsed_hotels = parse_hotels(hotels=hotels)
 	payload = {
 		'CheckIn': filters['check_in'], # format YYYY-mm-dd
@@ -27,30 +31,14 @@ def process(hotels, parsed_rooms, results_id, filters):
 		'IsDetailedResponse': False
 	}
 	response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
-	try:
-		hotels = response.json()['HotelResult']
-		temp_hotels = []
-		for hotel in hotels:
-			temp = parsed_hotels['hotels_dict'][hotel['HotelCode']]
-			temp['price'] = hotel['Rooms'][0]['TotalFare']
-			temp_hotels.append(temp)
-		results = json.loads(cache.get(results_id))
-		results['hotels'] = []
-		results['hotels'].extend(temp_hotels)
-		results['status'] = 'update'
-		cache.set(results_id, json.dumps(results), 18000)
-	except KeyError:
-		pass
-
-
-def search_tbo(results_id, filters):
-	parsed_rooms = parse_rooms(filters['rooms'])
-	hotels = Hotel.objects.values_list('id', 'external_id').filter(
-		destination_id=filters['destination']
-	)
-	counter = 0
-	batch = REQUEST_BATCH
-	while counter <= len(hotels):
-		if len(hotels[counter:counter+batch]) > 0:
-			process.delay(hotels[counter:counter+batch], parsed_rooms, results_id, filters)
-		counter += batch
+	hotels = response.json()['HotelResult']
+	temp_hotels = []
+	for hotel in hotels:
+		temp = parsed_hotels['hotels_dict'][hotel['HotelCode']]
+		temp['price'] = hotel['Rooms'][0]['TotalFare']
+		temp_hotels.append(temp)
+	results = json.loads(cache.get(results_id))
+	results['hotels'] = []
+	results['hotels'].extend(temp_hotels)
+	results['status'] = 'update'
+	cache.set(results_id, json.dumps(results), 18000)
