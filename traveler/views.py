@@ -9,7 +9,7 @@ class ListCreateTravelerApiView(ListCreateAPIView):
     serializer_class = TravelerSerializer
 
     def get_queryset(self):
-        return TravelerSerializer.objects.filter(agent__user=self.request.user)
+        return Traveler.objects.filter(agent__user=self.request.user)
 
 
 class TravelerDetail(RetrieveUpdateAPIView):
