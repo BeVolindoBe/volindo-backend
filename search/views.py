@@ -30,12 +30,11 @@ class SearchHotel(APIView):
             results = {
                 'results_id': results_id,
                 'status': 'pending',
-                'filters': filters.data,
-                'hotels': []
+                'filters': filters.data
             }
             cache.set(results_id, json.dumps(results), 18000)
-            search_tbo.delay(results_id, filters.validated_data)
-            # search_tbo(results_id, filters.validated_data)
+            # search_tbo.delay(resultss_id, filters.validated_data)
+            search_tbo(results_id, filters.validated_data)
             results['hotels'] = HotelSerializer(
                 Hotel.objects.prefetch_related(
                     'hotel_pictures',

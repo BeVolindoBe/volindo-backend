@@ -14,6 +14,7 @@ from external_api.tasks.tbo.common import(
 from hotel.models import Hotel
 
 
+@shared_task
 def process(hotels, parsed_rooms, results_id, filters):
 	parsed_hotels = parse_hotels(hotels=hotels)
 	payload = {
@@ -27,15 +28,18 @@ def process(hotels, parsed_rooms, results_id, filters):
 	}
 	response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
 	if response.status_code == 200:
-		temp_hotels = []
-		for hotel in response.json()['HotelResult']:
-			temp = parsed_hotels['hotels_dict'][hotel['HotelCode']]
-			temp['price'] = hotel['Rooms'][0]['TotalFare']
-			temp_hotels.append(temp)
-		results = json.loads(cache.get(results_id))
-		results['status'] = 'update'
-		results['hotels'].extend(temp_hotels)
-		cache.set(results_id, json.dumps(results), 18000)
+		try:
+			temp_hotels = []
+			for hotel in response.json()['HotelResult']:
+				temp = parsed_hotels['hotels_dict'][hotel['HotelCode']]
+				temp['price'] = hotel['Rooms'][0]['TotalFare']
+				temp_hotels.append(temp)
+			results = json.loads(cache.get(results_id))
+			results['status'] = 'update'
+			results['hotels'].extend(temp_hotels)
+			cache.set(results_id, json.dumps(results), 18000)
+		except KeyError:
+			pass
 
 
 @shared_task
@@ -47,5 +51,6 @@ def search_tbo(results_id, filters):
 	counter = 0
 	batch = REQUEST_BATCH
 	while counter <= len(hotels):
-		process(hotels[counter:counter+batch], parsed_rooms, results_id, filters)
+		if len(hotels[counter:counter+batch]) > 0:
+			process.delay(hotels[counter:counter+batch], parsed_rooms, results_id, filters)
 		counter += batch
