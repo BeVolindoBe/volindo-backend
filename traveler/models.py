@@ -15,13 +15,7 @@ class Traveler(models.Model):
     last_name = models.CharField(max_length=60)
     email = models.EmailField()
     birth_date = models.DateField(null=True, default=None)
-    phone_country_code = models.ForeignKey(
-        Item,
-        on_delete=models.CASCADE,
-        related_name='traveler_phone_contry_code',
-        null=True,
-        default=None
-    )
+    phone_country_code = models.CharField(max_length=5, null=True, default=None)
     phone_number = models.CharField(max_length=10, null=True, default=None)
     title = models.CharField(max_length=2, choices=TITLE_CHOICES, null=True, default=None)
     traveler_status = models.ForeignKey(

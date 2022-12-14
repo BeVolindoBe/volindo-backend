@@ -19,7 +19,6 @@ class TravelerSerializer(serializers.ModelSerializer):
             'last_name',
             'email',
             'birth_date',
-            'age',
             'phone_country_code',
             'phone_number',
             'title',
@@ -35,13 +34,11 @@ class TravelerSerializer(serializers.ModelSerializer):
     
     def to_internal_value(self, data):
         data['agent'] = Agent.objects.get(user=self.context['request'].user)
-        data['phone_country_code'] = Item.objects.get(id=data['phone_country_code'])
         data['country'] = Country.objects.get(id=data['country'])
         return data
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
         data['country'] = CountrySerializer(instance.country).data
-        data['phone_country_code'] = ItemSerializer(instance.phone_country_code).data
         data['traveler_status'] = ItemSerializer(instance.traveler_status).data
         return data
