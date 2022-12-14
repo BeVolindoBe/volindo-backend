@@ -9,7 +9,8 @@ class ItemSerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'slug',
-            'description'
+            'description',
+            'metadata'
         )
 
 
@@ -22,8 +23,7 @@ class CatalogueSerializer(serializers.ModelSerializer):
         fields = (
             'slug',
             'description',
-            'items',
-            'metadata',
+            'items'
         )
 
 
