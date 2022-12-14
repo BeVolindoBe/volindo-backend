@@ -22,7 +22,8 @@ class CatalogueSerializer(serializers.ModelSerializer):
         fields = (
             'slug',
             'description',
-            'items'
+            'items',
+            'metadata',
         )
 
 
@@ -42,5 +43,6 @@ class CountrySerializer(serializers.ModelSerializer):
         fields = (
             'id',
             'iso_code',
-            'country_name'
+            'country_name',
+            'metadata',
         )
