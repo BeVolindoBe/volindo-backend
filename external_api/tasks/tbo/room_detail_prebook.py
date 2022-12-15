@@ -20,7 +20,7 @@ def get_room_price(prices):
     price = 0
     for p in prices:
         price += p['BasePrice']
-    return price
+    return round(price, 2)
 
 
 def parse_rooms(rooms):
