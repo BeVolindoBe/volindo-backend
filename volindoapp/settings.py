@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'notification',
     'search',
     'external_api',
-    'hotel'
+    'hotel',
+    'reservation'
 ]
 
 MIDDLEWARE = [

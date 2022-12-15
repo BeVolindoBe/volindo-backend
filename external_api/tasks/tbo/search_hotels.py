@@ -7,7 +7,7 @@ from django.core.cache import cache
 from celery import shared_task
 
 from external_api.tasks.tbo.common import(
-	REQUEST_BATCH, HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME,
+	HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME,
 	parse_hotels, parse_rooms
 )
 
@@ -15,7 +15,7 @@ from hotel.models import Hotel
 
 
 @shared_task
-def search_tbo(results_id, filters):
+def tbo_search_hotels(results_id, filters):
 	parsed_rooms = parse_rooms(filters['rooms'])
 	hotels = Hotel.objects.values_list('id', 'external_id').filter(
 		destination_id=filters['destination']

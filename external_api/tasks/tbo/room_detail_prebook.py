@@ -44,7 +44,7 @@ def parse_rooms(rooms):
     return data
 
 
-def tbo_room_prebook_details(details):
+def tbo_get_room_prebook_details(details):
     results = cache.get(details['results_id'])
     if results is None:
         response = GenericResponse(

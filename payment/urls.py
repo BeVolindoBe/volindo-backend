@@ -1,9 +1,8 @@
 from django.urls import path
 
-from payment.views import NewReservationPayment, PaymentView
+from payment.views import PaymentList
 
 
 urlpatterns = [
-    path('reservations/', NewReservationPayment.as_view()),
-    path('<str:payment_id>/', PaymentView.as_view()),
+   path('', PaymentList.as_view())
 ]

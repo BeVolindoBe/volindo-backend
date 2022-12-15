@@ -32,7 +32,7 @@ def parse_hotel_detail(data):
     ]
 
 
-def tbo_hotel_details(hotel_id, results_id):
+def tbo_get_hotel_details(hotel_id, results_id):
     results = cache.get(results_id)
     if results is None:
         data = GenericResponse(
