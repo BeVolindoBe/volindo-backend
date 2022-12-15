@@ -78,8 +78,6 @@ class SearchTestCase(TestCase):
             HTTP_AUTHORIZATION=f'Bearer {token}',
             data={
                 'booking_code': response.json()['rooms'][0]['booking_code'],
-                'hotel_id': response.json()['id'],
-                'hotel_name': response.json()['results_id'],
                 'results_id': response.json()['results_id']
             }
         )
