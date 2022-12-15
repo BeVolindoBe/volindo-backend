@@ -18,8 +18,7 @@ services:
     volindo-worker:
         container_name: volindo-worker
         build: .
-        # command: 'celery -A volindoapp worker -l INFO'
-        command: "watchmedo auto-restart -d external_api/ -p '*.py' -- celery -A volindoapp worker -l INFO"
+        command: 'celery -A volindoapp worker -l INFO'
         volumes:
             - .:/code
         env_file:

@@ -16,20 +16,40 @@ from external_api.tasks.tbo.common import(
 )
 
 
-def tbo_room_prebook_details(details):
-    """
-    data: {
-        hotel_id
-        results_id
-        booking_code
-        hotel_name
+def get_room_price(prices):
+    price = 0
+    for p in prices:
+        price += p['BasePrice']
+    return price
+
+
+def parse_rooms(rooms):
+    data = {
+        'price': rooms[0]['TotalFare'],
+        'tax': rooms[0]['TotalTax'],
+        'cancel_policies': [
+            {
+                'from_date': datetime.strptime(c['FromDate'], '%d-%m-%Y %H:%M:%S').strftime('%Y-%m-%d'), # 12-12-2022 00:00:00
+                'charge': c['CancellationCharge']
+            } for c in rooms[0]['CancelPolicies']
+        ],
+        'booking_code': rooms[0]['BookingCode'],
+        'rooms_details': [
+            {
+                'name': rooms[0]['Name'][x],
+                'price': get_room_price(rooms[0]['DayRates'][x])
+            } for x in range(len(rooms[0]['Name']))
+        ]
     }
-    """
+    return data
+
+
+def tbo_room_prebook_details(details):
     results = cache.get(details['results_id'])
     if results is None:
         response = GenericResponse(
-            data={'message': 'Hotel data not longer available.'},
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE
+            data={'message': 'Hotel data is not longer available.'},
+            status_code=status.HTTP_404_NOT_FOUND
         )
         return response
     payload = {
@@ -38,29 +58,25 @@ def tbo_room_prebook_details(details):
     }
     results = json.loads(results)
     prebook = requests.post(PREBOOK_URL, headers=HEADERS, data=json.dumps(payload))
-    room = prebook.json()['HotelResult'][0]['Rooms'][0]
-    try:
-        policies = room['RateConditions']
-    except KeyError:
-        policies = []
-    data = {
-        'filters': results['filters'],
-        'hotel_id': details['hotel_id'],
-        'hotel_name': details['hotel_name'],
-        'number_of_nights': get_number_of_nights(results['filters']['check_in'], results['filters']['check_out']),
-        'policies': policies,
-        'name': room['Name'][0],
-        'price': room['TotalFare'],
-        'booking_code': room['BookingCode'],
-        'cancel_policies': [
-            {
-                'from_date': datetime.strptime(c['FromDate'], '%d-%m-%Y %H:%M:%S').strftime('%Y-%m-%d'), # 12-12-2022 00:00:00
-                'charge': c['CancellationCharge']
-            } for c in room['CancelPolicies']
-        ]
-    }   
-    response = GenericResponse(
-        data=data,
-        status_code=status.HTTP_200_OK
-    )
-    return response
+    if prebook.status_code == 200:
+        prebook_data = prebook.json()
+        # print(prebook_data)
+        if 'HotelResult' in prebook_data:
+            policies = prebook_data['HotelResult'][0]['RateConditions'] if 'RateConditions' in prebook_data['HotelResult'][0] else []
+            data = {
+                'filters': results['filters'],
+                'number_of_nights': get_number_of_nights(results['filters']['check_in'], results['filters']['check_out']),
+                'policies': policies,
+                'rooms': parse_rooms(prebook_data['HotelResult'][0]['Rooms'])
+            }   
+            response = GenericResponse(
+                data=data,
+                status_code=status.HTTP_200_OK
+            )
+            return response
+        else:
+            response = GenericResponse(
+                data={'message': 'Hotel data is not longer available.'},
+                status_code=status.HTTP_404_NOT_FOUND
+            )
+            return response

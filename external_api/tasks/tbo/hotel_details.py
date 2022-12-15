@@ -17,7 +17,7 @@ from hotel.models import Hotel
 from hotel.serializers import HotelSerializer
 
 
-def parse_hotel_detail(data, filters):
+def parse_hotel_detail(data):
     return [
         {
             'name': r['Name'][0],
@@ -33,7 +33,6 @@ def parse_hotel_detail(data, filters):
 
 
 def tbo_hotel_details(hotel_id, results_id):
-    # refactor
     results = cache.get(results_id)
     if results is None:
         data = GenericResponse(
@@ -57,18 +56,13 @@ def tbo_hotel_details(hotel_id, results_id):
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
     if response.status_code == 200:
+        hotel = {
+            'rooms': [],
+            'number_of_nights': get_number_of_nights(filters['check_in'], filters['check_out']),
+            'results_id': results_id
+        }
         if 'HotelResult' in response.json():
-            hotel = {
-                'rooms': parse_hotel_detail(response.json()['HotelResult'][0], filters),
-                'number_of_nights': get_number_of_nights(filters['check_in'], filters['check_out']),
-                'results_id': results_id
-            }
-        else:
-            hotel = {
-                'rooms': [],
-                'number_of_nights': get_number_of_nights(filters['check_in'], filters['check_out']),
-                'results_id': results_id
-            }
+            hotel['rooms'] = parse_hotel_detail(response.json()['HotelResult'][0])
         hotel.update(hotel_data)
         data = GenericResponse(data=hotel, status_code=status.HTTP_200_OK)
     else:

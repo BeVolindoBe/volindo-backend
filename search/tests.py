@@ -36,6 +36,12 @@ class SearchTestCase(TestCase):
                     'children_age': [
                         1
                     ]
+                },
+                {
+                    'number_of_adults': 1,
+                    'children_age': [
+                        1
+                    ]
                 }
             ],
             'currency': 'USD',
