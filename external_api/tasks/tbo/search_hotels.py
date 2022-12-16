@@ -31,6 +31,7 @@ def tbo_search_hotels(results_id, filters):
         'IsDetailedResponse': False
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
+    print(response.json())
     hotels = response.json()['HotelResult']
     temp_hotels = []
     for hotel in hotels:
