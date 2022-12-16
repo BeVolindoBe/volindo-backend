@@ -1,6 +1,22 @@
 from rest_framework import serializers
 
-from payment.serializers import PaymentSerializer
+
+class StringListField(serializers.ListField):
+    child = serializers.CharField()
+
+
+class CancelPoliciesSerializer(serializers.Serializer):
+    from_date = serializers.DateField()
+    charge = serializers.DecimalField(max_digits=5, decimal_places=2)
+
+
+class PolicySerializer(serializers.Serializer):
+    policy = serializers.CharField()
+
+
+class PoliciesSerializer(serializers.Serializer):
+    cancellation_policies = CancelPoliciesSerializer(many=True)
+    policies = StringListField()
 
 
 class NewPaymentSerializer(serializers.Serializer):
@@ -29,3 +45,12 @@ class ReservationSerializer(serializers.Serializer):
     booking_code = serializers.CharField()
     hotel_id = serializers.UUIDField()
     results_id = serializers.UUIDField()
+    policies = PoliciesSerializer()
+    policies_acceptance = serializers.BooleanField()
+
+    def validate(self, attrs):
+        if attrs['policies_acceptance'] is False:
+            raise serializers.ValidationError(
+                {"policies_acceptance": "User must accept the policies to continue."}
+            )
+        return attrs

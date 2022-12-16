@@ -137,7 +137,20 @@ class ReservationTestCase(TestCase):
             },
             'hotel_id': prebook['hotel_id'],
             'results_id': prebook['results_id'],
-            'booking_code': prebook['rooms']['booking_code']
+            'booking_code': prebook['rooms']['booking_code'],
+            'policies': {
+                'cancellation_policies': [
+                    {
+                        'from_date': '2022-12-22',
+                        'charge': 100.0
+                    }
+                ],
+                'policies': [
+                    'No cats',
+                    'No smoking'
+                ]
+            },
+            'policies_acceptance': True
         }
         response = self.client.post(
             '/agent/reservations/',
@@ -145,9 +158,9 @@ class ReservationTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
+        print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(1, Payment.objects.all().count())
         self.assertEqual(1, Reservation.objects.all().count())
         self.assertEqual(2, Room.objects.all().count())
         self.assertEqual(2, Guest.objects.all().count())
-        print(dumps(response.json(), indent=4))

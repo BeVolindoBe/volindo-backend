@@ -20,6 +20,8 @@ class Reservation(models.Model):
         Hotel,
         on_delete=models.CASCADE
     )
+    policies = models.JSONField(null=True, default=None)
+    policies_acceptance = models.BooleanField(default=False)
     search_parameters = models.JSONField()
     booking_code = models.CharField(max_length=200, null=True, default=None)
     created_at = models.DateTimeField(auto_now_add=True)

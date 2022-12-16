@@ -26,7 +26,8 @@ def tbo_book(data, user):
         payment=payment,
         hotel_id=data['hotel_id'],
         search_parameters=data['filters'],
-        booking_code=data['booking_code']
+        booking_code=data['booking_code'],
+        policies=data['policies']
     )
     rooms_list = []
     guests_list = []
@@ -49,7 +50,6 @@ def tbo_book(data, user):
             )
     Room.objects.bulk_create(rooms_list)
     Guest.objects.bulk_create(guests_list)
-    print(payment)
     return GenericResponse(
         data=PaymentSerializer(payment).data,
         status_code=status.HTTP_201_CREATED
