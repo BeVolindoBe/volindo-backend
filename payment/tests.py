@@ -166,13 +166,32 @@ class PaymentReservationTestCase(TestCase):
     #     )
     #     self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-    def test_get_payment_detail(self):
+    # def test_get_payment_detail(self):
+    #     token = get_token()
+    #     payment_id = self.get_payment_id()['id']
+    #     response = self.client.get(
+    #         f'/agent/payments/{payment_id}/',
+    #         HTTP_AUTHORIZATION=f'Bearer {token}',
+    #         content_type='application/json'
+    #     )
+    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
+    #     print(dumps(response.json(), indent=4))
+
+
+    def test_pay_reservation(self):
         token = get_token()
         payment_id = self.get_payment_id()['id']
-        response = self.client.get(
-            f'/agent/payments/{payment_id}/',
+        data = {
+            'card_number': '',
+            'exp_date': '',
+            'cvv': '',
+            'card_name': ''
+        }
+        response = self.client.post(
+            f'/agent/payments/{payment_id}/pay-reservation/',
             HTTP_AUTHORIZATION=f'Bearer {token}',
-            content_type='application/json'
+            content_type='application/json',
+            data=data,
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         print(dumps(response.json(), indent=4))

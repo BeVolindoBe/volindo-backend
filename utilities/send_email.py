@@ -7,12 +7,6 @@ from django.conf import settings
 
 
 def send(to_emails:list, subject:str, html_template:str, data:dict) -> bool:
-    """
-    to_emails: list of email addresses
-    subject: email subject
-    html: html template for the email
-    data: information to replace in the template
-    """
     f = open(settings.BASE_DIR / f'utilities/email_templates/{html_template}')
     template = f.read()
     for k,v in data.items():
@@ -26,8 +20,7 @@ def send(to_emails:list, subject:str, html_template:str, data:dict) -> bool:
     )
     try:
         sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
-        response = sg.send(message)
+        sg.send(message)
         return True
     except Exception as e:
-        print(e)
         return False
