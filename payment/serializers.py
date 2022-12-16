@@ -2,6 +2,9 @@ from datetime import datetime
 
 from rest_framework import serializers
 
+from catalogue.models import Item
+from catalogue.serializers import ItemSerializer
+
 from payment.models import Payment
 
 
@@ -11,12 +14,18 @@ class PaymentSerializer(serializers.ModelSerializer):
         model = Payment
         fields = (
             'id',
-            'agent',
-            'amount',
             'commission',
+            'subtotal',
             'total',
-            'approved_at'
+            'approved_at',
+            'payment_type',
         )
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['payment_type'] = ItemSerializer(
+            Item.objects.get(id=instance.payment_type)
+        ).data
 
 
 class CardSerializer(serializers.Serializer):

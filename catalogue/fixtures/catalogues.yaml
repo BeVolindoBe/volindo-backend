@@ -51,3 +51,9 @@
     id: '91594db6-0e55-4b6d-babf-d617719a5972'
     slug: 'api_providers'
     description: ' API Providers'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: 'ca055044-8be3-4d09-9ff2-19500d886349'
+    slug: 'payment_types'
+    description: ' Payment type'

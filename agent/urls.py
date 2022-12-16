@@ -7,4 +7,5 @@ urlpatterns = [
     path('', AgentDetail.as_view()),
     path('travelers/', include('traveler.urls')),
     path('notifications/', include('notification.urls')),
+    path('reservations/', include('reservation.urls')),
 ]

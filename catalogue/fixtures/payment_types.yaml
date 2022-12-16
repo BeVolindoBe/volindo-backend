@@ -1,0 +1,13 @@
+- model: 'catalogue.Item'
+  fields:
+    id: 'bdc2ac59-ef70-4595-b73b-e8a5b477a15e'
+    catalogue_id: 'ca055044-8be3-4d09-9ff2-19500d886349'
+    slug: 'payment_type_subscription'
+    description: 'Subscription Payment'
+
+- model: 'catalogue.Item'
+  fields:
+    id: '2f0d3a9b-22de-40ca-a701-b5a5b36a04ba'
+    catalogue_id: 'ca055044-8be3-4d09-9ff2-19500d886349'
+    slug: 'payment_type_reservation'
+    description: 'Reservation Payment'
