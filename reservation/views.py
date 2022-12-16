@@ -1,5 +1,10 @@
+import json
+
+from django.core.cache import cache
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 
 from drf_yasg.utils import swagger_auto_schema
 
@@ -14,5 +19,10 @@ class Reservation(APIView):
     def post(self, request):
         data = ReservationSerializer(data=request.data)
         if data.is_valid(raise_exception=True):
-            response = tbo_book(data)
+            cleaned_data = data.data
+            results = cache.get(cleaned_data['results_id'])
+            if results is None:
+                return Response({'message': 'Data is no longer available.'}, status=status.HTTP_404_NOT_FOUND)
+            cleaned_data['filters'] = json.loads(results)['filters']
+            response = tbo_book(cleaned_data)
             return Response(response.data, status=response.status_code)

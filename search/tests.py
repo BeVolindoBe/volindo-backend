@@ -61,7 +61,6 @@ class SearchTestCase(TestCase):
                 f'/search/hotels/results/{results_id}/',
                 HTTP_AUTHORIZATION=f'Bearer {token}'
             )
-            # print(response.json())
             if response.json()['status'] != 'pending':
                 break
             time.sleep(1)

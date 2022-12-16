@@ -26,5 +26,6 @@ class ReservationSerializer(serializers.Serializer):
 
     rooms = RoomSerializer(many=True)
     payment = NewPaymentSerializer()
+    booking_code = serializers.CharField()
     hotel_id = serializers.UUIDField()
     results_id = serializers.UUIDField()

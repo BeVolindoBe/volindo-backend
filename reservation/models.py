@@ -21,6 +21,7 @@ class Reservation(models.Model):
         on_delete=models.CASCADE
     )
     search_parameters = models.JSONField()
+    booking_code = models.CharField(max_length=200, null=True, default=None)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

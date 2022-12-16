@@ -5,8 +5,6 @@ from common.response_class import GenericResponse
 
 def tbo_book(data):
     return GenericResponse(
-        data={
-            'message': 'OK'
-        },
+        data=data,
         status_code=status.HTTP_201_CREATED
     )
