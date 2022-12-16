@@ -158,7 +158,7 @@ class ReservationTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(1, Payment.objects.all().count())
         self.assertEqual(1, Reservation.objects.all().count())
