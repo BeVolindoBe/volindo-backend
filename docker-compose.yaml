@@ -29,7 +29,7 @@ services:
     vdb:
         container_name: vdb
         image: postgres:14
-        # command: ["postgres", "-c", "log_statement=all"]
+        command: ["postgres", "-c", "log_statement=all"]
         environment:
             - POSTGRES_DB=vdb
             - POSTGRES_USER=postgres

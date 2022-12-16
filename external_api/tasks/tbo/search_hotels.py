@@ -31,7 +31,6 @@ def tbo_search_hotels(results_id, filters):
         'IsDetailedResponse': False
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
-    print(response.json())
     hotels = response.json()['HotelResult']
     temp_hotels = []
     for hotel in hotels:
@@ -42,4 +41,4 @@ def tbo_search_hotels(results_id, filters):
     results['hotels'] = []
     results['hotels'].extend(temp_hotels)
     results['status'] = 'update'
-    cache.set(results_id, json.dumps(results), 18000)
+    cache.set(results_id, json.dumps(results), 900)

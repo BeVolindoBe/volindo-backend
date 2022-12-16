@@ -43,6 +43,3 @@ class Traveler(models.Model):
     class Meta:
         db_table = 'travelers'
         managed = True
-
-    def __str__(self):
-        return f'{self.first_name} {self.last_name}'

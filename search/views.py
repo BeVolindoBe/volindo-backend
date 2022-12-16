@@ -31,7 +31,7 @@ class SearchHotel(APIView):
                 'filters': filters.data,
                 'hotels': []
             }
-            cache.set(results_id, json.dumps(results), 18000)
+            cache.set(results_id, json.dumps(results), 900)
             tbo_search_hotels.delay(results_id, filters.validated_data)
             # tbo_search_hotels(results_id, filters.validated_data)
             results['hotels'] = HotelSerializer(
