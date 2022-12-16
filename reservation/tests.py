@@ -8,6 +8,10 @@ from rest_framework import status
 
 from agent.tests import get_token
 
+from payment.models import Payment
+
+from reservation.models import Reservation, Room, Guest
+
 
 class ReservationTestCase(TestCase):
 
@@ -21,6 +25,7 @@ class ReservationTestCase(TestCase):
         'catalogue/fixtures/countries.yaml',
         'catalogue/fixtures/api_providers.yaml',
         'catalogue/fixtures/destinations.yaml',
+        'catalogue/fixtures/payment_types.yaml',
         'hotel/fixtures/hotels.yaml',
         'hotel/fixtures/hotel_amenities.yaml',
         'hotel/fixtures/hotel_pictures.yaml',
@@ -107,13 +112,22 @@ class ReservationTestCase(TestCase):
         data = {
             'rooms': [
                 {
-                'guests': [
-                    {
-                        'traveler_id': traveler['id'],
-                        'is_lead': True
-                    }
-                ],
-                'name': 'Palace Room'
+                    'guests': [
+                        {
+                            'traveler_id': traveler['id'],
+                            'is_lead': True
+                        }
+                    ],
+                    'name': 'Palace Room'
+                },
+                {
+                    'guests': [
+                        {
+                            'traveler_id': traveler['id'],
+                            'is_lead': True
+                        }
+                    ],
+                    'name': 'Palace Room'
                 }
             ],
             'payment': {
@@ -132,4 +146,8 @@ class ReservationTestCase(TestCase):
             content_type='application/json'
         )
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(1, Payment.objects.all().count())
+        self.assertEqual(1, Reservation.objects.all().count())
+        self.assertEqual(2, Room.objects.all().count())
+        self.assertEqual(2, Guest.objects.all().count())
         print(dumps(response.json(), indent=4))

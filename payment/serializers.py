@@ -17,15 +17,8 @@ class PaymentSerializer(serializers.ModelSerializer):
             'commission',
             'subtotal',
             'total',
-            'approved_at',
-            'payment_type',
+            'approved_at'
         )
-
-    def to_representation(self, instance):
-        data = super().to_representation(instance)
-        data['payment_type'] = ItemSerializer(
-            Item.objects.get(id=instance.payment_type)
-        ).data
 
 
 class CardSerializer(serializers.Serializer):

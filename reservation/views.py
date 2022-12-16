@@ -24,5 +24,5 @@ class Reservation(APIView):
             if results is None:
                 return Response({'message': 'Data is no longer available.'}, status=status.HTTP_404_NOT_FOUND)
             cleaned_data['filters'] = json.loads(results)['filters']
-            response = tbo_book(cleaned_data)
+            response = tbo_book(cleaned_data, request.user)
             return Response(response.data, status=response.status_code)

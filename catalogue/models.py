@@ -15,9 +15,6 @@ class Catalogue(models.Model):
         verbose_name_plural = 'Catalogues'
         ordering = ['description']
 
-    def __str__(self):
-        return self.description
-
 
 class Item(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
@@ -32,11 +29,6 @@ class Item(models.Model):
         verbose_name = 'Catalogue item'
         verbose_name_plural = 'Catalogue items'
         ordering = ['catalogue']
-
-    def __str__(self):
-        if self.parent is None:
-            return f'{self.description}'
-        return f'{self.description} - {self.parent.description}'
 
 
 class Country(models.Model):
