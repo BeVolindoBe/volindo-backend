@@ -23,12 +23,10 @@ class PaymentDetail(RetrieveAPIView):
         return Payment.objects.all()
 
 
-class ReservationPayment(RetrieveAPIView):
+class ReservationPayment(APIView):
 
     def post(self, request, pk):
-        return Response(
-            {
-                'message': 'OK'
-            },
-            status=status.HTTP_200_OK
-        )
+        data = CardSerializer(data=request.data)
+        if data.is_valid(raise_exception=True):
+            cleaned_data = data.data
+            return Response(cleaned_data, status=status.HTTP_200_OK)

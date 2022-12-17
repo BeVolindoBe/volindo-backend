@@ -188,10 +188,10 @@ class PaymentReservationTestCase(TestCase):
             'card_name': ''
         }
         response = self.client.post(
-            f'/agent/payments/{payment_id}/pay-reservation/',
+            f'/agent/payments/{payment_id}/reservation/',
             HTTP_AUTHORIZATION=f'Bearer {token}',
             content_type='application/json',
             data=data,
         )
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
         print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
