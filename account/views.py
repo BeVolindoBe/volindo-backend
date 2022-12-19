@@ -10,12 +10,14 @@ from account.serializers import RegisterSerializer
 
 
 class RegisterView(CreateAPIView):
+
     queryset = User.objects.all()
     permission_classes = (AllowAny, )
     serializer_class = RegisterSerializer
 
 
 class HealthCheck(APIView):
+
     authentication_classes = []
     permission_classes = []
 

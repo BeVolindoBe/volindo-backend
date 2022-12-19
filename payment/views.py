@@ -1,6 +1,7 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
 
 from utilities.payments import pay_reservation
 
@@ -19,6 +20,7 @@ class PaymentList(ListAPIView):
 class PaymentDetail(RetrieveAPIView):
 
     serializer_class = PaymentDetailSerializer
+    permission_classes = (AllowAny, )
 
     def get_queryset(self):
         return Payment.objects.all()
