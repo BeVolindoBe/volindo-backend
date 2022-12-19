@@ -1,3 +1,5 @@
+from os import environ
+
 from uuid import uuid4
 
 from rest_framework import status
@@ -13,6 +15,14 @@ from reservation.models import Reservation, Room, Guest
 
 from external_api.tasks.tbo.common import PAYMENT_TYPE
 from external_api.tasks.tbo.room_detail_prebook import tbo_get_room_prebook_details
+
+
+
+TITLE_DICT = {
+    'MR': ('Mr', 'Adult'),
+    'MS': ('Ms', 'Adult'),
+    'CH': ('Mr', 'Child')
+}
 
 
 def tbo_book(data, user):
@@ -59,56 +69,67 @@ def tbo_book(data, user):
     )
 
 
-# {
-#   "BookingCode": "1247101!TB!1!TB!d6f7ec94-fd7a-4d62-b04b-2b9508b8c25d",
-#   "CustomerDetails": [
-#     {
-#       "CustomerNames": [
-#         {
-#           "Title": "Mr",
-#           "FirstName": "Shubham",
-#           "LastName": "Gupta",
-#           "Type": "Adult"
-#         },
-#         {
-#           "Title": "Mr",
-#           "FirstName": "Kunal",
-#           "LastName": "Agrawal",
-#           "Type": "Child"
-#         }
-#       ]
-#     },
-#     {
-#       "CustomerNames": [
-#         {
-#           "Title": "Ms",
-#           "FirstName": "Surbhi",
-#           "LastName": "Jain",
-#           "Type": "Adult"
-#         },
-#         {
-#           "Title": "Ms",
-#           "FirstName": "Anshu",
-#           "LastName": "Rawat",
-#           "Type": "Child"
-#         }
-#       ]
-#     }
-#   ],
-#   "BookingType": "Voucher",
-#   "PaymentMode": "SavedCard",
-#   "PaymentInfo": {
-#     "CvvNumber": "123"
-#   },
-#   "ClientReferenceId": "1626265961573-16415097",
-#   "BookingReferenceId": "AVw123218",
-#   "TotalFare": 43.2,
-#   "EmailId": "apisupport@tboholidays.com",
-#   "PhoneNumber": "918448780621"
-# }
+def get_customer_names(room):
+    return [
+        {
+            'Title': TITLE_DICT[g['traveler']['title']][0],
+            'FirstName': g['traveler']['first_name'],
+            'LastName': g['traveler']['last_name'],
+            'Type': TITLE_DICT[g['traveler']['title']][1]
+        } for g in room['guests']
+    ]
+
+
+def parse_guests(reservation):
+    data = {
+        'email': reservation['rooms'][0]['guests'][0]['traveler']['email'],
+        'phone': '{} {}'.format(
+            reservation['rooms'][0]['guests'][0]['traveler']['phone_country_code'],
+            reservation['rooms'][0]['guests'][0]['traveler']['phone_number']
+        ),
+        'customers': []
+    }
+    for r in reservation['rooms']:
+        data['customers'].append(
+            {
+                'CustomerNames': get_customer_names(r)
+            }
+        )
+    return data
 
 
 def tbo_payment(payment):
+    payment_data = PaymentDetailSerializer(payment).data
+    parsed_guests = parse_guests(parse_guests(payment_data['reservation']))
+    payload =  {
+        'BookingCode': payment_data['reservation']['booking_code'],
+        'CustomerDetails': parsed_guests['customers'],
+        'ClientReferenceId': payment_data['id'],
+        'BookingReferenceId': payment_data['reservation']['id'],
+        'TotalFare': payment_data['subtotal'],
+        'EmailId': parsed_guests['email'],
+        'PhoneNumber': parsed_guests['phone'],
+        'BookingType': 'Voucher',
+        'PaymentMode': 'NewCard',
+        'PaymentInfo': {
+            'CvvNumber': environ['CARD_CVV'],
+            'CardNumber': environ['CARD_NUMBER'],
+            'CardExpirationMonth': environ['CARD_EXPIRATION_MONTH'],
+            'CardExpirationYear': environ['CARD_EXPIRATION_YEAR'],
+            'CardHolderFirstName': environ['CARD_FIRST_NAME'],
+            'CardHolderlastName': environ['CARD_LAST_NAME'],
+            'BillingAmount': payment_data['subtotal'],
+            'BillingCurrency': 'USD',
+            'CardHolderAddress': {
+                'AddressLine1': environ['CARD_ADDRESS_LINE_1'],
+                'AddressLine2': environ['CARD_ADDRESS_LINE_2'],
+                'City': environ['CARD_CITY'],
+                'PostalCode': environ['CARD_CP'],
+                'CountryCode': environ['CARD_COUNTRY']
+            }
+        }
+    }
+    print(payload)
     return GenericResponse(
         data=PaymentDetailSerializer(payment).data,
         status_code=status.HTTP_201_CREATED

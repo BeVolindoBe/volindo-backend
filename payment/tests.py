@@ -192,5 +192,5 @@ class PaymentReservationTestCase(TestCase):
             content_type='application/json',
             data=card_data,
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)

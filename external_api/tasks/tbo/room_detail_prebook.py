@@ -60,7 +60,6 @@ def tbo_get_room_prebook_details(details):
     prebook = requests.post(PREBOOK_URL, headers=HEADERS, data=json.dumps(payload))
     if prebook.status_code == 200:
         prebook_data = prebook.json()
-        # print(prebook_data)
         if 'HotelResult' in prebook_data:
             policies = prebook_data['HotelResult'][0]['RateConditions'] if 'RateConditions' in prebook_data['HotelResult'][0] else []
             data = {
@@ -73,7 +72,6 @@ def tbo_get_room_prebook_details(details):
                 data=data,
                 status_code=status.HTTP_200_OK
             )
-            print(response.data)
             return response
         else:
             response = GenericResponse(

@@ -20,7 +20,8 @@ class PaymentList(ListAPIView):
 class PaymentDetail(RetrieveAPIView):
 
     serializer_class = PaymentDetailSerializer
-    permission_classes = (AllowAny, )
+    authentication_classes = []
+    permission_classes = []
 
     def get_queryset(self):
         return Payment.objects.all()
