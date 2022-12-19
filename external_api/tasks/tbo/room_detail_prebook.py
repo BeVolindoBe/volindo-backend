@@ -73,6 +73,7 @@ def tbo_get_room_prebook_details(details):
                 data=data,
                 status_code=status.HTTP_200_OK
             )
+            print(response.data)
             return response
         else:
             response = GenericResponse(
