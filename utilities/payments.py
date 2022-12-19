@@ -1,7 +1,5 @@
 from os import environ
 
-import json
-
 import requests
 
 from rest_framework import status

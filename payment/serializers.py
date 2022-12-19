@@ -12,6 +12,8 @@ from traveler.serializers import TravelerSerializer
 
 from reservation.models import Reservation, Room, Guest
 
+from hotel.serializers import HotelSerializer
+
 
 class GuestModelSerializer(serializers.ModelSerializer):
 
@@ -47,6 +49,8 @@ class RoomModelSerializer(serializers.ModelSerializer):
 
 
 class ReservationModelSerializer(serializers.ModelSerializer):
+
+    hotel = HotelSerializer()
 
     class Meta:
         model = Reservation

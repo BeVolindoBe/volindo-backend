@@ -7,7 +7,7 @@ from common.response_class import GenericResponse
 from agent.models import Agent
 
 from payment.models import Payment
-from payment.serializers import PaymentSerializer
+from payment.serializers import PaymentSerializer, PaymentDetailSerializer
 
 from reservation.models import Reservation, Room, Guest
 
@@ -58,6 +58,6 @@ def tbo_book(data, user):
 
 def tbo_payment(payment):
     return GenericResponse(
-        data=PaymentSerializer(payment).data,
+        data=PaymentDetailSerializer(payment).data,
         status_code=status.HTTP_201_CREATED
     )
