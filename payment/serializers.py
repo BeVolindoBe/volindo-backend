@@ -6,7 +6,8 @@ from catalogue.serializers import ItemSerializer
 
 from payment.models import Payment
 
-from traveler.models import Traveler
+from agent.serializers import AgentSerializer
+
 from traveler.serializers import TravelerSerializer
 
 from reservation.models import Reservation, Room, Guest
@@ -65,9 +66,12 @@ class ReservationModelSerializer(serializers.ModelSerializer):
 
 class PaymentDetailSerializer(serializers.ModelSerializer):
 
+    agent = AgentSerializer()
+
     class Meta:
         model = Payment
         fields = (
+            'agent',
             'id',
             'commission',
             'subtotal',

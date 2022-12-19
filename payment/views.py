@@ -1,7 +1,8 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status
+
+from utilities.payments import pay_reservation
 
 from payment.models import Payment
 from payment.serializers import PaymentSerializer, PaymentDetailSerializer, CardSerializer
@@ -28,5 +29,6 @@ class ReservationPayment(APIView):
     def post(self, request, pk):
         data = CardSerializer(data=request.data)
         if data.is_valid(raise_exception=True):
-            cleaned_data = data.data
-            return Response(cleaned_data, status=status.HTTP_200_OK)
+            card_details = data.data
+            payment = pay_reservation(payment_id=pk, card_details=card_details)
+            return Response(payment.data, status=payment.status_code)

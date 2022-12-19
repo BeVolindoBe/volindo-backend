@@ -32,13 +32,13 @@ class SearchHotel(APIView):
                 'hotels': []
             }
             cache.set(results_id, json.dumps(results), 900)
-            tbo_search_hotels.delay(results_id, filters.validated_data)
-            # tbo_search_hotels(results_id, filters.validated_data)
+            tbo_search_hotels.delay(results_id, filters.data)
+            # tbo_search_hotels(results_id, filters.data)
             results['hotels'] = HotelSerializer(
                 Hotel.objects.prefetch_related(
                     'hotel_pictures',
                     'hotel_amenities'
-                ).filter(destination_id=filters.validated_data['destination']).order_by('?'),
+                ).filter(destination_id=filters.data['destination']).order_by('?'),
                 many=True
             ).data
             return Response(results, status=status.HTTP_200_OK)

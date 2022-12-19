@@ -56,5 +56,8 @@ def tbo_book(data, user):
     )
 
 
-def tbo_payment(data):
-    pass
+def tbo_payment(payment):
+    return GenericResponse(
+        data=PaymentSerializer(payment).data,
+        status_code=status.HTTP_201_CREATED
+    )

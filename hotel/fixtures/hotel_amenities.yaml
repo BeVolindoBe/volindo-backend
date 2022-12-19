@@ -1,11 +1,11 @@
 - model: 'hotel.HotelAmenity'
   fields:
     id: '7195f3c2-dcd6-49f6-9429-9ba3b45fe593'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
+    hotel: '8a212316-ac8e-4b75-b26f-c2c8ec23cdd8'
     amenity: "Street parking"
 
 - model: 'hotel.HotelAmenity'
   fields:
     id: 'ffa0747a-c5fd-46a9-8547-e95157ebae53'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
+    hotel: '8a212316-ac8e-4b75-b26f-c2c8ec23cdd8'
     amenity: "Public transport tickets"

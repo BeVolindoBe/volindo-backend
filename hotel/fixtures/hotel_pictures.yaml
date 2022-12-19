@@ -1,48 +1,13 @@
 - model: 'hotel.HotelPicture'
   fields:
     id: 'c26e5010-6bed-4fb8-9a75-dd66c6101454'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
+    hotel: '8a212316-ac8e-4b75-b26f-c2c8ec23cdd8'
     image_type: 'A'
     url: 'https://api.tbotechnology.in/imageresource.aspx?img=FbrGPTrju5e/HYusSxssYNGz+r+daGo8+nI8f2/HFw9QwX+47gOd8n0vhhPU+r1v+0bc9UjwxGNdUaEd9k3xHUm6KG8mnQDcBKMV0E8pXRd9WCSwk7ULoOm3+zZGzpb65l82xuK20PTKwOHPsxhpmBRj9U8h8t1xP6qHnqM3VTwH2SqIK96keQ=='
 
 - model: 'hotel.HotelPicture'
   fields:
     id: 'ebb21e8d-d361-4676-8403-1507cf9ca186'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
+    hotel: '8a212316-ac8e-4b75-b26f-c2c8ec23cdd8'
     image_type: 'A'
     url: 'https://api.tbotechnology.in/imageresource.aspx?img=FbrGPTrju5e/HYusSxssYNGz+r+daGo8+nI8f2/HFw9QwX+47gOd8n0vhhPU+r1vAgA3h3iim1A/FqNeGA4VZ191ic7CpeT8DSZEiX1TLfy2zznx8PHHgN5VOJ48WXK6euY5uEwwqtzWDdC9erbdykkhINbVcB04GHdjPFz7BcBdk8NVVDJCtQ=='
-
-- model: 'hotel.HotelPicture'
-  fields:
-    id: 'e1a50264-3680-42f9-b134-c9f6dc6436c6'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
-    image_type: 'A'
-    url: 'https://api.tbotechnology.in/imageresource.aspx?img=FbrGPTrju5e/HYusSxssYNGz+r+daGo8+nI8f2/HFw9QwX+47gOd8n0vhhPU+r1vLXnLDAxFXMzH32ijxTiOn0v7QjOLxoX8GqEHOZq7L018nQ3SSzuD0NO2q875tJwNqRVVyggOv37RCHwXS3HTmbAmgpBgs5357/bhh9VgONC65cpsWMGNlQ=='
-
-- model: 'hotel.HotelPicture'
-  fields:
-    id: '6eccd619-2fa3-4672-bbcc-04f375750bb1'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
-    image_type: 'A'
-    url: 'https://api.tbotechnology.in/imageresource.aspx?img=FbrGPTrju5e/HYusSxssYNGz+r+daGo8+nI8f2/HFw9QwX+47gOd8n0vhhPU+r1vaPBJU3dDCHMnZNY9RvrCYhQYEh2vup7PvKx27hrEUH6/0tfHreM/vg0wL7S53PhdBBr2VLwgPAa7lOHmXtgymE9e8Ub0xxkw9VkAzK25OiIqFjwlFYevxQ=='
-
-- model: 'hotel.HotelPicture'
-  fields:
-    id: '794e2df1-97ac-4065-b771-4d94b50b60f1'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
-    image_type: 'A'
-    url: 'https://api.tbotechnology.in/imageresource.aspx?img=FbrGPTrju5e/HYusSxssYNGz+r+daGo8+nI8f2/HFw9QwX+47gOd8n0vhhPU+r1vb+C6Xnu7GrqcwFjyFj0jBYER1L6iRKrgocv9oOu0P0c/rokjC3Nhrs8jGmZg7+rcO9BYidis9a1RzuKJxBfhAD+X9qMGNfbn/cmv62jqKi3aK+ESu5eDOA=='
-
-- model: 'hotel.HotelPicture'
-  fields:
-    id: 'b6732b67-1aa5-4e1c-9265-a8acd4670b14'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
-    image_type: 'A'
-    url: 'https://api.tbotechnology.in/imageresource.aspx?img=FbrGPTrju5e/HYusSxssYNGz+r+daGo8+nI8f2/HFw9QwX+47gOd8n0vhhPU+r1vb+C6Xnu7GrpJuoT0tUIV6ixcZZPcwGhSP16kYdrmQqmku0LO3hBdRKUSfDvG4t6sVm2A7b3RAIfcbTYWrsQbj74sxFqwCkDmJVvn5Wrpvntz8DJsrWgqjg=='
-
-- model: 'hotel.HotelPicture'
-  fields:
-    id: '0709eace-23b4-4de8-a8fd-f0c0a04d6d14'
-    hotel: '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
-    image_type: 'A'
-    url: 'https://api.tbotechnology.in/imageresource.aspx?img=FbrGPTrju5e/HYusSxssYNGz+r+daGo8+nI8f2/HFw9QwX+47gOd8n0vhhPU+r1vb+C6Xnu7GroVlNWgKhszsLub0wMQM6VFTG/gsyFo5po0jmfGRGDvrUiRHVRGrX8f+g7jYNRqhrl570xBzkFblNlLTx1q87XBBJ5nX5KJrJZoKsQIcG/RtQ=='

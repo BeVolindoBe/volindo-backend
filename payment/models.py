@@ -24,7 +24,7 @@ class Payment(models.Model):
     subtotal = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     total = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     approved_at = models.DateTimeField(null=True, default=None)
-    response_data = models.TextField(null=True, default=None)
+    response_data = models.JSONField(null=True, default=None)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
