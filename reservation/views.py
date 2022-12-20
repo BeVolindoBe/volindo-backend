@@ -8,12 +8,13 @@ from rest_framework import status
 
 from drf_yasg.utils import swagger_auto_schema
 
+from reservation.models import Reservation
 from reservation.serializers import ReservationSerializer
 
 from external_api.tasks.tbo.book import tbo_book
 
 
-class Reservation(APIView):
+class ReservationApiView(APIView):
 
     @swagger_auto_schema(request_body=ReservationSerializer)
     def post(self, request):
