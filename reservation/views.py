@@ -30,6 +30,6 @@ class ReservationApiView(APIView):
     
     def get(self, request):
         reservations = ReservationSerializer(
-            Reservation.objects.filter(agent__user=request.user)
+            Reservation.objects.filter(payment__agent__user=request.user)
         ).data
         return Response(reservations, status=status.HTTP_200_OK)
