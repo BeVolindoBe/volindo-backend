@@ -29,6 +29,9 @@ class PaymentDetail(RetrieveAPIView):
 
 class ReservationPayment(APIView):
 
+    authentication_classes = []
+    permission_classes = []
+
     def post(self, request, pk):
         data = CardSerializer(data=request.data)
         if data.is_valid(raise_exception=True):
