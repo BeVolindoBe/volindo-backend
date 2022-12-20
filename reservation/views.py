@@ -26,3 +26,9 @@ class Reservation(APIView):
             cleaned_data['filters'] = json.loads(results)['filters']
             response = tbo_book(cleaned_data, request.user)
             return Response(response.data, status=response.status_code)
+    
+    def get(self, request):
+        reservations = ReservationSerializer(
+            Reservation.objects.filter(agent__user=request.user)
+        ).data
+        return Response(reservations, status=status.HTTP_200_OK)
