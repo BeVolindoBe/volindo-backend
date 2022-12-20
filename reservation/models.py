@@ -23,6 +23,7 @@ class Reservation(models.Model):
     policies = models.JSONField(null=True, default=None)
     policies_acceptance = models.BooleanField(default=False)
     search_parameters = models.JSONField()
+    booking_response = models.JSONField(null=True, default=True)
     booking_code = models.CharField(max_length=200, null=True, default=None)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

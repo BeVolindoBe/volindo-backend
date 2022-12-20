@@ -1,6 +1,10 @@
 from os import environ
 
+import json
+
 from uuid import uuid4
+
+import requests
 
 from rest_framework import status
 
@@ -9,13 +13,12 @@ from common.response_class import GenericResponse
 from agent.models import Agent
 
 from payment.models import Payment
-from payment.serializers import PaymentSerializer, PaymentDetailSerializer
+from payment.serializers import PaymentSerializer
 
 from reservation.models import Reservation, Room, Guest
 
-from external_api.tasks.tbo.common import PAYMENT_TYPE
+from external_api.tasks.tbo.common import PAYMENT_TYPE, BOOK_URL, HEADERS
 from external_api.tasks.tbo.room_detail_prebook import tbo_get_room_prebook_details
-
 
 
 TITLE_DICT = {
@@ -72,41 +75,46 @@ def tbo_book(data, user):
 def get_customer_names(room):
     return [
         {
-            'Title': TITLE_DICT[g['traveler']['title']][0],
-            'FirstName': g['traveler']['first_name'],
-            'LastName': g['traveler']['last_name'],
-            'Type': TITLE_DICT[g['traveler']['title']][1]
-        } for g in room['guests']
+            'Title': TITLE_DICT[g.traveler.title][0],
+            'FirstName': g.traveler.first_name,
+            'LastName': g.traveler.last_name,
+            'Type': TITLE_DICT[g.traveler.title][1]
+        } for g in room.room_guests.all()
     ]
 
 
 def parse_guests(reservation):
-    data = {
-        'email': reservation['rooms'][0]['guests'][0]['traveler']['email'],
+    # refactor
+    # first guest in first room
+    traveler = reservation.reservation_rooms.first().room_guests.first().traveler
+    guests = {
+        'email': traveler.email,
         'phone': '{} {}'.format(
-            reservation['rooms'][0]['guests'][0]['traveler']['phone_country_code'],
-            reservation['rooms'][0]['guests'][0]['traveler']['phone_number']
+            traveler.phone_country_code,
+            traveler.phone_number
         ),
         'customers': []
     }
-    for r in reservation['rooms']:
-        data['customers'].append(
+    for r in reservation.reservation_rooms.all():
+        guests['customers'].append(
             {
                 'CustomerNames': get_customer_names(r)
             }
         )
-    return data
+    return guests
 
 
 def tbo_payment(payment):
-    payment_data = PaymentDetailSerializer(payment).data
-    parsed_guests = parse_guests(parse_guests(payment_data['reservation']))
+    reservation = Reservation.objects.prefetch_related(
+        'reservation_rooms__room_guests'
+    ).get(payment=payment)
+    parsed_guests = parse_guests(reservation)
     payload =  {
-        'BookingCode': payment_data['reservation']['booking_code'],
+        'BookingCode': reservation.booking_code,
         'CustomerDetails': parsed_guests['customers'],
-        'ClientReferenceId': payment_data['id'],
-        'BookingReferenceId': payment_data['reservation']['id'],
-        'TotalFare': payment_data['subtotal'],
+        'ClientReferenceId': str(payment.id),
+        'BookingReferenceId': str(reservation.id),
+        'TotalFare': float(payment.subtotal),
         'EmailId': parsed_guests['email'],
         'PhoneNumber': parsed_guests['phone'],
         'BookingType': 'Voucher',
@@ -118,7 +126,7 @@ def tbo_payment(payment):
             'CardExpirationYear': environ['CARD_EXPIRATION_YEAR'],
             'CardHolderFirstName': environ['CARD_FIRST_NAME'],
             'CardHolderlastName': environ['CARD_LAST_NAME'],
-            'BillingAmount': payment_data['subtotal'],
+            'BillingAmount': float(payment.subtotal),
             'BillingCurrency': 'USD',
             'CardHolderAddress': {
                 'AddressLine1': environ['CARD_ADDRESS_LINE_1'],
@@ -129,8 +137,16 @@ def tbo_payment(payment):
             }
         }
     }
-    print(payload)
+    book = requests.post(BOOK_URL, headers=HEADERS, data=json.dumps(payload))
+    if book.status_code == 200:
+        if book.json()['Status']['Code'] == 200:
+            reservation.booking_response = book.json()
+            reservation.save()
+            return GenericResponse(
+                data=PaymentSerializer(payment).data,
+                status_code=status.HTTP_201_CREATED
+            )
     return GenericResponse(
-        data=PaymentDetailSerializer(payment).data,
-        status_code=status.HTTP_201_CREATED
+        data={'message': 'There was a problem with the booking process.'},
+        status_code=status.HTTP_503_SERVICE_UNAVAILABLE
     )
