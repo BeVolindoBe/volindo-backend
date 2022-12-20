@@ -1,5 +1,7 @@
 from os import environ
 
+from datetime import datetime
+
 import requests
 
 from rest_framework import status
@@ -70,6 +72,7 @@ def pay_reservation(payment_id, card_details):
             status_code=status.HTTP_402_PAYMENT_REQUIRED
         )
     payment.response_data = confirmation
+    payment.approved_at = datetime.now()
     payment.save()
     book = tbo_payment(payment)
     if book is False:
