@@ -8,8 +8,10 @@ from rest_framework import status
 
 from drf_yasg.utils import swagger_auto_schema
 
-from reservation.models import Reservation
 from reservation.serializers import ReservationSerializer
+
+from payment.serializers import PaymentDetailSerializer
+from payment.models import Payment
 
 from external_api.tasks.tbo.book import tbo_book
 
@@ -29,7 +31,8 @@ class ReservationApiView(APIView):
             return Response(response.data, status=response.status_code)
     
     def get(self, request):
-        reservations = ReservationSerializer(
-            Reservation.objects.filter(payment__agent__user=request.user)
+        response_data = PaymentDetailSerializer(
+            Payment.objects.filter(agent__user=request.user),
+            many=True
         ).data
-        return Response(reservations, status=status.HTTP_200_OK)
+        return Response(response_data, status=status.HTTP_200_OK)

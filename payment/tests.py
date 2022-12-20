@@ -192,5 +192,10 @@ class PaymentReservationTestCase(TestCase):
             content_type='application/json',
             data=card_data,
         )
+        response = self.client.get(
+            f'/agent/reservations/',
+            HTTP_AUTHORIZATION=f'Bearer {token}',
+            content_type='application/json'
+        )
         print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
