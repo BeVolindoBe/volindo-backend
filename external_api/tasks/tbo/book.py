@@ -141,6 +141,7 @@ def tbo_payment(payment):
     if book.status_code == 200:
         if book.json()['Status']['Code'] == 200:
             reservation.booking_response = book.json()
+            reservation.policies_acceptance = True
             reservation.save()
             return GenericResponse(
                 data=PaymentSerializer(payment).data,
