@@ -11,8 +11,9 @@ from rest_framework import status
 from common.response_class import GenericResponse
 from common.common import get_number_of_nights
 
+from external_api.logs import save_log
 from external_api.tasks.tbo.common import(
-    HEADERS, PREBOOK_URL, PAYMENT_MODE
+    HEADERS, PREBOOK_URL, PAYMENT_MODE, PROVIDER_ID
 )
 
 
@@ -58,6 +59,7 @@ def tbo_get_room_prebook_details(details):
     }
     results = json.loads(results)
     prebook = requests.post(PREBOOK_URL, headers=HEADERS, data=json.dumps(payload))
+    save_log(PROVIDER_ID, PREBOOK_URL, payload, prebook.status_code, prebook.json())
     if prebook.status_code == 200:
         prebook_data = prebook.json()
         if 'HotelResult' in prebook_data:

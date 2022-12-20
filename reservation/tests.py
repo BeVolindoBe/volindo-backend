@@ -35,7 +35,7 @@ class ReservationTestCase(TestCase):
         data = {
             'first_name': 'Eren',
             'last_name': 'Jaeger',
-            'email': 'mail@mail.com',
+            'email': 'rogney@volindo.com',
             'birth_date': '1900-01-01',
             'phone_country_code': '+52', # +52 Mexico
             'phone_number': '5544332211',
@@ -133,7 +133,8 @@ class ReservationTestCase(TestCase):
             'payment': {
                 'commission': '10.50',
                 'subtotal': '10.50',
-                'total': '10.50'
+                'total': '10.50',
+                'link': True
             },
             'hotel_id': prebook['hotel_id'],
             'results_id': prebook['results_id'],

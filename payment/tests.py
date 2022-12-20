@@ -129,7 +129,8 @@ class PaymentReservationTestCase(TestCase):
             'payment': {
                 'commission': '10.50',
                 'subtotal': '10.50',
-                'total': '10.50'
+                'total': '10.50',
+                'link': True
             },
             'hotel_id': prebook['hotel_id'],
             'results_id': prebook['results_id'],

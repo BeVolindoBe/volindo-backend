@@ -24,6 +24,7 @@ class NewPaymentSerializer(serializers.Serializer):
     commission = serializers.DecimalField(max_digits=10, decimal_places=2)
     subtotal = serializers.DecimalField(max_digits=10, decimal_places=2)
     total = serializers.DecimalField(max_digits=10, decimal_places=2)
+    link = serializers.BooleanField()
 
 
 class GuestSerializer(serializers.Serializer):

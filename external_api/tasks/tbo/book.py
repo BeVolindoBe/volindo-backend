@@ -17,7 +17,8 @@ from payment.serializers import PaymentSerializer
 
 from reservation.models import Reservation, Room, Guest
 
-from external_api.tasks.tbo.common import PAYMENT_TYPE, BOOK_URL, HEADERS
+from external_api.logs import save_log
+from external_api.tasks.tbo.common import PAYMENT_TYPE, BOOK_URL, HEADERS, PROVIDER_ID
 from external_api.tasks.tbo.room_detail_prebook import tbo_get_room_prebook_details
 
 
@@ -66,6 +67,8 @@ def tbo_book(data, user):
             )
     Room.objects.bulk_create(rooms_list)
     Guest.objects.bulk_create(guests_list)
+    if data['payment']['link']:
+        print('send_email')
     return GenericResponse(
         data=PaymentSerializer(payment).data,
         status_code=status.HTTP_201_CREATED
@@ -138,6 +141,7 @@ def tbo_payment(payment):
         }
     }
     book = requests.post(BOOK_URL, headers=HEADERS, data=json.dumps(payload))
+    save_log(PROVIDER_ID, BOOK_URL, payload, book.status_code, book.json())
     if book.status_code == 200:
         if book.json()['Status']['Code'] == 200:
             reservation.booking_response = book.json()

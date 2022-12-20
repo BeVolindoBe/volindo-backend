@@ -9,8 +9,10 @@ from rest_framework import status
 from common.response_class import GenericResponse
 from common.common import get_number_of_nights
 
+from external_api.logs import save_log
 from external_api.tasks.tbo.common import(
-    HEADERS, SEARCH_URL, EXPECTED_DETAIL_RESPONSE_TIME, parse_rooms
+    HEADERS, SEARCH_URL, EXPECTED_DETAIL_RESPONSE_TIME, parse_rooms,
+    PROVIDER_ID
 )
 
 from hotel.models import Hotel
@@ -55,6 +57,7 @@ def tbo_get_hotel_details(hotel_id, results_id):
 		'IsDetailedResponse': False
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
+    save_log(PROVIDER_ID, SEARCH_URL, payload, response.status_code, response.json())
     if response.status_code == 200:
         hotel = {
             'rooms': [],
