@@ -54,7 +54,8 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             'booking_code',
             'cancelled_at',
             'created_at',
-            'updated_at'
+            'updated_at',
+            'search_parameters'
         )
 
     def get_rooms_details(self, reservation_id):
