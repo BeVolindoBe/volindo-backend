@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import json
 
 from django.core.cache import cache
@@ -8,6 +10,7 @@ from rest_framework import status
 
 from drf_yasg.utils import swagger_auto_schema
 
+from reservation.models import Reservation
 from reservation.serializers import ReservationSerializer
 
 from payment.serializers import PaymentDetailSerializer
@@ -36,3 +39,9 @@ class ReservationApiView(APIView):
             many=True
         ).data
         return Response(response_data, status=status.HTTP_200_OK)
+
+
+class CancelReservationApiView(APIView):
+    def post(self, request, pk):
+        Reservation.objects.filter(id=pk).update(cancelled_at=datetime.now())
+        return Response({'message:' 'Reservation cancelled.'}, status=status.HTTP_200_OK)
