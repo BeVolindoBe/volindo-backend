@@ -11,7 +11,7 @@ from rest_framework import status
 from drf_yasg.utils import swagger_auto_schema
 
 from reservation.models import Reservation
-from reservation.serializers import ReservationSerializer
+from reservation.serializers import ReservationSerializer, ReservationModelSerializer
 
 from payment.serializers import PaymentDetailSerializer
 from payment.models import Payment
@@ -42,6 +42,9 @@ class ReservationApiView(APIView):
 
 
 class CancelReservationApiView(APIView):
-    def post(self, request, pk):
-        Reservation.objects.filter(id=pk).update(cancelled_at=datetime.now())
-        return Response({'message:' 'Reservation cancelled.'}, status=status.HTTP_200_OK)
+    def post(self, request, reservation_id):
+        reservation = Reservation.objects.get(id=reservation_id)
+        reservation.cancelled_at = datetime.now()
+        reservation.save()
+        data = ReservationModelSerializer(reservation).data
+        return Response(data, status=status.HTTP_200_OK)
