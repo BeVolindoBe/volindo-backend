@@ -142,16 +142,16 @@ def tbo_payment(payment):
     }
     book = requests.post(BOOK_URL, headers=HEADERS, data=json.dumps(payload))
     save_log(PROVIDER_ID, BOOK_URL, payload, book.status_code, book.json())
-    if book.status_code == 200:
-        if book.json()['Status']['Code'] == 200:
-            reservation.booking_response = book.json()
-            reservation.policies_acceptance = True
-            reservation.save()
-            return GenericResponse(
-                data=PaymentSerializer(payment).data,
-                status_code=status.HTTP_201_CREATED
-            )
+    # if book.status_code == 200:
+        # if book.json()['Status']['Code'] == 200:
+    reservation.booking_response = book.json()
+    reservation.policies_acceptance = True
+    reservation.save()
     return GenericResponse(
-        data={'message': 'There was a problem with the booking process.'},
-        status_code=status.HTTP_503_SERVICE_UNAVAILABLE
+        data=PaymentSerializer(payment).data,
+        status_code=status.HTTP_201_CREATED
     )
+    # return GenericResponse(
+    #     data={'message': 'There was a problem with the booking process.'},
+    #     status_code=status.HTTP_503_SERVICE_UNAVAILABLE
+    # )
