@@ -4,7 +4,7 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
-from agent.tests import get_token
+from common.testing import FIXTURES, get_token
 
 from hotel.models import HotelPicture, Hotel
 
@@ -12,12 +12,7 @@ from hotel.models import HotelPicture, Hotel
 class StaticTestCase(TestCase):
 
     client = Client()
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml',
-        'catalogue/fixtures/api_providers.yaml'
-    ]
+    fixtures = FIXTURES
 
     def test_search(self):
         token = get_token()

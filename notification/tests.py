@@ -4,17 +4,13 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
-from agent.tests import get_token
+from common.testing import FIXTURES, get_token
 
 
 class TravelerTestCase(TestCase):
 
     client = Client()
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml'
-    ]
+    fixtures = FIXTURES
 
     def test_notifications(self):
         token = get_token()

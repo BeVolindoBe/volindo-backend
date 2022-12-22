@@ -57,3 +57,9 @@
     id: 'ca055044-8be3-4d09-9ff2-19500d886349'
     slug: 'payment_types'
     description: ' Payment type'
+
+- model: 'catalogue.Catalogue'
+  fields:
+    id: '194ee180-7c08-4878-bbf9-911de85874d9'
+    slug: 'reservation_status'
+    description: ' Reservation status'

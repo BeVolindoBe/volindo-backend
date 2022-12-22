@@ -1,5 +1,7 @@
 from os import environ
 
+from time import sleep
+
 import json
 
 from uuid import uuid4
@@ -7,6 +9,8 @@ from uuid import uuid4
 import requests
 
 from rest_framework import status
+
+from celery import shared_task
 
 from common.response_class import GenericResponse
 
@@ -18,7 +22,10 @@ from payment.serializers import PaymentSerializer
 from reservation.models import Reservation, Room, Guest
 
 from external_api.logs import save_log
-from external_api.tasks.tbo.common import PAYMENT_TYPE, BOOK_URL, HEADERS, PROVIDER_ID, PAYMENT_METHOD
+from external_api.tasks.tbo.common import (PAYMENT_TYPE, BOOK_URL, HEADERS, PROVIDER_ID,
+    BOOKING_DETAIL_URL,
+    PAYMENT_METHOD
+)
 from external_api.tasks.tbo.room_detail_prebook import tbo_get_room_prebook_details
 
 
@@ -87,6 +94,31 @@ def get_customer_names(room):
     ]
 
 
+@shared_task
+def update_book_status(reservation_id):
+    sleep(120)
+    r = Reservation.objects.get(id=reservation_id)
+    counter = 0
+    payload = {
+        'ConfirmationNumber': r.confirmation_number,
+        'PaymentMode': PAYMENT_METHOD
+    }
+    while counter < 5:
+        response = requests.post(
+            BOOKING_DETAIL_URL,
+            headers=HEADERS,
+            data=json.dumps(payload)
+        )
+        if response.status_code == '200' and response.json()['Status']['Code'] == 200:
+            if response.json()['BookingDetail']['BookingStatus'] == 'Confirmed':
+                r.reservation_status = '5955f72b-3afd-4137-8a69-dc9d1eb24253' # done
+                r.save()
+                return
+        counter += 1
+        sleep(60)
+    print('Send alert email')
+
+
 def parse_guests(reservation):
     # refactor
     # first guest in first room
@@ -149,11 +181,13 @@ def card_payment(payment):
             reservation.booking_response = book_response
             reservation.policies_acceptance = True
             reservation.confirmation_number = book_response['ConfirmationNumber']
+            reservation.reservation_status = 'c6cc1c43-7cae-408f-b4e4-4ebeac75d64b' # processing
             reservation.save()
             return GenericResponse(
                 data=PaymentSerializer(payment).data,
                 status_code=status.HTTP_201_CREATED
             )
+            update_book_status.delay(reservation.id)
     return GenericResponse(
         data={'message': 'There was a problem with the booking process.'},
         status_code=status.HTTP_503_SERVICE_UNAVAILABLE

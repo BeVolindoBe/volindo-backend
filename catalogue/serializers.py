@@ -2,6 +2,7 @@ from rest_framework import serializers
 
 from catalogue.models import Catalogue, Item, Destination, Country
 
+
 class ItemSerializer(serializers.ModelSerializer):
 
     class Meta:

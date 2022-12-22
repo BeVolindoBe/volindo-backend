@@ -6,26 +6,14 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
-from agent.tests import get_token
+from common.testing import FIXTURES, get_token
 
 
 class PaymentReservationTestCase(TestCase):
 
     client = Client()
 
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml',
-        'catalogue/fixtures/traveler_status.yaml',
-        'catalogue/fixtures/countries.yaml',
-        'catalogue/fixtures/api_providers.yaml',
-        'catalogue/fixtures/destinations.yaml',
-        'catalogue/fixtures/payment_types.yaml',
-        'hotel/fixtures/hotels.yaml',
-        'hotel/fixtures/hotel_amenities.yaml',
-        'hotel/fixtures/hotel_pictures.yaml',
-    ]
+    fixtures = FIXTURES
 
     def create_traveler(self, token):
         data = {

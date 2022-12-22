@@ -2,9 +2,9 @@ from json import dumps
 
 from django.test import TestCase, Client
 
-from rest_framework import status
+from common.testing import FIXTURES, get_token
 
-from agent.tests import get_token
+from rest_framework import status
 
 
 class HotelTestCase(TestCase):
@@ -12,17 +12,7 @@ class HotelTestCase(TestCase):
     client = Client()
     hotel_id = '8ef1885f-e24b-4183-bcb2-67d44c5d448f'
 
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml',
-        'catalogue/fixtures/countries.yaml',
-        'catalogue/fixtures/api_providers.yaml',
-        'catalogue/fixtures/destinations.yaml',
-        'hotel/fixtures/hotels.yaml',
-        'hotel/fixtures/hotel_amenities.yaml',
-        'hotel/fixtures/hotel_pictures.yaml',
-    ]
+    fixtures = FIXTURES
 
     def test_update_traveler_by_id(self):
         token = get_token()

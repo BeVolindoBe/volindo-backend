@@ -4,20 +4,13 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
-from agent.tests import get_token
+from common.testing import FIXTURES, get_token
 
 
 class TravelerTestCase(TestCase):
 
     client = Client()
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml',
-        'catalogue/fixtures/countries.yaml',
-        'catalogue/fixtures/phone_country_codes.yaml',
-        'catalogue/fixtures/traveler_status.yaml',
-    ]
+    fixtures = FIXTURES
 
     def test_traveler(self):
         token = get_token()

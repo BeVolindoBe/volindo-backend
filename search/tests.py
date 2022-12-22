@@ -6,23 +6,13 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
-from agent.tests import get_token
+from common.testing import FIXTURES, get_token
 
 
 class SearchTestCase(TestCase):
 
     client = Client()
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml',
-        'catalogue/fixtures/countries.yaml',
-        'catalogue/fixtures/api_providers.yaml',
-        'catalogue/fixtures/destinations.yaml',
-        'hotel/fixtures/hotels.yaml',
-        'hotel/fixtures/hotel_amenities.yaml',
-        'hotel/fixtures/hotel_pictures.yaml',
-    ]
+    fixtures = FIXTURES
 
     def test_search(self):
         token = get_token()

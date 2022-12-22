@@ -4,18 +4,15 @@ from django.test import TestCase, Client
 
 from rest_framework import status
 
+from common.testing import FIXTURES, get_token
+
 from account.tests import get_token
 
 
 class AgentTestCase(TestCase):
 
     client = Client()
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/countries.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml',
-    ]
+    fixtures = FIXTURES
 
     def test_get_agent_detail(self):
         token = get_token()
@@ -27,7 +24,9 @@ class AgentTestCase(TestCase):
         token = get_token()
         data = {
             'first_name': 'Jhon',
-            'last_name': 'Doe'
+            'last_name': 'Doe',
+            'city': 'Azcapotzalco',
+            'zip_code': '02000'
         }
         response = self.client.patch(
             '/agent/',
@@ -35,7 +34,7 @@ class AgentTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        # print(dumps(response.json(), indent=4))
+        print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.json()['first_name'], 'Jhon')
         self.assertEqual(response.json()['last_name'], 'Doe')
@@ -51,9 +50,9 @@ class AgentTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.json()['country']['description'], 'United States')
+        self.assertEqual(response.json()['country']['country_name'], 'Albania')
     
     def test_update_agent_foreign_keys_read_only(self):
         token = get_token()

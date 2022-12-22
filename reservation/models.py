@@ -2,6 +2,8 @@ from uuid import uuid4
 
 from django.db import models
 
+from catalogue.models import Item
+
 from payment.models import Payment
 
 from hotel.models import Hotel
@@ -19,6 +21,11 @@ class Reservation(models.Model):
     hotel = models.ForeignKey(
         Hotel,
         on_delete=models.CASCADE
+    )
+    reservation_status = models.ForeignKey(
+        Item,
+        on_delete=models.CASCADE,
+        default='39810fb8-7302-41aa-9939-e0d867513fd9' # pending
     )
     policies = models.JSONField(null=True, default=None)
     policies_acceptance = models.BooleanField(default=False)

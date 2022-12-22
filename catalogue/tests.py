@@ -2,21 +2,15 @@ from json import dumps
 
 from django.test import TestCase, Client
 
-from rest_framework import status
+from common.testing import FIXTURES, get_token
 
-from account.tests import get_token
+from rest_framework import status
 
 
 class CatalogueTestCase(TestCase):
 
     client = Client()
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/amenities.yaml',
-        'catalogue/fixtures/countries.yaml',
-        'catalogue/fixtures/destinations.yaml',
-    ]
+    fixtures = FIXTURES
 
     def test_get_all_catalogues(self):
         token = get_token()

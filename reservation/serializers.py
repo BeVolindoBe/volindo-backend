@@ -1,5 +1,7 @@
 from rest_framework import serializers
 
+from catalogue.serializers import ItemSerializer
+
 from hotel.serializers import HotelSerializer
 
 from traveler.serializers import TravelerSerializer
@@ -55,7 +57,8 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             'cancelled_at',
             'created_at',
             'updated_at',
-            'search_parameters'
+            'search_parameters',
+            'reservation_status'
         )
 
     def get_rooms_details(self, reservation_id):
@@ -67,6 +70,7 @@ class ReservationModelSerializer(serializers.ModelSerializer):
     def to_representation(self, instance):
         data = super().to_representation(instance)
         data['rooms'] = self.get_rooms_details(instance.id)
+        data['reservation_status'] = ItemSerializer(instance.reservation_status).data
         return data
 
 

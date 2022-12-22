@@ -1,0 +1,20 @@
+- model: 'catalogue.Item'
+  fields:
+    id: '39810fb8-7302-41aa-9939-e0d867513fd9'
+    catalogue_id: '194ee180-7c08-4878-bbf9-911de85874d9'
+    slug: 'reservation_status_pending'
+    description: 'Pending'
+
+- model: 'catalogue.Item'
+  fields:
+    id: 'c6cc1c43-7cae-408f-b4e4-4ebeac75d64b'
+    catalogue_id: '194ee180-7c08-4878-bbf9-911de85874d9'
+    slug: 'reservation_status_processing'
+    description: 'Processing'
+
+- model: 'catalogue.Item'
+  fields:
+    id: '5955f72b-3afd-4137-8a69-dc9d1eb24253'
+    catalogue_id: '194ee180-7c08-4878-bbf9-911de85874d9'
+    slug: 'reservation_status_done'
+    description: 'Done'

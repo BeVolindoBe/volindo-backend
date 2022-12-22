@@ -3,39 +3,18 @@ from json import dumps
 from django.test import TestCase, Client
 from django.contrib.auth.models import User
 
+from common.testing import FIXTURES
+
 from agent.models import Agent
 
 from rest_framework import status
-
-
-def get_token():
-    client = Client()
-    data = {
-        'first_name': 'Travel',
-        'last_name': 'Agent',
-        'username': 'user@example.com',
-        'email': 'user@example.com',
-        'password': 'W1D78#Ae9O5r',
-        'password2': 'W1D78#Ae9O5r',
-    }
-    client.post('/accounts/register/', data=data)
-    data = {
-        'username': 'user@example.com',
-        'password': 'W1D78#Ae9O5r'
-    }
-    response = client.post('/token/', data=data)
-    return response.json()['access']
     
 
 class USerTestCase(TestCase):
 
     client = Client()
 
-    fixtures = [
-        'catalogue/fixtures/catalogues.yaml',
-        'catalogue/fixtures/agent_status.yaml',
-        'catalogue/fixtures/agent_subscriptions.yaml',
-    ]
+    fixtures = FIXTURES
 
     def test_health_check(self):
         response = self.client.get('')
