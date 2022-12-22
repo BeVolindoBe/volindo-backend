@@ -21,6 +21,7 @@ class Reservation(models.Model):
         on_delete=models.CASCADE
     )
     policies = models.JSONField(null=True, default=None)
+    supplements = models.JSONField(null=True, default=None)
     policies_acceptance = models.BooleanField(default=False)
     search_parameters = models.JSONField()
     booking_response = models.JSONField(null=True, default=None)
