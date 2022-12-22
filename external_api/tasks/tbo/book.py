@@ -143,19 +143,21 @@ def card_payment(payment):
     }
     book = requests.post(BOOK_URL, headers=HEADERS, data=json.dumps(payload))
     save_log(PROVIDER_ID, BOOK_URL, payload, book.status_code, book.json())
-    # if book.status_code == 200:
-        # if book.json()['Status']['Code'] == 200:
-    reservation.booking_response = book.json()
-    reservation.policies_acceptance = True
-    reservation.save()
+    if book.status_code == 200:
+        book_response = book.json()
+        if book_response['Status']['Code'] == 200:
+            reservation.booking_response = book_response
+            reservation.policies_acceptance = True
+            reservation.confirmation_number = book_response['ConfirmationNumber']
+            reservation.save()
+            return GenericResponse(
+                data=PaymentSerializer(payment).data,
+                status_code=status.HTTP_201_CREATED
+            )
     return GenericResponse(
-        data=PaymentSerializer(payment).data,
-        status_code=status.HTTP_201_CREATED
+        data={'message': 'There was a problem with the booking process.'},
+        status_code=status.HTTP_503_SERVICE_UNAVAILABLE
     )
-    # return GenericResponse(
-    #     data={'message': 'There was a problem with the booking process.'},
-    #     status_code=status.HTTP_503_SERVICE_UNAVAILABLE
-    # )
 
 
 def credit_payment(payment):
@@ -172,40 +174,22 @@ def credit_payment(payment):
         'EmailId': parsed_guests['email'],
         'PhoneNumber': parsed_guests['phone'],
         'BookingType': 'Voucher',
-        'PaymentMode': 'NewCard',
-        'PaymentInfo': {
-            'CvvNumber': environ['CARD_CVV'],
-            'CardNumber': environ['CARD_NUMBER'],
-            'CardExpirationMonth': environ['CARD_EXPIRATION_MONTH'],
-            'CardExpirationYear': environ['CARD_EXPIRATION_YEAR'],
-            'CardHolderFirstName': environ['CARD_FIRST_NAME'],
-            'CardHolderlastName': environ['CARD_LAST_NAME'],
-            'BillingAmount': float(payment.subtotal),
-            'BillingCurrency': 'USD',
-            'CardHolderAddress': {
-                'AddressLine1': environ['CARD_ADDRESS_LINE_1'],
-                'AddressLine2': environ['CARD_ADDRESS_LINE_2'],
-                'City': environ['CARD_CITY'],
-                'PostalCode': environ['CARD_CP'],
-                'CountryCode': environ['CARD_COUNTRY']
-            }
-        }
     }
     book = requests.post(BOOK_URL, headers=HEADERS, data=json.dumps(payload))
     save_log(PROVIDER_ID, BOOK_URL, payload, book.status_code, book.json())
-    # if book.status_code == 200:
-        # if book.json()['Status']['Code'] == 200:
-    reservation.booking_response = book.json()
-    reservation.policies_acceptance = True
-    reservation.save()
+    if book.status_code == 200:
+        if book.json()['Status']['Code'] == 200:
+            reservation.booking_response = book.json()
+            reservation.policies_acceptance = True
+            reservation.save()
+            return GenericResponse(
+                data=PaymentSerializer(payment).data,
+                status_code=status.HTTP_201_CREATED
+            )
     return GenericResponse(
-        data=PaymentSerializer(payment).data,
-        status_code=status.HTTP_201_CREATED
+        data={'message': 'There was a problem with the booking process.'},
+        status_code=status.HTTP_503_SERVICE_UNAVAILABLE
     )
-    # return GenericResponse(
-    #     data={'message': 'There was a problem with the booking process.'},
-    #     status_code=status.HTTP_503_SERVICE_UNAVAILABLE
-    # )
 
 
 def tbo_payment(payment):
@@ -213,7 +197,4 @@ def tbo_payment(payment):
         response = credit_payment(payment)
     else:
         response = card_payment(payment)
-    return GenericResponse(
-        data=response.data,
-        status_code=response.status_code
-    )
+    return response

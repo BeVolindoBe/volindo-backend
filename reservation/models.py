@@ -25,6 +25,7 @@ class Reservation(models.Model):
     search_parameters = models.JSONField()
     booking_response = models.JSONField(null=True, default=None)
     booking_code = models.CharField(max_length=200, null=True, default=None)
+    confirmation_number = models.CharField(max_length=200, null=True, default=None)
     cancelled_at = models.DateTimeField(null=True, default=None)
     cancellation_response = models.JSONField(null=True, default=None)
     created_at = models.DateTimeField(auto_now_add=True)

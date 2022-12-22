@@ -21,6 +21,10 @@ class Agent(models.Model):
         null=True,
         default=None
     )
+    address = models.CharField(max_length=200, null=True, default=None)
+    city = models.CharField(max_length=200, null=True, default=None)
+    state_province = models.CharField(max_length=200, null=True, default=None)
+    zip_code = models.CharField(max_length=5, null=True, default=None)
     phone_country_code = models.CharField(max_length=5, null=True, default=None)
     phone_number = models.CharField(max_length=20, null=True, default=None)
     web_site = models.URLField(null=True, default=None)

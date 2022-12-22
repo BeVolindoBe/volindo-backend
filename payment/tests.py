@@ -195,7 +195,6 @@ class PaymentReservationTestCase(TestCase):
     def test_pay_reservation(self):
         token = get_token()
         payment = self.get_payment_id()
-        print(payment)
         card_data = {
             'card_number': '4242424242424242',
             'cvv': '123',
@@ -213,5 +212,5 @@ class PaymentReservationTestCase(TestCase):
             HTTP_AUTHORIZATION=f'Bearer {token}',
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
-        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
