@@ -21,7 +21,6 @@ class Reservation(models.Model):
         on_delete=models.CASCADE
     )
     policies = models.JSONField(null=True, default=None)
-    supplements = models.JSONField(null=True, default=None)
     policies_acceptance = models.BooleanField(default=False)
     search_parameters = models.JSONField()
     booking_response = models.JSONField(null=True, default=None)
@@ -46,6 +45,7 @@ class Room(models.Model):
         related_name='reservation_rooms'
     )
     name = models.CharField(max_length=200)
+    supplements = models.JSONField(null=True, default=None)
     price = models.DecimalField(max_digits=10, decimal_places=2, null=True, default=None)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -18,7 +18,7 @@ from payment.serializers import PaymentSerializer
 from reservation.models import Reservation, Room, Guest
 
 from external_api.logs import save_log
-from external_api.tasks.tbo.common import PAYMENT_TYPE, BOOK_URL, HEADERS, PROVIDER_ID
+from external_api.tasks.tbo.common import PAYMENT_TYPE, BOOK_URL, HEADERS, PROVIDER_ID, PAYMENT_METHOD
 from external_api.tasks.tbo.room_detail_prebook import tbo_get_room_prebook_details
 
 
@@ -54,7 +54,8 @@ def tbo_book(data, user):
                 id=room_id,
                 reservation=reservation,
                 name=room_details['rooms']['rooms_details'][x]['name'],
-                price=room_details['rooms']['rooms_details'][x]['price']
+                price=room_details['rooms']['rooms_details'][x]['price'],
+                supplements=room_details['rooms']['rooms_details'][x]['supplements']
             )
         )
         for guest in data['rooms'][x]['guests']:
@@ -107,7 +108,7 @@ def parse_guests(reservation):
     return guests
 
 
-def tbo_payment(payment):
+def card_payment(payment):
     reservation = Reservation.objects.prefetch_related(
         'reservation_rooms__room_guests'
     ).get(payment=payment)
@@ -155,3 +156,64 @@ def tbo_payment(payment):
     #     data={'message': 'There was a problem with the booking process.'},
     #     status_code=status.HTTP_503_SERVICE_UNAVAILABLE
     # )
+
+
+def credit_payment(payment):
+    reservation = Reservation.objects.prefetch_related(
+        'reservation_rooms__room_guests'
+    ).get(payment=payment)
+    parsed_guests = parse_guests(reservation)
+    payload =  {
+        'BookingCode': reservation.booking_code,
+        'CustomerDetails': parsed_guests['customers'],
+        'ClientReferenceId': str(payment.id),
+        'BookingReferenceId': str(reservation.id),
+        'TotalFare': float(payment.subtotal),
+        'EmailId': parsed_guests['email'],
+        'PhoneNumber': parsed_guests['phone'],
+        'BookingType': 'Voucher',
+        'PaymentMode': 'NewCard',
+        'PaymentInfo': {
+            'CvvNumber': environ['CARD_CVV'],
+            'CardNumber': environ['CARD_NUMBER'],
+            'CardExpirationMonth': environ['CARD_EXPIRATION_MONTH'],
+            'CardExpirationYear': environ['CARD_EXPIRATION_YEAR'],
+            'CardHolderFirstName': environ['CARD_FIRST_NAME'],
+            'CardHolderlastName': environ['CARD_LAST_NAME'],
+            'BillingAmount': float(payment.subtotal),
+            'BillingCurrency': 'USD',
+            'CardHolderAddress': {
+                'AddressLine1': environ['CARD_ADDRESS_LINE_1'],
+                'AddressLine2': environ['CARD_ADDRESS_LINE_2'],
+                'City': environ['CARD_CITY'],
+                'PostalCode': environ['CARD_CP'],
+                'CountryCode': environ['CARD_COUNTRY']
+            }
+        }
+    }
+    book = requests.post(BOOK_URL, headers=HEADERS, data=json.dumps(payload))
+    save_log(PROVIDER_ID, BOOK_URL, payload, book.status_code, book.json())
+    # if book.status_code == 200:
+        # if book.json()['Status']['Code'] == 200:
+    reservation.booking_response = book.json()
+    reservation.policies_acceptance = True
+    reservation.save()
+    return GenericResponse(
+        data=PaymentSerializer(payment).data,
+        status_code=status.HTTP_201_CREATED
+    )
+    # return GenericResponse(
+    #     data={'message': 'There was a problem with the booking process.'},
+    #     status_code=status.HTTP_503_SERVICE_UNAVAILABLE
+    # )
+
+
+def tbo_payment(payment):
+    if PAYMENT_METHOD == 'Limit':
+        response = credit_payment(payment)
+    else:
+        response = card_payment(payment)
+    return GenericResponse(
+        data=response.data,
+        status_code=response.status_code
+    )

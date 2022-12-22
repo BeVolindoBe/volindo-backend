@@ -118,7 +118,14 @@ class ReservationTestCase(TestCase):
                             'is_lead': True
                         }
                     ],
-                    'name': 'Palace Room'
+                    'name': 'Palace Room',
+                    'supplements': [
+                        {
+                            'type': 'At property',
+                            'price': '30 AED',
+                            'description': 'Mandatory tax'
+                        }
+                    ]
                 },
                 {
                     'guests': [
@@ -127,7 +134,14 @@ class ReservationTestCase(TestCase):
                             'is_lead': True
                         }
                     ],
-                    'name': 'Palace Room'
+                    'name': 'Palace Room',
+                    'supplements': [
+                        {
+                            'type': 'At property',
+                            'price': '30 AED',
+                            'description': 'Mandatory tax'
+                        }
+                    ]
                 }
             ],
             'payment': {

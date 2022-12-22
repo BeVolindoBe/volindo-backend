@@ -114,7 +114,14 @@ class PaymentReservationTestCase(TestCase):
                             'is_lead': True
                         }
                     ],
-                    'name': 'Palace Room'
+                    'name': 'Palace Room',
+                    'supplements': [
+                        {
+                            'type': 'At property',
+                            'price': '30 AED',
+                            'description': 'Mandatory tax'
+                        }
+                    ]
                 },
                 {
                     'guests': [
@@ -123,7 +130,14 @@ class PaymentReservationTestCase(TestCase):
                             'is_lead': True
                         }
                     ],
-                    'name': 'Palace Room'
+                    'name': 'Palace Room',
+                    'supplements': [
+                        {
+                            'type': 'At property',
+                            'price': '30 AED',
+                            'description': 'Mandatory tax'
+                        }
+                    ]
                 }
             ],
             'payment': {
@@ -181,6 +195,7 @@ class PaymentReservationTestCase(TestCase):
     def test_pay_reservation(self):
         token = get_token()
         payment = self.get_payment_id()
+        print(payment)
         card_data = {
             'card_number': '4242424242424242',
             'cvv': '123',

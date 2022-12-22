@@ -102,10 +102,17 @@ class GuestSerializer(serializers.Serializer):
     is_lead = serializers.BooleanField()
 
 
+class SupplementSerializer(serializers.Serializer):
+    price = serializers.CharField()
+    description = serializers.CharField()
+    type = serializers.CharField()
+
+
 class RoomSerializer(serializers.Serializer):
 
     guests = GuestSerializer(many=True)
     name = serializers.CharField()
+    supplements = SupplementSerializer(many=True)
 
 
 class ReservationSerializer(serializers.Serializer):

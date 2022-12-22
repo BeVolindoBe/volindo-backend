@@ -21,13 +21,7 @@ class Agent(models.Model):
         null=True,
         default=None
     )
-    phone_country_code = models.ForeignKey(
-        Item,
-        on_delete=models.CASCADE,
-        related_name='agent_phone_country_code',
-        null=True,
-        default=None
-    )
+    phone_country_code = models.CharField(max_length=5, null=True, default=None)
     phone_number = models.CharField(max_length=20, null=True, default=None)
     web_site = models.URLField(null=True, default=None)
     agent_status = models.ForeignKey(

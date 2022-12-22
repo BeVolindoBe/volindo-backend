@@ -13,8 +13,14 @@ from common.common import get_number_of_nights
 
 from external_api.logs import save_log
 from external_api.tasks.tbo.common import(
-    HEADERS, PREBOOK_URL, PAYMENT_MODE, PROVIDER_ID
+    HEADERS, PREBOOK_URL, PROVIDER_ID, PAYMENT_METHOD
 )
+
+
+SUPPLEMENTS_DICT = {
+    'AtProperty': 'At property',
+    'Included': 'Included'
+}
 
 
 def get_room_price(prices):
@@ -22,6 +28,16 @@ def get_room_price(prices):
     for p in prices:
         price += p['BasePrice']
     return round(price, 2)
+
+
+def get_supplements(room):
+    return [
+        {
+            'type': SUPPLEMENTS_DICT[s['Type']],
+            'price': f"{s['Price']} {s['Currency']}",
+            'description': s['Description'].replace('_', ' ').capitalize()
+        } for s in room
+    ]
 
 
 def parse_rooms(rooms):
@@ -38,7 +54,8 @@ def parse_rooms(rooms):
         'rooms_details': [
             {
                 'name': rooms[0]['Name'][x],
-                'price': get_room_price(rooms[0]['DayRates'][x])
+                'price': get_room_price(rooms[0]['DayRates'][x]),
+                'supplements': get_supplements(rooms[0]['Supplements'][x]) if 'Supplements' in rooms[0] else []
             } for x in range(len(rooms[0]['Name']))
         ]
     }
@@ -55,7 +72,7 @@ def tbo_get_room_prebook_details(details):
         return response
     payload = {
         'BookingCode': details['booking_code'],
-        'PaymentMode': PAYMENT_MODE
+        'PaymentMode': PAYMENT_METHOD
     }
     results = json.loads(results)
     prebook = requests.post(PREBOOK_URL, headers=HEADERS, data=json.dumps(payload))
