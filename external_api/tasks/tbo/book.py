@@ -95,8 +95,7 @@ def get_customer_names(room):
 
 @shared_task
 def update_book_status(reservation_id):
-    sleep(120)
-    r = Reservation.objects.get(id=reservation_id)
+    r = Reservation.objects.get(id=str(reservation_id))
     counter = 0
     payload = {
         'ConfirmationNumber': r.confirmation_number,
@@ -181,7 +180,7 @@ def card_payment(payment):
             reservation.booking_response = book_response
             reservation.policies_acceptance = True
             reservation.confirmation_number = book_response['ConfirmationNumber']
-            reservation.reservation_status = 'c6cc1c43-7cae-408f-b4e4-4ebeac75d64b' # processing
+            reservation.reservation_status_id = 'c6cc1c43-7cae-408f-b4e4-4ebeac75d64b' # processing
             reservation.save()
             update_book_status.delay(reservation.id)
             return GenericResponse(
@@ -212,10 +211,14 @@ def credit_payment(payment):
     book = requests.post(BOOK_URL, headers=HEADERS, data=json.dumps(payload))
     save_log(PROVIDER_ID, BOOK_URL, payload, book.status_code, book.json())
     if book.status_code == 200:
+        book_response = book.json()
         if book.json()['Status']['Code'] == 200:
-            reservation.booking_response = book.json()
+            reservation.booking_response = book_response
             reservation.policies_acceptance = True
+            reservation.confirmation_number = book_response['ConfirmationNumber']
+            reservation.reservation_status_id = 'c6cc1c43-7cae-408f-b4e4-4ebeac75d64b' # processing
             reservation.save()
+            update_book_status.delay(reservation.id)
             return GenericResponse(
                 data=PaymentSerializer(payment).data,
                 status_code=status.HTTP_201_CREATED
