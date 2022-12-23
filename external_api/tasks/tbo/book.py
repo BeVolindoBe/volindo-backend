@@ -109,6 +109,7 @@ def update_book_status(reservation_id):
             headers=HEADERS,
             data=json.dumps(payload)
         )
+        save_log(PROVIDER_ID, BOOKING_DETAIL_URL, payload, response.status_code, response.json())
         if response.status_code == '200' and response.json()['Status']['Code'] == 200:
             if response.json()['BookingDetail']['BookingStatus'] == 'Confirmed':
                 r.reservation_status = '5955f72b-3afd-4137-8a69-dc9d1eb24253' # done

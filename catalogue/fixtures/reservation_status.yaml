@@ -18,3 +18,10 @@
     catalogue_id: '194ee180-7c08-4878-bbf9-911de85874d9'
     slug: 'reservation_status_done'
     description: 'Done'
+
+- model: 'catalogue.Item'
+  fields:
+    id: '37d50458-f362-482f-b4f8-3c33738f490e'
+    catalogue_id: '194ee180-7c08-4878-bbf9-911de85874d9'
+    slug: 'reservation_status_cancelled'
+    description: 'Cancelled'
