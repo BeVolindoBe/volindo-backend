@@ -183,11 +183,11 @@ def card_payment(payment):
             reservation.confirmation_number = book_response['ConfirmationNumber']
             reservation.reservation_status = 'c6cc1c43-7cae-408f-b4e4-4ebeac75d64b' # processing
             reservation.save()
+            update_book_status.delay(reservation.id)
             return GenericResponse(
                 data=PaymentSerializer(payment).data,
                 status_code=status.HTTP_201_CREATED
             )
-            update_book_status.delay(reservation.id)
     return GenericResponse(
         data={'message': 'There was a problem with the booking process.'},
         status_code=status.HTTP_503_SERVICE_UNAVAILABLE
