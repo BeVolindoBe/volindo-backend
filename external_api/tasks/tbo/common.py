@@ -7,7 +7,7 @@ AUTH = environ['TBO_AUTH']
 SEARCH_URL = f'{HOST}/Search'
 PREBOOK_URL = f'{HOST}/PreBook'
 BOOK_URL = f'{HOST}/Book'
-BOOKING_DETAIL_URL = f'{HOST}/Book'
+BOOKING_DETAIL_URL = f'{HOST}/BookingDetail'
 
 HEADERS = {
 	'Authorization': f'Basic {AUTH}',
