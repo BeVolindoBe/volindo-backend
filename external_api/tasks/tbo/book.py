@@ -23,8 +23,7 @@ from reservation.models import Reservation, Room, Guest
 
 from external_api.logs import save_log
 from external_api.tasks.tbo.common import (PAYMENT_TYPE, BOOK_URL, HEADERS, PROVIDER_ID,
-    BOOKING_DETAIL_URL,
-    PAYMENT_METHOD
+    BOOKING_DETAIL_URL, PAYMENT_METHOD
 )
 from external_api.tasks.tbo.room_detail_prebook import tbo_get_room_prebook_details
 

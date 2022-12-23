@@ -6,9 +6,10 @@ from django.core.cache import cache
 
 from celery import shared_task
 
+from external_api.logs import save_log
 from external_api.tasks.tbo.common import(
     HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME,
-    parse_hotels, parse_rooms
+    parse_hotels, parse_rooms, PROVIDER_ID
 )
 
 from hotel.models import Hotel
@@ -31,6 +32,7 @@ def tbo_search_hotels(results_id, filters):
         'IsDetailedResponse': False
     }
     response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
+    save_log(PROVIDER_ID, SEARCH_URL, payload, response.status_code, response.json())
     hotels = response.json()['HotelResult']
     temp_hotels = []
     for hotel in hotels:
