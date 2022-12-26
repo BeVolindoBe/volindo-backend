@@ -1,13 +1,5 @@
 - model: 'catalogue.Destination'
   fields:
-    id: '28e6f8d5-a361-4468-b13e-77ba8ff73ebe'
-    country: '2eaf1638-4ba3-4d64-94a1-133c523f0f69'
-    external_id: '141497'
-    search_field: 'victoria falls'
-    display_name: "Victoria Falls - Zimbabwe"
-
-- model: 'catalogue.Destination'
-  fields:
     id: '224d3796-70b6-4d36-942d-e3ce90f97ff9'
     country: '87ddfd52-d402-4867-8e44-1e57b3a6f772'
     external_id: '115936'

@@ -103,7 +103,7 @@ DATABASES = {
         'PASSWORD': environ.get('DATABASE_PASSWORD'),
         'HOST': environ.get('DATABASE_HOST'),
         'PORT': environ.get('DATABASE_PORT'),
-    }
+    },
 }
 
 # Password validation

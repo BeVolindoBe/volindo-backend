@@ -12,7 +12,6 @@ from common.testing import FIXTURES, get_token
 class PaymentReservationTestCase(TestCase):
 
     client = Client()
-
     fixtures = FIXTURES
 
     def create_traveler(self, token):
@@ -25,7 +24,7 @@ class PaymentReservationTestCase(TestCase):
             'phone_number': '5544332211',
             'title': 'MR',
             'address': 'Mexico Street 10',
-            'country': '3fe45243-96b9-4427-89ff-baad6cd696bb', # Mexico
+            'country': '87ddfd52-d402-4867-8e44-1e57b3a6f772', # United Arab Emirates
             'city': 'Mexico City',
             'state_province': 'Mexico City',
             'zip_code' : '02000',
@@ -200,5 +199,15 @@ class PaymentReservationTestCase(TestCase):
             HTTP_AUTHORIZATION=f'Bearer {token}',
             content_type='application/json'
         )
-        # print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        print(dumps(response.json(), indent=4))
+        # while True:
+        #     print('Waiting for status update')
+        #     response = self.client.get(
+        #     f'/agent/reservations/',
+        #         HTTP_AUTHORIZATION=f'Bearer {token}',
+        #         content_type='application/json'
+        #     )
+        #     if response.json()['status'] != 'pending':
+        #         break
+        #     sleep(10)

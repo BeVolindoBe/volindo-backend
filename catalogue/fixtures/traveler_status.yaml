@@ -18,3 +18,10 @@
     catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
     slug: 'travaler_family_friend'
     description: 'Family/Friend'
+
+- model: 'catalogue.Item'
+  fields:
+    id: '8a852e6b-7040-4271-8b05-e205fe78c45f'
+    catalogue_id: '1765c730-ba74-4768-aae1-2d17d0d38fa8'
+    slug: 'travaler_deleted'
+    description: 'Deleted'
