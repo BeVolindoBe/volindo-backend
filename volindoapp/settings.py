@@ -179,6 +179,14 @@ SWAGGER_SETTINGS = {
 }
 
 
+def traces_sampler(ctx):
+    if 'wsgi_environ' in ctx:
+        url = ctx['wsgi_environ'].get('PATH_INFO', '')
+        if url.startswith('/hotels/results/'):
+            return 0  # Don't trace any
+    return 1  # Trace all
+
+
 if DEBUG is False:
     import sentry_sdk
     from sentry_sdk.integrations.django import DjangoIntegration
@@ -189,5 +197,6 @@ if DEBUG is False:
             DjangoIntegration(),
         ],
         traces_sample_rate=1.0,
-        send_default_pii=True
+        send_default_pii=True,
+        traces_sampler=traces_sampler
     )

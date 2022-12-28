@@ -11,3 +11,10 @@
     catalogue_id: '91594db6-0e55-4b6d-babf-d617719a5972'
     slug: 'tbo'
     description: 'TBO'
+
+- model: 'catalogue.Item'
+  fields:
+    id: '06c0c84a-af8b-4c0f-b5c3-891c53e492f2'
+    catalogue_id: '91594db6-0e55-4b6d-babf-d617719a5972'
+    slug: 'tmx'
+    description: 'Travelomatix'

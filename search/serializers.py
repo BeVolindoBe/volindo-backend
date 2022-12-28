@@ -10,7 +10,7 @@ class SearchRoomSerializer(serializers.Serializer):
     )
 
 
-class SearchSerializer(serializers.Serializer):
+class SearchHotelSerializer(serializers.Serializer):
     destination = serializers.CharField()
     check_in = serializers.CharField()
     check_out = serializers.CharField()
@@ -23,5 +23,27 @@ class SearchSerializer(serializers.Serializer):
         if attrs['check_in'] < now or attrs['check_out'] < now or attrs['check_out'] < attrs['check_in']:
             raise serializers.ValidationError(
                 {"check_in": "Check in or check out dates are invalid."}
+            )
+        return attrs
+
+
+class SearchFlightsSerializer(serializers.Serializer):
+    adults = serializers.IntegerField()
+    children = serializers.IntegerField()
+    infants = serializers.IntegerField()
+    flight_type = serializers.CharField()
+    flight_class = serializers.CharField()
+    departure_date = serializers.CharField()
+    return_date = serializers.CharField()
+
+    def validate(self, attrs):
+        now = datetime.now().strftime('%Y-%m-%d')
+        if attrs['departure_date'] < now:
+            raise serializers.ValidationError(
+                {'message': 'Invalid departure_date.'}
+            )
+        if attrs['return_date'] < attrs['departure_date']:
+            raise serializers.ValidationError(
+                {'message': 'return_date must be after departure_date.'}
             )
         return attrs

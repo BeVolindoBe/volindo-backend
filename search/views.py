@@ -8,11 +8,10 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from drf_yasg.utils import swagger_auto_schema
-
 from external_api.tasks.tbo.search_hotels import tbo_search_hotels
+from external_api.tasks.tmx.search_flights import tmx_search_flights
 
-from search.serializers import SearchSerializer
+from search.serializers import SearchHotelSerializer, SearchFlightsSerializer
 
 from hotel.models import Hotel
 from hotel.serializers import HotelSerializer
@@ -20,9 +19,8 @@ from hotel.serializers import HotelSerializer
 
 class SearchHotel(APIView):
 
-    @swagger_auto_schema(request_body=SearchSerializer)
     def post(self, request):
-        filters = SearchSerializer(data=request.data)
+        filters = SearchHotelSerializer(data=request.data)
         if filters.is_valid(raise_exception=True):
             results_id = str(uuid4())
             results = {
@@ -46,6 +44,33 @@ class SearchHotel(APIView):
 
 
 class ResultsHotel(APIView):
+
+    def get(self, request, results_id):
+        data = cache.get(results_id)
+        if data is None:
+            return Response({'message': 'No search results found.'}, status=status.HTTP_404_NOT_FOUND)
+        return Response(json.loads(data), status=status.HTTP_200_OK)
+
+
+class SearchFlights(APIView):
+
+    def post(self, request):
+        filters = SearchFlightsSerializer(data=request.data)
+        if filters.is_valid(raise_exception=True):
+            results_id = str(uuid4())
+            results = {
+                'results_id': results_id,
+                'status': 'pending',
+                'filters': filters.data,
+                'flights': []
+            }
+            cache.set(results_id, json.dumps(results), 900)
+            tmx_search_flights(results_id, filters.data)
+            return Response(results, status=status.HTTP_200_OK)
+        return Response({'message': 'Bad request.'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class ResultsFlights(APIView):
 
     def get(self, request, results_id):
         data = cache.get(results_id)
