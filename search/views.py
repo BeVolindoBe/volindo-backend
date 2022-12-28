@@ -65,7 +65,7 @@ class SearchFlights(APIView):
                 'flights': []
             }
             cache.set(results_id, json.dumps(results), 900)
-            tmx_search_flights(results_id, filters.data)
+            tmx_search_flights.delay(results_id, filters.data)
             return Response(results, status=status.HTTP_200_OK)
         return Response({'message': 'Bad request.'}, status=status.HTTP_400_BAD_REQUEST)
 

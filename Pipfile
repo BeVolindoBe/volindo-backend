@@ -18,6 +18,7 @@ djangorestframework-simplejwt = {extras = ["crypto"], version = "*"}
 sendgrid = "*"
 unidecode = "*"
 sentry-sdk = "*"
+watchdog = "*"
 
 [dev-packages]
 

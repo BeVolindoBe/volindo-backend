@@ -78,6 +78,7 @@ class SearchTestCase(TestCase):
             'adults': 1,
             'children': 0,
             'infants': 0,
+            # 'flight_type': 'OneWay',
             'flight_type': 'Return',
             'flight_class': 'Economy',
             'departure_date': '2023-01-10',
@@ -89,4 +90,14 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
+        while True:
+            results_id = response.json()['results_id']
+            response = self.client.get(
+                f'/search/flights/results/{results_id}/',
+                HTTP_AUTHORIZATION=f'Bearer {token}'
+            )
+            if response.json()['status'] != 'pending':
+                # print(dumps(response.json(), indent=4))
+                break
+            time.sleep(2)
