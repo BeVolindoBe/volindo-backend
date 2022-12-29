@@ -33,8 +33,11 @@ class TravelerSerializer(serializers.ModelSerializer):
         )
     
     def to_internal_value(self, data):
-        data['agent'] = Agent.objects.get(user=self.context['request'].user)
-        data['country'] = Country.objects.get(id=data['country'])
+        try:
+            data['country'] = Country.objects.get(id=data['country'])
+            data['agent'] = Agent.objects.get(user=self.context['request'].user)
+        except KeyError:
+            pass
         return data
 
     def to_representation(self, instance):
