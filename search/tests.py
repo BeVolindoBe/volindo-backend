@@ -91,6 +91,7 @@ class SearchTestCase(TestCase):
             content_type='application/json'
         )
         # print(dumps(response.json(), indent=4))
+        counter = 0
         while True:
             results_id = response.json()['results_id']
             response = self.client.get(
@@ -98,6 +99,9 @@ class SearchTestCase(TestCase):
                 HTTP_AUTHORIZATION=f'Bearer {token}'
             )
             if response.json()['status'] != 'pending':
-                # print(dumps(response.json(), indent=4))
+                print(dumps(response.json(), indent=4))
                 break
             time.sleep(2)
+            counter += 1
+            if counter > 10:
+                break

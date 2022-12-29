@@ -37,76 +37,67 @@ def parse_origin(data):
     }
 
 
-def parse_flights(flights):
+def parse_details(data):
+    details = {
+        'flights': [],
+        'stops': len(data) - 1,
+        'duration': 0
+    }
+    for f in data:
+        details['duration'] += f['Duration']
+        details['flights'].append(
+            {
+                'airline_code': f['OperatorCode'],
+                'airline_image': 'http://18.188.80.180/apiTravelsb2b/airlines/AM.png',
+                'airline_name': 'OperatorName',
+                'baggage': parse_baggage(f['Attr']),
+                'class': f['Attr'],
+                'destination': parse_destination(f['Destination']),
+                'duration': f['Duration'],
+                'flight_number': f['FlightNumber'],
+                'origin': parse_origin(f['Origin'])
+            }
+        )
+    return details
+
+
+def parse_flights(flights_data):
     # first element of the array includes the going flights,
     # second element contains the returning flights
     flights = []
-    for x in range(len(flights[0])): # going
-        for y in range(len(flights[1])): # returning
+    going_flights = flights_data[0]
+    returning_flights = flights_data[1] if len(flights_data) > 1 else None
+    for x in range(len(going_flights)): # going
+        for y in range(len(returning_flights)): # returning
+            going_details = parse_details(going_flights[x]['FlightDetails']['Details'][0])
+            returning_details = parse_details(returning_flights[y]['FlightDetails']['Details'][0])
             flights.append(
                 {
                     'going': {
-                        'flights': [
-                            {
-                                'airline_code': f['OperatorCode'],
-                                'airline_image': 'http://18.188.80.180/apiTravelsb2b/airlines/AM.png',
-                                'airline_name': 'OperatorName',
-                                'baggage': parse_baggage(f['Attr']),
-                                'class': f['Attr'],
-                                'destination': parse_destination(f['Destination']),
-                                'duration': f['Duration'],
-                                'flight_number': f['FlightNumber'],
-                                'origin': parse_origin(f['Origin'])
-                            } for f in flights[0][x]['FlightDetails']['Details'][0]
-                        ],
-                        'stops': len(flights[0][x]['FlightDetails']['Details'][0]),
-                        'total_duration': 140,
+                        'flights': going_details['flights'],
+                        'stops': going_details['stops'],
+                        'total_duration': going_details['duration'],
+                        'result_token': going_flights[x]['ResultToken'],
+                        'is_refundable': going_flights[x]['Attr']['IsRefundable'],
+                        'price': going_flights[x]['Price']['TotalDisplayFare']
                     },
-                    'isRefundable': False,
-                    'points': 222.84,
                     'price': {
                         'currency': 'USD',
-                        'markUp': 0,
-                        'offeredPrice': 151.68,
-                        'totalPrice': 151.68,
-                        'totalPriceAdults': 151.68,
-                        'totalPriceChildren': None,
-                        'totalPriceInfants': None,
+                        'total_price': going_flights[x]['Price']['TotalDisplayFare'] if returning_flights is None else (
+                            going_flights[x]['Price']['TotalDisplayFare'] +
+                            returning_flights[y]['Price']['TotalDisplayFare']
+                        ),
                     },
-                    'resultToken': 'c2b03b9a55448093852cef9ab15431df*_*9*_*n3GpqdDwKZkQOOzU',
                     'returning': [
                         {
-                            'flights': [
-                                {
-                                    'airlineCode': 'AM',
-                                    'airlineImage': 'http://18.188.80.180/apiTravelsb2b/airlines/AM.png',
-                                    'airlineName': 'Aeromexico',
-                                    'baggage': {'baggage': '0PC', 'cabin': '7 Kg'},
-                                    'class': 'Y',
-                                    'destination': {
-                                        'airportCode': 'MEX',
-                                        'airportName': 'Mexico City',
-                                        'city': 'Mexico City',
-                                        'dateTime': '2023-01-28 08:55:00',
-                                    },
-                                    'duration': '154',
-                                    'flightNumber': '507',
-                                    'origin': {
-                                        'airportCode': 'CUN',
-                                        'airportName': 'Cancun',
-                                        'city': 'Cancun',
-                                        'dateTime': '2023-01-28 07:21:00',
-                                    },
-                                }
-                            ],
-                            'stops': 0,
-                            'totalDuration': 154,
+                            'flights': returning_details['flights'],
+                            'stops': returning_details['stops'],
+                            'total_duration': returning_details['duration'],
+                            'result_token': returning_flights[y]['ResultToken'],
+                            'is_refundable': returning_flights[y]['Attr']['IsRefundable'],
+                            'price': returning_flights[y]['Price']['TotalDisplayFare']
                         }
-                    ],
-                    'totalAdults': 1,
-                    'totalChildren': 0,
-                    'totalDuration': 294,
-                    'totalInfant': 0
+                    ] if returning_flights is not None else []
                 }
             )
     return flights
