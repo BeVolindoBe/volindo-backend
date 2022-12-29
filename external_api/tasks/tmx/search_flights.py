@@ -49,7 +49,7 @@ def parse_details(data):
             {
                 'airline_code': f['OperatorCode'],
                 'airline_image': 'http://18.188.80.180/apiTravelsb2b/airlines/AM.png',
-                'airline_name': 'OperatorName',
+                'airline_name': f['OperatorName'],
                 'baggage': parse_baggage(f['Attr']),
                 'class': f['CabinClass'],
                 'destination': parse_destination(f['Destination']),
@@ -65,7 +65,7 @@ def return_flight(flights_data):
     # first element of the array includes the going flights,
     # second element contains the returning flights
     flights = []
-    going_flights = flights_data[0]
+    going_flights = flights_data[0][:100]
     returning_flights = flights_data[1]
     for x in range(len(going_flights)): # going
         for y in range(len(returning_flights)): # returning
@@ -83,10 +83,10 @@ def return_flight(flights_data):
                     },
                     'price': {
                         'currency': 'USD',
-                        'total_price': going_flights[x]['Price']['TotalDisplayFare'] if returning_flights is None else (
+                        'total_price': round(going_flights[x]['Price']['TotalDisplayFare'], 2) if returning_flights is None else round((
                             going_flights[x]['Price']['TotalDisplayFare'] +
                             returning_flights[y]['Price']['TotalDisplayFare']
-                        ),
+                        )),
                     },
                     'returning': [
                         {
