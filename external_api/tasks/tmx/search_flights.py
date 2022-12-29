@@ -65,8 +65,8 @@ def return_flight(flights_data):
     # first element of the array includes the going flights,
     # second element contains the returning flights
     flights = []
-    going_flights = flights_data[0][:100]
-    returning_flights = flights_data[1]
+    going_flights = flights_data[0][:10]
+    returning_flights = flights_data[1][:10]
     for x in range(len(going_flights)): # going
         for y in range(len(returning_flights)): # returning
             going_details = parse_details(going_flights[x]['FlightDetails']['Details'][0])
@@ -105,7 +105,7 @@ def return_flight(flights_data):
 
 def one_way_flight(flights_data):
     flights = []
-    going_flights = flights_data[0]
+    going_flights = flights_data[0][:100]
     for x in range(len(going_flights)): # going
         going_details = parse_details(going_flights[x]['FlightDetails']['Details'][0])
         flights.append(
