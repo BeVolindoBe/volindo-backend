@@ -93,7 +93,7 @@ class SearchTestCase(TestCase):
                 HTTP_AUTHORIZATION=f'Bearer {token}'
             )
             if response.json()['status'] != 'pending':
-                # print(dumps(response.json(), indent=4))
+                print(dumps(response.json(), indent=4))
                 break
             time.sleep(5)
             counter += 1

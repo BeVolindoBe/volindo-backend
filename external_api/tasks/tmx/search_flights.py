@@ -51,7 +51,7 @@ def parse_details(data):
                 'airline_image': 'http://18.188.80.180/apiTravelsb2b/airlines/AM.png',
                 'airline_name': 'OperatorName',
                 'baggage': parse_baggage(f['Attr']),
-                'class': f['Attr'],
+                'class': f['CabinClass'],
                 'destination': parse_destination(f['Destination']),
                 'duration': f['Duration'],
                 'flight_number': f['FlightNumber'],
