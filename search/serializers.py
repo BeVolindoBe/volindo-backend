@@ -33,6 +33,8 @@ class SearchFlightsSerializer(serializers.Serializer):
     infants = serializers.IntegerField()
     flight_type = serializers.CharField()
     flight_class = serializers.CharField()
+    origin = serializers.CharField()
+    destination = serializers.CharField()
     departure_date = serializers.CharField()
     return_date = serializers.CharField()
 

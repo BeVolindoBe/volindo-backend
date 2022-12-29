@@ -8,7 +8,7 @@ from celery import shared_task
 
 from external_api.logs import save_log
 from external_api.tasks.tmx.common import(
-    HEADERS, SEARCH_URL, PROVIDER_ID
+    HEADERS, SEARCH_URL, PROVIDER_ID, FLIGHT_DICT
 )
 
 
@@ -109,15 +109,15 @@ def tmx_search_flights(results_id, filters):
         'AdultCount': f"{filters['adults']}",
         'ChildCount': f"{filters['children']}",
         'InfantCount': f"{filters['infants']}",
-        'JourneyType': f"{filters['flight_type']}",
+        'JourneyType': f"{FLIGHT_DICT[filters['flight_type']]}",
         'PreferredAirlines': [''],
-        'CabinClass': f"{filters['flight_class']}",
+        'CabinClass': f"{FLIGHT_DICT[filters['flight_class']]}",
         'Segments': [
             {
-                'Origin': 'BLR',
-                'Destination': 'MAA',
-                'DepartureDate': '2023-01-04T00:00:00',
-                'ReturnDate': '2023-01-10T00:00:00'
+                'Origin': filters['origin'],
+                'Destination': filters['destination'],
+                'DepartureDate': f"{filters['departure_date']}T00:00:00",
+                'ReturnDate': f"{filters['return_date']}T00:00:00",
             }
         ]
     }

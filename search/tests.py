@@ -79,10 +79,12 @@ class SearchTestCase(TestCase):
             'children': 0,
             'infants': 0,
             # 'flight_type': 'OneWay',
-            'flight_type': 'Return',
-            'flight_class': 'Economy',
+            'flight_type': 'return',
+            'flight_class': 'economy',
             'departure_date': '2023-01-10',
-            'return_date': '2023-01-15'
+            'return_date': '2023-01-15',
+            'origin': 'BLR',
+            'destination': 'MAA',
         }
         response = self.client.post(
             f'/search/flights/',
@@ -90,7 +92,7 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        # print(dumps(response.json(), indent=4))
+        print(dumps(response.json(), indent=4))
         counter = 0
         while True:
             results_id = response.json()['results_id']

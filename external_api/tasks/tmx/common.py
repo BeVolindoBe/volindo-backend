@@ -20,3 +20,11 @@ HEADERS = {
     'Content-Type': 'application/json',
 	'User-Agent': 'Mozilla/5.0'
 }
+
+FLIGHT_DICT = {
+    'economy': 'Economy',
+    'business': 'Business',
+    'first': 'First',
+    'return': 'Return',
+    'one_way': 'OneWay'
+}
