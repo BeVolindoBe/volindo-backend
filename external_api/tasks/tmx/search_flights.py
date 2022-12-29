@@ -61,12 +61,12 @@ def parse_details(data):
     return details
 
 
-def parse_flights(flights_data):
+def return_flight(flights_data):
     # first element of the array includes the going flights,
     # second element contains the returning flights
     flights = []
     going_flights = flights_data[0]
-    returning_flights = flights_data[1] if len(flights_data) > 1 else None
+    returning_flights = flights_data[1]
     for x in range(len(going_flights)): # going
         for y in range(len(returning_flights)): # returning
             going_details = parse_details(going_flights[x]['FlightDetails']['Details'][0])
@@ -101,6 +101,37 @@ def parse_flights(flights_data):
                 }
             )
     return flights
+
+
+def one_way_flight(flights_data):
+    flights = []
+    going_flights = flights_data[0]
+    for x in range(len(going_flights)): # going
+        going_details = parse_details(going_flights[x]['FlightDetails']['Details'][0])
+        flights.append(
+            {
+                'going': {
+                    'flights': going_details['flights'],
+                    'stops': going_details['stops'],
+                    'total_duration': going_details['duration'],
+                    'result_token': going_flights[x]['ResultToken'],
+                    'is_refundable': going_flights[x]['Attr']['IsRefundable'],
+                    'price': going_flights[x]['Price']['TotalDisplayFare']
+                },
+                'price': {
+                    'currency': 'USD',
+                    'total_price': going_flights[x]['Price']['TotalDisplayFare']
+                },
+                'returning': []
+            }
+        )
+    return flights
+
+
+def parse_flights(flights_data):
+    if len(flights_data) > 1:
+        return return_flight(flights_data)
+    return one_way_flight(flights_data)
 
 
 @shared_task

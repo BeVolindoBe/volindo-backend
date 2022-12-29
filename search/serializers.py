@@ -36,7 +36,7 @@ class SearchFlightsSerializer(serializers.Serializer):
     origin = serializers.CharField()
     destination = serializers.CharField()
     departure_date = serializers.CharField()
-    return_date = serializers.CharField()
+    return_date = serializers.CharField(allow_blank=True)
 
     def validate(self, attrs):
         now = datetime.now().strftime('%Y-%m-%d')
@@ -44,7 +44,7 @@ class SearchFlightsSerializer(serializers.Serializer):
             raise serializers.ValidationError(
                 {'message': 'Invalid departure_date.'}
             )
-        if attrs['return_date'] < attrs['departure_date']:
+        if attrs['return_date'] != '' and attrs['return_date'] < attrs['departure_date']:
             raise serializers.ValidationError(
                 {'message': 'return_date must be after departure_date.'}
             )

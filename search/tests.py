@@ -72,13 +72,12 @@ class SearchTestCase(TestCase):
     #     )
     #     print(print(dumps(response.json(), indent=4)))
 
-    def test_search_flights(self):
+    def test_search_return_flights(self):
         token = get_token()
         data = {
             'adults': 1,
             'children': 0,
             'infants': 0,
-            # 'flight_type': 'OneWay',
             'flight_type': 'return',
             'flight_class': 'economy',
             'departure_date': '2023-01-10',
@@ -92,7 +91,7 @@ class SearchTestCase(TestCase):
             data=data,
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
+        # print(dumps(response.json(), indent=4))
         counter = 0
         while True:
             results_id = response.json()['results_id']
@@ -101,9 +100,46 @@ class SearchTestCase(TestCase):
                 HTTP_AUTHORIZATION=f'Bearer {token}'
             )
             if response.json()['status'] != 'pending':
-                print(dumps(response.json(), indent=4))
+                # print(dumps(response.json(), indent=4))
                 break
-            time.sleep(2)
+            time.sleep(5)
             counter += 1
-            if counter > 10:
+            if counter > 20:
+                self.assertEqual(0, 1)
+                break
+
+    def test_search_single_flights(self):
+        token = get_token()
+        data = {
+            'adults': 1,
+            'children': 0,
+            'infants': 0,
+            'flight_type': 'one_way',
+            'flight_class': 'economy',
+            'departure_date': '2023-01-10',
+            'return_date': '',
+            'origin': 'BLR',
+            'destination': 'MAA',
+        }
+        response = self.client.post(
+            f'/search/flights/',
+            HTTP_AUTHORIZATION=f'Bearer {token}',
+            data=data,
+            content_type='application/json'
+        )
+        # print(dumps(response.json(), indent=4))
+        counter = 0
+        while True:
+            results_id = response.json()['results_id']
+            response = self.client.get(
+                f'/search/flights/results/{results_id}/',
+                HTTP_AUTHORIZATION=f'Bearer {token}'
+            )
+            if response.json()['status'] != 'pending':
+                # print(dumps(response.json(), indent=4))
+                break
+            time.sleep(5)
+            counter += 1
+            if counter > 20:
+                self.assertEqual(0, 1)
                 break
