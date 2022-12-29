@@ -1,0 +1,15 @@
+- model: 'airport.Airport'
+  fields:
+    id: '8786e5fb-6245-43f7-a549-666098c2b69a'
+    provider_id: '06c0c84a-af8b-4c0f-b5c3-891c53e492f2'
+    external_id: 'BLR'
+    search_field: 'india bangalore bengaluru international airport'
+    display_name: "India - Bangalore - Bengaluru International Airport"
+
+- model: 'airport.Airport'
+  fields:
+    id: 'b1bb9e44-4bd3-4526-96ac-9cc4431956e6'
+    provider_id: '06c0c84a-af8b-4c0f-b5c3-891c53e492f2'
+    external_id: 'MAA'
+    search_field: 'india chennai chennai airport'
+    display_name: "India - Chennai - Chennai Airport"

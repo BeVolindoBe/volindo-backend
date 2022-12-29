@@ -14,6 +14,7 @@ FIXTURES = [
     'hotel/fixtures/hotels.yaml',
     'hotel/fixtures/hotel_amenities.yaml',
     'hotel/fixtures/hotel_pictures.yaml',
+    'airport/fixtures/airports.yaml',
 ]
 
 

@@ -38,3 +38,12 @@ class CatalogueTestCase(TestCase):
         )           
         print(dumps(response.json(), indent=4))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_destinations_autocmomplete(self):
+        token = get_token()
+        response = self.client.get(
+            '/catalogues/airports/?airport=ind',
+            HTTP_AUTHORIZATION=f'Bearer {token}',
+        )           
+        print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)

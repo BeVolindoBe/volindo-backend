@@ -20,7 +20,7 @@ for row in csv_reader:
                 provider_id=PROVIDER_ID,
                 external_id=row[1],
                 airport_name=row[2],
-                search_name=unidecode(row[2]).lower().replace('-', '')
+                search_name=unidecode(row[2]).lower().replace('-', '').replace('  ', ' ')
             )
         )
 

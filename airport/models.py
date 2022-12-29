@@ -22,8 +22,8 @@ class Airport(models.Model):
         default=None
     )
     external_id = models.CharField(max_length=100, db_index=True, null=True, default=None)
-    airport_name = models.CharField(max_length=200)
-    search_name = models.CharField(max_length=200, db_index=True)
+    display_name = models.CharField(max_length=200)
+    search_field = models.CharField(max_length=200, db_index=True)
 
     class Meta:
         db_table = 'airports'
