@@ -128,12 +128,6 @@ def one_way_flight(flights_data):
     return flights
 
 
-def parse_flights(flights_data):
-    if len(flights_data) > 1:
-        return return_flight(flights_data)
-    return one_way_flight(flights_data)
-
-
 @shared_task
 def tmx_search_flights(results_id, filters):
     payload = {
@@ -158,6 +152,9 @@ def tmx_search_flights(results_id, filters):
     if response.status_code == 200:
         response_data = response.json()
         if response_data['Status'] == 1:
-            results['flights'] = parse_flights(response_data['Search']['FlightDataList']['JourneyList'])
+            if filters['flight_type'] == 'one_way':
+                    results['flights'] = one_way_flight(response_data['Search']['FlightDataList']['JourneyList'])
+            else:
+                results['flights'] = return_flight(response_data['Search']['FlightDataList']['JourneyList'])
     results['status'] = 'update'
     cache.set(results_id, json.dumps(results), 900)
