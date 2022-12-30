@@ -35,10 +35,16 @@ def fetch_hotel_data(hotels_list, filters, parsed_rooms, results_id):
             'hotel_amenities', 'hotel_pictures'
         ).filter(external_id__in=hotels_list.keys())
         for h in hotels:
-            hotels_list[h.external_id] = HotelSerializer(h).data
+            try:
+                hotels_list[h.external_id] = HotelSerializer(h).data
+            except KeyError:
+                pass
         prices = data['HotelResult']
         for p in prices:
-            hotels_list[p['HotelCode']]['price'] = p['Rooms'][0]['TotalFare']
+            try:
+                hotels_list[p['HotelCode']]['price'] = p['Rooms'][0]['TotalFare']
+            except KeyError:
+                pass
         results = json.loads(cache.get(results_id))
         results['hotels'].extend(hotels_list.values())
         results['status'] = 'update'
