@@ -31,15 +31,14 @@ def fetch_hotel_data(hotels_list, filters, parsed_rooms, results_id):
     data = response.json()
     save_log(PROVIDER_ID, SEARCH_URL, payload, response.status_code, response.json())
     if response.status_code == 200 and data['Status']['Code'] == 200:
-        prices = data['HotelResult']
-        print(hotels_list)
-        for p in prices:
-            hotels_list[p['HotelCode']]['price'] = p['Rooms'][0]['TotalFare']
         hotels = Hotel.objects.prefetch_related(
             'hotel_amenities', 'hotel_pictures'
         ).filter(external_id__in=hotels_list.keys())
         for h in hotels:
-            hotels_list[h.external_id]['details'] = HotelSerializer(h).data
+            hotels_list[h.external_id] = HotelSerializer(h).data
+        prices = data['HotelResult']
+        for p in prices:
+            hotels_list[p['HotelCode']]['price'] = p['Rooms'][0]['TotalFare']
         results = json.loads(cache.get(results_id))
         results['hotels'] = []
         results['hotels'].extend(hotels_list.values())
@@ -56,10 +55,7 @@ def tbo_search_hotels(results_id, filters):
     counter = 0
     while counter <= len(hotels):
         hotels_list = {
-            h[1]: {
-                'price': '',
-                'details': {}
-            } for h in hotels[counter:counter+BATCH]
+            h[1]: {} for h in hotels[counter:counter+BATCH]
         }
         fetch_hotel_data.delay(hotels_list, filters, parsed_rooms, results_id)
         counter += BATCH
