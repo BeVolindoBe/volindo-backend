@@ -4,6 +4,8 @@ from os import environ
 HOST = environ['TBO_URL']
 AUTH = environ['TBO_AUTH']
 
+BATCH = environ['BATCH_HOTEL_SEARCH']
+
 SEARCH_URL = f'{HOST}/Search'
 PREBOOK_URL = f'{HOST}/PreBook'
 BOOK_URL = f'{HOST}/Book'
@@ -53,5 +55,3 @@ def parse_hotels(hotels) -> dict:
 		'hotels_dict': hotels_dict
 	}
 	return parsed_hotels
-
-BATCH = 2
