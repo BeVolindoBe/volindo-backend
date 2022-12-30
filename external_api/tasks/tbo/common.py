@@ -4,7 +4,7 @@ from os import environ
 HOST = environ['TBO_URL']
 AUTH = environ['TBO_AUTH']
 
-BATCH = environ['BATCH_HOTEL_SEARCH']
+BATCH = int(environ['BATCH_HOTEL_SEARCH'])
 
 SEARCH_URL = f'{HOST}/Search'
 PREBOOK_URL = f'{HOST}/PreBook'

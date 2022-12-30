@@ -49,13 +49,13 @@ def fetch_hotel_data(hotels_list, filters, parsed_rooms, results_id):
 @shared_task
 def tbo_search_hotels(results_id, filters):
     parsed_rooms = parse_rooms(filters['rooms'])
-    hotels = Hotel.objects.values_list('id', 'external_id').filter(
+    hotels = Hotel.objects.values_list('external_id').filter(
         destination_id=filters['destination']
     )
     counter = 0
     while counter <= len(hotels):
         hotels_list = {
-            h[1]: {} for h in hotels[counter:counter+BATCH]
+            h[0]: {} for h in hotels[counter:counter+BATCH]
         }
         fetch_hotel_data.delay(hotels_list, filters, parsed_rooms, results_id)
         counter += BATCH
