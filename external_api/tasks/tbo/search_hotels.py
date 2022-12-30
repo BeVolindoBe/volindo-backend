@@ -40,7 +40,6 @@ def fetch_hotel_data(hotels_list, filters, parsed_rooms, results_id):
         for p in prices:
             hotels_list[p['HotelCode']]['price'] = p['Rooms'][0]['TotalFare']
         results = json.loads(cache.get(results_id))
-        results['hotels'] = []
         results['hotels'].extend(hotels_list.values())
         results['status'] = 'update'
         cache.set(results_id, json.dumps(results), 900)
