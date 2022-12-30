@@ -53,3 +53,5 @@ def parse_hotels(hotels) -> dict:
 		'hotels_dict': hotels_dict
 	}
 	return parsed_hotels
+
+BATCH = 2

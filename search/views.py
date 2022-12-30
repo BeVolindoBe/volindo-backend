@@ -36,7 +36,7 @@ class SearchHotel(APIView):
                 Hotel.objects.prefetch_related(
                     'hotel_pictures',
                     'hotel_amenities'
-                ).filter(destination_id=filters.data['destination']).order_by('?'),
+                ).filter(destination_id=filters.data['destination']).order_by('?')[:100],
                 many=True
             ).data
             return Response(results, status=status.HTTP_200_OK)

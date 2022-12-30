@@ -23,9 +23,6 @@ class HotelAmenitySerializer(serializers.ModelSerializer):
 
 class HotelSerializer(serializers.ModelSerializer):
 
-    hotel_amenities = HotelAmenitySerializer(many=True)
-    hotel_pictures = HotelPictureSerializer(many=True)
-
     class Meta:
         model = Hotel
         fields = (
@@ -41,6 +38,14 @@ class HotelSerializer(serializers.ModelSerializer):
             'hotel_pictures',
             'description'
         )
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['id'] = str(instance.id)
+        data['hotel_pictures'] = HotelPictureSerializer(instance.hotel_pictures.all(), many=True).data
+        data['hotel_amenities'] = HotelAmenitySerializer(instance.hotel_amenities.all(), many=True).data
+        data['destination'] = str(instance.destination)
+        return data
 
 
 class PreBookSerializer(serializers.Serializer):

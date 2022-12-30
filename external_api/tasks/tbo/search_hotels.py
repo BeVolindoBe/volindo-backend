@@ -9,10 +9,42 @@ from celery import shared_task
 from external_api.logs import save_log
 from external_api.tasks.tbo.common import(
     HEADERS, SEARCH_URL, EXPECTED_SEARCH_RESPONSE_TIME,
-    parse_hotels, parse_rooms, PROVIDER_ID
+    parse_hotels, parse_rooms, PROVIDER_ID, BATCH
 )
 
 from hotel.models import Hotel
+from hotel.serializers import HotelSerializer
+
+
+@shared_task
+def fetch_hotel_data(hotels_list, filters, parsed_rooms, results_id):
+    payload = {
+        'CheckIn': filters['check_in'], # format YYYY-mm-dd
+        'CheckOut': filters['check_out'], # format YYYY-mm-dd
+        'HotelCodes': ','.join(hotels_list.keys()), # 100043,32412443
+        'GuestNationality': filters['nationality'],
+        'PaxRooms': parsed_rooms,
+        'ResponseTime': EXPECTED_SEARCH_RESPONSE_TIME,
+        'IsDetailedResponse': False
+    }
+    response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
+    data = response.json()
+    save_log(PROVIDER_ID, SEARCH_URL, payload, response.status_code, response.json())
+    if response.status_code == 200 and data['Status']['Code'] == 200:
+        prices = data['HotelResult']
+        print(hotels_list)
+        for p in prices:
+            hotels_list[p['HotelCode']]['price'] = p['Rooms'][0]['TotalFare']
+        hotels = Hotel.objects.prefetch_related(
+            'hotel_amenities', 'hotel_pictures'
+        ).filter(external_id__in=hotels_list.keys())
+        for h in hotels:
+            hotels_list[h.external_id]['details'] = HotelSerializer(h).data
+        results = json.loads(cache.get(results_id))
+        results['hotels'] = []
+        results['hotels'].extend(hotels_list.values())
+        results['status'] = 'update'
+        cache.set(results_id, json.dumps(results), 900)
 
 
 @shared_task
@@ -21,26 +53,13 @@ def tbo_search_hotels(results_id, filters):
     hotels = Hotel.objects.values_list('id', 'external_id').filter(
         destination_id=filters['destination']
     )
-    parsed_hotels = parse_hotels(hotels=hotels)
-    payload = {
-        'CheckIn': filters['check_in'], # format YYYY-mm-dd
-        'CheckOut': filters['check_out'], # format YYYY-mm-dd
-        'HotelCodes': parsed_hotels['ids'],
-        'GuestNationality': filters['nationality'],
-        'PaxRooms': parsed_rooms,
-        'ResponseTime': EXPECTED_SEARCH_RESPONSE_TIME,
-        'IsDetailedResponse': False
-    }
-    response = requests.post(SEARCH_URL, headers=HEADERS, data=json.dumps(payload))
-    save_log(PROVIDER_ID, SEARCH_URL, payload, response.status_code, response.json())
-    hotels = response.json()['HotelResult']
-    temp_hotels = []
-    for hotel in hotels:
-        temp = parsed_hotels['hotels_dict'][hotel['HotelCode']]
-        temp['price'] = hotel['Rooms'][0]['TotalFare']
-        temp_hotels.append(temp)
-    results = json.loads(cache.get(results_id))
-    results['hotels'] = []
-    results['hotels'].extend(temp_hotels)
-    results['status'] = 'update'
-    cache.set(results_id, json.dumps(results), 900)
+    counter = 0
+    while counter <= len(hotels):
+        hotels_list = {
+            h[1]: {
+                'price': '',
+                'details': {}
+            } for h in hotels[counter:counter+BATCH]
+        }
+        fetch_hotel_data.delay(hotels_list, filters, parsed_rooms, results_id)
+        counter += BATCH

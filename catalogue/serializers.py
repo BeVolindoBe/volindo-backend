@@ -5,6 +5,8 @@ from catalogue.models import Catalogue, Item, Destination, Country
 
 class ItemSerializer(serializers.ModelSerializer):
 
+    id = serializers.CharField()
+
     class Meta:
         model = Item
         fields = (
@@ -14,10 +16,13 @@ class ItemSerializer(serializers.ModelSerializer):
             'metadata'
         )
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['id'] = str(instance.id)
+        return data
+
 
 class CatalogueSerializer(serializers.ModelSerializer):
-
-    items = ItemSerializer(many=True)
 
     class Meta:
         model = Catalogue
@@ -30,6 +35,8 @@ class CatalogueSerializer(serializers.ModelSerializer):
 
 class DestinationSerializer(serializers.ModelSerializer):
 
+    id = serializers.CharField()
+
     class Meta:
         model = Destination
         fields = (
@@ -37,8 +44,16 @@ class DestinationSerializer(serializers.ModelSerializer):
             'display_name'
         )
 
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['id'] = str(instance.id)
+        return data
+
 
 class CountrySerializer(serializers.ModelSerializer):
+
+    id = serializers.CharField()
+
     class Meta:
         model = Country
         fields = (
@@ -47,3 +62,8 @@ class CountrySerializer(serializers.ModelSerializer):
             'country_name',
             'metadata',
         )
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data['id'] = str(instance.id)
+        return data
