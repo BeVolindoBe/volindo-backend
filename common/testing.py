@@ -2,6 +2,8 @@ from django.test import Client
 
 
 FIXTURES = [
+    'user/fixtures/users.yaml',
+    # 'agent/fixtures/agents.yaml',
     'catalogue/fixtures/catalogues.yaml',
     'catalogue/fixtures/agent_status.yaml',
     'catalogue/fixtures/agent_subscriptions.yaml',
@@ -17,21 +19,4 @@ FIXTURES = [
     'airport/fixtures/airports.yaml',
 ]
 
-
-def get_token():
-    client = Client()
-    data = {
-        'first_name': 'Travel',
-        'last_name': 'Agent',
-        'username': 'user@example.com',
-        'email': 'user@example.com',
-        'password': 'W1D78#Ae9O5r',
-        'password2': 'W1D78#Ae9O5r',
-    }
-    client.post('/accounts/register/', data=data)
-    data = {
-        'username': 'user@example.com',
-        'password': 'W1D78#Ae9O5r'
-    }
-    response = client.post('/token/', data=data)
-    return response.json()['access']
+USER_ID = '1d9646fd-73c1-44ad-919b-6b8730ee2855'

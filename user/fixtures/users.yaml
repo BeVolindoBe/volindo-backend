@@ -1,0 +1,7 @@
+- model: 'user.User'
+  fields:
+    id: '1d9646fd-73c1-44ad-919b-6b8730ee2855'
+    full_name: 'Eren Jaeger'
+    email: 'mail@mail.com'
+    created_at: '2022-05-03'
+    updated_at: '2022-05-03'

@@ -44,10 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'rest_framework_simplejwt',
-    'drf_yasg',
     'catalogue',
-    'account',
+    'user',
     'agent',
     'payment',
     'traveler',
@@ -158,39 +156,24 @@ CACHES = {
 }
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
     'DATE_INPUT_FORMATS': ['%Y-%m-%d'],
-}
-
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=int(environ['ACCES_TOKEN_MINUTES'])),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=int(environ['REFRESH_TOKEN_DAYS']))
 }
 
 
 CSRF_TRUSTED_ORIGINS = environ.get('CSRF_TRUSTED_ORIGINS').split(',')
 
-SWAGGER_SETTINGS = {
-    'DEFAULT_API_URL': environ['HOST']
-}
-
-
-def traces_sampler(ctx):
-    if 'wsgi_environ' in ctx:
-        url = ctx['wsgi_environ'].get('PATH_INFO', '')
-        if url.startswith('/hotels/results/'):
-            return 0  # Don't trace any
-    return 1  # Trace all
-
 
 if DEBUG is False:
+
     import sentry_sdk
     from sentry_sdk.integrations.django import DjangoIntegration
+
+    def traces_sampler(ctx):
+        if 'wsgi_environ' in ctx:
+            url = ctx['wsgi_environ'].get('PATH_INFO', '')
+            if url.startswith('/hotels/results/'):
+                return 0  # Don't trace any
+        return 1  # Trace all
 
     sentry_sdk.init(
         dsn=environ['SENTRY_DSN'],

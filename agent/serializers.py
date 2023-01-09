@@ -10,13 +10,12 @@ class AgentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Agent
         fields = (
-            'first_name',
-            'last_name',
+            'full_name',
             'email',
             'photo',
             'phone_country_code',
             'phone_number',
-            'birth_date',
+            'birthday',
             'country',
             'web_site',
             'agent_status',

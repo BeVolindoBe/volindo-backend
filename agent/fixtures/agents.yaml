@@ -1,0 +1,22 @@
+- model: 'agent.Agent'
+  fields:
+    id: '2507fbfb-bd67-4df1-af5d-09159fe8533c'
+    user: '1d9646fd-73c1-44ad-919b-6b8730ee2855'
+    name: 'Eren Jaeger'
+    email: 'mail@mail.com'
+    created_at: '2022-05-03'
+    updated_at: '2022-05-03'
+    photo: 'google.com'
+    birthday: '1900-03-05'
+    country: '87ddfd52-d402-4867-8e44-1e57b3a6f772' # United Arab Emirates
+    address: 'Mexico City'
+    city: 'Mexico City'
+    state_province: 'Mexico City'
+    zip_code: '02000'
+    phone_country_code: '+52'
+    phone_number: '5544332211'
+    web_site: 'google.com'
+    agent_status: '69e5e698-a900-4d14-a077-ba165f476a40' # validated
+    agent_subscription: '20179d75-765c-471b-9d2e-6dac1c91bce8' # free
+    updated_at: '2022-10-10'
+    created_at: '2022-10-10'

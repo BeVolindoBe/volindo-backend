@@ -3,3 +3,9 @@
     id: '87ddfd52-d402-4867-8e44-1e57b3a6f772'
     iso_code: 'AE'
     country_name: 'United Arab Emirates'
+
+- model: 'catalogue.Country'
+  fields:
+    id: '7f494634-379c-4c3a-ad0f-c84db69076ab'
+    iso_code: 'MX'
+    country_name: 'Mexico'

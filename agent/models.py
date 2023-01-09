@@ -1,19 +1,19 @@
 from uuid import uuid4
 
 from django.db import models
-from django.contrib.auth.models import User
 
 from catalogue.models import Item, Country
 
+from user.models import User
+
 
 class Agent(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    first_name = models.CharField(max_length=60)
-    last_name = models.CharField(max_length=60)
-    email = models.EmailField(unique=True)
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid4)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='agent_user')
+    full_name = models.CharField(max_length=200, null=True, default=None)
+    email = models.EmailField(null=True, default=None)
     photo = models.URLField(null=True, default=None)
-    birth_date = models.DateField(null=True, default=None)
+    birthday = models.DateField(null=True, default=None)
     country = models.ForeignKey(
         Country,
         on_delete=models.CASCADE,
