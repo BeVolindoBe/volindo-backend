@@ -17,4 +17,4 @@ class User(models.Model):
         managed = True
 
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.full_name}'
