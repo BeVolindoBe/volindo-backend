@@ -41,8 +41,7 @@ class ReservationPayment(APIView):
             return Response(payment.data, status=payment.status_code)
 
 
-
 class PaymentSession(APIView):
 
     def get(self, request, user__external_id):
-        return Response(get_stripe_session(), status=status.HTTP_200_OK)
+        return Response(get_stripe_session(), status=status.HTTP_303_SEE_OTHER)

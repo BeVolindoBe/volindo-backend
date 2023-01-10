@@ -12,7 +12,7 @@ KEY = environ.get('STRIPE_KEY')
 
 
 def get_stripe_session():
-    stripe.api_key = 'sk_test_51M0AYpJLqNE3DWQ6UJQ7S4bxtmYKZJyRwokDelUSvRiws5ZUjmzFouo1llhQUqjO15pYB7nzbvdY10jMnzEzcbgK00oymrIfjl'
+    stripe.api_key = KEY
     return stripe.checkout.Session.create(
         success_url=SUCCESS_URL,
         cancel_url=SUCCESS_URL,

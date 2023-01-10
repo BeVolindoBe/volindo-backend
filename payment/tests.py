@@ -19,8 +19,8 @@ class SubscriptionPayment(TestCase):
             f'/users/{USER_ID}/payments/create-session/',
             content_type='application/json'
         )
-        print(dumps(response.json(), indent=4))
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # print(dumps(response.json(), indent=4))
+        self.assertEqual(response.status_code, status.HTTP_303_SEE_OTHER)
 
 
 # class PaymentReservationTestCase(TestCase):
