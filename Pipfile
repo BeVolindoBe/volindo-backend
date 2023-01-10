@@ -20,6 +20,7 @@ unidecode = "*"
 sentry-sdk = "*"
 watchdog = "*"
 boto3 = "*"
+stripe = "*"
 
 [dev-packages]
 

@@ -1,12 +1,13 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import AllowAny
+from rest_framework import status
 
 from utilities.payments import pay_reservation
 
 from payment.models import Payment
 from payment.serializers import PaymentSerializer, PaymentDetailSerializer, CardSerializer
+from payment.connection import get_stripe_session
 
 
 class PaymentList(ListAPIView):
@@ -38,3 +39,10 @@ class ReservationPayment(APIView):
             card_details = data.data
             payment = pay_reservation(payment_id=pk, card_details=card_details)
             return Response(payment.data, status=payment.status_code)
+
+
+
+class PaymentSession(APIView):
+
+    def get(self, request, user__external_id):
+        return Response(get_stripe_session(), status=status.HTTP_200_OK)
