@@ -16,4 +16,4 @@ class AccountDetail(RetrieveAPIView):
     serializer_class = UserSerializer
 
     def get_object(self):
-        return self.get_queryset().get(id=self.kwargs['user_id'])
+        return self.get_queryset().get(id=self.kwargs['external_id'])

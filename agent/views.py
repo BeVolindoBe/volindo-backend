@@ -9,8 +9,5 @@ from agent.models import Agent
 class AgentDetail(RetrieveUpdateAPIView):
 
     serializer_class = AgentSerializer
-    lookup_field = 'user_id'
+    lookup_field = 'user__external_id'
     queryset = Agent.objects.all()
-
-    # def get_queryset(self):
-    #     return Agent.objects.filter(user_id=self.kwargs['user_id'])

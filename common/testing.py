@@ -19,4 +19,4 @@ FIXTURES = [
     'airport/fixtures/airports.yaml',
 ]
 
-USER_ID = '1d9646fd-73c1-44ad-919b-6b8730ee2855'
+USER_ID = '87a69f31-c564-4079-be07-759e58c952dd'

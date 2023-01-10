@@ -18,6 +18,7 @@ class UserTestCase(TestCase):
 
     def test_new_user(self):
         data = {
+            'external_id': 'c0a80101-0000-0000-0000-000000000000',
             'email': 'email@email.com',
             'full_name': 'Eren Jaeger'
         }
@@ -32,8 +33,9 @@ class UserTestCase(TestCase):
     
     def test_duplicate_user(self):
         data = {
+            'external_id': 'c0a80101-0000-0000-0000-000000000002',
             'email': 'mail@mail.com',
-            'full_name': 'Eren Jaeger'
+            'full_name': 'Jaeger Eren'
         }
         response = self.client.post(
             '/accounts/',

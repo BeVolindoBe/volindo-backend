@@ -18,7 +18,6 @@ class AgentTestCase(TestCase):
 
     def test_get_agent_detail(self):
         user_id = str(User.objects.first().id)
-        print(f'/users/{USER_ID}/',)
         response = self.client.get(
             f'/users/{USER_ID}/',
             content_type='application/json'
